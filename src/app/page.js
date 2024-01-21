@@ -1,6 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const NavBar = dynamic(() => import("./Components/NavBar/NavBar.js"), {
+  ssr: false,
+});
 
 export default function Home() {
-  return <div>TedxNTUA</div>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
