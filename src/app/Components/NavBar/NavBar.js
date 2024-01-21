@@ -28,7 +28,7 @@ const NavBar = () => {
     background: "black", // Set the background color to transparent
     color: "white",
     padding: "20px",
-    height: "calc(100% - 650px)",
+    height: "100%",
   };
 
   const navLinks = (
