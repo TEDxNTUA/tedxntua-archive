@@ -1,16 +1,20 @@
+"use client";
 import React from "react";
-import { Container, Typography, Grid } from "@mui/material";
+import { Container, Typography, Grid, Button } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
-const Footer = (isPhone) => {
-  const icon_size = isPhone.isPhone ? 50 : 30;
+import useMediaQuery from "@mui/material/useMediaQuery";
+import useTheme from "@mui/material/styles/useTheme";
+const Footer = () => {
+  const theme = useTheme();
+  const isPhone = useMediaQuery(theme.breakpoints.down("sm"));
+  const icon_size = isPhone ? 50 : 30;
   return (
     <>
       <footer className="footer">
         <Container>
           <Typography
-            variant={isPhone.isPhone ? "h3" : "h2"}
+            variant={isPhone ? "h3" : "h2"}
             color="white"
             align="center"
           >
@@ -22,20 +26,48 @@ const Footer = (isPhone) => {
             <br /> moments and much more!
           </Typography>
 
-          <Grid
-            container
-            spacing={2}
-            justifyContent="center"
-            display="flex"
-            style={{ paddingTop: "10px", paddingBottom: "10px" }}
+          <Container
+            style={{
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
           >
-            <Grid item>
-              <FacebookIcon style={{ width: icon_size, height: icon_size }} />
-            </Grid>
-            <Grid item>
-              <InstagramIcon style={{ width: icon_size, height: icon_size }} />
-            </Grid>
-            <Grid item>
+            <Button
+              onClick={() =>
+                window.open("https://www.facebook.com/tedxntua/", "_blank")
+              }
+            >
+              <FacebookIcon
+                style={{
+                  color: "white",
+                  width: icon_size,
+                  height: icon_size,
+                }}
+              />
+            </Button>
+
+            <Button
+              onClick={() =>
+                window.open("https://www.instagram.com/tedxntua/", "_blank")
+              }
+            >
+              <InstagramIcon
+                style={{
+                  color: "white",
+                  width: icon_size,
+                  height: icon_size,
+                }}
+              />
+            </Button>
+
+            <Button
+              onClick={() =>
+                window.open("https://www.tiktok.com/@tedxntua", "_blank")
+              }
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={icon_size}
@@ -48,8 +80,13 @@ const Footer = (isPhone) => {
                   fill="white"
                 />
               </svg>
-            </Grid>
-            <Grid item>
+            </Button>
+
+            <Button
+              onClick={() =>
+                window.open("https://www.youtube.com/c/TEDxNTUA", "_blank")
+              }
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={icon_size}
@@ -62,9 +99,8 @@ const Footer = (isPhone) => {
                   fill="white"
                 />
               </svg>
-            </Grid>
-            <Grid item></Grid>
-          </Grid>
+            </Button>
+          </Container>
         </Container>
       </footer>
     </>
