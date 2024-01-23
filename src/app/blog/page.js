@@ -1,15 +1,14 @@
-"use client";
+import { BLOGPOSTS } from "../../../data/blogposts";
 
-import dynamic from "next/dynamic";
+import SocialMediaList from "@/components/SocialMedia/SocialMediaList";
+import BlogGrid from "@/components/Blog/BlogGrid";
 
-const NavBar = dynamic(() => import("../Components/NavBar/NavBar.js"), {
-  ssr: false,
-});
 function BlogPage() {
   return (
-    <div>
-      <NavBar />
+    <div className="bg-black">
       Blog
+      <BlogGrid blogposts={BLOGPOSTS} />
+      <SocialMediaList />
     </div>
   );
 }
