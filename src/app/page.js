@@ -1,17 +1,17 @@
-import dynamic from "next/dynamic";
-import Footer from "./Components/Footer/Footer.js";
-import FirstPage from "./Components/MainScreen/FirstPage/FirstPage.js";
+import AboutTheArchive from "@/components/MainScreen/AboutTheArchive";
+import HeroSection from "@/components/MainScreen/HeroSection";
+import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
 
-const NavBar = dynamic(() => import("./Components/NavBar/NavBar.js"), {
-  ssr: false,
-});
-
-export default function Home() {
+function HomePage() {
   return (
-    <div>
-      <NavBar />
-      <FirstPage />
-      <Footer />
-    </div>
+    <main>
+      <HeroSection />
+      <AboutTheArchive />
+      <div className="bg-black pt-6">
+        <TEDxInNumbers />
+      </div>
+    </main>
   );
 }
+
+export default HomePage;
