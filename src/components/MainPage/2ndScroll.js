@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-function AboutTheArchive() {
+function SecondScroll() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 justify-items-center bg-red-500">
       <div className="flex flex-col items-center md:items-left justify-center w-6/12 lg:w-5/12 my-8">
@@ -35,4 +35,4 @@ function AboutTheArchive() {
   );
 }
 
-export default AboutTheArchive;
+export default SecondScroll;
