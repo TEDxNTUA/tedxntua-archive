@@ -50,14 +50,14 @@ const NavBar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "black" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "black" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center" }}>
             <Link href="/" passHref>
               <img
                 src="https://github.com/TEDxNTUA/tedxntua2022/blob/main/project/static/images/tedxntua_logo_whitetext.png?raw=true"
                 alt="TEDxNTUA Logo"
-                style={{ height: "50px", marginRight: "10px" }}
+                style={{ height: "50px", marginRight: "10px", marginTop: "15px" }}
               />
             </Link>
             {!isMobile && (
