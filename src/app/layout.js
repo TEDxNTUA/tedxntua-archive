@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import Navbar from "@/components/NavBar/NavBar.js";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "TEDxNTUA",
@@ -10,10 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-black">
         <Navbar />
         <div className="mt-[5rem]"></div>
         {children}
+        <Footer />
       </body>
     </html>
   );
