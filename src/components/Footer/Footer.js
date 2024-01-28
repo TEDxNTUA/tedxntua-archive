@@ -3,7 +3,7 @@ import SocialMediaList from "../SocialMedia/SocialMediaList";
 function Footer() {
   return (
     <section className="block text-center pt-2 pb-1 lg:py-3 bg-black w-full right-0 bottom-0">
-      <div className="grid grid-cols-2 md:grid-cols-1 justify-items-center gap-3 mb-2 w-[80%] mx-auto">
+      <div className="grid grid-rows-2 md:grid-cols-1 justify-items-center gap-3 mb-2 w-[80%] mx-auto">
         <div
           id="social-media"
           className="flex items-center mx-auto justify-center md:flex-none md:flex-col"
