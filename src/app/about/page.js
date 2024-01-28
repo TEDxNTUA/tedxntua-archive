@@ -1,12 +1,11 @@
-import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
-import IncrementalNumber from "@/components/TEDInNumbers/IncrementalNumber";
-
+import AboutTed from "@/components/About/AboutTed";
+import AboutTedxNtua from "@/components/About/AboutTedxNtua";
 function AboutPage() {
   return (
     <div>
-      About
-      <TEDxInNumbers />
-      <div className="bg-blue-500 h-[100vh] "></div>
+      <AboutTedxNtua />
+      <AboutTed />
+      {/* <div className="bg-red-600 h-[100vh] "></div> */}
     </div>
   );
 }

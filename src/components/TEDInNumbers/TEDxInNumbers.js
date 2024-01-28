@@ -25,13 +25,27 @@ const achievementsList = [
   },
 ];
 
-const TEDxInNumbers = () => {
+const TEDxInNumbers = ({ color = "red", md_size_cols = 4 }) => {
+  const sizeVariants = {
+    1: "md:grid-cols-1",
+    2: "md:grid-cols-2",
+    3: "md:grid-cols-3",
+    4: "md:grid-cols-4",
+  };
+  const borderColorsVariants = {
+    red: "border-[#eb0028]",
+    black: "border-black",
+    white: "border-white",
+  };
   return (
-    <div className="grid list-none grid-cols-2  md:grid-cols-4 gap-6 w-8/12 mx-auto p-4 border-[#eb0028] border-[0.5px] rounded-md">
+    <div
+      className={`grid list-none grid-cols-2  ${sizeVariants[md_size_cols]} gap-6 w-8/12 mx-auto p-4 ${borderColorsVariants[color]} border-[0.5px] rounded-md`}
+    >
       {achievementsList.map((achievement, index) => {
         return (
           <div key={index}>
             <TEDxStat
+              color={color}
               endValue={achievement.endValue}
               suffix={achievement.suffix}
               stat={achievement.stat}
