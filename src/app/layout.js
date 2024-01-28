@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="mt-[5rem]"></div>
         {children}
+        <NewsLetter />
         <Footer />
       </body>
     </html>

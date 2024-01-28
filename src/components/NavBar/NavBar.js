@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import SocialMediaNav from "./SocialMediaNav";
 
 const navLinks = [
+  { title: "Home", path: "./", isImage: true },
   {
     title: "Watch",
     path: "/watch",
@@ -21,7 +22,7 @@ const navLinks = [
 
 function NewNavbar() {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
-
+  const [buttonClicked, setButtonClicked] = useState("");
   const closeDrawer = () => {
     if (drawerIsOpen) {
       setDrawerIsOpen(false);
@@ -32,24 +33,48 @@ function NewNavbar() {
     "h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]";
 
   return (
-    <nav className="fixed bg-black top-0 left-0 right-0 z-10">
+    <nav className="fixed bg-black top-0 left-0 right-0 z-10 w-full flex">
       <div className="flex w-full py-4 px-6 items-center justify-between lg:px-16 xl:px-22 2xl:px-36 3xl:px-56">
         <Link
           onClick={closeDrawer}
           href="/"
           className="text-5xl text-white font-semibold"
         >
-          TED<span className="text-[#eb0028]">x</span>NTUA
+          <img
+            src="/tedxntua_logo.png"
+            className="w-44 lg:w-64 h-auto object-contain"
+            alt="TEDxNTUA Logo"
+          ></img>
         </Link>
         {/* Desktop Nav */}
-        <div id="desktop-navbar" className="menu hidden md:block">
-          <ul className="flex md:flex-row md:space-x-8 lg:space-x-16">
+        <div
+          id="desktop-navbar"
+          className="menu hidden md:flex flex-row-reverse "
+        >
+          <ul className="flex md:flex-row  md:space-x-8 lg:space-x-16">
             {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+              <li key={index} className="mx-2">
+                {link.isImage ? (
+                  <Link href={link.path}>
+                    <img
+                      src="/homepage/archive.png"
+                      alt={link.title}
+                      className="w-22 h-8"
+                    />
+                  </Link>
+                ) : (
+                  <NavLink
+                    href={link.path}
+                    title={link.title}
+                    className={"text-white hover:text-red-500"}
+                    onClick={() => setButtonClicked(link.title)}
+                    buttonClicked={buttonClicked}
+                  />
+                )}
               </li>
             ))}
           </ul>
+          console.log(buttonClicked);
         </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block md:hidden">
