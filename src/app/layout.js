@@ -2,6 +2,7 @@ import "./globals.css";
 
 import Navbar from "@/components/NavBar/NavBar.js";
 import Footer from "@/components/Footer/Footer";
+import NewsLetter from "@/components/NewsLetter/NewsLetter";
 
 export const metadata = {
   title: "TEDxNTUA",
