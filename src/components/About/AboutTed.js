@@ -17,26 +17,33 @@ The TED Conference provides general guidance for the TEDx program, but individua
 };
 
 const AboutTed = () => {
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-3  lg:items-center my-5 mx-3 text-black text-justify gap-5  ">
-      <div className="bg-white rounded-2xl p-3">
-        <div className="text-3xl text-[#eb0028] text-center underline underline-offset-4 italic  font-bold">
+  return (    
+    <div class="flex-column mx-40 ">
+      <div class="flex flex-row items-center mt-20">
+        <div class="text-3xl text-[#eb0028] text-center italic font-bold pr-40">
           {text.q1}
         </div>
-        <div className="text-md">{text.ans1}</div>
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
+          {text.ans1}
+        </div>
       </div>
-      <div className="bg-white rounded-2xl p-3">
-        <div className="text-3xl text-[#eb0028] text-center underline underline-offset-4 italic font-bold ">
+      <div class="flex flex-row items-center mt-20">
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
+          {text.ans2}
+        </div>
+        <div class="text-3xl text-[#eb0028] text-center italic font-bold pl-40">
           {text.q2}
         </div>
-        <div className="text-md">{text.ans2}</div>
       </div>
-      <div className="bg-white rounded-2xl p-3">
-        <div className="text-3xl text-[#eb0028] text-center underline underline-offset-4 italic font-bold">
+      <div class="flex flex-row items-center my-20">
+        <div class="text-3xl text-[#eb0028] text-center italic font-bold pr-40">
           {text.q3}
         </div>
-        <div className="text-md">{text.ans3}</div>
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
+          {text.ans3}
+        </div>
       </div>
+
     </div>
   );
 };
