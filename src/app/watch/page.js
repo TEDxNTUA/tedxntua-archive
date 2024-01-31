@@ -7,7 +7,7 @@ import SelectGridSize from "@/components/Watch/SelectGridSize";
 
 function BlogPage() {
   const [gridSizeXl, setGridSizeXl] = useState(3);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState([]);
   const [event_year, setEvent_year] = useState(""); 
   return (
     <div className="bg-black">
@@ -15,8 +15,6 @@ function BlogPage() {
       <div className="grid grid-cols-1 justify-items-center">
         <WatchHero
           watchtalks={WATCHTALKS}
-          gridSizeXl={gridSizeXl}
-          setGridSizeXl={setGridSizeXl}
           category={category}
           setCategory={setCategory}
           event_year={event_year}

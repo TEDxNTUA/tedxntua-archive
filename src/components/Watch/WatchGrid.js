@@ -18,7 +18,7 @@ export default function WatchGrid({
   // Filter the watchtalks array only if the category is not an empty string
   const filteredWatchTalks = watchtalks.filter(
     (watchtalk) =>
-      (category.trim() === "" || watchtalk.category === category) &&
+      (category.length === 0 || category.includes(watchtalk.category)) &&
       (event_year === "" || watchtalk.year === parseInt(event_year))
   );
   return (
@@ -28,7 +28,7 @@ export default function WatchGrid({
       )}
       {filteredWatchTalks.length > 0 && (
         <ul
-          className={`container grid grid-cols-1 list-none gap-6 lg:gap-20 ${gridsizeVariants[gridSizeXl]} w-10/12 mx-auto z-1 rounded-md p-1 lg:bg-zinc-950`}
+          className={`grid grid-cols-1 list-none gap-[6vh] lg:gap-10 ${gridsizeVariants[gridSizeXl]} w-10/12 mx-auto z-1 rounded-md lg:p-10 lg:bg-zinc-950`}
         >
           {filteredWatchTalks
             .sort((a, b) => b.year - a.year)

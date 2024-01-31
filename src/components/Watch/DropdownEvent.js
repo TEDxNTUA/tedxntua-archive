@@ -17,7 +17,7 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
     setDropdownVisible(!isDropdownVisible);
   };
   return (
-    <div className="text-white hidden lg:grid lg:grid-cols-1 items-start justify-start gap-1 h-fit left-[80%] absolute ">
+    <div className="text-white grid grid-cols-1 items-start justify-start gap-1 h-fit lg:left-[80%] left-[60%] absolute ">
       <button
         id="dropdownDefaultButton"
         data-dropdown-toggle="dropdown"
@@ -42,7 +42,7 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
           {uniqueYears.map((yearEvent, index) => (
             <li key={index}>
               <p
-                className="block px-4 py-2 hover:bg-[#eb0028] hover:text-white text-black"
+                className="block px-4 py-2 text-center hover:bg-[#eb0028] hover:text-white text-black hover:cursor-pointer"
                 onClick={() => handleChangeEvent(yearEvent)}
               >
                 {yearEvent}

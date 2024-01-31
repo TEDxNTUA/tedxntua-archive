@@ -37,6 +37,7 @@ export const WATCHTALKS = [
     speaker_name: "Thanos Vlastos",
     speaker_info: "http://regplanunit.survey.ntua.gr/st_Vlastos.html",
     year: 2015,
+    category: "Society",
   },
   {
     id: "watchtalk4",
@@ -50,6 +51,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.lifo.gr/now/greece/adrianos-golemis-o-giatros-ton-astronayton-poy-oneireyetai-na-paei-sto-diastima",
     year: 2015,
+    category: "Society",
   },
   {
     id: "watchtalk5",
@@ -63,6 +65,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/dimitris-fouskakis-6090962/?originalSubdomain=gr",
     year: 2015,
+    category: "Technology",
   },
   {
     id: "watchtalk6",
@@ -76,6 +79,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/daphne-becket-a3b9154/?originalSubdomain=uk",
     year: 2015,
+    category: "Society",
   },
   {
     id: "watchtalk7",
