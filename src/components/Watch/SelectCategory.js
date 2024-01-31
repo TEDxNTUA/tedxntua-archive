@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { WATCHTALKSCATEGORIES } from "../../../data/watchtalks-cat-years";
 
 const SelectCategory = ({ category, setCategory, uniqueCategories }) => {
   const handleSelectCategoryChange = (event) => {
