@@ -27,7 +27,7 @@ export default function MovingText() {
         scrub: 0.25,
         onUpdate: (e) => (direction = e.direction * -1),
       },
-      x: "=100px",
+      x: "=-500px",
     });
 
     requestAnimationFrame(animate);
@@ -63,7 +63,7 @@ export default function MovingText() {
         <div ref={sliderTed} className="absolute whitespace-nowrap">
           <p
             ref={firstTed}
-            className="relative m-0 text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
+            className="text-white relative m-0 text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
           >
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
@@ -81,7 +81,7 @@ export default function MovingText() {
           </p>
         </div>
       </div>
-      <div className="absolute top-[70%] bg-blue-500">
+      <div className="absolute top-[70%]">
         <div ref={sliderIdeas} className="absolute whitespace-nowrap">
           <p
             ref={firstIdeas}

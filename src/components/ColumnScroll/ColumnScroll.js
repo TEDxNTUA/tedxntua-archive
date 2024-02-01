@@ -21,7 +21,7 @@ const images = [
   "/columnPhotos/column12.jpeg",
 ];
 
-export default function Home() {
+export default function ColumnScroll() {
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -31,9 +31,9 @@ export default function Home() {
   });
 
   const { height } = dimension;
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 1.8]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.3]);
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.6]);
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.8]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 2.6]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
 
   useEffect(() => {
