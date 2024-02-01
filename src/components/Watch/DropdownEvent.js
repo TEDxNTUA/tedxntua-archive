@@ -27,8 +27,8 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
       >
         <p>{event_year === "" ? "Event" : event_year}</p>
         <img
-          src={event_year === "" ? "/arrow_down.png" : "/cancel.png"}
-          className="w-4 h-4 ml-2"
+          src={event_year === "" ? "/arrow_up.png" : "/cancel.png"}
+          className="w-4 h-4 ml-2 rotate-180"
         />
       </button>
 
