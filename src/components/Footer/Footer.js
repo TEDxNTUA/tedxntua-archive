@@ -9,7 +9,6 @@ function Footer() {
           id="social-media"
           className="flex flex-col items-center mx-auto justify-center gap-10 md:flex-none md:flex-row "
         >
-          <NewsLetter />
           <div
             id="social-media"
             className="flex items-center mx-auto justify-center md:flex-none md:flex-col "
@@ -20,6 +19,7 @@ function Footer() {
             </p>
             <SocialMediaList />
           </div>
+          <NewsLetter />
         </div>
         <div id="tedxntua-trademark" className="flex flex-col items-center">
           <p className="text-white  text-xxs lg:text-md font-extralight mb-2">
