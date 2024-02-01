@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import { BLOGPOSTS } from "../../../data/blogposts";
 
 import BlogGrid from "@/components/Blog/BlogGrid";
@@ -11,6 +12,7 @@ function BlogPage() {
         team!
       </h1>
       <BlogGrid blogposts={BLOGPOSTS} />
+      <Footer />
     </div>
   );
 }
