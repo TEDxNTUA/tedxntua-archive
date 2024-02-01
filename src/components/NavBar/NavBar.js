@@ -74,7 +74,6 @@ function NewNavbar() {
               </li>
             ))}
           </ul>
-          console.log(buttonClicked);
         </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block md:hidden">

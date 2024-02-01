@@ -19,7 +19,11 @@ export default function Timeline() {
       {PREVIOUSEVENTS.map((TedEvent) => (
         <Photo key={TedEvent.id} TedEvent={TedEvent} />
       ))}
-      {/* <Photo
+    </section>
+  );
+}
+
+/* <Photo
         key={"mneme"}
         TedEvent={{
           id: "mneme",
@@ -30,8 +34,6 @@ export default function Timeline() {
           paragraph:
             "Memory is what allows us to discuss, compare, decide, justify, foresee, anticipate, and most importantly: it is the very baseline of our evolution and the fundamental pillar of our culture. As we see it, remembrance and recollection are inextricably connected with our identity. They define the past’s relevance in time and our existence’s significance in the world's timeline. Therefore, Mneme becomes our temporal and existential consciousness. In Greek mythology, Mnemosyne was the Goddess of Memory and mother of the nine Muses who were originally patron goddesses of poets of the oral tradition. Therefore, we aspire to enhance the concept of “Ideas Worth Spreading” by bringing the importance of passing down knowledge, into the spotlight.",
         }}
-      /> */}
-      <motion.div className="progress" style={{ scaleX }} />
-    </section>
-  );
-}
+      /> */
+// <motion.div className="progress" style={{ scaleX }} />
+// </section>

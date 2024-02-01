@@ -39,41 +39,43 @@ export default function Photo({ TedEvent }) {
     //     {TedEvent.paragraph}
     //   </p>
     // </main>
-    <div className="grid grid-cols-1 xl:grid-cols-3 text-center justify-center items-center h-[calc(100vh-5rem)] bg-slate-400 w-[90%] md:w-[80%] mx-auto border-green-500 border-2">
-      <div className="flex flex-col justify-center text-white gap-20 bg-orange-700">
-        <h2
-          className="text-white font-bold text-6xl tracking-tighter leading-5 "
-          // style={{ y, zIndex: 1 }}
-        >
-          {TedEvent.year}
-        </h2>
+    <div className="snap-start">
+      <div className="grid grid-cols-1 xl:grid-cols-3 text-center justify-center items-center h-[calc(100vh-5rem)]  w-[90%] md:w-[80%] mx-auto ">
+        <div className="flex flex-col justify-center text-white gap-20 bg-orange-700 lg:bg-transparent">
+          <h2
+            className="text-white font-bold text-6xl italic tracking-tighter leading-4 lg:leading-none "
+            // style={{ y, zIndex: 1 }}
+          >
+            {TedEvent.year}
+          </h2>
+          <img
+            src={`/eventLogos/${TedEvent.logo}`}
+            className="mx-auto w-[10rem] h-[10vh] hidden"
+            // style={{ y, zIndex: 1 }}
+          />
+        </div>
+        <div>
+          <img
+            ref={Imageref}
+            className="border-[2px] border-[#eb002733] hover:border-[#eb0028] rounded-md mx-auto w-[60%] xl:w-full object-fill"
+            src={`/previousEvents/${TedEvent.source}`}
+            alt="Previous ted event"
+          />
+        </div>
+
         <img
           src={`/eventLogos/${TedEvent.logo}`}
-          className="mx-auto w-[10rem] h-[10vh] hidden xl:block"
+          className="mx-auto w-[15vw] h-[5vh] xl:hidden"
           // style={{ y, zIndex: 1 }}
         />
-      </div>
-      <div>
-        <img
-          ref={Imageref}
-          className="border-[2px] border-[#eb002733] hover:border-[#eb0028] rounded-md mx-auto w-[60%] xl:w-full object-fill"
-          src={`/previousEvents/${TedEvent.source}`}
-          alt="Previous ted event"
-        />
-      </div>
-
-      <img
-        src={`/eventLogos/${TedEvent.logo}`}
-        className="mx-auto w-[15vw] h-[5vh] xl:hidden"
-        // style={{ y, zIndex: 1 }}
-      />
-      <div>
-        <p
-          className="hidden xl:block text-white font-bold text-md 3xl:text-xl leading-6 text-justify tracking-wide w-[85%] mx-auto"
-          // style={{ y, right: "7vw", zIndex: 1 }}
-        >
-          {TedEvent.paragraph}
-        </p>
+        <div>
+          <p
+            className="hidden xl:block text-white font-bold text-md 3xl:text-xl leading-6 text-justify tracking-wide w-[85%] mx-auto"
+            // style={{ y, right: "7vw", zIndex: 1 }}
+          >
+            {TedEvent.paragraph}
+          </p>
+        </div>
       </div>
     </div>
   );

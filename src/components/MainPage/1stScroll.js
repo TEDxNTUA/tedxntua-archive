@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function FirstScroll() {
   return (
-    <section className="bg-black">
+    <section className="bg-black h-[calc(100vh-5rem)]">
       <div className="w-[100%] h-auto relative flex flex-col-reverse md:flex-none">
         <Image
           className="w-[100%]"

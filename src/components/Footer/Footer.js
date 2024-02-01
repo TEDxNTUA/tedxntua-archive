@@ -11,9 +11,9 @@ function Footer() {
         >
           <div
             id="social-media"
-            className="flex items-center mx-auto justify-center md:flex-none md:flex-col "
+            className="flex flex-col items-center mx-auto justify-center "
           >
-            <p className="text-white font-thin text-xs  xl:text-sm hidden md:block mb-2">
+            <p className="text-white font-thin text-xs xl:text-sm  md:block mb-2">
               Follow us on social media for behind-the-scenes moments and much
               more!
             </p>

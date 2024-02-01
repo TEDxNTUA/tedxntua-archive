@@ -5,18 +5,26 @@ import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
 import Timeline from "@/components/TimeLine/Timeline";
 // import PhoneTimeline from "@/components/TimeLine/PhoneTimeline";
 import MovingText from "@/components/MovingText";
+import Footer from "@/components/Footer/Footer";
 
 function HomePage() {
   return (
     <main>
-      <FirstScroll />
-      <SecondScroll />
-      <div className="bg-black pt-6">
-        <TEDxInNumbers />
+      <div className="overflow overflow-y-scroll h-[calc(100vh-5rem)] snap-y snap-mandatory">
+        <div className="snap-start">
+          <FirstScroll />
+        </div>
+        <div className="snap-start">
+          <SecondScroll />
+          <div className="bg-black pt-6">
+            <TEDxInNumbers />
+          </div>
+        </div>
+        <Timeline />
+        <div className="snap-start">
+          <Footer />
+        </div>
       </div>
-      <Timeline />
-      <MovingText />
-      <div id="spacer-1" className="h-[100vh] bg-emerald-500"></div>
     </main>
   );
 }
