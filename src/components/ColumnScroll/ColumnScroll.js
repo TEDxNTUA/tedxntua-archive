@@ -31,8 +31,8 @@ export default function ColumnScroll() {
   });
 
   const { height } = dimension;
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.8]);
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 2.6]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.0]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 2.6]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
 

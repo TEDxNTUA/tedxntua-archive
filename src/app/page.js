@@ -3,8 +3,6 @@ import SecondScroll from "@/components/MainPage/2ndScroll";
 
 import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
 import Timeline from "@/components/TimeLine/Timeline";
-// import PhoneTimeline from "@/components/TimeLine/PhoneTimeline";
-import MovingText from "@/components/MovingText";
 import Footer from "@/components/Footer/Footer";
 
 function HomePage() {
