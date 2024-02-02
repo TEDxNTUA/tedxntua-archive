@@ -17,7 +17,7 @@ The TED Conference provides general guidance for the TEDx program, but individua
 };
 
 const AboutTed = () => {
-  return (    
+  return (
     <div class="flex-column mx-40 ">
       <div class="flex flex-row items-center mt-20">
         <div class="text-3xl text-[#eb0028] text-center italic font-bold pr-40">
@@ -43,7 +43,6 @@ const AboutTed = () => {
           {text.ans3}
         </div>
       </div>
-
     </div>
   );
 };

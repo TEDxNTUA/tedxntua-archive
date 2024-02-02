@@ -8,7 +8,7 @@ const navLinks = [
   { title: "Home", path: "./", isImage: true },
   {
     title: "Watch",
-    path: "/watch",
+    path: "/watch2",
   },
   {
     title: "Let's Blog",
@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     title: "About",
-    path: "/about",
+    path: "/about2",
   },
 ];
 

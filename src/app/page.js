@@ -8,7 +8,7 @@ import Footer from "@/components/Footer/Footer";
 function HomePage() {
   return (
     <main>
-      <div className="overflow overflow-y-scroll h-[calc(100vh-5rem)] snap-y snap-mandatory">
+      <div className="overflow overflow-y-scroll snap-y snap-mandatory">
         <div className="snap-start">
           <FirstScroll />
         </div>

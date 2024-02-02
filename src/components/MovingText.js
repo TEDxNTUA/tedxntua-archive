@@ -43,28 +43,32 @@ export default function MovingText() {
     gsap.set(firstTed.current, { xPercent: -100 - xPercent });
     gsap.set(secondTed.current, { xPercent: -100 - xPercent });
 
-    gsap.set(firstIdeas.current, { xPercent: xPercent });
-    gsap.set(secondIdeas.current, { xPercent: xPercent });
+    // gsap.set(firstIdeas.current, { xPercent: xPercent });
+    // gsap.set(secondIdeas.current, { xPercent: xPercent });
+    gsap.set(firstIdeas.current, { xPercent: -100 - xPercent });
+    gsap.set(secondIdeas.current, { xPercent: -100 - xPercent });
 
     requestAnimationFrame(animate);
-    xPercent += 0.05 * direction;
+    xPercent += 0.01 * direction;
   };
 
   return (
-    <main className="py-56 overflow-hidden relative h-[100vh] w-[100vw]">
+    <main className="py-56 overflow-hidden relative h-[calc(100vh-5rem)] w-[100vw]">
       <Image
-        src="/previousEvents/play.jpeg"
+        src="/about.png"
         fill={true}
         alt="background"
-        className="object-cover overflow-hidden"
+        className="object-cover overflow-hidden top-[-30%] opacity-70"
       />
-
-      <div className="absolute top-[58%] md:top-[50%] bg-blue-500">
+      {/* 
+      <div className="absolute top-[84vh]">
         <div ref={sliderTed} className="absolute whitespace-nowrap">
           <p
             ref={firstTed}
-            className="text-white relative m-0 text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
+            className="text-white relative m-0 text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
+            <span className="text-[#eb0028]">TEDx</span>NTUA -
+            <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
@@ -72,28 +76,34 @@ export default function MovingText() {
           </p>
           <p
             ref={secondTed}
-            className="left-[100%] absolute m-0 text-white text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
+            className="left-[100%] absolute m-0 text-white text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
+            {" "}
+            <span className="text-[#eb0028]">TEDx</span>NTUA -
+            <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
           </p>
         </div>
-      </div>
-      <div className="absolute top-[70%]">
+      </div> */}
+      <div className="absolute top-[80vh]">
         <div ref={sliderIdeas} className="absolute whitespace-nowrap">
           <p
             ref={firstIdeas}
-            className="relative m-0 text-white text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
+            className="text-white relative m-0 text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
-            Ideas Worth Spreading - Ideas Worth Spreading -
+            Ideas Worth Spreading - Ideas Worth Spreading - Ideas Worth
+            Spreading - Ideas Worth Spreading -
           </p>
           <p
             ref={secondIdeas}
-            className="left-[100%] absolute m-0 text-white text-[5rem] md:text-[8rem] 2xl:text-[12rem] leading-[1.5rem] font-bold pr-12 top-0"
+            className="left-[100%] absolute m-0 text-white text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
-            Ideas Worth Spreading - Ideas Worth Spreading -
+            {" "}
+            Ideas Worth Spreading - Ideas Worth Spreading - Ideas Worth
+            Spreading - Ideas Worth Spreading -
           </p>
         </div>
       </div>
