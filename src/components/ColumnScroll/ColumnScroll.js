@@ -37,19 +37,18 @@ export default function ColumnScroll() {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
 
   useEffect(() => {
-    const lenis = new Lenis({
-      easing: (t) => 1 - Math.pow(1 - t, 5),
-    });
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
+    // const lenis = new Lenis({
+    //   easing: (t) => 1 - Math.pow(1 - t, 5),
+    // });
+    // const raf = (time) => {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // };
+    // requestAnimationFrame(raf);
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
     window.addEventListener("resize", resize);
-    requestAnimationFrame(raf);
     resize();
     return () => {
       window.removeEventListener("resize", resize);
