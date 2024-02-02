@@ -2,7 +2,7 @@ import FirstScroll from "@/components/MainPage/1stScroll";
 import SecondScroll from "@/components/MainPage/2ndScroll";
 
 import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
-import Timeline from "@/components/TimeLine/Timeline";
+import Timeline from "@/components/TimeLine/TimeLine";
 import Footer from "@/components/Footer/Footer";
 
 function HomePage() {
