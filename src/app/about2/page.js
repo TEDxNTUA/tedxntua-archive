@@ -15,9 +15,10 @@ function AboutPage() {
           <MovingIdeas />
         </div> */}
       {/* <BlobTest /> */}
-      <div className="overflow overflow-y-scroll snap-y snap-mandatory">
+      {/* <div className="overflow overflow-y-scroll snap-y snap-mandatory"> */}
+      <div>
         <div
-          className="h-[calc(40vh)] md:h-[calc(100vh-5rem)] relative snap-start"
+          className="h-auto md:h-[calc(100vh-5rem)] relative "
           // style={{
           //   backgroundImage: `url('/about/about0.png')`,
           // }}
@@ -29,10 +30,10 @@ function AboutPage() {
             height={1500}
           ></Image>
         </div>
-        <div className="snap-start">
+        <div>
           <AboutTED />
         </div>
-        <div className="snap-start">
+        <div>
           <AboutTEDx />
         </div>
       </div>
@@ -40,7 +41,7 @@ function AboutPage() {
       <div className="h-[15vh]"></div>
       <ColumnScroll />
       <div className="h-[15vh]"></div>
-      <MovingTed />
+      {/* <MovingTed /> */}
       <div className="h-[15vh]"></div>
       <AboutTEDxNTUA />
     </section>
