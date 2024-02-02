@@ -5,6 +5,7 @@ import AboutTEDxNTUA from "@/components/About2/AboutTEDxNTUA";
 import MovingTed from "@/components/About2/MovingTed";
 // import MovingIdeas from "@/components/About2/MovingIdeas";
 import Image from "next/image";
+// import BlobTest from "@/components/Blob/blobTest";
 
 function AboutPage() {
   return (
@@ -13,6 +14,7 @@ function AboutPage() {
         {/* <div className="snap-start">
           <MovingIdeas />
         </div> */}
+        {/* <BlobTest /> */}
         <div
           className="h-[calc(40vh)] md:h-[calc(100vh-5rem)] relative"
           // style={{
