@@ -10,13 +10,14 @@ import Image from "next/image";
 function AboutPage() {
   return (
     <section>
-      <div className="overflow overflow-y-scroll snap-y snap-mandatory">
-        {/* <div className="snap-start">
+      {/* <div className="overflow overflow-y-scroll snap-y snap-mandatory"> */}
+      {/* <div className="snap-start">
           <MovingIdeas />
         </div> */}
-        {/* <BlobTest /> */}
+      {/* <BlobTest /> */}
+      <div className="overflow overflow-y-scroll snap-y snap-mandatory">
         <div
-          className="h-[calc(40vh)] md:h-[calc(100vh-5rem)] relative"
+          className="h-[calc(40vh)] md:h-[calc(100vh-5rem)] relative snap-start"
           // style={{
           //   backgroundImage: `url('/about/about0.png')`,
           // }}
@@ -35,6 +36,7 @@ function AboutPage() {
           <AboutTEDx />
         </div>
       </div>
+      {/* </div> */}
       <div className="h-[15vh]"></div>
       <ColumnScroll />
       <div className="h-[15vh]"></div>
