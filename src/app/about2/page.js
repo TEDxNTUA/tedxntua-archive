@@ -6,7 +6,7 @@ import MovingTed from "@/components/About2/MovingTed";
 // import MovingIdeas from "@/components/About2/MovingIdeas";
 import Image from "next/image";
 // import BlobTest from "@/components/Blob/blobTest";
-
+import Footer from "@/components/Footer/Footer";
 function AboutPage() {
   return (
     <section>
@@ -44,6 +44,7 @@ function AboutPage() {
       {/* <MovingTed /> */}
       <div className="h-[15vh]"></div>
       <AboutTEDxNTUA />
+      <Footer />
     </section>
   );
 }
