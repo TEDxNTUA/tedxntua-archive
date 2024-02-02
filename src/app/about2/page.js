@@ -1,16 +1,30 @@
-import MovingText from "@/components/MovingText";
 import AboutTED from "@/components/About2/AboutTED";
 import AboutTEDx from "@/components/About2/AboutTEDx";
 import ColumnScroll from "@/components/ColumnScroll/ColumnScroll";
 import AboutTEDxNTUA from "@/components/About2/AboutTEDxNTUA";
 import MovingTed from "@/components/About2/MovingTed";
+// import MovingIdeas from "@/components/About2/MovingIdeas";
+import Image from "next/image";
 
 function AboutPage() {
   return (
     <section>
       <div className="overflow overflow-y-scroll snap-y snap-mandatory">
-        <div className="snap-start">
-          <MovingText />
+        {/* <div className="snap-start">
+          <MovingIdeas />
+        </div> */}
+        <div
+          className="h-[calc(40vh)] md:h-[calc(100vh-5rem)] relative"
+          // style={{
+          //   backgroundImage: `url('/about/about0.png')`,
+          // }}
+        >
+          <Image
+            className="w-full object-cover my-auto relative"
+            src="/about/about0.png"
+            width={1500}
+            height={1500}
+          ></Image>
         </div>
         <div className="snap-start">
           <AboutTED />
