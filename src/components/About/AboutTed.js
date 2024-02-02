@@ -17,29 +17,29 @@ The TED Conference provides general guidance for the TEDx program, but individua
 };
 
 const AboutTed = () => {
-  return (
-    <div class="flex-column mx-40 ">
-      <div class="flex flex-row items-center mt-20">
-        <div class="text-3xl text-[#eb0028] text-center italic font-bold pr-40">
+  return (    
+    <div class="flex-column mx-10 lg:mx-40 ">
+      <div class="flex flex-col lg:flex-row items-center mt-20">
+        <div class="text-3xl text-[#eb0028] text-center italic mb-5 font-bold lg:pr-40">
           {text.q1}
         </div>
-        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-5 py-5 lg:px-10 lg:py-10 rounded-xl border-2 border-[#eb0028]">
           {text.ans1}
         </div>
       </div>
-      <div class="flex flex-row items-center mt-20">
-        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
-          {text.ans2}
-        </div>
-        <div class="text-3xl text-[#eb0028] text-center italic font-bold pl-40">
+      <div class="flex flex-col lg:flex-row items-center mt-20">
+        <div class="text-3xl text-[#eb0028] text-center italic mb-5 font-bold lg:pr-40">
           {text.q2}
         </div>
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-5 py-5 lg:px-10 lg:py-10 rounded-xl border-2 border-[#eb0028]">
+          {text.ans2}
+        </div>
       </div>
-      <div class="flex flex-row items-center my-20">
-        <div class="text-3xl text-[#eb0028] text-center italic font-bold pr-40">
+      <div class="flex flex-col lg:flex-row items-center my-20">
+        <div class="text-3xl text-[#eb0028] text-center italic mb-5 font-bold lg:pr-40">
           {text.q3}
         </div>
-        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-10 py-10 rounded-xl border-2 border-[#eb0028]">
+        <div class="text-sm text-[#FFFFFF] text-justify italic font-bold px-5 py-5 lg:px-10 lg:py-10 rounded-xl border-2 border-[#eb0028]">
           {text.ans3}
         </div>
       </div>
