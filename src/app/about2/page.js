@@ -40,7 +40,7 @@ function AboutPage() {
       {/* </div> */}
       <div className="h-[15vh]"></div>
       <ColumnScroll />
-      <div className="h-[15vh]"></div>
+      {/* <div className="h-[15vh]"></div> */}
       {/* <MovingTed /> */}
       <div className="h-[15vh]"></div>
       <AboutTEDxNTUA />
