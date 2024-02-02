@@ -3,10 +3,10 @@ import Image from "next/image";
 function FirstScroll() {
   return (
     <section className="bg-black h-[calc(100vh-5rem)]">
-      <div className="w-[100%] h-auto relative flex flex-col-reverse md:flex-none">
+      <div className="w-[100%] h-auto relative flex flex-col-reverse items-end md:flex-none">
         <Image
-          className="w-[100%]"
-          src="/homepage/1.png"
+          className="w-auto lg:h-[95vh]"
+          src="/homepage/1_.png"
           width={800}
           height={800}
           alt="archive"
