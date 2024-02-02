@@ -8,11 +8,11 @@ import Footer from "@/components/Footer/Footer";
 function HomePage() {
   return (
     <main>
-      <div className="overflow overflow-y-scroll h-[calc(100vh-5rem)] snap-y snap-mandatory">
+      <div className="overflow overflow-y-scroll snap-y snap-mandatory h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]">
         <div className="snap-start">
           <FirstScroll />
         </div>
-        <div className="snap-start">
+        <div className="snap-start h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]">
           <SecondScroll />
           <div className="bg-black pt-6">
             <TEDxInNumbers />

@@ -43,7 +43,6 @@ const AboutTed = () => {
           {text.ans3}
         </div>
       </div>
-
     </div>
   );
 };

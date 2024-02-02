@@ -4,14 +4,14 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function MovingText() {
-  const firstTed = useRef(null);
-  const secondTed = useRef(null);
+export default function MovingIdeas() {
+  // const firstTed = useRef(null);
+  // const secondTed = useRef(null);
 
   const firstIdeas = useRef(null);
   const secondIdeas = useRef(null);
 
-  const sliderTed = useRef(null);
+  // const sliderTed = useRef(null);
   const sliderIdeas = useRef(null);
 
   let xPercent = 0;
@@ -19,7 +19,7 @@ export default function MovingText() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(sliderTed.current, {
+    gsap.to(sliderIdeas.current, {
       scrollTrigger: {
         trigger: document.documentElement,
         start: 0,
@@ -40,8 +40,8 @@ export default function MovingText() {
       xPercent = -100;
     }
 
-    gsap.set(firstTed.current, { xPercent: -100 - xPercent });
-    gsap.set(secondTed.current, { xPercent: -100 - xPercent });
+    // gsap.set(firstTed.current, { xPercent: -100 - xPercent });
+    // gsap.set(secondTed.current, { xPercent: -100 - xPercent });
 
     gsap.set(firstIdeas.current, { xPercent: xPercent });
     gsap.set(secondIdeas.current, { xPercent: xPercent });
@@ -61,7 +61,7 @@ export default function MovingText() {
         className="object-cover overflow-hidden top-[-30%] opacity-70"
       />
 
-      <div className="absolute top-[84vh]">
+      {/* <div className="absolute top-[84vh]">
         <div ref={sliderTed} className="absolute whitespace-nowrap">
           <p
             ref={firstTed}
@@ -87,7 +87,7 @@ export default function MovingText() {
             <span className="text-[#eb0028]">TEDx</span>NTUA -
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="absolute top-[80vh]">
         <div ref={sliderIdeas} className="absolute whitespace-nowrap">
           <p

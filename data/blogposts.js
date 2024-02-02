@@ -5,7 +5,7 @@ export const BLOGPOSTS = [
     id: "blogpost1",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",
@@ -15,7 +15,7 @@ export const BLOGPOSTS = [
     id: "blogpost2",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",
@@ -25,7 +25,7 @@ export const BLOGPOSTS = [
     id: "blogpost3",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",
@@ -35,7 +35,7 @@ export const BLOGPOSTS = [
     id: "blogpost4",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",
@@ -45,7 +45,7 @@ export const BLOGPOSTS = [
     id: "blogpost5",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",
@@ -55,7 +55,7 @@ export const BLOGPOSTS = [
     id: "blogpost6",
     title: "Why work life balance doesn't always work",
     link: "https://www.instagram.com/tedxntua/",
-    thumbnail: "/blogpost/blog.png",
+    thumbnail: "/blogpost/blogw.png",
     content:
       "Why work life balance doesn't always work Why work life balance doesn't always work",
     createdDate: "2024-01-23",

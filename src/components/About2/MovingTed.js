@@ -8,20 +8,17 @@ export default function MovingText() {
   const firstTed = useRef(null);
   const secondTed = useRef(null);
 
-  const firstIdeas = useRef(null);
-  const secondIdeas = useRef(null);
-
+  const movingTedRef = useRef(null);
   const sliderTed = useRef(null);
-  const sliderIdeas = useRef(null);
 
   let xPercent = 0;
   let direction = -1;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(sliderTed.current, {
+    gsap.to(movingTedRef.current, {
       scrollTrigger: {
-        trigger: document.documentElement,
+        trigger: movingTedRef.current,
         start: 0,
         end: window.innerHeight,
         scrub: 0.25,
@@ -40,32 +37,39 @@ export default function MovingText() {
       xPercent = -100;
     }
 
-    gsap.set(firstTed.current, { xPercent: -100 - xPercent });
-    gsap.set(secondTed.current, { xPercent: -100 - xPercent });
+    gsap.set(firstTed.current, { xPercent: xPercent });
+    gsap.set(secondTed.current, { xPercent: xPercent });
 
-    gsap.set(firstIdeas.current, { xPercent: xPercent });
-    gsap.set(secondIdeas.current, { xPercent: xPercent });
+    // gsap.set(firstIdeas.current, { xPercent: xPercent });
+    // gsap.set(secondIdeas.current, { xPercent: xPercent });
     // gsap.set(firstIdeas.current, { xPercent: -100 - xPercent });
     // gsap.set(secondIdeas.current, { xPercent: -100 - xPercent });
 
     requestAnimationFrame(animate);
-    xPercent += 0.01 * direction;
+    xPercent += 0.02 * direction;
   };
 
   return (
-    <main className="py-56 overflow-hidden relative h-[calc(100vh-5rem)] w-[100vw]">
-      <Image
-        src="/about.png"
+    <main
+      ref={movingTedRef}
+      className="pt-20 pb-[5.5rem] overflow-hidden relative w-[100vw] border-y-[0.05px] border-white"
+      style={{
+        backgroundImage: `url('/BG.png')`,
+        backgroundSize: "cover", // Optional: adjust as needed
+      }}
+    >
+      {/* <Image
+        src="/BG.png"
         fill={true}
         alt="background"
-        className="object-cover overflow-hidden top-[-30%] opacity-70"
-      />
+        className="overflow-hidden opacity-70"
+      /> */}
 
-      <div className="absolute top-[84vh]">
+      <div className="absolute bg-red-500">
         <div ref={sliderTed} className="absolute whitespace-nowrap">
           <p
             ref={firstTed}
-            className="text-white relative m-0 text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
+            className="text-white relative m-0 text-[6rem] leading-[1.5rem] font-bold top-0"
           >
             <span className="text-[#eb0028]">TEDx</span>NTUA -
             <span className="text-[#eb0028]">TEDx</span>NTUA -
@@ -76,7 +80,7 @@ export default function MovingText() {
           </p>
           <p
             ref={secondTed}
-            className="left-[100%] absolute m-0 text-white text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
+            className="left-[100%] absolute m-0 text-white text-[6rem] leading-[1.5rem] font-bold top-0"
           >
             {" "}
             <span className="text-[#eb0028]">TEDx</span>NTUA -
@@ -88,7 +92,7 @@ export default function MovingText() {
           </p>
         </div>
       </div>
-      <div className="absolute top-[80vh]">
+      {/* <div className="absolute top-[80vh]">
         <div ref={sliderIdeas} className="absolute whitespace-nowrap">
           <p
             ref={firstIdeas}
@@ -106,7 +110,7 @@ export default function MovingText() {
             Spreading - Ideas Worth Spreading -
           </p>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
