@@ -39,7 +39,11 @@ const SelectCategory = ({ category, setCategory, uniqueCategories }) => {
               // aria-pressed={category.includes(watchtalk_category)}
               onTouchEnd={handleTouchEnd}
             >
-              {watchtalk_category}
+              {
+                // Capitalize the first letter of the category
+                watchtalk_category.charAt(0).toUpperCase() +
+                  watchtalk_category.slice(1)
+              }
             </button>
           ))}
         </div>
