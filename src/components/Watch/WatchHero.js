@@ -10,7 +10,7 @@ const WatchHero = ({
 }) => {
   // Get unique values from watchtalks
   const getUniqueValues = (array, key) => [
-    ...new Set(array.map((item) => item && item[key])),
+    ...new Set(array.flatMap((item) => item && item[key])),
   ];
   // Get unique categories and years from watchtalks
   const uniqueCategories = getUniqueValues(watchtalks, "category").filter(

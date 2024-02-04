@@ -15,10 +15,15 @@ export default function WatchGrid({
     6: "lg:grid-cols-6",
   };
 
-  // Filter the watchtalks array only if the category is not an empty string
+  // Filter WatchTalks based on categories and event year
   const filteredWatchTalks = watchtalks.filter(
     (watchtalk) =>
-      (category.length === 0 || category.includes(watchtalk.category)) &&
+      // Category filtering: Include only WatchTalks that match the specified categories (single or multiple) or include any category from an array
+      (category.length === 0 ||
+        (Array.isArray(watchtalk.category) &&
+          watchtalk.category.some((cat) => category.includes(cat))) ||
+        category.includes(watchtalk.category)) &&
+      // Year filtering: Include only WatchTalks that match the specified event year or include all years if not specified
       (event_year === "" || watchtalk.year === parseInt(event_year))
   );
   return (

@@ -10,7 +10,7 @@ export const WATCHTALKS = [
     speaker_name: "Yiannis Ampelas",
     speaker_info: "https://www.befoolish.co/work/newslexia/",
     year: 2015,
-    category: "Design",
+    category: ["business", "technology"],
   },
   {
     id: "watchtalk2",
@@ -24,7 +24,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/jon-mark-walls/?originalSubdomain=ch",
     year: 2015,
-    category: "Technology",
+    category: "business",
   },
   {
     id: "watchtalk3",
@@ -37,7 +37,7 @@ export const WATCHTALKS = [
     speaker_name: "Thanos Vlastos",
     speaker_info: "http://regplanunit.survey.ntua.gr/st_Vlastos.html",
     year: 2015,
-    category: "Society",
+    category: "life",
   },
   {
     id: "watchtalk4",
@@ -51,7 +51,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.lifo.gr/now/greece/adrianos-golemis-o-giatros-ton-astronayton-poy-oneireyetai-na-paei-sto-diastima",
     year: 2015,
-    category: "Society",
+    category: "life",
   },
   {
     id: "watchtalk5",
@@ -65,7 +65,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/dimitris-fouskakis-6090962/?originalSubdomain=gr",
     year: 2015,
-    category: "Technology",
+    category: "science",
   },
   {
     id: "watchtalk6",
@@ -79,7 +79,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/daphne-becket-a3b9154/?originalSubdomain=uk",
     year: 2015,
-    category: "Society",
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk7",
@@ -92,6 +92,7 @@ export const WATCHTALKS = [
     speaker_name: "Ashley Dove-Jay",
     speaker_info: "https://www.linkedin.com/in/ashdj/?originalSubdomain=uk",
     year: 2015,
+    category: "science",
   },
   {
     id: "watchtalk8",
@@ -104,6 +105,7 @@ export const WATCHTALKS = [
     speaker_name: "Yorgos Koutsoyannopoulos",
     speaker_info: "https://www.linkedin.com/in/yorgoskoutsoyannopoulos/",
     year: 2015,
+    category: ["business", "technology"],
   },
   {
     id: "watchtalk9",
@@ -117,6 +119,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.cozzika.org/gr/to-idryma/2012-12-11-00-41-02/item/134",
     year: 2015,
+    category: "science",
   },
   {
     id: "watchtalk10",
@@ -130,6 +133,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%98%CE%B5%CE%BF%CE%B4%CF%8C%CF%83%CE%B7%CF%82_%CE%A4%CE%AC%CF%83%CE%B9%CE%BF%CF%82",
     year: 2015,
+    category: ["science", "technology"],
   },
   {
     id: "watchtalk11",
@@ -143,6 +147,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/ignatios-fotiou-a2107445/?originalSubdomain=gr",
     year: 2015,
+    category: ["business", "life"],
   },
   {
     id: "watchtalk12",
@@ -156,6 +161,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/athinapitta/?originalSubdomain=gr",
     year: 2015,
+    category: "business",
   },
   {
     id: "watchtalk13",
@@ -169,6 +175,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.engoe.gr/?fbclid=IwAR3og3-oisA_RbOgO0cT4V6Gl82RxaggBU7A6gGbuiyXC6B1JiWura9j-gk",
     year: 2015,
+    category: "life",
   },
   {
     id: "watchtalk14",
@@ -182,6 +189,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.globalcitizen.org/fr/content/israel-dejenes-story/",
     year: 2015,
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk15",
@@ -195,6 +203,7 @@ export const WATCHTALKS = [
     speaker_name: "John Kalogerakis",
     speaker_info: "https://jmk.gr/index.php/who-is-john-kalogerakis/",
     year: 2017,
+    category: "business",
   },
   {
     id: "watchtalk16",
@@ -208,6 +217,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/sotiris-kokkinos-55957a49/?originalSubdomain=gr",
     year: 2017,
+    category: ["technology", "science"],
   },
   {
     id: "watchtalk17",
@@ -220,6 +230,7 @@ export const WATCHTALKS = [
     speaker_name: "Sissy Nikolaou",
     speaker_info: "https://www.nist.gov/people/aspasia-nikolaou",
     year: 2017,
+    category: "science",
   },
   {
     id: "watchtalk18",
@@ -233,6 +244,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/edwardperello/?originalSubdomain=uk",
     year: 2017,
+    category: "science",
   },
   {
     id: "watchtalk19",
@@ -246,6 +258,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/chrisraftogiannis/?originalSubdomain=gr",
     year: 2017,
+    category: ["business", "life"],
   },
   {
     id: "watchtalk20",
@@ -259,6 +272,7 @@ export const WATCHTALKS = [
     speaker_name: "Anezina Solomonidou",
     speaker_info: "https://science.jpl.nasa.gov/people/anezina-solomonidou/",
     year: 2017,
+    category: ["science", "technology"],
   },
   {
     id: "watchtalk21",
@@ -272,6 +286,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%94%CE%AE%CE%BC%CE%B7%CF%84%CF%81%CE%B1_%CE%93%CE%B1%CE%BB%CE%AC%CE%BD%CE%B7",
     year: 2018,
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk22",
@@ -285,6 +300,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/vcharalampidis/?originalSubdomain=gr",
     year: 2018,
+    category: ["life", "history"],
   },
   {
     id: "watchtalk23",
@@ -297,6 +313,7 @@ export const WATCHTALKS = [
     speaker_name: "Caroline Bos",
     speaker_info: "https://en.wikipedia.org/wiki/Caroline_Bos",
     year: 2018,
+    category: "technology",
   },
   {
     id: "watchtalk24",
@@ -309,6 +326,7 @@ export const WATCHTALKS = [
     speaker_name: "Michael Styllas",
     speaker_info: "https://www.researchgate.net/profile/Michael-Styllas",
     year: 2018,
+    category: ["life", "history"],
   },
   {
     id: "watchtalk25",
@@ -321,6 +339,7 @@ export const WATCHTALKS = [
     speaker_name: "Natassa Lianou & Ermis Chalvatzis (LC Architects)",
     speaker_info: "https://www.lc-a.uk/",
     year: 2018,
+    category: "science",
   },
   {
     id: "watchtalk26",
@@ -334,6 +353,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/ioannatheodorou/?originalSubdomain=nl",
     year: 2018,
+    category: ["business", "life"],
   },
   {
     id: "watchtalk27",
@@ -347,6 +367,7 @@ export const WATCHTALKS = [
     speaker_name: "Romy Lorenz",
     speaker_info: "https://www.romylorenz.com/",
     year: 2018,
+    category: ["technology", "science"],
   },
   {
     id: "watchtalk28",
@@ -359,6 +380,7 @@ export const WATCHTALKS = [
     speaker_name: "Themis Sapsis",
     speaker_info: "https://meche.mit.edu/people/faculty/sapsis@MIT.EDU",
     year: 2018,
+    category: "science",
   },
   {
     id: "watchtalk29",
@@ -371,6 +393,7 @@ export const WATCHTALKS = [
     speaker_name: "Aimilios Chalamandaris",
     speaker_info: "https://www.endeavor.org.gr/mentors/aimilios-chalamandaris",
     year: 2018,
+    category: "business",
   },
   {
     id: "watchtalk30",
@@ -384,6 +407,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.ece.upatras.gr/index.php/en/meriti-professors/makios-vasilios.html",
     year: 2018,
+    category: "business",
   },
   {
     id: "watchtalk31",
@@ -396,6 +420,7 @@ export const WATCHTALKS = [
     speaker_name: "Dionysis Zindros",
     speaker_info: "https://dionyziz.com/w/",
     year: 2018,
+    category: "technology",
   },
   {
     id: "watchtalk32",
@@ -409,6 +434,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/michael-spengos-36440625/?originalSubdomain=gr",
     year: 2019,
+    category: "science",
   },
   {
     id: "watchtalk33",
@@ -417,11 +443,12 @@ export const WATCHTALKS = [
       "https://youtu.be/SaDSwHN7pPg?list=PLsRNoUx8w3rOypGod6FxNmceFuwNMHYfX",
     thumbnail_yt: "https://i.ytimg.com/vi/SaDSwHN7pPg/hqdefault.jpg",
     thumbnail: "/watchtalks/watchtalk33.jpg",
-    bio: "Does mankind have any power over the matter that surrounds it? Is it possible to create new materials with the properties and the characteristics that suit our needs? And if so, how? Marianna Diamantopoulou is a PhD candiyear at Swiss Federal Institute of Technology (ETH) in Zurich, Switzerland. She graduated from the Department of Chemical Engineering in Patras in 2014, and pursued further a M.Sc. degree at ETH. Her master thesis project was funded by General Electric and conducted in Binnig and Rohrer Nanotechnology Center (BRNC), a shared facility between IBM and ETH. Before starting her journey in the research world, she also gained professional experience by working as a Chemical Engineer in Pöyry Switzerland AG.",
+    bio: "Does mankind have any power over the matter that surrounds it? Is it possible to create new materials with the properties and the characteristics that suit our needs? And if so, how? Marianna Diamantopoulou is a PhD candidate at Swiss Federal Institute of Technology (ETH) in Zurich, Switzerland. She graduated from the Department of Chemical Engineering in Patras in 2014, and pursued further a M.Sc. degree at ETH. Her master thesis project was funded by General Electric and conducted in Binnig and Rohrer Nanotechnology Center (BRNC), a shared facility between IBM and ETH. Before starting her journey in the research world, she also gained professional experience by working as a Chemical Engineer in Pöyry Switzerland AG.",
     speaker_name: "Marianna Diamantopoulou",
     speaker_info:
       "https://www.linkedin.com/in/marianna-diamantopoulou-a078149b/?originalSubdomain=ch",
     year: 2019,
+    category: "science",
   },
   {
     id: "watchtalk34",
@@ -434,6 +461,7 @@ export const WATCHTALKS = [
     speaker_name: "Eleni Diamanti",
     speaker_info: "https://en.wikipedia.org/wiki/Eleni_Diamanti",
     year: 2019,
+    category: "science",
   },
   {
     id: "watchtalk35",
@@ -447,6 +475,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%9C%CE%B1%CE%BD%CF%8C%CE%BB%CE%B7%CF%82_%CE%9A%CE%BF%CF%81%CF%81%CE%AD%CF%82",
     year: 2019,
+    category: ["science", "life"],
   },
   {
     id: "watchtalk36",
@@ -459,6 +488,7 @@ export const WATCHTALKS = [
     speaker_name: "Delft Hyperloop",
     speaker_info: "https://www.delfthyperloop.nl/",
     year: 2019,
+    category: ["technology", "life", "business"],
   },
   {
     id: "watchtalk37",
@@ -471,6 +501,7 @@ export const WATCHTALKS = [
     speaker_name: "Kastler Skjeseth Architects",
     speaker_info: "https://www.kastlerskjeseth.no/",
     year: 2019,
+    category: "science",
   },
   {
     id: "watchtalk38",
@@ -484,6 +515,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/g%C3%A1bor-v%C3%A1s%C3%A1rhelyi-764432135/?originalSubdomain=hu",
     year: 2019,
+    category: "science",
   },
   {
     id: "watchtalk39",
@@ -492,10 +524,11 @@ export const WATCHTALKS = [
       "https://youtu.be/eJu2vb3uU30?list=PLsRNoUx8w3rOypGod6FxNmceFuwNMHYfX",
     thumbnail_yt: "https://i.ytimg.com/vi/eJu2vb3uU30/hqdefault.jpg",
     thumbnail: "/watchtalks/watchtalk39.jpg",
-    bio: "How do restrictions create innovation? \n\nEn-Route is an international architecture team based in Athens. Founded by Hannes Livers Gutberlet and Katerina Kourkoula, they treat design as a process of analytical research, unique for every project. \n\nHannes studied Economics in EBS University and Architecture in TU Delft, M.I.T. and ETH while he has worked for Architectuurstudio Herman Hertzberger, OMA and Urban Think Tank. He is a PhD candiyear at ETH Zurich. \n\nKaterina studied Architecture at Bartlett, UCL and at the Cooper Union where she received the ‘AIA School Meda’ and ‘The Certificate of Merit’. She has worked for Buschow Henley and Lot-Ek.",
+    bio: "How do restrictions create innovation? \n\nEn-Route is an international architecture team based in Athens. Founded by Hannes Livers Gutberlet and Katerina Kourkoula, they treat design as a process of analytical research, unique for every project. \n\nHannes studied Economics in EBS University and Architecture in TU Delft, M.I.T. and ETH while he has worked for Architectuurstudio Herman Hertzberger, OMA and Urban Think Tank. He is a PhD candidate at ETH Zurich. \n\nKaterina studied Architecture at Bartlett, UCL and at the Cooper Union where she received the ‘AIA School Meda’ and ‘The Certificate of Merit’. She has worked for Buschow Henley and Lot-Ek.",
     speaker_name: "En Route Architects",
     speaker_info: "https://www.e-r-a.net/",
     year: 2019,
+    category: ["science", "business"],
   },
   {
     id: "watchtalk40",
@@ -509,6 +542,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/fotis-liarokapis-a569053/?originalSubdomain=cy",
     year: 2019,
+    category: "technology",
   },
   {
     id: "watchtalk41",
@@ -521,6 +555,7 @@ export const WATCHTALKS = [
     speaker_name: "Ivan Yamshchikov",
     speaker_info: "https://www.yamshchikov.info/",
     year: 2019,
+    category: ["science", "life"],
   },
   {
     id: "watchtalk42",
@@ -534,6 +569,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.iac.es/en/mobility/dr-evanthia-hatziminaoglou-european-southern-observatory-eso-germany",
     year: 2019,
+    category: ["science", "life"],
   },
   {
     id: "watchtalk43",
@@ -547,6 +583,7 @@ export const WATCHTALKS = [
     speaker_info:
       "http://dddp.pspa.uoa.gr/an8rwpino-dynamiko/didaskontes/iwannhs-tasopoylos.html",
     year: 2019,
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk44",
@@ -559,6 +596,7 @@ export const WATCHTALKS = [
     speaker_name: "Υannis Zambelis",
     speaker_info: "https://www.zabelis.gr/",
     year: 2021,
+    category: "culture",
   },
   {
     id: "watchtalk45",
@@ -571,6 +609,7 @@ export const WATCHTALKS = [
     speaker_name: "Erofili Kokkali",
     speaker_info: "https://www.lifo.gr/authors/erofili-kokkali",
     year: 2021,
+    category: "culture",
   },
   {
     id: "watchtalk46",
@@ -584,6 +623,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%94%CE%AE%CE%BC%CE%B7%CF%84%CF%81%CE%B1_%CE%9A%CE%BF%CF%81%CE%BF%CE%BA%CE%AF%CE%B4%CE%B1",
     year: 2021,
+    category: "life",
   },
   {
     id: "watchtalk47",
@@ -592,10 +632,11 @@ export const WATCHTALKS = [
       "https://youtu.be/boB9v4hkbVU?list=PLd7-PjFC85gwOVYVXIPNOOonl4EL9nLTq",
     thumbnail_yt: "https://i.ytimg.com/vi/boB9v4hkbVU/hqdefault.jpg",
     thumbnail: "/watchtalks/watchtalk47.jpg",
-    bio: "Dionysios Pnevmatikatos received a degree in Computer Science from the University of Crete in 1989, as well as a Master's and Doctorate in Computer Science from the University of Wisconsin-Madison in 1991 and 1996 respectively. Since September 2019 he is a Professor at the School of Electrical and Computer Engineering of the National Technical University of Athens. Also, from 2000 to 2019 he was a professor at the EMMY school of the Technical University of Crete where he was Director of the Laboratory of Microprocessors and Material and president of the respective department. He has been a Research Fellow at the Institute for Research and Technology (ITE) since 1997, has been the Coordinator for the European Research Project FASTER (FP7) and has been and is the Founding Officer for the European Research Projects DeSyRe (FP7), AXIOM, EXTRA20 ), and in several national projects. His research interests include Computer Architecture with a focus on the use of Rearranged Logic to create efficient accelerators in heterogeneous parallel systems. In addition, he has worked in the design of Reliable systems, architectures for accelerating applications in hardware or with rearranged logic, network packet processors, etc. He is a regular member of Program Committees at key conferences in his area such as ISCA, FPL and year in the subjects of Computer Architecture and Rearranged Systems.",
+    bio: "Dionysios Pnevmatikatos received a degree in Computer Science from the University of Crete in 1989, as well as a Master's and Doctorate in Computer Science from the University of Wisconsin-Madison in 1991 and 1996 respectively. Since September 2019 he is a Professor at the School of Electrical and Computer Engineering of the National Technical University of Athens. Also, from 2000 to 2019 he was a professor at the EMMY school of the Technical University of Crete where he was Director of the Laboratory of Microprocessors and Material and president of the respective department. He has been a Research Fellow at the Institute for Research and Technology (ITE) since 1997, has been the Coordinator for the European Research Project FASTER (FP7) and has been and is the Founding Officer for the European Research Projects DeSyRe (FP7), AXIOM, EXTRA20 ), and in several national projects. His research interests include Computer Architecture with a focus on the use of Rearranged Logic to create efficient accelerators in heterogeneous parallel systems. In addition, he has worked in the design of Reliable systems, architectures for accelerating applications in hardware or with rearranged logic, network packet processors, etc. He is a regular member of Program Committees at key conferences in his area such as ISCA, FPL and DATE in the subjects of Computer Architecture and Rearranged Systems.",
     speaker_name: "Dionisios Pnevmatikatos",
     speaker_info: "https://www.ece.ntua.gr/gr/staff/474",
     year: 2021,
+    category: ["technology", "history"],
   },
   {
     id: "watchtalk48",
@@ -609,6 +650,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/vasileios-chatzikos-87123245/?originalSubdomain=gr",
     year: 2021,
+    category: "business",
   },
   {
     id: "watchtalk49",
@@ -621,6 +663,7 @@ export const WATCHTALKS = [
     speaker_name: "Sandra Mavroidi",
     speaker_info: "https://trianemi.edu.gr/",
     year: 2021,
+    category: "life",
   },
   {
     id: "watchtalk50",
@@ -634,6 +677,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://mad.tv/soc-science-tube-tora-mathainei-koinoniologia-amp-psychologia-kai-sto-tedxntua/",
     year: 2021,
+    category: ["science", "life"],
   },
   {
     id: "watchtalk51",
@@ -643,10 +687,11 @@ export const WATCHTALKS = [
       "https://youtu.be/MbdZWRVhwt0?list=PLd7-PjFC85gwOVYVXIPNOOonl4EL9nLTq",
     thumbnail_yt: "https://i.ytimg.com/vi/MbdZWRVhwt0/hqdefault.jpg",
     thumbnail: "/watchtalks/watchtalk51.jpg",
-    bio: 'Evangelos Gazis received a degree in Physics from the Kapodistrian University of Athens in 1973, as well as a Master\'s and Doctoral Degree at the "Demokritos" research center and the Kapodistrian University of Athens in 1978 and 1980 respectively. Indicatively, he was a Visiting Professor at the Department of Physics at CERN (2009-2011) and a Visiting Professor at the Department of Physics at Lund University in Sweden (2007 to year). He has been a Professor at the School of Applied Mathematics and Natural Sciences of NTUA since 1983. He is also a co-author of more than 640 scientific publications in international scientific journals in Particle Physics, with over 23,500 citations, and author of international monographs on the muon detection spectrometer at the CERN ATLAS Collaboration (2000) and in 11 journals.',
+    bio: 'Evangelos Gazis received a degree in Physics from the Kapodistrian University of Athens in 1973, as well as a Master\'s and Doctoral Degree at the "Demokritos" research center and the Kapodistrian University of Athens in 1978 and 1980 respectively. Indicatively, he was a Visiting Professor at the Department of Physics at CERN (2009-2011) and a Visiting Professor at the Department of Physics at Lund University in Sweden (2007 to date). He has been a Professor at the School of Applied Mathematics and Natural Sciences of NTUA since 1983. He is also a co-author of more than 640 scientific publications in international scientific journals in Particle Physics, with over 23,500 citations, and author of international monographs on the muon detection spectrometer at the CERN ATLAS Collaboration (2000) and in 11 journals.',
     speaker_name: "Evangelos Gazis",
     speaker_info: "http://www.physics.ntua.gr/~egazis/",
     year: 2021,
+    category: "science",
   },
   {
     id: "watchtalk52",
@@ -660,6 +705,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/marios-fragkoulis-80141a53/?originalSubdomain=gr",
     year: 2021,
+    category: "technology",
   },
   {
     id: "watchtalk53",
@@ -672,6 +718,7 @@ export const WATCHTALKS = [
     speaker_name: "Fiori Zafeiopoulou",
     speaker_info: "https://www.epixeiro.gr/authors/633",
     year: 2021,
+    category: "life",
   },
   {
     id: "watchtalk54",
@@ -685,6 +732,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/apostolosapostolakis/?originalSubdomain=gr",
     year: 2022,
+    category: ["technology", "business"],
   },
   {
     id: "watchtalk55",
@@ -698,6 +746,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%95%CF%85%CE%B3%CE%AD%CE%BD%CE%B9%CE%BF%CF%82_%CE%A4%CF%81%CE%B9%CE%B2%CE%B9%CE%B6%CE%AC%CF%82",
     year: 2022,
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk56",
@@ -711,6 +760,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%9C%CE%B9%CF%81%CE%AD%CE%BB%CE%B1_%CE%A0%CE%AC%CF%87%CE%BF%CF%85",
     year: 2022,
+    category: "life",
   },
   {
     id: "watchtalk57",
@@ -724,6 +774,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%9B%CE%AD%CE%BD%CE%B1_%CE%94%CE%B9%CE%B2%CE%AC%CE%BD%CE%B7",
     year: 2022,
+    category: ["life", "culture"],
   },
   {
     id: "watchtalk58",
@@ -737,6 +788,7 @@ export const WATCHTALKS = [
     speaker_info:
       "https://www.linkedin.com/in/konstantinos-gardikis-89940343/?originalSubdomain=gr",
     year: 2022,
+    category: ["culture", "science"],
   },
   {
     id: "watchtalk59",
@@ -750,5 +802,6 @@ export const WATCHTALKS = [
     speaker_info:
       "https://el.wikipedia.org/wiki/%CE%86%CE%BD%CE%BD%CE%B1_%CE%9D%CF%84%CE%BF%CF%85%CE%BD%CF%84%CE%BF%CF%85%CE%BD%CE%AC%CE%BA%CE%B7",
     year: 2022,
+    category: "life",
   },
 ];
