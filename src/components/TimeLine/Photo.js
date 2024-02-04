@@ -40,7 +40,10 @@ export default function Photo({ TedEvent }) {
     //   </p>
     // </main>
     <div className="snap-start">
-      <div className="grid grid-cols-1 xl:grid-cols-3  colstext-center justify-center items-center h-[calc(100vh-5rem)] w-[90%] md:w-[80%] mx-auto ">
+      <div className="grid grid-cols-1 xl:grid-cols-3 text-center justify-center items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto ">
+        <hr className="hidden lg:fixed lg:flex h-1 bg-neutral-100 opacity-100 w-[6%] left-[13%] col-span-1" />
+        <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-[#eb0028] opacity-100 left-[15%]"></div>
+        <div className="hidden lg:fixed lg:flex w-7 h-7 bg-black rounded-full left-[14.5%]" />
         <div className="flex flex-col justify-center text-white gap-20 lg:bg-transparent">
           <h2
             className="text-white font-bold text-6xl italic tracking-tighter leading-4 lg:leading-none mx-auto"
@@ -70,7 +73,7 @@ export default function Photo({ TedEvent }) {
         />
         <div>
           <p
-            className="hidden xl:block text-white font-semibold text-md 4xl:text-md 2xl:text-xl leading-6 text-justify tracking-wide w-[95%] mx-auto"
+            className="hidden xl:block text-white font-semibold text-md 4xl:text-md 2xl:text-md leading-6 text-justify tracking-wide w-[95%] mx-auto"
             // style={{ y, right: "7vw", zIndex: 1 }}
           >
             {TedEvent.paragraph}
