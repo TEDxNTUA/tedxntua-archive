@@ -13,7 +13,7 @@ function Footer() {
             id="social-media"
             className="flex flex-col items-center mx-auto justify-center "
           >
-            <p className="text-white font-thin text-xs xl:text-sm  md:block mb-2">
+            <p className="text-white font-bold text-sm xl:text-lg mb-10  md:block mb-2">
               Follow us on social media for behind-the-scenes moments and much
               more!
             </p>

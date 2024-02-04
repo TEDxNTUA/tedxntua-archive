@@ -6,7 +6,7 @@ const NewsLetter = () => {
       <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">
         Subscribe to our newsletter & stay updated!
       </h2>
-      <div className="flex flex-row items-center justify-center p-3 text-center gap-5">
+      <div className="flex lg:flex-row flex-col items-center justify-center p-3 text-center gap-5">
         <input
           type="email"
           placeholder="Your email address"
