@@ -54,7 +54,7 @@ export default function MovingText() {
       ref={movingTedRef}
       className="pt-20 pb-[5.5rem] overflow-hidden relative w-[100vw] border-y-[0.05px] border-white"
       style={{
-        backgroundImage: `url('/BG.png')`,
+        backgroundImage: `url('/about/BG.png')`,
         backgroundSize: "cover", // Optional: adjust as needed
       }}
     >

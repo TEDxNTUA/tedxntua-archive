@@ -8,7 +8,7 @@ const navLinks = [
   { title: "Home", path: "./", isImage: true },
   {
     title: "Watch",
-    path: "/watch2",
+    path: "/watch",
   },
   {
     title: "Let's Blog",
@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     title: "About",
-    path: "/about2",
+    path: "/about",
   },
 ];
 
@@ -55,7 +55,10 @@ function NewNavbar() {
             {navLinks.map((link, index) => (
               <li key={index} className="mx-2">
                 {link.isImage ? (
-                  <Link href={link.path}>
+                  <Link
+                    href={link.path}
+                    onClick={window.scrollTo({ top: 0, behavior: "smooth" })}
+                  >
                     <img
                       src="/homepage/archive.png"
                       alt={link.title}

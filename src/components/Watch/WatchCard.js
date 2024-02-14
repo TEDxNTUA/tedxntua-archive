@@ -24,7 +24,7 @@ export default function WatchCard({
               alt={title}
             />
             <img
-              src={"/play_button.png"}
+              src={"/watchpage/play_button.png"}
               alt="play_button"
               className="absolute z-5 mx-auto lg:h-[10%]"
             />

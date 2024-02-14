@@ -1,20 +1,51 @@
-import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
-import IncrementalNumber from "@/components/TEDInNumbers/IncrementalNumber";
+import AboutTED from "@/components/About/AboutTED";
+import AboutTEDx from "@/components/About/AboutTEDx";
 import ColumnScroll from "@/components/ColumnScroll/ColumnScroll";
-import AboutTed from "@/components/About/AboutTed";
-import AboutTedxNtua from "@/components/About/AboutTedxNtua";
+import AboutTEDxNTUA from "@/components/About/AboutTEDxNTUA";
+import MovingTed from "@/components/About/MovingTed";
+// import MovingIdeas from "@/components/About2/MovingIdeas";
+import Image from "next/image";
+// import BlobTest from "@/components/Blob/blobTest";
 import Footer from "@/components/Footer/Footer";
-
 function AboutPage() {
   return (
-    <div>
-      <AboutTedxNtua />
-      <AboutTed />
-      <div className="h-[20vh]"></div>
+    <section>
+      {/* <div className="overflow overflow-y-scroll snap-y snap-mandatory"> */}
+      {/* <div className="snap-start">
+          <MovingIdeas />
+        </div> */}
+      {/* <BlobTest /> */}
+      {/* <div className="overflow overflow-y-scroll snap-y snap-mandatory"> */}
+      <div>
+        <div
+          className="h-auto md:h-[calc(100vh-5rem)] relative "
+          // style={{
+          //   backgroundImage: `url('/about/about0.png')`,
+          // }}
+        >
+          <Image
+            className="w-full object-cover my-auto relative"
+            src="/about/about0.png"
+            width={1500}
+            height={1500}
+          ></Image>
+        </div>
+        <div>
+          <AboutTED />
+        </div>
+        <div>
+          <AboutTEDx />
+        </div>
+      </div>
+      {/* </div> */}
+      <div className="h-[15vh]"></div>
       <ColumnScroll />
-      <div className="h-[10vh]"></div>
+      {/* <div className="h-[15vh]"></div> */}
+      {/* <MovingTed /> */}
+      <div className="h-[15vh]"></div>
+      <AboutTEDxNTUA />
       <Footer />
-    </div>
+    </section>
   );
 }
 
