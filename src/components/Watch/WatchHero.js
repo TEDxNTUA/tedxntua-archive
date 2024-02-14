@@ -18,7 +18,7 @@ const WatchHero = ({
   );
   const uniqueYears = getUniqueValues(watchtalks, "year").filter(Boolean);
   return (
-    <div className="flex flex-col items-center lg:relative justify-center lg:mt-[100px] lg:mb-[7%] lg:z-[2] lg:bg-black w-[100vw]">
+    <div className="flex flex-col items-center lg:relative justify-center lg:mt-[100px] lg:mb-[7%] lg:z-[2] lg:bg-black w-full">
       <h1 className="text-white m-3 w-[75%] lg:pl-[4vw] text-3xl lg:text-7xl p-2 text-center font-bold italic">
         Here you can find all our
         <span className="text-[#eb0028]"> TEDx</span>NTUA talks since 2015!

@@ -44,6 +44,11 @@ function NewNavbar() {
             src="/tedxntua_logo.png"
             className="w-44 lg:w-64 h-auto object-contain"
             alt="TEDxNTUA Logo"
+            onClick={() =>
+              document
+                .getElementById("main-scroll-container")
+                .scrollTo({ top: 0, behavior: "smooth" })
+            }
           ></img>
         </Link>
         {/* Desktop Nav */}
@@ -57,7 +62,11 @@ function NewNavbar() {
                 {link.isImage ? (
                   <Link
                     href={link.path}
-                    onClick={window.scrollTo({ top: 0, behavior: "smooth" })}
+                    onClick={() =>
+                      document
+                        .getElementById("main-scroll-container")
+                        .scrollTo({ top: 0, behavior: "smooth" })
+                    }
                   >
                     <img
                       src="/homepage/archive.png"
