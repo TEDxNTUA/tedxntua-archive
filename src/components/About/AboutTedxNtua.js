@@ -2,7 +2,8 @@ function AboutTEDxNTUA() {
   return (
     <div
       style={{
-        backgroundImage: `url('/about/about4a.jpeg')`,
+        // backgroundImage: `url('/about/about4a.jpeg')`,
+        backgroundImage: `url('/about/BG.png')`,
         backgroundSize: "cover", // Optional: adjust as needed
       }}
       className="h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)] w-full relative flex flex-col justify-center"

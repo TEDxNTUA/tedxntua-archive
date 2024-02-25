@@ -2,7 +2,8 @@ function AboutTED() {
   return (
     <div
       style={{
-        backgroundImage: `url('/about/about4a.jpeg')`,
+        // backgroundImage: `url('/about/about4a.jpeg')`,
+        backgroundImage: `url('/about/BG.png')`,
         // backgroundImage: `url('BG.png.jpeg')`,
         backgroundSize: "cover", // Optional: adjust as needed
       }}

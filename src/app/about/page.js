@@ -17,7 +17,7 @@ function AboutPage() {
       {/* <BlobTest /> */}
       {/* <div className="overflow overflow-y-scroll snap-y snap-mandatory"> */}
       <div>
-        <div
+        {/* <div
           className="h-auto md:h-[calc(100vh-5rem)] relative "
           // style={{
           //   backgroundImage: `url('/about/about0.png')`,
@@ -29,7 +29,7 @@ function AboutPage() {
             width={1500}
             height={1500}
           ></Image>
-        </div>
+        </div> */}
         <div>
           <AboutTED />
         </div>

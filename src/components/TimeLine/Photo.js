@@ -60,7 +60,7 @@ export default function Photo({ TedEvent }) {
         <div className="xl:mr-[5vw]">
           <img
             ref={Imageref}
-            className="border-[2px] border-[#eb002733] hover:border-[#eb0028] rounded-md mx-auto w-[60%] xl:w-full object-fill"
+            className="border-[2px] border-[#eb002733] rounded-md mx-auto w-[60%] xl:w-full object-fill" //hover:border-[#eb0028]
             src={`/previousEvents/${TedEvent.source}`}
             alt="Previous ted event"
           />
