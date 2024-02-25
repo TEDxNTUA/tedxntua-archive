@@ -1,7 +1,7 @@
-import AboutTED from "@/components/About/AboutTED";
+import AboutTED from "@/components/About/AboutTed";
 import AboutTEDx from "@/components/About/AboutTEDx";
 import ColumnScroll from "@/components/ColumnScroll/ColumnScroll";
-import AboutTEDxNTUA from "@/components/About/AboutTEDxNTUA";
+import AboutTEDxNTUA from "@/components/About/AboutTedxNtua";
 import MovingTed from "@/components/About/MovingTed";
 // import MovingIdeas from "@/components/About2/MovingIdeas";
 import Image from "next/image";
