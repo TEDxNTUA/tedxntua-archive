@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import SocialMediaNav from "./SocialMediaNav";
+// import { usePathname } from "next/navigation";
 
 const navLinks = [
   { title: "Home", path: "./", isImage: true },
@@ -21,8 +22,11 @@ const navLinks = [
 ];
 
 function NewNavbar() {
+  // const path = usePathname();
+  // console.log(path);
+
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
-  const [buttonClicked, setButtonClicked] = useState("");
+  // const [buttonClicked, setButtonClicked] = useState("");
   const closeDrawer = () => {
     if (drawerIsOpen) {
       setDrawerIsOpen(false);
@@ -78,9 +82,8 @@ function NewNavbar() {
                   <NavLink
                     href={link.path}
                     title={link.title}
-                    className={"text-white hover:text-red-500"}
-                    onClick={() => setButtonClicked(link.title)}
-                    buttonClicked={buttonClicked}
+                    // onClick={() => setButtonClicked(link.title)}
+                    // buttonClicked={buttonClicked}
                   />
                 )}
               </li>
@@ -117,11 +120,11 @@ function NewNavbar() {
         id="mobile-drawer"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[45%] z-50 md:hidden h-[90vh] bg-black border-t border-t-white ease-in duration-300"
-            : "fixed right-[-120%]  h-[90vh]"
+            ? "fixed right-0 w-[45%] z-50 md:hidden h-[90vh] bg-black border-t border-t-white ease-in duration-300 mt-[9.8vh]"
+            : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
         }
       >
-        <div className="flex flex-col items-center justify-between  h-full py-16 w-[90%] mx-auto">
+        <div className="flex flex-col items-center justify-between h-full pt-16 pb-24 w-[90%] mx-auto">
           <ul className="flex flex-col place-items-center text-center">
             {navLinks.map((link, index) => (
               <li key={index} className="py-4">
@@ -129,7 +132,8 @@ function NewNavbar() {
               </li>
             ))}
           </ul>
-          <button
+          {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
+          {/* <button
             className="bg-[#eb0028] bg-opacity-100 hover:bg-[#eb0028] hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
             onClick={() => {
               // Handle booking logic here
@@ -137,7 +141,7 @@ function NewNavbar() {
             }}
           >
             Book Your Ticket!
-          </button>
+          </button> */}
 
           <SocialMediaNav onClick={closeDrawer} />
         </div>
@@ -147,8 +151,8 @@ function NewNavbar() {
         id="opacity-when-drawer-clicked"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[100%] md:hidden h-screen bg-black/30 z-10"
-            : "fixed right-[-120%] h-screen"
+            ? "fixed right-0 w-[100%] md:hidden bg-black/30 z-10 h-[90vh] mt-[9.8vh]"
+            : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
         }
       />
     </nav>

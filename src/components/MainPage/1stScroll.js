@@ -6,7 +6,7 @@ function FirstScroll() {
       <div className="w-[100%] h-auto relative flex flex-col-reverse items-end md:flex-none">
         <Image
           className="w-auto lg:h-[95vh]"
-          src="/homepage/1_.png"
+          src="/homepage/starting-page.png"
           width={800}
           height={800}
           alt="archive"

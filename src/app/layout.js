@@ -26,8 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black font-[Helvetica]">
-        <ModalNewsLetter />
-        <ScrollTopButton />
+        {/* <ModalNewsLetter /> */}
+        <div>
+          <ScrollTopButton />
+        </div>
         <Navbar />
         <div className="mt-[5rem]"></div>
         {children}
