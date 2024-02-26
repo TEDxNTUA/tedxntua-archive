@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import InputForm from "./InputForm/InputForm";
+import InputForm2 from "./InputForm/InputForm2";
 
 import classes from "./NewsLetterTitle.module.css";
 
@@ -51,7 +51,7 @@ const NewsLetter = () => {
           events!
         </p>
         <div className="spacer h-2"></div>
-        <InputForm />
+        <InputForm2 />
       </div>
       <div className="spacer h-6"></div>
       <Image
