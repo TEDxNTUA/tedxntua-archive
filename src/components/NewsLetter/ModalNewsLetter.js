@@ -5,15 +5,15 @@ import Modal from "./Modal";
 import NewsLetter from "./NewsLetter";
 
 const ModalNewsLetter = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsModalOpen(true);
-    }, 3000); // 5000 milliseconds = 5 seconds
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsModalOpen(true);
+  //   }, 3000); // 5000 milliseconds = 5 seconds
 
-    return () => clearTimeout(timer); // Clear the timer if the component unmounts
-  }, []);
+  //   return () => clearTimeout(timer); // Clear the timer if the component unmounts
+  // }, []);
 
   return (
     <>
