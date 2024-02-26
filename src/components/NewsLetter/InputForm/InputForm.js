@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef, useState, useEffect } from "react";
 
 import NameInput from "./NameInput";
@@ -10,6 +11,7 @@ import { checkName, checkEmail } from "../../../../lib/formValidation";
 import { fetchData } from "../../../../lib/fetchData";
 
 const InputForm = forwardRef((props, ref) => {
+  // ALL THE BELOW IS FOR CLIENT SIDE VALIDATION
   const [name, setName] = useState("");
   const [nameIsInitial, setNameIsInitial] = useState(true);
   const [nameValidation, setNameValidation] = useState({
@@ -97,29 +99,31 @@ const InputForm = forwardRef((props, ref) => {
     }
   }, [buttonPressed, nameValidation, surnameValidation, emailValidation]);
 
-  // useEffect(() => {
-  //   if (allowFetch) {
-  //     setDisableButton(true);
+  // ALL THE ABOVE IS FOR CLIENT SIDE VALIDATION
 
-  //     // WORK WITH MAILCHIMP APIIIIIIIII
-  //     fetchData(name, surname, email).then((success) => {
-  //       setSuccessFetch(success);
-  //       setDisableButton(false);
-  //       if (success) {
-  //         setName("");
-  //         setSurname("");
-  //         setEmail("");
-  //         const timeout = setTimeout(() => {
-  //           setIsInitial(true);
-  //         }, 3000);
-  //         return () => {
-  //           clearTimeout(timeout);
-  //         };
-  //       }
-  //     });
-  //   }
-  //   setButtonPressed(false);
-  // }, [allowFetch]);
+  // Fetching
+
+  useEffect(() => {
+    if (allowFetch) {
+      setDisableButton(true);
+      fetchData(name, surname, email).then((success) => {
+        setSuccessFetch(success);
+        setDisableButton(false);
+        if (success) {
+          setName("");
+          setSurname("");
+          setEmail("");
+          const timeout = setTimeout(() => {
+            setIsInitial(true);
+          }, 3000);
+          return () => {
+            clearTimeout(timeout);
+          };
+        }
+      });
+    }
+    setButtonPressed(false);
+  }, [allowFetch]);
 
   return (
     <section ref={ref} className="flex flex-col">
