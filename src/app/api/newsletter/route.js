@@ -1,9 +1,11 @@
+import axios from "axios";
 import { NextResponse } from "next/server";
 
-// // To handle a GET request to /api
-// export async function GET(request) {
+// To handle a GET request to /api
+// export async function PO123ST(request) {
 //   // Do whatever you want
-//   return NextResponse.json({ message: "Hello World" }, { status: 200 });
+//   console.log(JSON.stringify(request));
+//   return NextResponse.json({ message: request.body }, { status: 200 });
 // }
 
 function getRequestParams(name, surname, email) {
@@ -21,6 +23,7 @@ function getRequestParams(name, surname, email) {
     merge_fields: {
       FNAME: name,
       LNAME: surname,
+      NEWSLETTER: "Ναι",
     },
   };
 
@@ -34,43 +37,47 @@ function getRequestParams(name, surname, email) {
 }
 
 // To handle a POST request to /api
-export async function POST(req) {
-  // Do whatever you want
-  const { email, name, surname } = req.body;
+export async function POST(req, res) {
+  const { name, surname, email } = await req.json();
 
-  if (!email || !email.length) {
-    return NextResponse.json(
-      { message: "Forgot to add your email?" },
-      { status: 400 }
-    );
+  const { url, memberInfo, headers } = getRequestParams(name, surname, email);
+
+  if (!name && !email) {
+    return res.status(400).json({ error: "Email and name is required" });
   }
 
-  // try {
-  //   const { url, memberInfo, headers } = getRequestParams(name, surname, email);
-
-  //   const response = await axios.post(url, memberInfo, { headers });
-
-  //   return NextResponse.json({ error: null }, { status: 201 });
-  // } catch (e) {
-  //   return NextResponse.json(
-  //     { error: "Oops sth went wrong." },
-  //     { status: 400 }
-  //   );
-  // }
   try {
-    const { url, data, headers } = getRequestParams(email);
+    const data = {
+      email_address: email,
+      status: "subscribed",
+      merge_fields: {
+        FNAME: name,
+        LNAME: surname,
+        NEWSLETTER: "Ναι",
+      },
+    };
 
     const response = await axios.post(url, data, { headers });
 
-    // Success
-    return res.status(201).json({ error: null });
-  } catch (error) {
-    return res.status(400).json({
-      error: `Oops, something went wrong... Send me an email at uriklar@gmail.com and I'll add you to the list.`,
-    });
+    // const response = await fetch(
+    //   `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
 
-    // Report error to Sentry or whatever
+    //   {
+    //     body: JSON.stringify(data),
+    //     headers: { headers },
+    //     method: "POST",
+    //   }
+    // );
+    console.log(response);
+    console.log(response.status);
+    if (response.status >= 400) {
+      return NextResponse.json({ error: null }, { status: 400 });
+    }
+
+    return NextResponse.json({ error: null }, { status: 201 });
+  } catch (error) {
+    return (
+      NextResponse.json({ error: error.response.data.title.toString() }, { status: 577 })
+    );
   }
 }
-
-// Same logic to add a `PATCH`, `DELETE`...

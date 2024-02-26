@@ -24,9 +24,9 @@ const InputForm2 = forwardRef((props, ref) => {
     setErrorMessage(null);
     try {
       const response = await axios.post("api/newsletter", {
-        name,
-        surname,
-        email,
+        name: name,
+        surname: surname,
+        email: email,
       });
       setState("Success");
     } catch (e) {
@@ -108,7 +108,7 @@ const InputForm2 = forwardRef((props, ref) => {
             >
               Subscribe
             </button>
-            {state === "Error" && <p>Error</p>}
+            {state === "Error" && <p>{errorMessage}</p>}
             {state === "Success" && <p>Success</p>}
             {/* <SubmitButton disableButton={disableButton} />
             <FetchMessage
