@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function BlogCard({
   bloglink,
   thumbnail,
@@ -6,44 +7,44 @@ export default function BlogCard({
   author,
 }) {
   return (
-    <div className="flex flex-col bg-neutral-50 rounded-md shadow-md border-[3px] border-[#eb00276c] w-full sm:w-[50%] md:w-[80%] lg:w-[80%] hover:border-[#eb0028] transition mx-auto">
-      <div className="my-row grow">
-        <a target="_blank" href={bloglink} className="hover:cursor-pointer">
-          <div className="rounded-md w-full overflow-hidden">
+    <Link href={bloglink}>
+      <div className="flex flex-col mx-auto w-full sm:w-[50%] md:w-[80%] lg:w-[80%] border-[#eb00276c] hover:border-[#eb0028] hover:shadow-md border-b-[2px]">
+        <div className="my-row grow hover:cursor-pointer">
+          <div className="rounded w-full overflow-hidden">
             <img
-              className="w-full h-full object-center object-cover shadow-sm"
+              className="w-46 h-46 object-center object-cover shadow-sm"
               src={thumbnail}
               alt={title}
             />
           </div>
-          <div className="px-3 md:px-4 lg:px-6">
-            <h2 className="text-black py-2 md:py-3 font-semibold text-center text-md lg:text-xl 2xl:text-2xl">
+          <div className="">
+            <p className="text-white py-2 md:py-3 font-semibold text-lg lg:text-xl 2xl:text-2xl">
               {title}
-            </h2>
-            <p className="tracking-tight text-justify text-gray-600 text-md 2xl:text-lg">
+            </p>
+            <p className="tracking-tighter text-justify text-slate-50 text-md 2xl:text-sm">
               {content}
             </p>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <div className="my-row">
-        <div className="w-11/12 bg-gray-200 h-[0.12rem] mx-auto my-1 md:my-2" />
-        <a
-          target="_blank"
-          href={author.linkedin}
-          className="hover:cursor-pointer hover:font-extrabold align"
-        >
+        <div className="my-row">
+          <div className="w-11/12 bg-white h-[0.02rem] mx-auto my-3" />
+          {/* <a
+            target="_blank"
+            href={author.linkedin}
+            className="hover:cursor-pointer hover:font-extrabold align"
+          > */}
           <div className="flex flex-col justify-center mb-2">
-            <h3 className="text-gray-700 font-bold text-center align-bottom text-md 2xl:text-xl hover:text-gray-900">
+            <h3 className="text-white font-bold text-center align-bottom text-sm 2xl:text-xl">
               {author.name}
             </h3>
-            <p className="text-gray-400 text-center font-semibold text-md 2xl:text-lg hover-text-[#eb0028]">
+            <p className="text-neutral-200 text-center font-semibold text-xs 2xl:text-lg hover-text-[#eb0028]">
               {author.team}
             </p>
           </div>
-        </a>
+          {/* </a> */}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

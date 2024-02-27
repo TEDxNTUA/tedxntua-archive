@@ -11,9 +11,13 @@ const navLinks = [
     title: "Watch",
     path: "/watch",
   },
+  // {
+  //   title: "Let's Blog",
+  //   path: "/blog",
+  // },
   {
-    title: "Let's Blog",
-    path: "/blog",
+    title: "Newsletter",
+    path: "/newsletter",
   },
   {
     title: "About",
