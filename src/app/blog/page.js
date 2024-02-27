@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer/Footer";
-import { BLOGPOSTS } from "../../../data/blogposts";
+// import { BLOGPOSTS } from "../../../data/blogposts";
 
-import BlogGrid from "@/components/Blog/BlogGrid";
+// import BlogGrid from "@/components/Blog/BlogGrid";
 
 function BlogPage() {
   return (
@@ -16,7 +16,7 @@ function BlogPage() {
       <h1 className="text-white w-[75%] text-4xl lg:text-7xl text-left font-bold  py-16 md:w-[80%] mx-auto">
         <span className="text-[#eb0028]">TEDx</span>NTUA Organisers' Blog
       </h1>
-      <BlogGrid blogposts={BLOGPOSTS} />
+      {/* <BlogGrid blogposts={BLOGPOSTS} /> */}
       <Footer />
     </div>
   );

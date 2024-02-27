@@ -3,8 +3,8 @@ import classes from "./NewsLetterTitle.module.css";
 
 export default function NewsletterTitle() {
   return (
-    <div className="w-[80%] md:w-[70%] 3xl:w-[60%] flex flex-col mx-auto gap-8 md:gap-12 xl:gap-16 2xl:gap-24 3xl:gap-28 4xl:gap-36 5xl:gap-40">
-      <div className="text-center font-serif font-extrabold text-[10cqw] md:text-[9cqw] 3xl:text-[6cqw] 5xl:text-[5cqw] pt-30 leading-10">
+    <div className="w-[80%] md:w-[70%] 3xl:w-[60%] flex flex-col mx-auto gap-8 sm:gap-20 md:gap-24 lg:gap-28 xl:gap-32 2xl:gap-36 3xl:gap-40 4xl:gap-36 5xl:gap-40">
+      <div className="text-center font-serif font-extrabold text-[10cqw] md:text-[9cqw] xl:text-[7cqw] 3xl:text-[6cqw] 5xl:text-[5cqw] pt-30 leading-10">
         <span className={classes.letter} data-title="N">
           N
         </span>
@@ -36,8 +36,7 @@ export default function NewsletterTitle() {
           R
         </span>
       </div>
-      <div></div>
-      <div className="flex flex-row justify-between items-center 3xl:w-[80%] 5xl:w-[65%] 3xl:mx-auto">
+      <div className="flex flex-row justify-between items-center w-[100%] md:w-[95%] xl:w-[80%] 3xl:w-[75%] 5xl:w-[65%] mx-auto">
         <Image
           src="/tedxntua_logo.png"
           alt="image"
