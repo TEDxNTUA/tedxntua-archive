@@ -15,6 +15,8 @@ module.exports = {
       },
       screens: {
         "3xl": "2000px",
+        "4xl": "2500px",
+        "5xl": "4000px",
       },
       colors: {
         "tedx-red": "#eb0028",
