@@ -1,6 +1,5 @@
 import NewsletterTitle from "@/components/NewsletterPages/NewsletterTitle";
 import IntroductionMedia from "@/components/NewsletterPages/Media/IntroductionMedia";
-import NewsletterSubtitle from "@/components/NewsletterPages/NewsletterSubtitle";
 import MediaSuggestions from "@/components/NewsletterPages/Media/MediaSuggestions";
 
 export default function MediaNewsletter() {
@@ -21,12 +20,8 @@ export default function MediaNewsletter() {
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28"></div>
       <div id="body" className="w-[80%] md:w-[70%] 3xl:w-[60%] mx-auto">
         <IntroductionMedia />
-        <div className="my-6">
-          <NewsletterSubtitle text="SUGGESTIONS" />
-        </div>
-        <MediaSuggestions />
 
-        <NewsletterSubtitle text="FUN FACT" />
+        <MediaSuggestions />
       </div>
     </div>
   );
