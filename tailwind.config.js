@@ -13,6 +13,9 @@ module.exports = {
       fontSize: {
         xxs: "0.6rem",
       },
+      screens: {
+        "3xl": "2000px",
+      },
       colors: {
         "tedx-red": "#eb0028",
       },
