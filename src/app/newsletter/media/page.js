@@ -25,6 +25,8 @@ export default function MediaNewsletter() {
           <NewsletterSubtitle text="SUGGESTIONS" />
         </div>
         <MediaSuggestions />
+
+        <NewsletterSubtitle text="FUN FACT" />
       </div>
     </div>
   );
