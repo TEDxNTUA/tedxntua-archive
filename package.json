@@ -17,13 +17,14 @@
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
     "kute.js": "^2.2.4",
-    "next": "14.1.0",
-    "node": "^21.2.0",
+    "next": "^14.1.0",
+    "node": "^21.6.2",
     "react": "^18",
     "react-dom": "^18",
     "react-router-dom": "^6.21.3",
     "sass": "^1.70.0",
-    "supports-color": "^9.4.0"
+    "sharp": "^0.33.2",
+    "supports-color": "^8.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
