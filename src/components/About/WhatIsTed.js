@@ -18,8 +18,8 @@ function WhatIsTed() {
           <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; worth spreading
         </h1>
 
-        <h1 class="c-title-1 text-[2.5rem] leading-[2.5rem] lg:hidden mt-[4rem] mb-[6rem] text-white font-bold text-left w-[70%] mx-auto">
-          <span class="text-our-red">TED is a </span> <br />
+        <h1 className="c-title-1 text-[2.5rem] leading-[2.5rem] lg:hidden mt-[4rem] mb-[6rem] text-white font-bold text-left w-[70%] mx-auto">
+          <span className="text-our-red">TED is a </span> <br />
           nonprofit organization devoted to ideas worth spreading
         </h1>
       </div>
@@ -32,8 +32,8 @@ function WhatIsTed() {
           backgroundSize: "cover", // Optional: adjust as needed
         }}
       >
-        <h1 class="c-title-1 text-[2.5rem] leading-[2.5rem] lg:hidden mt-[4rem] mb-[6rem] text-white font-bold text-left w-[70%] mx-auto">
-          <span class="text-our-red">TED is a </span> <br />
+        <h1 className="c-title-1 text-[2.5rem] leading-[2.5rem] lg:hidden mt-[4rem] mb-[6rem] text-white font-bold text-left w-[70%] mx-auto">
+          <span className="text-our-red">TED is a </span> <br />
           nonprofit organization devoted to ideas worth spreading
         </h1>
       </div>

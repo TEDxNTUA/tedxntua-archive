@@ -6,7 +6,7 @@ function SecondScroll() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 justify-items-center bg-black">
       <div className="flex flex-col items-center md:items-left justify-center w-8/12 lg:w-5/12 my-4 md:my-8">
-        <h1 className="text-2xl hover:text-[#eb0028] text-left font-extrabold text-white leading-tight">
+        <h1 className="text-2xl hover:text-our-red text-left font-extrabold text-white leading-tight">
           About the
         </h1>
 

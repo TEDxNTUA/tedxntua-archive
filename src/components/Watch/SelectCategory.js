@@ -24,7 +24,7 @@ const SelectCategory = ({ category, setCategory, uniqueCategories }) => {
   return (
     <div className="flex flex-col justify-end gap-2 pb-5">
       <div className="flex lg:flex flex-col items-center border border-white rounded-md h-full">
-        <p className="pb-1 font-bold italic underline decoration-[#eb0028] underline-offset-4">
+        <p className="pb-1 font-bold italic underline decoration-our-red underline-offset-4">
           <span className="text-white text-xl">Category</span>
         </p>
         <div className="text-white flex flex-wrap lg:grid lg:grid-cols-2 items-center justify-center gap-1 w-full h-full">
@@ -32,8 +32,8 @@ const SelectCategory = ({ category, setCategory, uniqueCategories }) => {
             <button
               key={index}
               className={`text-white text-xs font-bold cursor-pointer border-black border rounded-md px-2 py-1 ${
-                category.includes(watchtalk_category) ? "bg-[#eb0028]" : ""
-              } hover:bg-[#eb0028] hover:text-white`}
+                category.includes(watchtalk_category) ? "bg-our-red" : ""
+              } hover:bg-our-red hover:text-white`}
               value={watchtalk_category}
               onClick={handleSelectCategoryChange}
               // aria-pressed={category.includes(watchtalk_category)}

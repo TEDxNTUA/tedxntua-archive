@@ -9,12 +9,12 @@ function Aliki() {
         ανυπόφορες, όταν η ρουτίνα καταντάει βαρετή, όταν ο χρόνος έχει κολλήσει
         και η ώρα απλά δεν περνάει. Θα ήθελα σε τέτοιες στιγμές, ανά πάσα ώρα
         και στιγμή, να είχα πρόσβαση στη βιβλιοθήκη μου. Στα{" "}
-        <span className="text-[#eb0028]">βιβλία</span>, που έχουν την δυνατότητα
+        <span className="text-our-red">βιβλία</span>, που έχουν την δυνατότητα
         να μας ταξιδεύουν, να μας γεμίζουν συναισθήματα και να μας κάνουν να
         ονειρευόμαστε.
       </p>
       <div className="border-y-2 border-white flex flex-col gap-2 my-12 py-3 lg:py-4">
-        <p className="text-[#eb0028] font-bold text-lg">
+        <p className="text-our-red font-bold text-lg">
           “Mα εγώ μες τα βιβλία μου θα ‘θελα να ‘χα χαθεί” - Barbie:
         </p>
         <p className="text-right text-sm">
@@ -43,7 +43,7 @@ function Aliki() {
           <p className="mb-6 md:mb-0">
             Έτσι λοιπόν, μετά από δύο χρόνια σκέψης και διάφορες λίστες pros and
             cons, αποφάσισα να αγοράσω ένα{" "}
-            <span className="text-[#eb0028]">kindle</span>, μια απόφαση που δεν
+            <span className="text-our-red">kindle</span>, μια απόφαση που δεν
             μετανιώνω καθόλου.{" "}
           </p>
           <div className="hidden 2xl:block">

@@ -8,7 +8,7 @@ export default function BlogCard({
 }) {
   return (
     <Link href={bloglink}>
-      <div className="flex flex-col mx-auto w-full sm:w-[50%] md:w-[80%] lg:w-[80%] border-[#eb00276c] hover:border-[#eb0028] hover:shadow-md border-b-[2px]">
+      <div className="flex flex-col mx-auto w-full sm:w-[50%] md:w-[80%] lg:w-[80%] border-[#eb00276c] hover:border-our-red hover:shadow-md border-b-[2px]">
         <div className="my-row grow hover:cursor-pointer">
           <div className="rounded w-full overflow-hidden">
             <img
@@ -38,7 +38,7 @@ export default function BlogCard({
             <h3 className="text-white font-bold text-center align-bottom text-sm 2xl:text-xl">
               {author.name}
             </h3>
-            <p className="text-neutral-200 text-center font-semibold text-xs 2xl:text-lg hover-text-[#eb0028]">
+            <p className="text-neutral-200 text-center font-semibold text-xs 2xl:text-lg hover-text-our-red">
               {author.team}
             </p>
           </div>

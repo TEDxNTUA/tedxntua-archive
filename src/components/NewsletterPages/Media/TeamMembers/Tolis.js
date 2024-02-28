@@ -6,7 +6,7 @@ function Tolis() {
       {" "}
       <p>
         Νομίζω όλοι έχουμε ακούσει την Βίκυ Καγιά να εύχεται την viral ατάκα{" "}
-        <span className="text-[#eb0028]">«σκατά, σκατά, σκατά»</span> στις
+        <span className="text-our-red">«σκατά, σκατά, σκατά»</span> στις
         διαγωνιζόμενες του GNTM. Γιατί όμως λέμε σκατά για να ευχηθούμε
         επιτυχία;{" "}
       </p>
@@ -19,20 +19,20 @@ function Tolis() {
         <div className="md:col-span-3 md:flex md:flex-col">
           <p className="mb-8">
             Η φράση προέρχεται από την{" "}
-            <span className="text-[#eb0028]">Γαλλία</span> όπου τα παλιά τα
-            χρόνια (πριν την εποχή του TikTok και του Instagram) οι άνθρωποι
-            άρχισαν να λένε «<span className="text-[#eb0028]">merde</span>»,
-            σκατά δηλαδή, για να ευχηθούν καλή τύχη ο ένας στον άλλον.
-            &nbsp;Όταν παιζόταν μια παράσταση την εποχή που ακόμα κυκλοφορούσαν
-            άμαξες, τα άλογα δεν είχαν άλλη επιλογή από τo να… κάνουν την ανάγκη
-            τους έξω από το <span className="text-[#eb0028]">θέατρο</span>.
+            <span className="text-our-red">Γαλλία</span> όπου τα παλιά τα χρόνια
+            (πριν την εποχή του TikTok και του Instagram) οι άνθρωποι άρχισαν να
+            λένε «<span className="text-our-red">merde</span>», σκατά δηλαδή,
+            για να ευχηθούν καλή τύχη ο ένας στον άλλον. &nbsp;Όταν παιζόταν μια
+            παράσταση την εποχή που ακόμα κυκλοφορούσαν άμαξες, τα άλογα δεν
+            είχαν άλλη επιλογή από τo να… κάνουν την ανάγκη τους έξω από το{" "}
+            <span className="text-our-red">θέατρο</span>.
           </p>
           <div className="hidden xl:block">
             <p>
               Έτσι, οι Γάλλοι ηθοποιοί συχνά εύχονταν μεταξύ τους να γεμίσει{" "}
-              <span className="text-[#eb0028]">κοπριά</span> ο δρόμος έξω από το
+              <span className="text-our-red">κοπριά</span> ο δρόμος έξω από το
               θέατρο, δηλαδή η παράσταση να έχει μεγάλη{" "}
-              <span className="text-[#eb0028]">προσέλευση</span> και απήχηση!
+              <span className="text-our-red">προσέλευση</span> και απήχηση!
             </p>
           </div>
         </div>
@@ -48,15 +48,15 @@ function Tolis() {
       </div>
       <p className="md:my-6 lg:my-6 xl:hidden">
         Έτσι, οι Γάλλοι ηθοποιοί συχνά εύχονταν μεταξύ τους να γεμίσει{" "}
-        <span className="text-[#eb0028]">κοπριά</span> ο δρόμος έξω από το
-        θέατρο, δηλαδή η παράσταση να έχει μεγάλη{" "}
-        <span className="text-[#eb0028]">προσέλευση</span> και απήχηση!
+        <span className="text-our-red">κοπριά</span> ο δρόμος έξω από το θέατρο,
+        δηλαδή η παράσταση να έχει μεγάλη{" "}
+        <span className="text-our-red">προσέλευση</span> και απήχηση!
       </p>
       <p className="w-full mb-8 md:my-8 italics font-bold">
         <em>
           Συνεπώς ευχόμαστε όλοι{" "}
-          <span className="text-[#eb0028]">“σκατά, σκατά, σκατά”</span> στο
-          φετινό TEDxNTUA event!
+          <span className="text-our-red">“σκατά, σκατά, σκατά”</span> στο φετινό
+          TEDxNTUA event!
         </em>
       </p>{" "}
     </div>

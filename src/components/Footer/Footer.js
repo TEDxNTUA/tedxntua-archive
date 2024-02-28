@@ -26,14 +26,14 @@ function Footer() {
             © TEDxNTUA 2015 - 2024
           </p>
           <p className="text-white text-xxs xl:text-sm text-left">
-            <span className="text-[#eb0028]">TEDx</span>NTUA is operated under
-            license from <span className="text-[#eb0028]">TED</span>. Visit
+            <span className="text-our-red">TEDx</span>NTUA is operated under
+            license from <span className="text-our-red">TED</span>. Visit
             <a
               href="https://www.ted.com/about/programs-initiatives/tedx-program"
               target="_blank"
               className="hover:font-semibold"
             >
-              <span className="text-[#eb0028]"> TED </span>
+              <span className="text-our-red"> TED </span>
             </a>
             for more info.
           </p>

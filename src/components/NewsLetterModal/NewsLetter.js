@@ -46,9 +46,8 @@ const NewsLetter = () => {
       </h1>
       <div className="flex flex-col items-center gap-5 w-[80%]">
         <p className="text-gray-400 text-md lg:text-lg text-justify font-extralight px-3">
-          Sign up for TED<span className="text-[#eb0028]">x</span>NTUA
-          Newsletter to be the first to see our fresh news about our team &
-          events!
+          Sign up for TED<span className="text-our-red">x</span>NTUA Newsletter
+          to be the first to see our fresh news about our team & events!
         </p>
         <div className="spacer h-2"></div>
         <InputForm2 />

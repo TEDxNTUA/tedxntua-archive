@@ -12,7 +12,7 @@ function NewsletterPage() {
       // }}
     >
       <h1 className="text-white w-[75%] text-4xl lg:text-7xl text-left font-bold  py-16 md:w-[80%] mx-auto">
-        <span className="text-[#eb0028]">TEDx</span>NTUA Organisers' Blog
+        <span className="text-our-red">TEDx</span>NTUA Organisers' Blog
       </h1>
       <li>
         <BlogCard

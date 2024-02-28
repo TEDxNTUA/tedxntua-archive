@@ -21,7 +21,7 @@ function Anastasia() {
           <p className="mb-6">
             Tο{" "}
             <a
-              className="hover:cursor-pointer underline text-[#eb0028]"
+              className="hover:cursor-pointer underline text-our-red"
               href="https://www.imdb.com/title/tt16277242/"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ function Anastasia() {
           />
           <p className="mb-6">
             Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω ένα
-            <span className="text-[#eb0028] font-bold"> 11/10</span> και την
+            <span className="text-our-red font-bold"> 11/10</span> και την
             συνιστώ ανεπιφύλακτα!
           </p>
           <div className="flex justify-end">
@@ -65,7 +65,7 @@ function Anastasia() {
       </p>
       <p className="mb-6 block md:hidden">
         Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω ένα
-        <span className="text-[#eb0028] font-bold"> 11/10</span> και την συνιστώ
+        <span className="text-our-red font-bold"> 11/10</span> και την συνιστώ
         ανεπιφύλακτα!
       </p>
       <Image

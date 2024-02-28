@@ -27,7 +27,7 @@ export default function MediaNewsletter() {
           </span>
           <p className="text-white text-xxs self-end">
             xoxo...Media & Marketing Team
-            <span className="text-[#eb0028]">&lt;3</span>
+            <span className="text-our-red">&lt;3</span>
           </p>
         </div>
       </div>

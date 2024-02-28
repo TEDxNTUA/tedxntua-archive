@@ -18,7 +18,7 @@ function FetchMessage({ success, pending, isInitial }) {
 
     if (!pending && !success) {
       return (
-        <div className="h-6 font-medium text-[#eb0028] text-right">
+        <div className="h-6 font-medium text-our-red text-right">
           Please try again!
         </div>
       );

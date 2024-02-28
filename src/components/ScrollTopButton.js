@@ -38,7 +38,7 @@ const ScrollTopButton = () => {
     <button
       className={`scroll-top-button ${
         isVisible ? "visible" : "hidden"
-      } z-10 bg-[#eb0028] text-white font-bold py-2 px-2 rounded-full fixed bottom-0 right-0 mr-4 mb-4 transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105`}
+      } z-10 bg-our-red text-white font-bold py-2 px-2 rounded-full fixed bottom-0 right-0 mr-4 mb-4 transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105`}
       onClick={scrollToTop}
     >
       <img src="/arrow_up.png" alt="arrow_up" className="w-5 h-5" />

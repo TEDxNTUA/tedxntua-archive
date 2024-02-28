@@ -27,7 +27,7 @@ export default function Photo({ TedEvent }) {
     //   {/* <div ref={Imageref} className=""> */}
     //   <img
     //     ref={Imageref}
-    //     className="border-[2px] border-[#eb002733] hover:border-[#eb0028] rounded-md w-[100%] h-[100%] object-cover"
+    //     className="border-[2px] border-[#eb002733] hover:border-our-red rounded-md w-[100%] h-[100%] object-cover"
     //     src={`/previousEvents/${TedEvent.source}`}
     //     alt="Previous ted event"
     //   />
@@ -42,7 +42,7 @@ export default function Photo({ TedEvent }) {
     <div className="snap-start">
       <div className="grid grid-cols-1 xl:grid-cols-3 text-center justify-center items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto ">
         <hr className="hidden lg:fixed lg:flex h-1 bg-neutral-100 opacity-100 w-[6%] left-[13%] col-span-1" />
-        <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-[#eb0028] opacity-100 left-[15%]"></div>
+        <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-our-red opacity-100 left-[15%]"></div>
         <div className="hidden lg:fixed lg:flex w-7 h-7 bg-black rounded-full left-[14.5%]" />
         <div className="flex flex-col justify-center text-white gap-20 lg:bg-transparent">
           <h2
@@ -60,7 +60,7 @@ export default function Photo({ TedEvent }) {
         <div className="xl:mr-[5vw]">
           <img
             ref={Imageref}
-            className="border-[2px] border-[#eb002733] rounded-md mx-auto w-[60%] xl:w-full object-fill" //hover:border-[#eb0028]
+            className="border-[2px] border-[#eb002733] rounded-md mx-auto w-[60%] xl:w-full object-fill" //hover:border-our-red
             src={`/previousEvents/${TedEvent.source}`}
             alt="Previous ted event"
           />

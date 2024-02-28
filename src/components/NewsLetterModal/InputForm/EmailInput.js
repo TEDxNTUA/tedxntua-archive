@@ -24,7 +24,7 @@ const EmailInput = ({ email, text, setEmail, isInitial, validation }) => {
           value={email.toLowerCase()}
           onChange={(event) => setEmail(event.target.value)}
           className={`w-full rounded-md border-2 pt-2 pb-2 pl-2 pr-10 selection:bg-blue-200 focus:outline-none text-gray-800 ${
-            failure ? "border-[#eb0028]" : null
+            failure ? "border-our-red" : null
           } ${success ? "border-green-500" : null} ${
             !failure && !success ? "focus:border-[#f7941c]" : null
           }`}
