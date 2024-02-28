@@ -1,7 +1,8 @@
 import "./globals.css";
 import Navbar from "@/components/NavBar/NavBar.js";
-import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
+// import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
 import ScrollTopButton from "@/components/ScrollTopButton";
+import NewFooter from "@/components/Footer/NewFooter";
 
 export const metadata = {
   title: "TEDxNTUA-Archive",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="mt-[5rem]"></div>
         {children}
+        <NewFooter />
       </body>
     </html>
   );

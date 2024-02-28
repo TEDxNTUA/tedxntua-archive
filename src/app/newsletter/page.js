@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 import BlogCard from "@/components/Blog/BlogCard";
 
 function NewsletterPage() {
@@ -23,7 +23,7 @@ function NewsletterPage() {
           author="Media Team TEDxNTUA 2024"
         />
       </li>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -23,9 +23,7 @@ function HomePage() {
           </div>
         </div>
         <Timeline />
-        <div className="snap-start">
-          <Footer />
-        </div>
+        <div className="snap-start">{/* <Footer /> */}</div>
       </div>
     </main>
   );

@@ -44,7 +44,7 @@ function AboutPage() {
       {/* <MovingTed /> */}
       <div className="h-[15vh]"></div>
       <AboutTEDxNTUA />
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 }

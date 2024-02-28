@@ -1,14 +1,14 @@
 function AboutTEDxNTUA() {
   return (
     <div
-      style={{
-        // backgroundImage: `url('/about/about4a.jpeg')`,
-        backgroundImage: `url('/about/BG.png')`,
-        backgroundSize: "cover", // Optional: adjust as needed
-      }}
+      // style={{
+      //   // backgroundImage: `url('/about/about4a.jpeg')`,
+      //   backgroundImage: `url('/about/BG.png')`,
+      //   backgroundSize: "cover", // Optional: adjust as needed
+      // }}
       className="h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)] w-full relative flex flex-col justify-center"
     >
-      <div className="w-[55vw] md:w-[45vw] lg:w-[35vw] mx-auto lg:mx-0  lg:ml-[12vw]">
+      <div className="w-[55vw] md:w-[45vw] lg:w-[35vw] mx-auto">
         <h2 className="text-3xl md:text-5xl text-white font-black  text-center">
           About <span className="text-[#eb0028]">TEDx</span>NTUA
         </h2>

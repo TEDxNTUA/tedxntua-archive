@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 // import { BLOGPOSTS } from "../../../data/blogposts";
 
 // import BlogGrid from "@/components/Blog/BlogGrid";
@@ -17,7 +17,7 @@ function BlogPage() {
         <span className="text-[#eb0028]">TEDx</span>NTUA Organisers' Blog
       </h1>
       {/* <BlogGrid blogposts={BLOGPOSTS} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
