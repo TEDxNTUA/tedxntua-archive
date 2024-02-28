@@ -2,16 +2,16 @@ import NewsletterTitle from "@/components/NewsletterPages/NewsletterTitle";
 import IntroductionMedia from "@/components/NewsletterPages/Media/IntroductionMedia";
 import MediaSuggestions from "@/components/NewsletterPages/Media/MediaSuggestions";
 
-import NewFooter from "@/components/Footer/NewFooter";
-
 export default function MediaNewsletter() {
   return (
     <div
-      className="bg-neutral-800 bg-contain"
-      style={{
-        backgroundImage: `url('/newsletters/media/background.png')`,
-        // backgroundSize: `cover`,
-      }}
+      className="bg-our-black" // bg-contain"
+      style={
+        {
+          // backgroundImage: `url('/newsletters/media/background.png')`,
+          // backgroundSize: `cover`,
+        }
+      }
     >
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
       <NewsletterTitle />
@@ -32,7 +32,6 @@ export default function MediaNewsletter() {
         </div>
       </div>
       <div className="h-20"></div>
-      <NewFooter />
     </div>
   );
 }
