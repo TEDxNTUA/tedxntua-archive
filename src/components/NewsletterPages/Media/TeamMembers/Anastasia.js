@@ -3,31 +3,67 @@ import Image from "next/image";
 function Anastasia() {
   return (
     <div id="Anastasia">
-      <p className="text-white text-xs md:text-md lg:text-lg xl:text-xl text-justify w-full mb-4 italics font-bold">
+      <p className="w-full mb-4 md:mb-12 italics font-bold">
         Η <span className="font-bold">Αναστασία</span> μετά από άπειρα movie
         nights προτείνει:
       </p>
-      <p className="text-white text-xxs md:text-md lg:text-lg xl:text-xl text-justify w-full mb-6">
-        Tο{" "}
-        <a
-          className="hover:cursor-pointer underline text-[#eb0028]"
-          href="https://www.imdb.com/title/tt16277242/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Society of the Snow
-        </a>{" "}
-        -{" "}
-        <span className="italic">αν καταφέρεις να το δεις μέχρι το τέλος</span>{" "}
-        - θα σε αφήσει σίγουρα με έναν κόμπο στο στομάχι, να αναρωτιέσαι “μέχρι
-        πού μπορεί να φτάσει ο άνθρωπος για να επιβιώσει;”.
-      </p>
-      <p className="w-full text-white text-xxs md:text-md lg:text-lg xl:text-xl text-justify mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-5 md:gap-8">
+        <div className="md:col-span-3 md:flex md:flex-col md:gap-8">
+          <Image
+            src="/newsletters/media/society-of-snow1.jpeg"
+            alt="image"
+            // fill={true}
+            width={300}
+            height={300}
+            className="w-full h-auto hidden md:block"
+          />
+
+          <p className="mb-6">
+            Tο{" "}
+            <a
+              className="hover:cursor-pointer underline text-[#eb0028]"
+              href="https://www.imdb.com/title/tt16277242/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Society of the Snow
+            </a>{" "}
+            -{" "}
+            <span className="italic">
+              αν καταφέρεις να το δεις μέχρι το τέλος
+            </span>{" "}
+            - θα σε αφήσει σίγουρα με έναν κόμπο στο στομάχι, να αναρωτιέσαι
+            “μέχρι πού μπορεί να φτάσει ο άνθρωπος για να επιβιώσει;”. Βασίζεται
+            στην αληθινή ιστορία της Ουρουγουανής ομάδας rugby που επιβίωσε από
+            τη συντριβή του αεροπλάνου που την μετέφερε πάνω από τις Άνδεις και
+            κυκλοφόρησε πρόσφατα στο Netflix.
+          </p>
+        </div>
+        <div className="md:col-span-2 md:flex md:flex-col md:gap-8">
+          <Image
+            src="/newsletters/media/society-of-snow3.jpeg"
+            alt="image"
+            // fill={true}
+            width={300}
+            height={300}
+            className="w-full h-auto hidden md:block"
+          />
+          <p className="mb-6">
+            Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω ένα
+            <span className="text-[#eb0028] font-bold"> 11/10</span> και την
+            συνιστώ ανεπιφύλακτα!
+          </p>
+          <div className="flex justify-end">
+            <span className="font-bold">-Αναστασία</span>
+          </div>
+        </div>
+      </div>
+      <p className="mb-6 block md:hidden">
         Βασίζεται στην αληθινή ιστορία της Ουρουγουανής ομάδας rugby που
         επιβίωσε από τη συντριβή του αεροπλάνου που την μετέφερε πάνω από τις
         Άνδεις και κυκλοφόρησε πρόσφατα στο Netflix.
       </p>
-      <p className="w-full text-white text-xxs md:text-md lg:text-lg xl:text-xl text-justify mb-6">
+      <p className="mb-6 block md:hidden">
         Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω ένα
         <span className="text-[#eb0028] font-bold"> 11/10</span> και την συνιστώ
         ανεπιφύλακτα!
@@ -38,7 +74,7 @@ function Anastasia() {
         // fill={true}
         width={300}
         height={300}
-        className="w-full h-auto"
+        className="w-full h-auto md:hidden"
       />
     </div>
   );

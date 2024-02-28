@@ -4,7 +4,7 @@ function NewsletterSubtitle({ text }) {
   const letters = text.split("");
 
   return (
-    <div className="text-left font-mono font-extrabold text-3xl leading-10 my-8">
+    <div className="text-left font-extrabold text-3xl 2xl:text-5xl leading-10 my-8 lg:my-12">
       {letters.map((letter, index) => (
         <span key={index} className={classes.letter}>
           {letter}

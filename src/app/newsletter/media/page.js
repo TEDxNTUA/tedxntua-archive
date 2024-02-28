@@ -5,24 +5,31 @@ import MediaSuggestions from "@/components/NewsletterPages/Media/MediaSuggestion
 export default function MediaNewsletter() {
   return (
     <div
-      className="bg-neutral-800"
+      className="bg-neutral-800 bg-contain"
       style={{
         backgroundImage: `url('/newsletters/media/background.png')`,
-        backgroundSize: "cover", // Optional: adjust as needed
+        // backgroundSize: `cover`,
       }}
     >
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
-      {/* <h1 className="text-white w-[75%] text-7xl text-center font-bold py-16 md:w-[80%] mx-auto">
-        <span className="text-[#eb0028]">TEDx</span>Media NEwsletter
-      </h1> */}
-      {/* //grid grid-cols-1 lg:grid-cols-2">  */}
       <NewsletterTitle />
-      <div className="h-8 md:h-12 lg:h-20 2xl:h-28"></div>
+
+      <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>
       <div id="body" className="w-[80%] md:w-[70%] 3xl:w-[60%] mx-auto">
         <IntroductionMedia />
 
         <MediaSuggestions />
+        <div className="flex flex-col gap-6">
+          <span className="text-white text-lg mx-auto text-center flex self-center">
+            Keep in touch!
+          </span>
+          <p className="text-white text-xxs self-end">
+            xoxo...Media & Marketing Team
+            <span className="text-[#eb0028]">&lt;3</span>
+          </p>
+        </div>
       </div>
+      <div className="h-20"></div>
     </div>
   );
 }
