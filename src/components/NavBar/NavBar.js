@@ -124,7 +124,7 @@ function NewNavbar() {
         id="mobile-drawer"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[45%] z-50 md:hidden h-[92vh] bg-black border-t border-t-white ease-in duration-300 mt-[8.5vh]"
+            ? "fixed right-0 w-[45%] z-50 md:hidden h-[92vh] bg-black ease-in duration-300 mt-[8.2vh]"
             : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
         }
       >
@@ -155,7 +155,7 @@ function NewNavbar() {
         id="opacity-when-drawer-clicked"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[100%] md:hidden bg-black/40 z-40 h-[92vh] mt-[8.5vh]"
+            ? "fixed right-0 w-[100%] md:hidden bg-black/40 z-40 h-[92vh] mt-[8.2vh]"
             : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
         }
       />

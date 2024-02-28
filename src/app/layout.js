@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/NavBar/NavBar.js";
-// import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
+import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
 import ScrollTopButton from "@/components/ScrollTopButton";
 import NewFooter from "@/components/Footer/NewFooter";
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black font-[Helvetica]">
-        {/* <ModalNewsLetter /> */}
+        <ModalNewsLetter />
         <div>
           <ScrollTopButton />
         </div>

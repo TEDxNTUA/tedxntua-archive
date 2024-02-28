@@ -4,10 +4,10 @@ import SocialMediaFooter from "../NavBar/SocialMediaFooter";
 
 function NewFooter() {
   return (
-    <footer className="c-footer relative overflow-hidden pt-[2rem] sm:pt-[1rem] md:pt-[10rem]">
-      <div className="c-footer-animation w-embed h-[100vh] object-cover md:object-none md:height-[50rem] absolute top-0 right-0 left-0 bottom-0 z-0">
+    <footer className="c-footer relative overflow-hidden pt-[2rem] sm:pt-[1rem] md:pt-[10rem] z-0">
+      <div className="c-footer-animation w-embed h-[100vh] object-cover md:object-none md:height-[50rem] absolute top-0 right-0 left-0 bottom-0">
         <svg
-          className="overflow-hidden"
+          className="overflow-hidden z-0"
           width="100%"
           viewBox="0 0 1577 4307"
           fill="none"
