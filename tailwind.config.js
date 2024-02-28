@@ -20,6 +20,7 @@ module.exports = {
       },
       colors: {
         "tedx-red": "#eb0028",
+        "our-red": "#e14640",
         "our-black": "#191617",
       },
     },
