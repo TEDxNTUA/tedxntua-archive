@@ -24,9 +24,9 @@ const InputForm2 = forwardRef((props, ref) => {
     setErrorMessage(null);
     try {
       const response = await axios.post("api/newsletter", {
-        name: name,
-        surname: surname,
-        email: email,
+        name,
+        surname,
+        email,
       });
       setState("Success");
     } catch (e) {
@@ -35,11 +35,52 @@ const InputForm2 = forwardRef((props, ref) => {
     }
   };
 
+  const subscribeUser = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          surname,
+          email,
+        }),
+      });
+
+      console.log(res);
+      //   if (!res.ok) {
+      //     // If response is not ok, throw an error
+      //     throw new Error("Failed to subscribe");
+      //   }
+      if (!res.ok) {
+        // If response is not ok, throw an error
+        const errorData = await res.json(); // Extract error data from response
+        throw new Error(errorData.error); // Throw error with extracted error message
+      }
+
+      // If response is ok, reset the form fields and display success message
+      setName("");
+      setSurname("");
+      setEmail("");
+      setState("Success");
+    } catch (error) {
+      // Handle errors here
+      console.error("Error:", error);
+      setState("Error");
+      setErrorMessage(error.message);
+    }
+  };
+
   return (
     <section ref={ref} className="flex flex-col">
       <div className="flex items-center justify-center">
         <form
-          //   onSubmit={submitForm}
+          // onSubmit={submitForm}
+          onSubmit={subscribeUser}
           method="POST"
           acceptCharset="UTF-8"
           className="flex w-full flex-col"
@@ -102,13 +143,16 @@ const InputForm2 = forwardRef((props, ref) => {
               className={`lg:ml-2 w-full lg:w-1/3 shadow bg-brand2 focus:shadow-outline focus:outline-none text-center text-white font-bold py-2 px-4 rounded flex ${
                 state === "Loading" ? "button-gradient-loading" : ""
               }`}
-              type="button"
+              // type="button"
+              type="submit"
               disabled={state === "Loading"}
-              onClick={subscribe}
+              //   onClick={subscribe}
+              //   onClick={subscribeUser}
             >
               Subscribe
             </button>
-            {state === "Error" && <p>{errorMessage}</p>}
+            {/* {state === "Error" && <p>{errorMessage}</p>} */}
+            {state === "Error" && <p>Error</p>}
             {state === "Success" && <p>Success</p>}
             {/* <SubmitButton disableButton={disableButton} />
             <FetchMessage

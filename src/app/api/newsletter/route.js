@@ -1,6 +1,7 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
 
+import("supports-color");
 // To handle a GET request to /api
 // export async function PO123ST(request) {
 //   // Do whatever you want
@@ -46,17 +47,16 @@ export async function POST(req, res) {
     return res.status(400).json({ error: "Email and name is required" });
   }
 
+  const data = {
+    email_address: email,
+    status: "subscribed",
+    merge_fields: {
+      FNAME: name,
+      LNAME: surname,
+      NEWSLETTER: "Ναι",
+    },
+  };
   try {
-    const data = {
-      email_address: email,
-      status: "subscribed",
-      merge_fields: {
-        FNAME: name,
-        LNAME: surname,
-        NEWSLETTER: "Ναι",
-      },
-    };
-
     const response = await axios.post(url, data, { headers });
 
     // const response = await fetch(
@@ -69,15 +69,16 @@ export async function POST(req, res) {
     //   }
     // );
     console.log(response);
-    console.log(response.status);
     if (response.status >= 400) {
       return NextResponse.json({ error: null }, { status: 400 });
     }
 
     return NextResponse.json({ error: null }, { status: 201 });
   } catch (error) {
-    return (
-      NextResponse.json({ error: error.response.data.title.toString() }, { status: 577 })
+    console.log("Error", error.response.data.title);
+    return NextResponse.json(
+      { error: error.message || error.toString() },
+      { status: 500 }
     );
   }
 }
