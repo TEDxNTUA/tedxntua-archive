@@ -3,6 +3,7 @@ import AboutTEDxNTUA from "@/components/About/AboutTedxNtua";
 // import MovingTed from "@/components/About/MovingTed";
 import WhatIsTed from "@/components/About/WhatIsTed";
 import AboutTednTedx from "@/components/About/AboutTednTedx";
+import NewFooter from "@/components/Footer/NewFooter";
 
 function AboutPage() {
   return (
@@ -16,6 +17,7 @@ function AboutPage() {
       {/* <MovingTed /> */}
       <div className="h-[15vh]"></div>
       <AboutTEDxNTUA />
+      <NewFooter />
     </section>
   );
 }

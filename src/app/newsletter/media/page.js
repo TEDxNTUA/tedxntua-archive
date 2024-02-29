@@ -1,6 +1,7 @@
 import NewsletterTitle from "@/components/NewsletterPages/NewsletterTitle";
 import IntroductionMedia from "@/components/NewsletterPages/Media/IntroductionMedia";
 import MediaSuggestions from "@/components/NewsletterPages/Media/MediaSuggestions";
+import NewFooter from "@/components/Footer/NewFooter";
 
 export default function MediaNewsletter() {
   return (
@@ -32,6 +33,7 @@ export default function MediaNewsletter() {
         </div>
       </div>
       <div className="h-20"></div>
+      <NewFooter />
     </div>
   );
 }

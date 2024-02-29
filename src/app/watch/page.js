@@ -4,6 +4,7 @@ import { WATCHTALKS } from "../../../data/watchtalks";
 import WatchHero from "@/components/Watch/WatchHero";
 import React, { useState } from "react";
 import SelectGridSize from "@/components/Watch/SelectGridSize";
+import NewFooter from "@/components/Footer/NewFooter";
 // import Footer from "@/components/Footer/Footer";
 
 function BlogPage() {
@@ -28,6 +29,7 @@ function BlogPage() {
           event_year={event_year}
         />
       </div>
+      <NewFooter />
       {/* <Footer /> */}
     </div>
   );

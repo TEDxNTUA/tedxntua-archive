@@ -8,7 +8,7 @@ const Modal = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur z-[30]">
-      <div className="bg-white p-5 rounded-lg w-[60%] xl:w-[40%] 2xl:w-[35%] absolute border-black border-[1px]">
+      <div className="bg-white p-5 h-auto rounded-lg w-[90%] lg:w-[60%] xl:w-[50%] 2xl:w-[35%] absolute border-black border-[1px]">
         {/* <button
           
           className="float-right font-bold text-white h-[0.1rem] w-[0.1rem]"

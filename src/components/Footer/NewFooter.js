@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
-
+import ModalNewsLetter from "../NewsLetterModal/ModalNewsLetter";
+import { useState } from "react";
 function NewFooter() {
+  const [isModalOpenFlag, setIsModalOpenFlag] = useState(false);
   return (
     <footer className="c-footer relative overflow-hidden pt-[2rem] sm:pt-[1rem] md:pt-[10rem] z-0 bg-our-black">
       <div className="c-footer-animation w-embed h-[100vh] object-cover md:object-none md:height-[50rem] absolute top-0 right-0 left-0 bottom-0">
@@ -38,13 +41,14 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
               </p>
             </div>
             <div className="col-span-3 md:col-span-1 z-10">
-              {" "}
-              <button className="bg-our-black hover:bg-our-black/90 px-5 py-3 rounded-sm mx-auto text-white font-semibold z-10">
+              <button
+                className="bg-our-black hover:bg-our-black/90 px-5 py-3 rounded-sm mx-auto text-white font-semibold z-10"
+                onClick={() => setIsModalOpenFlag(true)}
+              >
                 Sign up
               </button>
             </div>
           </div>
-
           {/* Second row FOR BIG SCREENS */}
           <div className="md:row-span-1 md:grid-cols-2 border-our-black border-t-[0.5px] z-10 pt-2 md:pt-4 hidden md:grid">
             {/* First column*/}
@@ -64,7 +68,6 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
             {/* Nav links*/}
             <ul className="col-span-1 grid grid-cols-2 grid-rows-2 z-10 mt-4 lg:text-2xl justify-center justify-items-center">
               <li>
-                {" "}
                 <Link
                   href="/about"
                   className="text-our-black text-md font-bold"
@@ -73,13 +76,11 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link href="/" className="text-our-black text-md font-bold">
                   Archive
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   href="/newsletter"
                   className="text-our-black text-md font-bold"
@@ -88,7 +89,6 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   href="/watch"
                   className="text-our-black text-md font-bold"
@@ -113,7 +113,6 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
             {/* Nav links*/}
             <ul className="col-span-1 grid grid-cols-2 grid-rows-2 z-10 mt-4 justify-center justify-items-center">
               <li>
-                {" "}
                 <Link
                   href="/about"
                   className="text-our-black text-md font-bold"
@@ -122,13 +121,11 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link href="/" className="text-our-black text-md font-bold">
                   Archive
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   href="/newsletter"
                   className="text-our-black text-md font-bold"
@@ -137,7 +134,6 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   href="/watch"
                   className="text-our-black text-md font-bold"
@@ -151,6 +147,13 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
             <SocialMediaFooter />
           </div>
         </div>
+        {isModalOpenFlag && console.log(typeof setIsModalOpenFlag)}
+        {isModalOpenFlag && (
+          <ModalNewsLetter
+            isModalOpenFlag={isModalOpenFlag}
+            setIsModalOpenFlag={setIsModalOpenFlag}
+          />
+        )}
       </div>
     </footer>
   );

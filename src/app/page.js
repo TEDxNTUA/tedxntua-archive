@@ -4,7 +4,8 @@ import SecondScroll from "@/components/MainPage/2ndScroll";
 
 import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
 import Timeline from "@/components/TimeLine/TimeLine";
-import Footer from "@/components/Footer/Footer";
+import NewFooter from "@/components/Footer/NewFooter";
+import ScrollTopButton from "@/components/ScrollTopButton";
 
 function HomePage() {
   return (
@@ -23,8 +24,11 @@ function HomePage() {
           </div>
         </div>
         <Timeline />
-        <div className="snap-start">{/* <Footer /> */}</div>
+        <div className="snap-start">
+          <NewFooter />
+        </div>
       </div>
+      <ScrollTopButton isHomePage={true} />
     </main>
   );
 }

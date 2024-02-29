@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
 import NewsLetter from "./NewsLetter";
 
-const ModalNewsLetter = () => {
+const ModalNewsLetter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   // useEffect(() => {
@@ -18,7 +18,13 @@ const ModalNewsLetter = () => {
   return (
     <>
       {isModalOpen && (
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => {
+            setIsModalOpen(false);
+            setIsModalOpenFlag && setIsModalOpenFlag(false);
+          }}
+        >
           <NewsLetter />
         </Modal>
       )}
