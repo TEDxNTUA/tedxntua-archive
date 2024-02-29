@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
 import ModalWrapper from "../NewsletterModal/ModalWrapper";

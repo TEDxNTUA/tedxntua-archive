@@ -3,7 +3,7 @@ import FirstScroll from "@/components/MainPage/1stScroll";
 import SecondScroll from "@/components/MainPage/2ndScroll";
 
 import TEDxInNumbers from "@/components/TEDInNumbers/TEDxInNumbers";
-import Timeline from "@/components/Timeline/Timeline";
+import Timeline from "@/components/TimelineComponent/Timeline";
 import NewFooter from "@/components/Footer/NewFooter";
 import ScrollTopButton from "@/components/ScrollTopButton";
 
