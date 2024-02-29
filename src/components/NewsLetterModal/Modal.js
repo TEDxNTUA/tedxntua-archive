@@ -8,16 +8,9 @@ const Modal = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur z-[30]">
-      <div className="bg-white p-5 h-auto rounded-lg w-[90%] lg:w-[60%] xl:w-[50%] 2xl:w-[35%] absolute border-black border-[1px]">
-        {/* <button
-          
-          className="float-right font-bold text-white h-[0.1rem] w-[0.1rem]"
-        > */}
-        {/* Xfas */}
-
-        {/* X button: close modal */}
+      <div className="bg-white py-6 h-auto rounded-lg w-[300px] md:w-[520px] absolute border-black border-[1px]">
         <div
-          className="absolute right-[1rem]"
+          className="closing-x-button absolute right-0 top-0 m-4 z-10"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={onClose}
@@ -76,7 +69,7 @@ const Modal = ({ onClose }) => {
             </g>
           </svg>
         </div>
-        {/* </button> */}
+
         <NewsLetter />
       </div>
     </div>

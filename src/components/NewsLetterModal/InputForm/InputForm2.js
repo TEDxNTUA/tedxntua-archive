@@ -50,15 +50,15 @@ const InputForm2 = forwardRef((props, ref) => {
           className="flex w-full flex-col"
         >
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2 lg:gap-8 lg:flex-row">
+            <div className="email-input flex flex-col gap-1">
               <label
                 htmlFor="email"
-                className="block lg:mb-[0.15rem] pl-1 text-black lg:text-left font-medium"
+                className="block pl-1 text-black text-left font-medium"
               >
                 Email Address*
               </label>
               <input
-                className="appearance-none mb-2 lg:mb-0 w-full lg:w-2/3 border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
+                className="appearance-none w-full border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
                 type="text"
                 placeholder="Email Address"
                 value={email}
@@ -66,11 +66,11 @@ const InputForm2 = forwardRef((props, ref) => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="flex flex-col gap-2 lg:gap-8 lg:flex-row">
-              <div>
+            <div className="flex flex-col gap-4 md:gap-8 md:flex-row">
+              <div className="name-input flex flex-col gap-1">
                 <label
                   htmlFor="name"
-                  className="block lg:mb-[0.15rem] pl-1 text-black lg:text-left font-medium"
+                  className="block pl-1 text-black text-left font-medium"
                 >
                   Name*
                 </label>
@@ -84,15 +84,15 @@ const InputForm2 = forwardRef((props, ref) => {
                   />
                 </div>
               </div>
-              <div>
+              <div className="surname-input flex flex-col gap-1">
                 <label
                   htmlFor="surname"
-                  className="block mb-[0.15rem] pl-1 text-black lg:text-left font-medium"
+                  className="block pl-1 text-black text-left font-medium"
                 >
                   Surname*
                 </label>
                 <input
-                  className="appearance-none mb-2 lg:mb-0 w-full border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
+                  className="appearance-none lg:mb-0 w-full border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
                   type="text"
                   placeholder="Surname"
                   value={surname}
@@ -105,12 +105,12 @@ const InputForm2 = forwardRef((props, ref) => {
             <input type="hidden" className="hidden" />
             <div className="flex justify-center">
               <button
-                className={`lg:ml-2 w-2/3 lg:w-1/3 shadow bg-brand2 focus:shadow-outline focus:outline-none text-center text-black bg-[#eb0028]  justify-center font-bold py-2 px-4 rounded flex ${
+                className={`lg:ml-2 w-[150px] mt-4 shadow focus:shadow-outline focus:outline-none text-center bg-our-red justify-center py-2 px-4 rounded flex text-white font-bold ${
                   state === "Loading"
                     ? "button-gradient-loading cursor-wait"
                     : ""
                 }
-                ${isButtonDisabled ? "opacity-75 cursor-not-allowed" : ""}
+                ${isButtonDisabled ? "opacity-85 cursor-not-allowed" : ""}
                 
                 `}
                 type="button"
