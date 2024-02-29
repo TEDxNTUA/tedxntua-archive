@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
-import NewsLetter from "./NewsLetter";
+import Newsletter from "./Newsletter";
 
-const ModalNewsLetter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
+const ModalNewsletter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   // useEffect(() => {
@@ -25,11 +25,11 @@ const ModalNewsLetter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
             setIsModalOpenFlag && setIsModalOpenFlag(false);
           }}
         >
-          <NewsLetter />
+          <Newsletter />
         </Modal>
       )}
     </>
   );
 };
 
-export default ModalNewsLetter;
+export default ModalNewsletter;

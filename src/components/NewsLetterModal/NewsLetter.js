@@ -5,7 +5,7 @@ import InputForm2 from "./InputForm/InputForm2";
 
 import classes from "./NewsLetterTitle.module.css";
 
-const NewsLetter = () => {
+const Newsletter = () => {
   return (
     <div className="flex flex-col items-center justify-center text-center gap-6 4xl:gap-12 w-[90%] mx-auto">
       <div className="text-center mx-auto font-serif font-extrabold text-3xl md:text-5xl 4xl:text-7xl mt-6">
@@ -62,4 +62,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default Newsletter;
