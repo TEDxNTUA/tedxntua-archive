@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
-import ModalNewsLetter from "../NewsletterModal/ModalNewsletter";
+import ModalWrapper from "../NewsletterModal/ModalWrapper";
+
 import { useState } from "react";
 function NewFooter() {
   const [isModalOpenFlag, setIsModalOpenFlag] = useState(false);
@@ -149,7 +150,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
         </div>
         {isModalOpenFlag && console.log(typeof setIsModalOpenFlag)}
         {isModalOpenFlag && (
-          <ModalNewsLetter
+          <ModalWrapper
             isModalOpenFlag={isModalOpenFlag}
             setIsModalOpenFlag={setIsModalOpenFlag}
           />

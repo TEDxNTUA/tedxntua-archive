@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import NewsLetter from "./NewsLetter";
+import Newsletter from "./Newsletter";
 import { useState } from "react";
 
 const Modal = ({ onClose }) => {
@@ -70,7 +70,7 @@ const Modal = ({ onClose }) => {
           </svg>
         </div>
 
-        <NewsLetter />
+        <Newsletter />
       </div>
     </div>
   );
