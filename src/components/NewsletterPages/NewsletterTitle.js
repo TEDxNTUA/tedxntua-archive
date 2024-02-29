@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classes from "./NewsLetterTitle.module.css";
+import classes from "./NewsletterTitle.module.css";
 
 export default function NewsletterTitle() {
   return (
