@@ -4,12 +4,12 @@ function AboutTEDxNTUA() {
   return (
     <div className={classes.box}>
       <div className="mx-auto bg-our-red mt-10 mb-40 py-10 flex items-center justify-center">
-        <div className="w-[55vw] md:w-[45vw] lg:w-[35vw] py-10">
+        <div className="w-[55vw] md:w-[45vw] lg:w-[35vw] py-10 flex flex-col gap-12">
           <h2 className="text-3xl md:text-5xl text-white font-black mx-auto text-center">
             About <span className="text-our-black">TEDx</span>NTUA
           </h2>
-          <div className="h-[5vh]"></div>
-          <p className="text-md md:text-lg text-white font-light tracking-tighter lg:tracking-tight xl:tracking-widest leading-8 text-justify">
+          {/* <p className="text-md md:text-lg 4xl:text-[1.3rem] 4xl:leading-[2rem] text-white font-light tracking-tighter lg:tracking-tight xl:tracking-widest leading-8 text-justify"> */}
+          <p className="text-[1rem] leading-[1.875rem] 4xl:text-[1.3rem] 4xl:leading-[2rem] text-white 3xl:w-[80%] mx-auto text-justify">
             TEDxNTUA is a conference that features talks on the topics of
             popular science, art, and social issues, stories that can inspire,
             as well as intriguing workshops and performances. It runs under the

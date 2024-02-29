@@ -9,7 +9,7 @@ function NavLink({ href, title }) {
       href={href}
       passHref
       className={`text-2xl md:text-lg lg:text-xl font-semibold hover:text-our-red ${
-        path.startsWith(href)
+        path === href
           ? "text-our-red" // Apply the active class
           : "text-white" // No additional class if not active
       }`}

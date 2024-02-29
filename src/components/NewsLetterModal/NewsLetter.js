@@ -7,8 +7,8 @@ import classes from "./NewsLetterTitle.module.css";
 
 const NewsLetter = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center gap-8 w-[90%] mx-auto">
-      <div className="text-center mx-auto font-serif font-extrabold text-3xl md:text-5xl mt-6">
+    <div className="flex flex-col items-center justify-center text-center gap-6 4xl:gap-12 w-[90%] mx-auto">
+      <div className="text-center mx-auto font-serif font-extrabold text-3xl md:text-5xl 4xl:text-7xl mt-6">
         <span className={classes.letter} data-title="N">
           N
         </span>
@@ -40,11 +40,11 @@ const NewsLetter = () => {
           R
         </span>
       </div>
-      <h1 className="hidden md:block leading-7 text-2xl font-bold text-[rgb(51 65 85)]">
-        BE THE FIRST TO KNOW
-      </h1>
-      <div className="md:my-0 flex flex-col items-center gap-4 md:gap-8 w-[80%]">
-        <p className="text-gray-400 text-sm md:text-xl text-justify font-extralight px-3">
+      <div className="md:my-0 flex flex-col items-center gap-4 4xl:gap-12 w-[80%] 4xl:w-[70%]">
+        <h1 className="hidden md:block leading-7 text-lg 2xl:text-2xl 4xl:text-4xl font-bold text-[rgb(51 65 85)]">
+          BE THE FIRST TO KNOW
+        </h1>
+        <p className="text-gray-400 text-sm 2xl:text-base 4xl:text-2xl text-justify font-extralight px-3">
           Sign up for TED<span className="text-our-red">x</span>NTUA Newsletter
           to be the first to see our fresh news about our team & events!
         </p>

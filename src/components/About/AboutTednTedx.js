@@ -1,7 +1,7 @@
 function AboutTednTedx() {
   return (
     <div
-      className="w-[100%] h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem) table"
+      className="w-[100%] h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem) table pb-20"
       style={{
         backgroundImage: `url('/about/BG.png')`,
 
@@ -11,12 +11,12 @@ function AboutTednTedx() {
       <div className="text-white flex flex-col lg:flex-row lg:justify-between gap-[4rem] lg:gap-[1rem] text-justify lg:text-left lg:w-[80%] mx-auto">
         <div className="left-col lg:width-[54%] lg:max-w-[40rem] w-[70%] mx-auto">
           <div className="title-wrapper mb-[2rem] text-[1rem] leading-[1.875rem]">
-            <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] font-bold">
+            <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] 4xl:text-[6.25rem] 4xl:leading-[6.25rem] font-bold">
               About <span className="text-our-red">TED</span>
             </h2>
           </div>
-          <div>
-            <p className="text-[1rem] leading-[1.875rem]">
+          <div className="text-justify">
+            <p className="text-[1rem] leading-[1.875rem] 4xl:text-[1.3rem] 4xl:leading-[2rem]">
               TED is a nonprofit organization devoted to Ideas Worth Spreading.
               Started as a four-day conference in California 30 years ago, TED
               has grown to support its mission with multiple initiatives. The
@@ -63,11 +63,11 @@ function AboutTednTedx() {
         </div>
         <div className="right-col flex flex-col justify-end lg:w-[39%] lg:max-w-[30rem] w-[70%] mx-auto">
           <div className="title-wrapper mb-[2rem] text-[1rem] leading-[1.875rem]">
-            <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] font-bold">
+            <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] font-bold 4xl:text-[6.25rem] 4xl:leading-[6.25rem]">
               About <span className="text-our-red">TEDx</span>
             </h2>
           </div>
-          <p className="c-text-1">
+          <p className="text-justify 4xl:text-[1.3rem] 4xl:leading-[2rem]">
             In the spirit of ideas worth spreading, TEDx is a program of local,
             self-organized events that bring people together to share a TED-like
             experience. At a TEDx event, TED Talks video and live speakers

@@ -8,15 +8,15 @@ const Modal = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur z-[30]">
-      <div className="bg-white py-6 h-auto rounded-lg w-[300px] md:w-[520px] absolute border-black border-[1px]">
+      <div className="bg-white py-4 md:py-6 h-auto rounded-lg w-[300px] md:w-[450px] 2xl:w-[520px] 4xl:w-[800px] absolute border-black border-[1px]">
         <div
-          className="closing-x-button absolute right-0 top-0 m-4 z-10"
+          className="closing-x-button absolute right-0 top-0 m-4 4xl:m-8 z-10"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={onClose}
         >
           <svg
-            className={`w-[2rem] h-[2rem] hover:cursor-pointer ${
+            className={`w-[2rem] h-[2rem] 4xl:w-[3rem] 4xl:h-[3rem] hover:cursor-pointer ${
               isHovered ? "hidden" : "block"
             }`}
             viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ const Modal = ({ onClose }) => {
           </svg>
           {/* Hover X button  */}
           <svg
-            className={`w-[2rem] h-[2rem] float-right hover:cursor-pointer ${
+            className={`w-[2rem] h-[2rem] 4xl:w-[3rem] 4xl:h-[3rem] hover:cursor-pointer ${
               isHovered ? "block" : "hidden"
             }`}
             viewBox="0 0 24 24"
