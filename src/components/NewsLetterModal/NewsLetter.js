@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import InputForm2 from "./InputForm/InputForm2";
 
-import classes from "./NewsLetterTitle.module.css";
+import classes from "./NewsletterTitle.module.css";
 
 const Newsletter = () => {
   return (

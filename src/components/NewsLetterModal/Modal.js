@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Newsletter from "./NewsLetter";
+import Newsletter from "./Newsletter";
 import { useState } from "react";
 
 const Modal = ({ onClose }) => {

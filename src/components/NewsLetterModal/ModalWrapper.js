@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
-import Newsletter from "./NewsLetter";
+import Newsletter from "./Newsletter";
 
 const ModalWrapper = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
