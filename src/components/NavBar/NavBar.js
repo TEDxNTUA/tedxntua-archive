@@ -6,7 +6,7 @@ import SocialMediaNav from "./SocialMediaNav";
 // import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { title: "Home", path: "./", isImage: true },
+  { title: "Home", path: "/", isImage: true },
   {
     title: "Watch",
     path: "/watch",
