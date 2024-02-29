@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
-import ModalWrapper from "../NewsletterModal/ModalWrapper";
+import ModalWrapper from "../NewsLetterModal/ModalWrapper";
 
 import { useState } from "react";
 function NewFooter() {
