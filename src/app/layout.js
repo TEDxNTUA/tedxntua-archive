@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/NavBar/NavBar.js";
-import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
+import ModalNewsLetter from "@/components/NewsletterModal/ModalNewsletter";
 import ScrollTopButton from "@/components/ScrollTopButton";
 
 export const metadata = {

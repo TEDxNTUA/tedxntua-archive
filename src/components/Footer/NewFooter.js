@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
-import ModalNewsLetter from "../NewsLetterModal/ModalNewsLetter";
+import ModalNewsLetter from "../NewsletterModal/ModalNewsletter";
 import { useState } from "react";
 function NewFooter() {
   const [isModalOpenFlag, setIsModalOpenFlag] = useState(false);

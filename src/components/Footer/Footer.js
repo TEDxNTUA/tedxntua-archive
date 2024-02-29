@@ -1,5 +1,5 @@
 import SocialMediaList from "../SocialMedia/SocialMediaList";
-import NewsLetter from "../NewsLetterModal/NewsLetter";
+import NewsLetter from "../NewsletterModal/Newsletter";
 
 function Footer() {
   return (
