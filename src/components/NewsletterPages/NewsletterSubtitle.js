@@ -1,4 +1,4 @@
-import classes from "./NewsLetterSubtitle.module.css";
+import classes from "./NewsletterSubtitle.module.css";
 
 function NewsletterSubtitle({ text }) {
   const letters = text.split("");
