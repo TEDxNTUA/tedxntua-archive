@@ -80,7 +80,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+         name: page
+         path: ./out
+         if-no-files-found: error
+        #path: out
 
 
   # Deployment job
