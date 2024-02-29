@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
 import Newsletter from "./Newsletter";
 
-const ModalNewsletter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
+const ModalWrapper = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   // useEffect(() => {
@@ -32,4 +32,4 @@ const ModalNewsletter = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
   );
 };
 
-export default ModalNewsletter;
+export default ModalWrapper;
