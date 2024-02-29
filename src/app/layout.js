@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/NavBar/NavBar.js";
-import ModalNewsLetter from "@/components/NewsLetter/ModalNewsLetter";
+import ModalNewsLetter from "@/components/NewsLetterModal/ModalNewsLetter";
 import ScrollTopButton from "@/components/ScrollTopButton";
 
 export const metadata = {
@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-black font-[Helvetica]">
         <ModalNewsLetter />
-        <ScrollTopButton />
+        <div>
+          <ScrollTopButton />
+        </div>
         <Navbar />
         <div className="mt-[5rem]"></div>
         {children}

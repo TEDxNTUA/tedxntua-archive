@@ -21,7 +21,7 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
       <button
         id="dropdownDefaultButton"
         data-dropdown-toggle="dropdown"
-        className="text-white bg-[#eb0028]  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center "
+        className="text-white bg-our-red  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center "
         type="button"
         onClick={toggleDropdown}
       >
@@ -42,7 +42,7 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
           {uniqueYears.map((yearEvent, index) => (
             <li key={index}>
               <p
-                className="block px-4 py-2 text-center hover:bg-[#eb0028] hover:text-white text-black hover:cursor-pointer"
+                className="block px-4 py-2 text-center hover:bg-our-red hover:text-white text-black hover:cursor-pointer"
                 onClick={() => handleChangeEvent(yearEvent)}
               >
                 {yearEvent}

@@ -56,8 +56,10 @@ export default function ColumnScroll() {
   }, []);
 
   return (
-    <main>
+    <main className="relative">
+      {/* <main className=""> */}
       {/* <div className={styles.spacer}></div> */}
+      {/* <div className="absolute"> */}
       <div
         id="gallery"
         ref={gallery}
@@ -102,6 +104,7 @@ export default function ColumnScroll() {
         </div>
       </div>
       {/* <div className={styles.spacer}></div> */}
+      {/* </div> */}
     </main>
   );
 }

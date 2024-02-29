@@ -1,5 +1,4 @@
 import BlogCard from "./BlogCard";
-import NewBlogCard from "./BlogCard2";
 
 export default function BlogGrid({ blogposts }) {
   return (
@@ -7,7 +6,7 @@ export default function BlogGrid({ blogposts }) {
       {blogposts.map((blogpost, index) => {
         return (
           <li key={index}>
-            <NewBlogCard
+            <BlogCard
               bloglink={blogpost.link}
               thumbnail={blogpost.thumbnail}
               title={blogpost.title}
