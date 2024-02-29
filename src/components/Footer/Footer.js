@@ -1,5 +1,5 @@
 import SocialMediaList from "../SocialMedia/SocialMediaList";
-import NewsLetter from "../NewsLetter/NewsLetter";
+import NewsLetter from "../NewsLetterModal/NewsLetter";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
             id="social-media"
             className="flex flex-col items-center mx-auto justify-center "
           >
-            <p className="text-white font-bold text-sm xl:text-lg mb-10  md:block mb-2">
+            <p className="text-white font-bold text-sm xl:text-lg mb-10 md:block">
               Follow us on social media for behind-the-scenes moments and much
               more!
             </p>
@@ -22,18 +22,18 @@ function Footer() {
           <NewsLetter />
         </div>
         <div id="tedxntua-trademark" className="flex flex-col items-center">
-          <p className="text-white  text-xxs lg:text-md font-extralight mb-2">
+          <p className="text-white text-xxs lg:text-md font-extralight mb-2">
             © TEDxNTUA 2015 - 2024
           </p>
           <p className="text-white text-xxs xl:text-sm text-left">
-            <span className="text-[#eb0028]">TEDx</span>NTUA is operated under
-            license from <span className="text-[#eb0028]">TED</span>. Visit
+            <span className="text-our-red">TEDx</span>NTUA is operated under
+            license from <span className="text-our-red">TED</span>. Visit
             <a
               href="https://www.ted.com/about/programs-initiatives/tedx-program"
               target="_blank"
               className="hover:font-semibold"
             >
-              <span className="text-[#eb0028]"> TED </span>
+              <span className="text-our-red"> TED </span>
             </a>
             for more info.
           </p>

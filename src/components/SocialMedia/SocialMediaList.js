@@ -1,7 +1,7 @@
 import SocialMediaItem from "./SocialMediaItem";
 
 const socialMediaLinks = {
-  x: "https://twitter.com/tedxntua?lang=en",
+  twitter: "https://twitter.com/tedxntua?lang=en",
   facebook: "https://facebook.com/tedxntua",
   instagram: "https://instagram.com/tedxntua/?hl=en",
   linkedin: "https://linkedin.com/company/tedxntua",
@@ -11,24 +11,23 @@ const socialMediaLinks = {
 };
 
 function SocialMediaList() {
+  const socialMediaItems = Object.keys(socialMediaLinks).map((key) => {
+    const link = socialMediaLinks[key];
+    let iconName = key;
+    return (
+      <SocialMediaItem
+        key={key} // Make sure to include a unique key for each element in the array
+        link={link}
+        iconName={iconName}
+        color={"white"}
+        hoverColor={"red"}
+      />
+    );
+  });
   return (
     <section className="text-center bottom-0">
       <div className="grid grid-cols-6 justify-center gap-2">
-        <SocialMediaItem
-          link={socialMediaLinks.instagram}
-          iconName={"instagram"}
-        />
-        <SocialMediaItem
-          link={socialMediaLinks.facebook}
-          iconName={"facebook-f"}
-        />
-        <SocialMediaItem link={socialMediaLinks.tiktok} iconName={"tiktok"} />
-        <SocialMediaItem
-          link={socialMediaLinks.linkedin}
-          iconName={"linkedin"}
-        />
-        <SocialMediaItem link={socialMediaLinks.spotify} iconName={"spotify"} />
-        <SocialMediaItem link={socialMediaLinks.x} iconName={"x"} />
+        {socialMediaItems}
       </div>
     </section>
   );

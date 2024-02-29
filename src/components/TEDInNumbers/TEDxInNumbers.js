@@ -33,7 +33,7 @@ const TEDxInNumbers = ({ color = "red", md_size_cols = 4 }) => {
     4: "md:grid-cols-4",
   };
   const borderColorsVariants = {
-    red: "border-[#eb0028]",
+    red: "border-our-red",
     black: "border-black",
     white: "border-white",
   };

@@ -35,5 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .history
+<<<<<<< HEAD
+=======
+package-lock.json
+>>>>>>> ad23cdc2938cd487a968e81811b567049190eb25
 
 .env

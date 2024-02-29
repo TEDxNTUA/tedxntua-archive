@@ -2,28 +2,28 @@
 import { useState } from "react";
 import Image from "next/image";
 
-function SocialMediaItem({ iconName, link }) {
+function SocialMediaItem({ iconName, link, color, hoverColor }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <a
       href={link}
       target="_blank"
-      className="inline-flex items-center rounded-lg p-2 font-semibold text-white duration-300 ease-in-out"
+      className="max-w-[60%] sm:max-w-[40%] md:max-w-[60%] inline-block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative">
+      <div>
         <Image
-          className={`w-4 h-4 xl:w-5 xl:h-5 ${isHovered ? "hidden" : "block"}`}
-          src={`/socialMediaIcons/white/${iconName}-white.png`}
+          className={`${isHovered ? "hidden" : "block"}`}
+          src={`/socialMediaIcons/${color}/${iconName}-${color}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}
         />
         <Image
-          className={`w-4 h-4 xl:w-5 xl:h-5  ${isHovered ? "block" : "hidden"}`}
-          src={`/socialMediaIcons/red/${iconName}-red.png`}
+          className={`${isHovered ? "block" : "hidden"}`}
+          src={`/socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}

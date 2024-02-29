@@ -67,24 +67,24 @@ export default function MovingText() {
             ref={firstTed}
             className="text-white relative m-0 text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
           </p>
           <p
             ref={secondTed}
             className="left-[100%] absolute m-0 text-white text-[3rem] 3xl:text-[5rem] leading-[1.5rem] font-bold top-0"
           >
             {" "}
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
-            <span className="text-[#eb0028]">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
+            <span className="text-our-red">TEDx</span>NTUA -
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import IncrementalNumber from "@/components/TEDInNumbers/IncrementalNumber";
 
 function TEDxStat({ endValue, suffix, stat, color = "red" }) {
   const colorsVariants = {
-    red: "text-[#eb0028]",
+    red: "text-our-red",
     black: "text-black",
     white: "text-white",
   };
