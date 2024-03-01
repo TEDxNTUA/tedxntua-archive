@@ -9,7 +9,7 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
     <a
       href={link}
       target="_blank"
-      className="max-w-[60%] sm:max-w-[40%] md:max-w-[60%] inline-block"
+      className="max-w-[50%] sm:max-w-[30%] md:max-w-[60%] inline-block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
