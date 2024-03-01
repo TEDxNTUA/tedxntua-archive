@@ -52,7 +52,7 @@ const Newsletter = () => {
       </div>
       {/* <Image */}
       <img
-        src="/tedxntua-black-logo.png"
+        src="./tedxntua-black-logo.png"
         alt="tedx ntua logo"
         width={300}
         height={300}
