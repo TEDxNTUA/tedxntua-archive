@@ -41,11 +41,16 @@ export default function Photo({ TedEvent }) {
     //   </p>
     // </main>
     <div className="snap-start">
-      <div className="grid grid-cols-1 xl:grid-cols-3 text-center justify-between xl:justify-center xl:items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto ">
-        <hr className="hidden lg:fixed lg:flex h-1 bg-neutral-100 opacity-100 w-[6%] left-[13%] col-span-1" />
-        <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-our-red opacity-100 left-[15%]"></div>
-        <div className="hidden lg:fixed lg:flex w-7 h-7 bg-black rounded-full left-[14.5%]" />
-        <div className="flex flex-col justify-center text-white gap-20 lg:bg-transparent self-center">
+      <div className="timeline-grid grid grid-cols-1 xl:grid-cols-3 text-center justify-between xl:justify-center xl:items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto xl:border-l-8 xl:border-our-red">
+        {/* <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-our-red opacity-100 left-[9.3%]"></div> */}
+        <div className="flex flex-row justify-center content-center place-items-center text-white lg:bg-transparent self-center">
+          <div className="hidden xl:flex self-align-center left-0 relative">
+            {/* <div className="hidden lg:fixed lg:flex w-7 h-7 bg-white rounded-full left-[9.3%]" />
+            <hr className="hidden lg:fixed lg:flex h-1 bg-neutral-100 opacity-100 w-[6%] left-[10%] col-span-1" /> */}
+            {/* <div className="hidden lg:block w-7 bg-green-500 left-20 rounded-full" /> */}
+            <div className="line block left-20 h-3 w-28 bg-our-red opacity-100 col-span-1 rounded-r-md"></div>
+          </div>
+
           <h2
             className="text-white font-bold text-6xl italic tracking-tighter leading-4 lg:leading-none mx-auto"
             // style={{ y, zIndex: 1 }}
