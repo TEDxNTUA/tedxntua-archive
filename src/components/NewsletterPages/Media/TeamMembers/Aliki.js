@@ -25,7 +25,7 @@ function Aliki() {
         <div className="md:col-span-3 md:flex md:flex-col md:gap-8">
           {/* <Image */}
           <img
-            src="/newsletters/media/kindle.jpeg"
+            src="./newsletters/media/kindle.jpeg"
             alt="image"
             // fill={true}
             width={300}

@@ -7,7 +7,7 @@ function FirstScroll() {
         {/* <Image */}
         <img
           className="w-auto lg:h-[95vh]"
-          src="/homepage/starting-page.png"
+          src="./homepage/starting-page.png"
           width={800}
           height={800}
           alt="archive"
@@ -23,7 +23,7 @@ function FirstScroll() {
           {/* <Image */}
           <img
             className="pt-4 object-left w-[30%] mx-auto md:mx-0 md:w-[60%] lg:w-[80%]"
-            src="/homepage/archive.png"
+            src="./homepage/archive.png"
             width={300}
             height={300}
             alt="archive"

@@ -13,7 +13,7 @@ function SecondScroll() {
         {/* <Image */}
         <img
           className="pt-4 object-left"
-          src="/homepage/archive.png"
+          src="./homepage/archive.png"
           width={300}
           height={300}
           alt="archive"
@@ -27,7 +27,7 @@ function SecondScroll() {
       {/* <Image */}
       <img
         className="w-[70%] md:w-[100%] -pb-10"
-        src="/homepage/video-recap.png"
+        src="./homepage/video-recap.png"
         width={800}
         height={800}
         alt="archive"

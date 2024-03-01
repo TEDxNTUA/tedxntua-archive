@@ -11,7 +11,7 @@ function Anastasia() {
         <div className="md:col-span-3 md:flex md:flex-col md:gap-8">
           {/* <Image */}
           <img
-            src="/newsletters/media/society-of-snow1.jpeg"
+            src="./newsletters/media/society-of-snow1.jpeg"
             alt="image"
             // fill={true}
             width={300}
@@ -43,7 +43,7 @@ function Anastasia() {
         <div className="md:col-span-2 md:flex md:flex-col md:gap-8">
           {/* <Image */}
           <img
-            src="/newsletters/media/society-of-snow3.jpeg"
+            src="./newsletters/media/society-of-snow3.jpeg"
             alt="image"
             // fill={true}
             width={300}
@@ -72,7 +72,7 @@ function Anastasia() {
       </p>
       {/* <Image */}
       <img
-        src="/newsletters/media/society-of-snow1.jpeg"
+        src="./newsletters/media/society-of-snow1.jpeg"
         alt="image"
         // fill={true}
         width={300}

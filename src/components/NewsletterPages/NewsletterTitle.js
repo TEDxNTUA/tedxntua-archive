@@ -39,7 +39,7 @@ export default function NewsletterTitle() {
       <div className="flex flex-row justify-between items-center w-[100%] md:w-[95%] xl:w-[80%] 3xl:w-[75%] 5xl:w-[65%] mx-auto">
         {/* <Image */}
         <img
-          src="/tedxntua_logo.png"
+          src="./tedxntua_logo.png"
           alt="image"
           // fill={true}
           width={300}

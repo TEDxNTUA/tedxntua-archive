@@ -67,7 +67,7 @@ export default function ColumnScroll() {
       >
         {/* Background image */}
 
-        <img className="w-[100%] h-[100%] absolute" src="/about/BG.png"></img>
+        <img className="w-[100%] h-[100%] absolute" src="./about/BG.png"></img>
 
         {/* Conditionally render the first two columns for small screens */}
         <div className="md:hidden flex flex-row gap-[3vw] px-[3vw] h-[130vh] box-border mx-auto relative">

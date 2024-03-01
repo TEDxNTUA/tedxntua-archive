@@ -49,7 +49,7 @@ function NewNavbar() {
           className="text-5xl text-white font-semibold"
         >
           <img
-            src="/tedxntua_logo.png"
+            src="./tedxntua_logo.png"
             className="w-44 lg:w-64 h-auto object-contain"
             alt="TEDxNTUA Logo"
             onClick={() =>
@@ -77,7 +77,7 @@ function NewNavbar() {
                     }
                   >
                     <img
-                      src="/homepage/archive.png"
+                      src="./homepage/archive.png"
                       alt={link.title}
                       className="w-22 h-8"
                     />

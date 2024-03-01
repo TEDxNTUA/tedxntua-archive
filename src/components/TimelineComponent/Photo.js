@@ -20,7 +20,7 @@ export default function Photo({ TedEvent }) {
     //       {TedEvent.year}
     //     </h2>
     //     <img
-    //       src={`/eventLogos/${TedEvent.logo}`}
+    //       src={`./eventLogos/${TedEvent.logo}`}
     //       className="absolute w-[10rem] h-[50px]"
     //       style={{ y, zIndex: 1 }}
     //     />
@@ -29,7 +29,7 @@ export default function Photo({ TedEvent }) {
     //   <img
     //     ref={Imageref}
     //     className="border-[2px] border-[#eb002733] hover:border-our-red rounded-md w-[100%] h-[100%] object-cover"
-    //     src={`/previousEvents/${TedEvent.source}`}
+    //     src={`./previousEvents/${TedEvent.source}`}
     //     alt="Previous ted event"
     //   />
     //   {/* </div> */}
@@ -56,7 +56,7 @@ export default function Photo({ TedEvent }) {
           <img
             width={300}
             height={300}
-            src={`/eventLogos/${TedEvent.logo}`}
+            src={`./eventLogos/${TedEvent.logo}`}
             className="mx-auto w-[10rem] h-[10vh] hidden"
             // style={{ y, zIndex: 1 }}
           />
@@ -68,12 +68,12 @@ export default function Photo({ TedEvent }) {
             height={300}
             ref={Imageref}
             className="border-[2px] border-[#eb002733] rounded-md mx-auto w-[60%] xl:w-full object-fill" //hover:border-our-red
-            src={`/previousEvents/${TedEvent.source}`}
+            src={`./previousEvents/${TedEvent.source}`}
             alt="Previous ted event"
           />
         </div>
         {/* <img
-          src={`/eventLogos/${TedEvent.logo}`}
+          src={`./eventLogos/${TedEvent.logo}`}
           className="mx-auto w-[15vw] h-[5vh] xl:hidden"
           // style={{ y, zIndex: 1 }}
         /> */}

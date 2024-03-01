@@ -17,7 +17,7 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
         {/* <Image */}
         <img
           className={`${isHovered ? "hidden" : "block"}`}
-          src={`/socialMediaIcons/${color}/${iconName}-${color}.png`}
+          src={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}
@@ -25,7 +25,7 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
         {/* <Image */}
         <img
           className={`${isHovered ? "block" : "hidden"}`}
-          src={`/socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
+          src={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
           alt={`${iconName}-icon`}
           width={30}
           height={30}

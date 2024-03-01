@@ -59,7 +59,7 @@ export default function MovingText() {
       }}
     >
       {/* <Image
-        src="/BG.png"
+        src="./BG.png"
         fill={true}
         alt="background"
         className="overflow-hidden opacity-70"
