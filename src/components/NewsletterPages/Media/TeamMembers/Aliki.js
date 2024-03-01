@@ -27,7 +27,7 @@ function Aliki() {
           <img
             src="./newsletters/media/kindle.jpeg"
             alt="image"
-            // fill={true}
+            // fill="true"
             width={300}
             height={300}
             className="w-full h-auto object-cover"

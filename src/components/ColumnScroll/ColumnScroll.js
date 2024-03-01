@@ -119,8 +119,8 @@ const Column = ({ images, y }) => {
             id="imageContainer"
             className="w-[100%] h-[100%] relative rounded-md overflow-hidden"
           >
-            {/* <Image src={src} alt="image" fill={true} className="object-cover" /> */}
-            <img src={src} alt="image" fill={true} className="object-cover" />
+            {/* <Image src={src} alt="image" fill="true" className="object-cover" /> */}
+            <img src={src} alt="image" fill="true" className="object-cover" />
           </div>
         );
       })}

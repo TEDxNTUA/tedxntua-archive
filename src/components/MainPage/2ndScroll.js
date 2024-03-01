@@ -31,7 +31,8 @@ function SecondScroll() {
         width={800}
         height={800}
         alt="archive"
-        priority={true}
+        // priority={true}
+        priority="true"
       />
     </div>
   );
