@@ -10,10 +10,10 @@ function MediaSuggestions() {
       <NewsletterSubtitle text="ΠΡΟΤΑΣΕΙΣ" />
       <Anastasia />
       {/* <div className="h-16"></div> */}
-      <NewsletterSubtitle text="NEWSLETTER ΣΤΟ NEWSLETTER ;" />
+      {/* <NewsletterSubtitle text="NEWSLETTER ΣΤΟ NEWSLETTER ;" /> */}
       <Kostas />
       {/* <div className="h-16"></div> */}
-      <NewsletterSubtitle text="ΠΟΣΟ ΣΚΡΟΛ ΝΑ ΚΑΝΕΙΣ ΑΚΟΜΑ ;" />
+      {/* <NewsletterSubtitle text="ΠΟΣΟ ΣΚΡΟΛ ΝΑ ΚΑΝΕΙΣ ΑΚΟΜΑ ;" /> */}
       <Aliki />
       {/* <div className="h-16"></div> */}
       <NewsletterSubtitle text="FUN FACT" />

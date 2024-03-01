@@ -33,7 +33,7 @@ function Aliki() {
             className="w-full h-auto object-cover"
           />
         </div>
-        <div className="md:col-span-4 md:flex md:flex-col md:gap-4 lg:text-xl">
+        <div className="md:col-span-4 md:flex md:flex-col md:gap-4">
           <p className="my-6 md:mb-0">
             Πλέον δεν υπάρχει μόνο ένα είδος βιβλίου, ευκαιρία για διάβασμα
             υπάρχει πάντα και παντού. Είτε στην παραδοσιακή μορφή του, είτε σε
