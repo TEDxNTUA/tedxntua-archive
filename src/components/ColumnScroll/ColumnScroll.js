@@ -7,18 +7,18 @@ import { useEffect, useRef, useState } from "react";
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
-  "/columnPhotos/column1.jpeg",
-  "/columnPhotos/column2.jpeg",
-  "/columnPhotos/column3.jpeg",
-  "/columnPhotos/column4.jpeg",
-  "/columnPhotos/column5.jpeg",
-  "/columnPhotos/column6.jpeg",
-  "/columnPhotos/column7.jpeg",
-  "/columnPhotos/column8.jpeg",
-  "/columnPhotos/column9.jpeg",
-  "/columnPhotos/column10.jpeg",
-  "/columnPhotos/column11.jpeg",
-  "/columnPhotos/column12.jpeg",
+  "./columnPhotos/column1.jpeg",
+  "./columnPhotos/column2.jpeg",
+  "./columnPhotos/column3.jpeg",
+  "./columnPhotos/column4.jpeg",
+  "./columnPhotos/column5.jpeg",
+  "./columnPhotos/column6.jpeg",
+  "./columnPhotos/column7.jpeg",
+  "./columnPhotos/column8.jpeg",
+  "./columnPhotos/column9.jpeg",
+  "./columnPhotos/column10.jpeg",
+  "./columnPhotos/column11.jpeg",
+  "./columnPhotos/column12.jpeg",
 ];
 
 export default function ColumnScroll() {
