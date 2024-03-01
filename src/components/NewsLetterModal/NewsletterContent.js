@@ -51,7 +51,7 @@ const Newsletter = () => {
         <InputForm2 />
       </div>
       {/* <Image */}
-      <img
+      <Image
         src="./tedxntua-black-logo.png"
         alt="tedx ntua logo"
         width={300}
