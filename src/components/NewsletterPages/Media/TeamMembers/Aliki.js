@@ -23,7 +23,8 @@ function Aliki() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-7 md:gap-8">
         <div className="md:col-span-3 md:flex md:flex-col md:gap-8">
-          <Image
+          {/* <Image */}
+          <img
             src="/newsletters/media/kindle.jpeg"
             alt="image"
             // fill={true}

@@ -52,7 +52,8 @@ export default function Photo({ TedEvent }) {
           >
             {TedEvent.year}
           </h2>
-          <Image
+          {/* <Image */}
+          <img
             width={300}
             height={300}
             src={`/eventLogos/${TedEvent.logo}`}
@@ -61,7 +62,8 @@ export default function Photo({ TedEvent }) {
           />
         </div>
         <div className="xl:mr-[5vw] self-start xl:self-center">
-          <Image
+          {/* <Image */}
+          <img
             width={300}
             height={300}
             ref={Imageref}

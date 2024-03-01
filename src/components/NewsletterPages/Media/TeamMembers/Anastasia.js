@@ -9,7 +9,8 @@ function Anastasia() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-5 md:gap-8">
         <div className="md:col-span-3 md:flex md:flex-col md:gap-8">
-          <Image
+          {/* <Image */}
+          <img
             src="/newsletters/media/society-of-snow1.jpeg"
             alt="image"
             // fill={true}
@@ -40,7 +41,8 @@ function Anastasia() {
           </p>
         </div>
         <div className="md:col-span-2 md:flex md:flex-col md:gap-8">
-          <Image
+          {/* <Image */}
+          <img
             src="/newsletters/media/society-of-snow3.jpeg"
             alt="image"
             // fill={true}
@@ -68,7 +70,8 @@ function Anastasia() {
         <span className="text-our-red font-bold"> 11/10</span> και την συνιστώ
         ανεπιφύλακτα!
       </p>
-      <Image
+      {/* <Image */}
+      <img
         src="/newsletters/media/society-of-snow1.jpeg"
         alt="image"
         // fill={true}

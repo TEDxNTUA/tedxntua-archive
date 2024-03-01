@@ -37,7 +37,8 @@ function Tolis() {
           </div>
         </div>
         <div className="md:col-span-4 md:flex md:flex-col md:gap-8">
-          <Image
+          {/* <Image */}
+          <img
             src="/newsletters/media/kagia.jpeg"
             alt="image"
             width={300}

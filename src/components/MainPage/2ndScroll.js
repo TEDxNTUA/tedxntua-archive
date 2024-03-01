@@ -10,7 +10,8 @@ function SecondScroll() {
           About the
         </h1>
 
-        <Image
+        {/* <Image */}
+        <img
           className="pt-4 object-left"
           src="/homepage/archive.png"
           width={300}
@@ -23,7 +24,8 @@ function SecondScroll() {
         </p>
       </div>
 
-      <Image
+      {/* <Image */}
+      <img
         className="w-[70%] md:w-[100%] -pb-10"
         src="/homepage/video-recap.png"
         width={800}
