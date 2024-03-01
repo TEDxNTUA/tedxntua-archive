@@ -75,6 +75,10 @@ jobs:
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          MAILCHIMP_LIST_ID: ${{ secrets.MAILCHIMP_LIST_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
