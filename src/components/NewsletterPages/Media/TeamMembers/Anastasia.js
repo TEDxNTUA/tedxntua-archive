@@ -13,7 +13,7 @@ function Anastasia() {
           <img
             src="./newsletters/media/society-of-snow1.jpeg"
             alt="image"
-            // fill={true}
+            // fill="true"
             width={300}
             height={300}
             className="w-full h-auto hidden md:block"
@@ -45,7 +45,7 @@ function Anastasia() {
           <img
             src="./newsletters/media/society-of-snow3.jpeg"
             alt="image"
-            // fill={true}
+            // fill="true"
             width={300}
             height={300}
             className="w-full h-auto hidden md:block"
@@ -74,7 +74,7 @@ function Anastasia() {
       <img
         src="./newsletters/media/society-of-snow1.jpeg"
         alt="image"
-        // fill={true}
+        // fill="true"
         width={300}
         height={300}
         className="w-full h-auto md:hidden"

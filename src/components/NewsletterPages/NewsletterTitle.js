@@ -41,7 +41,7 @@ export default function NewsletterTitle() {
         <img
           src="./tedxntua_logo.png"
           alt="image"
-          // fill={true}
+          // fill="true"
           width={300}
           height={300}
           className="w-[30%]"

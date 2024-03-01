@@ -56,8 +56,8 @@ export default function MovingText() {
     <main className="py-56 overflow-hidden relative h-[calc(100vh-5rem)] w-[100vw]">
       {/* <Image */}
       <img
-        src="/about.png"
-        fill={true}
+        src="./about.png"
+        fill="true"
         alt="background"
         className="object-cover overflow-hidden top-[-30%] opacity-70"
       />
