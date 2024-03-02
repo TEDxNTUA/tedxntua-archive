@@ -36,7 +36,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
           <div className="grid justify-items-center md:row-span-1 md:grid-cols-4 pb-4 md:pb-12 justify-center items-center gap-4 md:gap-8">
             <div className="col-span-3 z-10">
               <p className="text-white text-[1.5rem] leading-9 md:text-[2rem] lg:text-[2.5rem] md:leading-10 lg:leading-[3rem] font-bold text-justify z-10">
-                Sign up to unmuTED to and we'll keep you posted on all things
+                Sign up to unmuTED and we'll keep you posted on all things
                 TEDxNTUA
               </p>
             </div>
