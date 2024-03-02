@@ -12,7 +12,7 @@ const socialMediaLinks = {
 
 function SocialMediaFooter() {
   return (
-    <div className="grid grid-cols-6 gap-3 justify-items-center">
+    <div className="grid grid-cols-5 gap-3 justify-items-center">
       <SocialMediaItem
         link={socialMediaLinks.instagram}
         iconName={"instagram"}
@@ -43,12 +43,12 @@ function SocialMediaFooter() {
         color={"black"}
         hoverColor={"white"}
       />
-      <SocialMediaItem
+      {/* <SocialMediaItem
         link={socialMediaLinks.twitter}
         iconName={"twitter"}
         color={"black"}
         hoverColor={"white"}
-      />
+      /> */}
     </div>
   );
 }
