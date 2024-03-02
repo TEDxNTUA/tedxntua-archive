@@ -1,6 +1,6 @@
 function IntroductionMedia() {
   return (
-    <div className="text-justify text-white text-xs md:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
+    <div className="text-justify text-white">
       <p className="w-full mb-6">Καλωσήρθες στο ολόφρεσκο μας newsletter!</p>
       <p className="w-full mb-6">
         Νομίζουμε πως ήρθε η ώρα να γνωρίσεις λίγο καλύτερα την ομάδα του{" "}

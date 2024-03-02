@@ -36,17 +36,24 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
           <div className="grid justify-items-center md:row-span-1 md:grid-cols-4 pb-4 md:pb-12 justify-center items-center gap-4 md:gap-8">
             <div className="col-span-3 z-10">
               <p className="text-white text-[1.5rem] leading-9 md:text-[2rem] lg:text-[2.5rem] md:leading-10 lg:leading-[3rem] font-bold text-justify z-10">
-                Sign up to our Newsletter to and we'll keep you posted on all
-                things TEDxNTUA
+                Sign up to unmuTED to and we'll keep you posted on all things
+                TEDxNTUA
               </p>
             </div>
             <div className="col-span-3 md:col-span-1 z-10">
-              <button
-                className="bg-our-black hover:bg-our-black/90 px-5 py-3 rounded-sm mx-auto text-white font-semibold z-10"
-                onClick={() => setIsModalOpenFlag(true)}
+              <a
+                className="hover:cursor-pointer flex justify-center text-our-red"
+                href="https://2023tedxntua.us21.list-manage.com/subscribe?u=8fb93651f7aa4956e92c4f188&id=1473802836"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Sign up
-              </button>
+                <button
+                  className="bg-our-black hover:bg-our-black/90 px-5 py-3 rounded-sm mx-auto text-white font-semibold z-10"
+                  // onClick={() => setIsModalOpenFlag(true)}
+                >
+                  Sign up
+                </button>
+              </a>
             </div>
           </div>
           {/* Second row FOR BIG SCREENS */}

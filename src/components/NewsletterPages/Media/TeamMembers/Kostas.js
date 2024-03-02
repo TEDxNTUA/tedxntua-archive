@@ -1,12 +1,12 @@
 function Kostas() {
   return (
     <div id="Kostas">
-      <p className="my-8 italics md:mb-12 italics font-bold text-md md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl text-justify">
+      <p className="mt-12 mb-8 italics md:mb-12 italics font-bold text-md md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl text-justify">
         Ο <span className="font-bold">Κώστας</span> που όλη την ώρα βρίσκει τα
         πιο ψαγμένα άρθρα παρουσιάζει
       </p>
-      <ul className="list-disc grid grid-cols-1 md:grid-cols-5 md:gap-8">
-        <li className="w-full mb-6 md:col-span-2 md:flex md:flex-col md:gap-8 md:order-2">
+      <ul className="list-disc grid grid-cols-1 md:gap-8 w-[90%] mx-auto">
+        <li className="w-full mb-6 md:flex md:flex-col md:gap-4 md:order-2">
           <p>
             {" "}
             Τι κοινό έχει η{" "}

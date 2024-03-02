@@ -16,8 +16,8 @@ const navLinks = [
   //   path: "/blog",
   // },
   {
-    title: "Newsletter",
-    path: "/newsletter",
+    title: "unmuTED",
+    path: "/unmuTED",
   },
   {
     title: "About",
