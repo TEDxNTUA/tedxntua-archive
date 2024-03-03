@@ -1,6 +1,7 @@
 .letter {
   font-weight: 700;
-  color: transparent;
+  /* color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #fff; */
+  font-family: "Helvetica", "Arial", sans-serif;
 }

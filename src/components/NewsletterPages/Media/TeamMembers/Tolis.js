@@ -4,17 +4,19 @@ function Tolis() {
   return (
     <div id="Tolis">
       {" "}
-      <p>
-        Νομίζω όλοι έχουμε ακούσει την Βίκυ Καγιά να εύχεται την viral ατάκα{" "}
-        <span className="text-our-red">«σκατά, σκατά, σκατά»</span> στις
-        διαγωνιζόμενες του GNTM. Γιατί όμως λέμε σκατά για να ευχηθούμε
-        επιτυχία;{" "}
-      </p>
-      <p className="my-8">
-        Ο <span className="font-bold">Τόλης</span> διαβάζοντας ανελλιπώς
-        επιστημονικά (λέμε τώρα) άρθρα, ανακάλυψε τον λόγο και θέλει να τον
-        μοιραστεί:
-      </p>
+      <div className="flex flex-col gap-6">
+        <p>
+          Νομίζω όλοι έχουμε ακούσει την Βίκυ Καγιά να εύχεται την viral ατάκα{" "}
+          <span className="text-our-red">«σκατά, σκατά, σκατά»</span> στις
+          διαγωνιζόμενες του GNTM. Γιατί όμως λέμε σκατά για να ευχηθούμε
+          επιτυχία;{" "}
+        </p>
+        <p className="mb-8 italics italics font-bold text-md md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl text-justify">
+          Ο <span className="font-bold">Τόλης</span> διαβάζοντας ανελλιπώς
+          επιστημονικά (λέμε τώρα) άρθρα, ανακάλυψε τον λόγο και θέλει να τον
+          μοιραστεί:
+        </p>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-8">
         <div className="lg:col-span-3 md:flex md:flex-col">
           <p className="mb-8">
@@ -53,7 +55,7 @@ function Tolis() {
         δηλαδή η παράσταση να έχει μεγάλη{" "}
         <span className="text-our-red">προσέλευση</span> και απήχηση!
       </p>
-      <p className="w-full mb-8 md:my-8 italics font-bold text-center">
+      <p className="w-full my-12 italics font-bold text-center">
         <em>
           Συνεπώς ευχόμαστε όλοι{" "}
           <span className="text-our-red">“σκατά, σκατά, σκατά”</span> στο φετινό

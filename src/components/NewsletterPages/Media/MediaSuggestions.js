@@ -8,7 +8,7 @@ function MediaSuggestions() {
   return (
     <div className="text-white text-justify">
       {/* text-xs md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl */}
-      <NewsletterSubtitle text="ΠΡΟΤΑΣΕΙΣ" />
+      <NewsletterSubtitle text="SUGGESTIONS" />
       <Anastasia2 />
       {/* <div className="h-16"></div> */}
       {/* <NewsletterSubtitle text="NEWSLETTER ΣΤΟ NEWSLETTER ;" /> */}

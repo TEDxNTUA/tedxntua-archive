@@ -1,7 +1,7 @@
 function AboutTednTedx() {
   return (
     <div
-      className="w-[100%] h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem) table pb-20"
+      className="w-[100%] table py-28 mb-28"
       style={{
         backgroundImage: `url('/about/BG.png')`,
 

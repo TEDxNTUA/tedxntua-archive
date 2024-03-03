@@ -1,6 +1,6 @@
 function IntroductionMedia() {
   return (
-    <div className="text-justify text-white flex flex-col gap-6">
+    <div className="text-justify text-white flex flex-col gap-6 bg-our-red rounded-md py-8 px-6 md:px-8">
       <p>
         It’s time to get unfiltered, uncensored,{" "}
         <span className="font-bold">unmuTED</span>!

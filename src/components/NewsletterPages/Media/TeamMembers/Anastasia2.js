@@ -14,7 +14,7 @@ function Anastasia() {
             <p className="mb-6 To">
               Tο{" "}
               <a
-                className="hover:cursor-pointer underline text-our-red"
+                className="hover:cursor-pointer underline hover:text-our-red decoration-2 italics font-bold"
                 href="https://www.imdb.com/title/tt16277242/"
                 target="_blank"
                 rel="noopener noreferrer"

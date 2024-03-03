@@ -26,9 +26,9 @@ export default function MediaNewsletter() {
 
         <MediaSuggestions />
         <div className="flex flex-col gap-6">
-          <span className="text-white text-lg mx-auto text-center flex self-center">
+          {/* <span className="text-white text-lg mx-auto text-center flex self-center">
             Keep in touch!
-          </span>
+          </span> */}
           <p className="text-white text-xxs self-end">
             xoxo...Media & Marketing Team
             <span className="text-our-red">&lt;3</span>

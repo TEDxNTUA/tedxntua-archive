@@ -3,10 +3,10 @@ function Kostas() {
     <div id="Kostas">
       <p className="mt-12 mb-8 italics md:mb-12 italics font-bold text-md md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl text-justify">
         Ο <span className="font-bold">Κώστας</span> που όλη την ώρα βρίσκει τα
-        πιο ψαγμένα άρθρα παρουσιάζει
+        πιο ψαγμένα άρθρα παρουσιάζει:
       </p>
-      <ul className="list-disc list-inside grid grid-cols-1 md:gap-8 w-[90%] mx-auto">
-        <li className="w-full mb-6 md:flex md:flex-col md:gap-4 md:order-2">
+      <ul className="list-disc flex flex-col gap-6 w-[90%] mx-auto">
+        <li className="w-full">
           <p>
             {" "}
             Τι κοινό έχει η{" "}
@@ -15,7 +15,7 @@ function Kostas() {
             <span className="text-our-red"> TED</span>; Η απάντηση βρίσκεται σε
             μία{" "}
             <a
-              className="hover:cursor-pointer underline italics font-bold text-our-red"
+              className="hover:cursor-pointer underline hover:text-our-red decoration-2 italics font-bold"
               href="https://www.noemamag.com/the-secret-history-and-strange-future-of-charisma/"
               target="_blank"
               rel="noopener noreferrer"
@@ -25,12 +25,12 @@ function Kostas() {
             με ελληνική προέλευση, αλλά πολύ νεφελώδες νόημα.
           </p>
         </li>
-        <li className="w-full mb-6 md:col-span-3 md:flex md:flex-col md:gap-8 md:order-1">
+        <li className="w-full">
           <p>
             <span className="text-our-red">«Η Ελλάδα ποτέ δεν θα αλλάξει»</span>{" "}
             Πόσες φορές έχουμε ακούσει αυτή την φράση; Έχω να σας προτείνω ένα{" "}
             <a
-              className="hover:cursor-pointer underline italics font-bold text-our-red"
+              className="hover:cursor-pointer underline hover:text-our-red decoration-2 italics font-bold"
               href="https://greekanalyst.substack.com/s/changing-greece"
               target="_blank"
               rel="noopener noreferrer"

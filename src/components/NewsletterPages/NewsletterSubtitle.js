@@ -5,11 +5,12 @@ function NewsletterSubtitle({ text }) {
 
   return (
     <div className="text-left font-extrabold text-3xl 2xl:text-5xl leading-10 my-8 lg:my-12">
-      {letters.map((letter, index) => (
+      {/* {letters.map((letter, index) => (
         <span key={index} className={classes.letter}>
           {letter}
         </span>
-      ))}
+      ))} */}
+      {text}
     </div>
   );
 }
