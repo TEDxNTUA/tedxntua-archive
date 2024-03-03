@@ -40,7 +40,8 @@ export default function Photo({ TedEvent }) {
     //     {TedEvent.paragraph}
     //   </p>
     // </main>
-    <div className="snap-start">
+    // <div className="snap-start">
+    <div>
       <div className="timeline-grid grid grid-cols-1 xl:grid-cols-3 text-center justify-between xl:justify-center xl:items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto xl:border-l-8 xl:border-our-red">
         {/* <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-our-red opacity-100 left-[9.3%]"></div> */}
         <div className="flex flex-row justify-center content-center place-items-center text-white lg:bg-transparent self-center">

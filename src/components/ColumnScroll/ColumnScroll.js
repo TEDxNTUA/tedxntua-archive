@@ -37,14 +37,16 @@ export default function ColumnScroll() {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
 
   useEffect(() => {
-    // const lenis = new Lenis({
-    //   easing: (t) => 1 - Math.pow(1 - t, 5),
-    // });
-    // const raf = (time) => {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // };
-    // requestAnimationFrame(raf);
+    const lenis = new Lenis({
+      // easing: (t) => 1 - Math.pow(1 - t, 5),
+      easing: (t) => t * t,
+    });
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
@@ -56,55 +58,60 @@ export default function ColumnScroll() {
   }, []);
 
   return (
-    <main className="relative">
+    <main className="py-16 relative">
       {/* <main className=""> */}
       {/* <div className={styles.spacer}></div> */}
       {/* <div className="absolute"> */}
-      <div
-        id="gallery"
-        ref={gallery}
-        className="h-[125vh] w-[80vw] md:w-[90vw] lg:w-[80vw] mx-auto overflow-hidden rounded relative"
-      >
-        {/* Background image */}
+      <div className="desktop">
+        <div
+          id="gallery"
+          ref={gallery}
+          className="h-[125vh] w-[80vw] md:w-[90vw] lg:w-[80vw] mx-auto overflow-hidden rounded relative"
+        >
+          {/* Background image */}
 
-        <img className="w-[100%] h-[100%] absolute" src="./about/BG.png"></img>
+          <img
+            className="w-[100%] h-[100%] absolute"
+            src="./about/BG.png"
+          ></img>
 
-        {/* Conditionally render the first two columns for small screens */}
-        <div className="md:hidden flex flex-row gap-[3vw] px-[3vw] h-[130vh] box-border mx-auto relative">
-          <Column
-            images={[
-              images[0],
-              images[1],
-              images[2],
-              images[3],
-              images[4],
-              images[5],
-            ]}
-            y={y1}
-          />
-          <Column
-            images={[
-              images[6],
-              images[7],
-              images[8],
-              images[9],
-              images[10],
-              images[11],
-            ]}
-            y={y2}
-          />
+          {/* Conditionally render the first two columns for small screens */}
+          <div className="md:hidden flex flex-row gap-[3vw] px-[3vw] h-[130vh] box-border mx-auto relative">
+            <Column
+              images={[
+                images[0],
+                images[1],
+                images[2],
+                images[3],
+                images[4],
+                images[5],
+              ]}
+              y={y1}
+            />
+            <Column
+              images={[
+                images[6],
+                images[7],
+                images[8],
+                images[9],
+                images[10],
+                images[11],
+              ]}
+              y={y2}
+            />
+          </div>
+
+          {/* Show all columns after the md breakpoint */}
+          <div className="hidden md:flex flex-row gap-[2vw] px-0 md:px-[2vw] h-[130vh] box-border mx-auto relative">
+            <Column images={[images[0], images[1], images[2]]} y={y1} />
+            <Column images={[images[3], images[4], images[5]]} y={y2} />
+            <Column images={[images[6], images[7], images[8]]} y={y3} />
+            <Column images={[images[9], images[10], images[11]]} y={y4} />
+          </div>
         </div>
-
-        {/* Show all columns after the md breakpoint */}
-        <div className="hidden md:flex flex-row gap-[2vw] px-0 md:px-[2vw] h-[130vh] box-border mx-auto relative">
-          <Column images={[images[0], images[1], images[2]]} y={y1} />
-          <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <Column images={[images[9], images[10], images[11]]} y={y4} />
-        </div>
+        {/* <div className={styles.spacer}></div> */}
+        {/* </div> */}
       </div>
-      {/* <div className={styles.spacer}></div> */}
-      {/* </div> */}
     </main>
   );
 }
