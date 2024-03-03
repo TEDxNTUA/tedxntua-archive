@@ -33,7 +33,7 @@ export default function WatchGrid({
       )}
       {filteredWatchTalks.length > 0 && (
         <ul
-          className={`grid grid-cols-1 list-none gap-[6vh] lg:gap-10 ${gridsizeVariants[gridSizeXl]} w-10/12 mx-auto z-1 rounded-md lg:p-10 lg:bg-zinc-950`}
+          className={`grid grid-cols-1 sm:grid-cols-2 list-none gap-[6vh] lg:gap-10 ${gridsizeVariants[gridSizeXl]} w-10/12 mx-auto z-1 rounded-md lg:p-10 lg:bg-zinc-950`}
         >
           {filteredWatchTalks
             .sort((a, b) => b.year - a.year)

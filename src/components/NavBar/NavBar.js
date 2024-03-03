@@ -124,8 +124,8 @@ function NewNavbar() {
         id="mobile-drawer"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[45%] z-50 md:hidden h-[92vh] bg-black ease-in duration-300 mt-[8.2vh]"
-            : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
+            ? "fixed right-0 w-[45%] z-100 md:hidden h-[92vh] bg-black ease-in duration-300 mt-[8.2vh]"
+            : "fixed right-[-120%] h-[90vh] mt-[9.8vh] z-100"
         }
       >
         <div className="flex flex-col items-center justify-between h-full pt-16 pb-24 w-[90%] mx-auto">

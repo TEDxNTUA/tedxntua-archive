@@ -1,4 +1,5 @@
 import React from "react";
+// const SelectGridSize = ({ gridSizeXl, setGridSizeXl }) => {
 const SelectGridSize = ({ gridSizeXl, setGridSizeXl }) => {
   return (
     // <div className="hidden lg:flex lg:flex-col items-center justify-center border gap-2 w-fit border-white rounded-md fixed bottom-[50%] p-1">
