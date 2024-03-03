@@ -70,11 +70,11 @@ function NewNavbar() {
                 {link.isImage ? (
                   <Link
                     href={link.path}
-                    onClick={() =>
-                      document
-                        .getElementById("main-scroll-container")
-                        .scrollTo({ top: 0, behavior: "smooth" })
-                    }
+                    // onClick={() =>
+                    //   document
+                    //     .getElementById("main-scroll-container")
+                    //     .scrollTo({ top: 0, behavior: "smooth" })
+                    // }
                   >
                     <img
                       src="./homepage/archive.png"
