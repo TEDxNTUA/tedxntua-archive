@@ -5,7 +5,7 @@ function Aliki() {
     <div id="Aliki">
       <div className="border-y-2 border-white flex flex-col my-8 py-3 lg:py-4 gap-4 3xl:my-16">
         <p className="text-our-red font-bold text-base md:text-lg 3xl:text-2xl">
-          “Mα εγώ μες τα βιβλία μου θα ‘θελα να ‘χα χαθεί”
+          “Mα εγώ μες τα βιβλία μου θα 'θελα να 'χα χαθεί”
         </p>
         <p className="text-left text-sm 3xl:text-base">
           Barbie: Βασιλοπούλα και Χωριατοπούλα

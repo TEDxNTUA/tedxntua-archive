@@ -54,11 +54,15 @@ const Newsletter = () => {
       </div>
       <div className="md:my-0 flex flex-col items-center gap-4 4xl:gap-12 w-[80%] 4xl:w-[70%]">
         <h1 className=" leading-7 text-base md:text-lg 2xl:text-2xl 4xl:text-4xl font-bold text-[rgb(51 65 85)]">
-          BE THE FIRST TO KNOW
+          GET OUR NEWS FIRST-HAND
         </h1>
         <p className="text-gray-400 text-sm 2xl:text-base 4xl:text-2xl text-justify font-extralight px-3">
-          Sign up for TED<span className="text-our-red">x</span>NTUA unmuTED to
-          be the first to see our fresh news about our team & events!
+          Sign up for our new project{" "}
+          <strong className="font-bold italic text-black">
+            TED<span className="text-our-red">x</span>NTUA unmuTED
+          </strong>{" "}
+          to be the first to know the latest news about us & our upcoming
+          events!
         </p>
         <SignupButton />
       </div>

@@ -20,7 +20,7 @@ function SecondScroll() {
         />
         <p className="text-white text-justify font-light text-sm mt-4">
           The TEDxNTUA Archive is a collection of all material produced by
-          TEDxNTUA since its 2015 inception. Scroll down to see...
+          TEDxNTUA since its inception in 2015. Scroll down to see...
         </p>
       </div>
 

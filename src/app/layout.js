@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black font-[Helvetica]">
-        {/* <ModalWrapper /> */}
+        <ModalWrapper />
         <div>
           <ScrollTopButton />
         </div>

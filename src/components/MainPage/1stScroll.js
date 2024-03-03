@@ -7,7 +7,7 @@ function FirstScroll() {
         {/* <Image */}
         <img
           className="w-auto lg:h-[95vh]"
-          src="./homepage/starting-page.png"
+          src="./homepage/starting-page1.png"
           width={800}
           height={800}
           alt="archive"
