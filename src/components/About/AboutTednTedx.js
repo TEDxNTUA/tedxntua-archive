@@ -9,7 +9,7 @@ function AboutTednTedx() {
       }}
     >
       <div className="text-white flex flex-col lg:flex-row lg:justify-between gap-[4rem] lg:gap-[1rem] text-justify lg:text-left lg:w-[80%] mx-auto">
-        <div className="left-col lg:width-[54%] lg:max-w-[40rem] w-[70%] mx-auto">
+        <div className="left-col lg:width-[54%] w-[80%] lg:max-w-[40rem] mx-auto">
           <div className="title-wrapper mb-[2rem] text-[1rem] leading-[1.875rem]">
             <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] 4xl:text-[6.25rem] 4xl:leading-[6.25rem] font-bold">
               About <span className="text-our-red">TED</span>
@@ -61,7 +61,7 @@ function AboutTednTedx() {
             </div>
           </div>
         </div>
-        <div className="right-col flex flex-col justify-end lg:w-[39%] lg:max-w-[30rem] w-[70%] mx-auto">
+        <div className="right-col flex flex-col justify-end w-[80%] lg:w-[39%] lg:max-w-[30rem] mx-auto">
           <div className="title-wrapper mb-[2rem] text-[1rem] leading-[1.875rem]">
             <h2 className="text-[2.25rem] leading-[2.25rem] lg:text-[4.25rem] lg:leading-[4.25rem] font-bold 4xl:text-[6.25rem] 4xl:leading-[6.25rem]">
               About <span className="text-our-red">TEDx</span>

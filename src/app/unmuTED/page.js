@@ -20,7 +20,7 @@ export default function MediaNewsletter() {
       <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>
       <div
         id="body"
-        className="w-[70%] md:w-[60%] 3xl:w-[50%] 3xl:text-xl mx-auto"
+        className="w-[80%] md:w-[60%] 3xl:w-[50%] 3xl:text-xl mx-auto"
       >
         <IntroductionMedia />
 

@@ -12,19 +12,23 @@ function HomePage() {
     <main>
       <div
         id="main-scroll-container"
-        className="overflow overflow-y-scroll snap-y snap-mandatory h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]"
+        // className="overflow overflow-y-scroll snap-y snap-mandatory h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]"
+        className="h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]"
       >
-        <div className="snap-start">
+        {/* <div className="snap-start"> */}
+        <div>
           <FirstScroll />
         </div>
-        <div className="snap-start h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]">
+        {/* <div className="snap-start h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]"> */}
+        <div className="h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem)]">
           <SecondScroll />
           <div className="bg-black pt-6">
             <TEDxInNumbers />
           </div>
         </div>
         <Timeline />
-        <div className="snap-start">
+        {/* <div className="snap-start"> */}
+        <div>
           <NewFooter />
         </div>
       </div>

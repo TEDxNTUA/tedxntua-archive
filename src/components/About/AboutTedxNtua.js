@@ -12,7 +12,7 @@ function AboutTEDxNTUA() {
     >
       <div className={classes.box}>
         <div className="mx-auto bg-our-red py-10 flex items-center justify-center">
-          <div className="w-[55vw] md:w-[45vw] lg:w-[35vw] py-10 flex flex-col gap-12">
+          <div className="w-[80vw] md:w-[65vw] lg:w-[55vw] xl:w-[45vw] py-10 flex flex-col gap-12">
             <h2 className="text-3xl md:text-5xl text-white font-black mx-auto text-center">
               About <span className="text-our-black">TEDx</span>NTUA
             </h2>

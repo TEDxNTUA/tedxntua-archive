@@ -17,11 +17,12 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
     setDropdownVisible(!isDropdownVisible);
   };
   return (
-    <div className="text-white grid grid-cols-1 items-start justify-start gap-1 h-fit lg:left-[80%] left-[60%] absolute ">
+    // <div className="text-white grid grid-cols-1 items-start justify-start gap-1 h-fit lg:left-[80%] left-[60%] absolute ">
+    <div className="text-white grid grid-cols-1 items-start justify-start gap-1 w-[100px]">
       <button
         id="dropdownDefaultButton"
         data-dropdown-toggle="dropdown"
-        className="text-white bg-our-red  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center "
+        className="text-white bg-our-red font-medium rounded-lg text-sm px-2 sm:px-5 mx-auto py-2.5 text-center inline-flex items-center"
         type="button"
         onClick={toggleDropdown}
       >

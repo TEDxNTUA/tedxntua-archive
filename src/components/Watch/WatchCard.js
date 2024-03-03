@@ -14,7 +14,7 @@ export default function WatchCard({
     setIsExpanded(!isExpanded);
   };
   return (
-    <div className="flex flex-col bg-neutral-50 rounded-md border-[3px] w-full sm:w-[50%] md:w-[80%] lg:w-full border-our-red mx-auto h-full">
+    <div className="flex flex-col bg-neutral-50 rounded-md border-[3px] w-full sm:w-[90%] md:w-[80%] lg:w-full border-our-red mx-auto h-full">
       <div className="flex flex-col grow lg:h-[70%]">
         <a target="_blank" href={yt_link} className="hover:cursor-pointer">
           <div className="flex flex-col rounded-sm justify-center items-center ">
