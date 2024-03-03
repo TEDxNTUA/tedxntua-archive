@@ -49,6 +49,7 @@ const socialMediaLinks = {
   spotify:
     "https://open.spotify.com/user/31jmzq7bew5xcd2cypvo4xuua6ay?si=Qt_NzTPGRFyETbZ4XgKoxw&utm_source=copy-link&nd=1&dlsi=ca94005974b04c42",
   tiktok: "https://www.tiktok.com/@tedxntua",
+  youtube: "https://www.youtube.com/@TEDxNTUA",
 };
 
 function SocialMediaNav() {

@@ -8,11 +8,12 @@ const socialMediaLinks = {
   spotify:
     "https://open.spotify.com/user/31jmzq7bew5xcd2cypvo4xuua6ay?si=Qt_NzTPGRFyETbZ4XgKoxw&utm_source=copy-link&nd=1&dlsi=ca94005974b04c42",
   tiktok: "https://www.tiktok.com/@tedxntua",
+  youtube: "https://www.youtube.com/@TEDxNTUA",
 };
 
 function SocialMediaFooter() {
   return (
-    <div className="grid grid-cols-5 gap-3 justify-items-center">
+    <div className="grid grid-cols-6 gap-3 justify-items-center">
       <SocialMediaItem
         link={socialMediaLinks.instagram}
         iconName={"instagram"}
@@ -43,12 +44,12 @@ function SocialMediaFooter() {
         color={"black"}
         hoverColor={"white"}
       />
-      {/* <SocialMediaItem
-        link={socialMediaLinks.twitter}
-        iconName={"twitter"}
+      <SocialMediaItem
+        link={socialMediaLinks.youtube}
+        iconName={"youtube"}
         color={"black"}
         hoverColor={"white"}
-      /> */}
+      />
     </div>
   );
 }
