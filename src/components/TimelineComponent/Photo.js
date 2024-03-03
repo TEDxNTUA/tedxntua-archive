@@ -84,7 +84,7 @@ export default function Photo({ TedEvent }) {
         /> */}
         <div className="hidden xl:block">
           <p
-            className="text-white font-semibold text-md 4xl:text-md 2xl:text-md leading-6 text-justify tracking-wide w-[95%] mx-auto"
+            className="text-white text-base 2xl:text-md leading-6 text-justify tracking-wide w-[95%] mx-auto"
             // style={{ y, right: "7vw", zIndex: 1 }}
           >
             {TedEvent.paragraph}
