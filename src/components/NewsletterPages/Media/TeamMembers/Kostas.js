@@ -5,7 +5,7 @@ function Kostas() {
         Ο <span className="font-bold">Κώστας</span> που όλη την ώρα βρίσκει τα
         πιο ψαγμένα άρθρα παρουσιάζει
       </p>
-      <ul className="list-disc grid grid-cols-1 md:gap-8 w-[90%] mx-auto">
+      <ul className="list-disc list-inside grid grid-cols-1 md:gap-8 w-[90%] mx-auto">
         <li className="w-full mb-6 md:flex md:flex-col md:gap-4 md:order-2">
           <p>
             {" "}

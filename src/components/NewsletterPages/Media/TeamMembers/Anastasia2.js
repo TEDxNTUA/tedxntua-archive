@@ -33,21 +33,13 @@ function Anastasia() {
               επιβίωσε από τη συντριβή του αεροπλάνου που την μετέφερε πάνω από
               τις Άνδεις και κυκλοφόρησε πρόσφατα στο Netflix.
             </p>
-            <p className="mb-6 epeidi">
+            <p className="mb-6 epeidi md:hidden lg:block">
               Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω
               ένα
               <span className="text-our-red font-bold"> 11/10</span> και την
               συνιστώ ανεπιφύλακτα!
             </p>
           </div>
-          <img
-            src="./newsletters/media/society-of-snow2.jpeg"
-            alt="image"
-            // fill="true"
-            width={300}
-            height={300}
-            className="h-200px w-auto hidden 3xl:block self-end mx-auto"
-          />
         </div>
 
         <div className="col-span-1">
@@ -62,6 +54,11 @@ function Anastasia() {
           />
         </div>
       </div>
+      <p className="my-6 epeidi hidden md:block lg:hidden">
+        Επειδή δεν πήρα τα μάτια μου ούτε στιγμή από την οθόνη, της βάζω ένα
+        <span className="text-our-red font-bold"> 11/10</span> και την συνιστώ
+        ανεπιφύλακτα!
+      </p>
     </div>
   );
 }

@@ -6,7 +6,8 @@ import Tolis from "./TeamMembers/Tolis";
 
 function MediaSuggestions() {
   return (
-    <div className="text-white text-xs md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-justify">
+    <div className="text-white text-justify">
+      {/* text-xs md:text-sm lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl */}
       <NewsletterSubtitle text="ΠΡΟΤΑΣΕΙΣ" />
       <Anastasia2 />
       {/* <div className="h-16"></div> */}

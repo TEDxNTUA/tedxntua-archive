@@ -15,8 +15,8 @@ function Tolis() {
         επιστημονικά (λέμε τώρα) άρθρα, ανακάλυψε τον λόγο και θέλει να τον
         μοιραστεί:
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-7 md:gap-8">
-        <div className="md:col-span-3 md:flex md:flex-col">
+      <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-8">
+        <div className="lg:col-span-3 md:flex md:flex-col">
           <p className="mb-8">
             Η φράση προέρχεται από την{" "}
             <span className="text-our-red">Γαλλία</span> όπου τα παλιά τα χρόνια
@@ -36,7 +36,7 @@ function Tolis() {
             </p>
           </div>
         </div>
-        <div className="md:col-span-4 md:flex md:flex-col md:gap-8">
+        <div className="lg:col-span-4 md:flex md:flex-col md:gap-8">
           {/* <Image */}
           <img
             src="./newsletters/media/kagia.jpeg"
@@ -53,7 +53,7 @@ function Tolis() {
         δηλαδή η παράσταση να έχει μεγάλη{" "}
         <span className="text-our-red">προσέλευση</span> και απήχηση!
       </p>
-      <p className="w-full mb-8 md:my-8 italics font-bold">
+      <p className="w-full mb-8 md:my-8 italics font-bold text-center">
         <em>
           Συνεπώς ευχόμαστε όλοι{" "}
           <span className="text-our-red">“σκατά, σκατά, σκατά”</span> στο φετινό

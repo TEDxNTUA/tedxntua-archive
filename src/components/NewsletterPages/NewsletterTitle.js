@@ -45,7 +45,7 @@ export default function NewsletterTitle() {
           height={300}
           priority="true"
           // fill="true"
-          className="mx-auto w-[80%] h-auto object-contain"
+          className="mx-auto w-[100%] lg:w-[80%] h-auto object-contain"
         />
       </div>
       <div className="flex flex-row justify-between items-center w-[100%] md:w-[95%] xl:w-[80%] 3xl:w-[75%] 5xl:w-[65%] mx-auto">
@@ -59,7 +59,15 @@ export default function NewsletterTitle() {
           className="w-[30%]"
         />
 
-        <h1 className="text-white text-[3cqw] font-serif">2.03.2024</h1>
+        {/* <h1 className="text-white text-[3cqw] font-serif">2.03.2024</h1> */}
+        <img
+          src="./newsletters/media/media-date.png"
+          alt="image"
+          // fill="true"
+          width={300}
+          height={300}
+          className="w-[30%]"
+        />
       </div>
     </div>
   );
