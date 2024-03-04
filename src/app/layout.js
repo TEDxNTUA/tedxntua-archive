@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           <ScrollTopButton />
         </div>
         <Navbar />
-        <div className="mt-[5rem]"></div>
+        <div className="mt-[65px]"></div>
         {children}
       </body>
     </html>

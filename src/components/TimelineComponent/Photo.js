@@ -42,18 +42,15 @@ export default function Photo({ TedEvent }) {
     // </main>
     // <div className="snap-start">
     <div>
-      <div className="timeline-grid grid grid-cols-1 xl:grid-cols-3 text-center justify-between xl:justify-center xl:items-center h-[calc(100vh-5rem)] w-[100%] md:w-[80%] mx-auto xl:border-l-8 xl:border-our-red">
+      <div className="timeline-grid grid grid-cols-1 lg:grid-cols-5 xl:grid-cols-3 text-center justify-between lg:justify-center lg:items-center h-[70vh] lg:h-[calc(100vh-65px)] w-[100%] md:w-[80%] mx-auto lg:border-l-8 lg:border-our-red max-w-[100rem]">
         {/* <div className="hidden lg:fixed lg:flex h-[100vh] w-2 self-stretch bg-our-red opacity-100 left-[9.3%]"></div> */}
         <div className="flex flex-row justify-center content-center place-items-center text-white lg:bg-transparent self-center">
-          <div className="hidden xl:flex self-align-center left-0 relative">
-            {/* <div className="hidden lg:fixed lg:flex w-7 h-7 bg-white rounded-full left-[9.3%]" />
-            <hr className="hidden lg:fixed lg:flex h-1 bg-neutral-100 opacity-100 w-[6%] left-[10%] col-span-1" /> */}
-            {/* <div className="hidden lg:block w-7 bg-green-500 left-20 rounded-full" /> */}
-            <div className="line block left-20 h-3 w-28 bg-our-red opacity-100 col-span-1 rounded-r-md"></div>
+          <div className="hidden lg:flex w-[80%] h-8 mx-auto left-0 right-[23px] 2xl:right-[22px] max-w-[100rem] absolute">
+            <div className="h-8 w-8 rounded-full border-[3.5px] bg-our-red border-our-red" />
           </div>
 
           <h2
-            className="text-white font-bold text-6xl italic tracking-tighter leading-4 lg:leading-none mx-auto"
+            className="text-white font-bold text-5xl xl:text-6xl italic tracking-tighter leading-4 lg:leading-none mx-auto"
             // style={{ y, zIndex: 1 }}
           >
             {TedEvent.year}
@@ -67,7 +64,7 @@ export default function Photo({ TedEvent }) {
             // style={{ y, zIndex: 1 }}
           />
         </div>
-        <div className="xl:mr-[5vw] self-start xl:self-center">
+        <div className="xl:mr-[5vw] self-start lg:self-center lg:col-span-2 xl:col-span-1">
           {/* <Image */}
           <img
             width={300}
@@ -83,14 +80,13 @@ export default function Photo({ TedEvent }) {
           className="mx-auto w-[15vw] h-[5vh] xl:hidden"
           // style={{ y, zIndex: 1 }}
         /> */}
-        <div className="hidden xl:block">
-          <p
-            className="text-white text-base 2xl:text-md leading-6 text-justify tracking-wide w-[95%] mx-auto"
-            // style={{ y, right: "7vw", zIndex: 1 }}
-          >
-            {TedEvent.paragraph}
-          </p>
-        </div>
+
+        <p
+          className="hidden lg:block text-white text-base 2xl:text-lg leading-6 text-justify col-span-2 xl:col-span-1 tracking-wide w-[95%] mx-auto"
+          // style={{ y, right: "7vw", zIndex: 1 }}
+        >
+          {TedEvent.paragraph}
+        </p>
       </div>
     </div>
   );
