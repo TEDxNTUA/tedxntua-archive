@@ -60,19 +60,17 @@ const SelectCategory = ({ category, setCategory, uniqueCategories }) => {
             key={index}
             className={`cursor-pointer border-black border rounded-md px-2 py-1 ${
               category.includes(watchtalk_category) ? "bg-our-red" : ""
-            } hover:bg-our-red hover:text-white`}
+            } hover:bg-our-red hover:text-white text-white text-xs font-bold  `}
             value={watchtalk_category}
             onClick={handleSelectCategoryChange}
             // aria-pressed={category.includes(watchtalk_category)}
             onTouchEnd={handleTouchEnd}
           >
-            <span className="text-white text-xs font-bold">
-              {
-                // Capitalize the first letter of the category
-                watchtalk_category.charAt(0).toUpperCase() +
-                  watchtalk_category.slice(1)
-              }
-            </span>
+            {
+              // Capitalize the first letter of the category
+              watchtalk_category.charAt(0).toUpperCase() +
+                watchtalk_category.slice(1)
+            }
           </button>
         ))}
       </div>

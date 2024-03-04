@@ -54,7 +54,6 @@ function HomePage() {
         <NewFooter />
       </div>
       {/* </div> */}
-      <ScrollTopButton isHomePage={true} />
     </main>
   );
 }
