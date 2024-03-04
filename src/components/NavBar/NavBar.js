@@ -41,16 +41,12 @@ function NewNavbar() {
     "h-[4px] w-8 my-[2.5px] rounded-full bg-white transition-all ease-in-out opacity-100 duration-[500ms]";
 
   return (
-    <nav className="fixed bg-black top-0 left-0 right-0 z-10 w-full flex">
-      <div className="flex w-full py-4 px-6 items-center justify-between lg:px-16 xl:px-22 2xl:px-36 3xl:px-56">
-        <Link
-          onClick={closeDrawer}
-          href="/"
-          className="text-5xl text-white font-semibold"
-        >
+    <nav className="fixed flex w-full top-0 left-0 right-0 z-10 bg-black">
+      <div className="flex w-[85%] lg:max-w-[100rem] h-[65px] px-6 items-center justify-between mx-auto">
+        <Link onClick={closeDrawer} href="/">
           <img
             src="./tedxntua_logo.png"
-            className="w-44 lg:w-64 h-auto object-contain"
+            className="w-auto h-[40px] object-contain"
             alt="TEDxNTUA Logo"
             onClick={() =>
               document
@@ -62,9 +58,9 @@ function NewNavbar() {
         {/* Desktop Nav */}
         <div
           id="desktop-navbar"
-          className="menu hidden md:flex flex-row-reverse "
+          className="menu hidden lg:flex flex-row-reverse "
         >
-          <ul className="flex md:flex-row  md:space-x-8 lg:space-x-16">
+          <ul className="flex lg:flex-row lg:space-x-8 xl:space-x-16">
             {navLinks.map((link, index) => (
               <li key={index} className="mx-2">
                 {link.isImage ? (
@@ -95,7 +91,7 @@ function NewNavbar() {
           </ul>
         </div>
         {/* Burger for Mobile Nav */}
-        <div id="burger" className="block md:hidden">
+        <div id="burger" className="block lg:hidden">
           <button
             className="flex cursor-pointer flex-col items-center justify-center outline-none"
             onClick={() => setDrawerIsOpen(!drawerIsOpen)}
@@ -124,8 +120,8 @@ function NewNavbar() {
         id="mobile-drawer"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[45%] z-100 md:hidden h-[92vh] bg-black ease-in duration-300 mt-[8.2vh]"
-            : "fixed right-[-120%] h-[90vh] mt-[9.8vh] z-100"
+            ? "fixed right-0 w-[45%] z-50 lg:hidden h-[92vh] bg-black ease-in duration-300 mt-[8.2vh]"
+            : "fixed right-[-120%] h-[90vh] mt-[9.8vh] z-50"
         }
       >
         <div className="flex flex-col items-center justify-between h-full pt-16 pb-24 w-[90%] mx-auto">
@@ -155,7 +151,7 @@ function NewNavbar() {
         id="opacity-when-drawer-clicked"
         className={
           drawerIsOpen
-            ? "fixed right-0 w-[100%] md:hidden bg-black/40 z-40 h-[92vh] mt-[8.2vh]"
+            ? "fixed right-0 w-[100%] lg:hidden bg-black/40 z-40 h-[92vh] mt-[8.2vh]"
             : "fixed right-[-120%] h-[90vh] mt-[9.8vh]"
         }
       />

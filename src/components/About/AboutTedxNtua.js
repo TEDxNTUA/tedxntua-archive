@@ -3,7 +3,7 @@ import classes from "./AboutTedx.module.css";
 function AboutTEDxNTUA() {
   return (
     <div
-      className="w-[100%] py-28"
+      className="h-[calc(100vh-65px)] flex flex-col justify-center"
       style={{
         // backgroundImage: `url('/about/about4b.jpeg')`,
         backgroundImage: `url('/about/BG.png')`,

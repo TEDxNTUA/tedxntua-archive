@@ -2,7 +2,7 @@ function WhatIsTed() {
   return (
     <div>
       {/* <div
-        className="desktop-title lg:table hidden w-[100%] h-[calc(100vh-4.1rem)] md:h-[calc(100vh-5rem) text-center"
+        className="desktop-title lg:table hidden w-[100%] h-[calc(100vh-65px)] md:h-[calc(100vh-5rem) text-center"
         style={{
           backgroundImage: `url('/about/BG.png')`,
 

@@ -11,7 +11,7 @@ function AboutPage() {
   return (
     <section>
       {/* <AlternateColumnScroll /> */}
-      <WhatIsTed />
+      {/* <WhatIsTed /> */}
       <AboutTEDxNTUA />
 
       {/* <div className="h-[15vh]"></div> */}

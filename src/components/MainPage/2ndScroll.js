@@ -1,40 +1,79 @@
-"use client";
+import TEDxInNumbers from "../TEDInNumbers/TEDxInNumbers";
 
 import Image from "next/image";
 
 function SecondScroll() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 justify-items-center bg-black mb-2">
-      <div className="flex flex-col items-center md:items-left justify-center w-8/12 lg:w-5/12 my-4 md:my-8">
-        <h1 className="hidden mb:block text-2xl hover:text-our-red text-left font-extrabold text-white leading-tight">
-          About the
-        </h1>
+    <section>
+      <div className="mobile-tablet 2nd-scroll h-[calc(100vh-65px)] lg:hidden flex flex-col justify-end">
+        <div className="flex flex-col justify-between gap-8 md:gap-16 items-center w-[85%] mx-auto my-auto">
+          <div className="title col-span-1 flex flex-col gap-4">
+            {/* <h1 className="text-2xl text-center font-extrabold text-white tracking-wider">
+            About the
+          </h1> */}
+            {/* <Image */}
+            <img
+              className="mx-auto w-[80%] md:w-[60%]"
+              src="./homepage/archive.png"
+              width={300}
+              height={300}
+              alt="archive"
+            />
+            <p className="text-white text-justify font-light text-base md:w-[80%] md:text-xl mx-auto">
+              The TEDxNTUA Archive is a collection of all material produced by
+              TEDxNTUA since its inception in 2015. Scroll down to see...
+            </p>
+          </div>
 
-        {/* <Image */}
-        <img
-          className="pt-4 object-left"
-          src="./homepage/archive.png"
-          width={300}
-          height={300}
-          alt="archive"
-        />
-        <p className="text-white text-justify font-light text-sm mt-4">
-          The TEDxNTUA Archive is a collection of all material produced by
-          TEDxNTUA since its inception in 2015. Scroll down to see...
-        </p>
+          {/* <Image */}
+          <img
+            className="w-[100%] rounded-md"
+            src="./homepage/video-recap.png"
+            width={800}
+            height={800}
+            alt="archive"
+            // priority={true}
+            priority="true"
+          />
+
+          <TEDxInNumbers />
+        </div>
       </div>
 
-      {/* <Image */}
-      <img
-        className="w-[70%] md:w-[100%] -pb-10"
-        src="./homepage/video-recap.png"
-        width={800}
-        height={800}
-        alt="archive"
-        // priority={true}
-        priority="true"
-      />
-    </div>
+      <div className="desktop 2nd-scroll h-[calc(100vh-65px)] hidden lg:flex flex-col gap-16 justify-center w-[80%] max-w-[100rem] mx-auto relative">
+        <div className="grid grid-cols-2 justify-center items-center mx-auto">
+          <div className="title col-span-1 flex flex-col gap-4">
+            {/* <h1 className="text-2xl text-center font-extrabold text-white tracking-wider">
+            About the
+          </h1> */}
+            {/* <Image */}
+            <img
+              className="mx-auto w-[80%] md:w-[60%]"
+              src="./homepage/archive.png"
+              width={300}
+              height={300}
+              alt="archive"
+            />
+            <p className="text-white text-justify font-light w-[70%] text-lg mx-auto">
+              The TEDxNTUA Archive is a collection of all material produced by
+              TEDxNTUA since its inception in 2015. Scroll down to see...
+            </p>
+          </div>
+
+          {/* <Image */}
+          <img
+            className="col-span-1 w-[100%] rounded-md"
+            src="./homepage/video-recap.png"
+            width={800}
+            height={800}
+            alt="archive"
+            // priority={true}
+            priority="true"
+          />
+        </div>
+        <TEDxInNumbers />
+      </div>
+    </section>
   );
 }
 
