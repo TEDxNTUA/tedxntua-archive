@@ -66,7 +66,8 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
               </p>
               <p className="row-span-1 text-our-black text-sm lg:text-base font-thin z-10 w-[60%] text-justify">
                 This independent TEDx event is operated under license from TED
-                and the auspices of ICCS
+                and the auspices of ICCS. This website is our latest version :
+                2024
               </p>
               <div className="row-span-1 w-[60%]">
                 <SocialMediaFooter />
@@ -118,7 +119,8 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
               </p>
               <p className="row-span-1 :text-our-black text-sm font-thin z-10 text-justify">
                 This independent TEDx event is operated under license from TED
-                and the auspices of ICCS
+                and the auspices of ICCS This website is our latest version :
+                2024
               </p>
             </div>
 
