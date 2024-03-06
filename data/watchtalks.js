@@ -809,8 +809,7 @@ export const WATCHTALKS = [
     title: "Leaving our Legacy in the Cosmos",
     yt_link:
       "https://www.youtube.com/watch?v=R9RgEicCzMI&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=1&pp=iAQB",
-    thumbnail_yt:
-      "https://i.ytimg.com/vi/R9RgEicCzMI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKF7VLVbTgav1yduNy2LonnQhzsQ",
+    thumbnail_yt: "https://i.ytimg.com/vi/R9RgEicCzMI/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk60.png",
     bio: "Gazing up at the night sky, we can’t help but wonder whether we are alone in the cosmos. Certainly, our existence is infinitesimally small compared to the vastness of the Universe. But how can we leave our mark to this world? How can we preserve the memory of humanity? In this TED Talk, Dr. Krimigis narrates the journey of the two Voyagers, the only human-made spacecrafts that have ventured beyond the limits of our solar system, now traveling through interstellar space. Alongside them, they carry the Golden Record, a phonograph record that encapsulates the memory of humanity, or at the very least the portion of it that we have chosen to share. Stamatios Krimigis, Vice-President of the Academy of Athens, is a distinguished physicist renowned for his work on NASA space missions, including Voyagers 1 & 2. Holding a Ph.D. from the University of Iowa, he has been associated with Johns Hopkins University's Applied Physics Laboratory since 1968. Honored with numerous awards, including recognition from the US Senate in 2018, an asteroid was named 8323 Krimigis in his honor. ",
     speaker_name: "Stamatis Krimigis",
@@ -824,8 +823,7 @@ export const WATCHTALKS = [
     title: "Navigating Forgetfulness and Intelligence in AI",
     yt_link:
       "https://youtu.be/iniU9cUOW5A?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=iniU9cUOW5A&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=2&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/iniU9cUOW5A/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk61.png",
     bio: "Embark on an illuminating journey into artificial intelligence's memory complexities with Xenia Miscouridou.In her TEDx talk, Xenia unravels the intricate interplay of memory and intelligence in AI systems. Exploring how AI remembers and forgets, she delves into the crucial link between memory, attention mechanisms, and time's transformative role. Xenia prompts critical reflections on AI's selective retention, re-education challenges, and the impact of flawed data on learning - an insightful exploration reshaping our perception of AI's memory dynamics. Xenia Miscouridou, a lecturer in Statistics and Machine Learning at Imperial College London, was recognized for her contributions, she was listed in Forbes 30 Under 30 in Europe in the Science and Healthcare sector.",
     speaker_name: "Xenia Miscouridou",
@@ -838,8 +836,7 @@ export const WATCHTALKS = [
     title: "Memory, Intelligence, Autonomy, Truth and Machines",
     yt_link:
       "https://youtu.be/E4UqnoUavwE?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=E4UqnoUavwE&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=3&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/E4UqnoUavwE/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk62.png",
     bio: "With the increasing use of the term “artificial intelligence”, a concern has started to arise: What exactly is “intelligence” and why is the human mind so special? A globally recognized leader in standards development and intellectual property, Dr. Konstantinos Karachalios, highlights the unique nuances of human memory as opposed to binary machines. Dr. Konstantinos Karachalios, Managing Director of IEEE Standards Association and an influential figure in global standards development and intellectual property, has led efforts to expand IEEE's presence in strategic emerging technology fields. Under his guidance, IEEE has become a focal point for debates on crucial issues such as a trustworthy and inclusive Internet, emphasizing ethical considerations and the rights of minors.",
     speaker_name: "Konstantinos Karachalios",
@@ -853,8 +850,7 @@ export const WATCHTALKS = [
     title: "An Actor's Duality: The Reality Between Memory and Imagination",
     yt_link:
       "https://youtu.be/_HrdqNALlkg?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=_HrdqNALlkg&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=4&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/_HrdqNALlkg/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk63.png",
     bio: "Ever pondered the intricate interplay between personal memories and the captivating world of acting? Enter Myrto Alikaki, a distinguished Greek actress who seamlessly bridges these two realms. Myrto, with her remarkable presence on both stage and screen, has embarked on a journey that traverses her cherished personal memories and the profound art of acting. In this Talk, she unravels the fascinating connection between memory, emotion, imagination, and the craft of acting. Myrto Alikaki, born in Paris in 1972, is a highly accomplished figure in the realms of theater, cinema, and television. Graduating from the Greek Art Theatre Karolos Koun in 1993, she has since collaborated with notable directors in both classical and contemporary theater productions. Her cinematic performances have earned her acclaim, including the First Prize for Female Role at Thessaloniki’s Film Festival in 1998 for Black Out and recognition at Cyprus’ International Film Festival for The Tree and the Swing.",
     speaker_name: "Myrto Alikaki",
@@ -868,8 +864,7 @@ export const WATCHTALKS = [
     title: "Memory Unveiled",
     yt_link:
       "https://youtu.be/4wZSOHNjMJs?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=4wZSOHNjMJs&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=5&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/4wZSOHNjMJs/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk64.png",
     bio: "Memory, the cornerstone of our identity, holds secrets waiting to be unveiled. In this talk, Dr. Nektarios Tavernarakis takes the stage at TEDxNTUA to delve into the intricacies of memory, aging, and the human brain. Through this exploration, he uncovers the profound influence of memory on our sense of self and presents cutting-edge research on memory-related challenges. Join him on this captivating journey into the world of memory as he delves into the enigmatic realm of our minds. Nektarios Tavernarakis, Professor of Molecular Systems Biology at the University of Crete, is a distinguished figure in the scientific community. Additionally serving as Chairman of the Board at the Foundation for Research and Technology and Research Director at the Institute of Molecular Biology and Biotechnology, his leadership extends to the Neurogenetics and Ageing laboratory. A member of prestigious scientific organizations, including EMBO and the European Academy of Sciences and Arts, Tavernarakis has made significant contributions to molecular biology, particularly in necrotic cell death, neurodegeneration, cellular metabolism, and aging. ",
     speaker_name: "Nektarios Tavernarakis",
@@ -883,8 +878,7 @@ export const WATCHTALKS = [
     title: "The rebirth of a village: Vamvakou Revival",
     yt_link:
       "https://youtu.be/XDnQ2A7JqoI?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=XDnQ2A7JqoI&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=6&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/XDnQ2A7JqoI/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk65.png",
     bio: "Thousands of villages around the world are facing the issue of depopulation and are threatened to be forgotten. Can a seemingly “dead” village be reborn? Meet Eleni Mami and Haris Vasilakos, co-founders of the Vamvakou Revival project who have dedicated their lives to this purpose.Representing an organization founded by a group of friends with strong ties to the village of Vamvakou, Eleni and Haris take the TEDxNTUA stage determined to their mission: to give new life to the village, based on its memories and history. Eleni Mami & Haris Vasilakos are both co-founders of the Vamvakou Revival, which was established in August 2018 with vital support from the Stavros Niarchos Foundation. Their team’s mission is to breathe new life into the village of Vamvakou by fostering sustainable development. They seek to attract residents by creating jobs and improving living standards. Key pillars include tourism, innovation, agri-food, culture, and entrepreneurship. The goal is to transform Vamvakou into a vibrant community, serving as a pioneering model not only in Greece but also internationally. ",
     speaker_name: "Eleni Mami & Haris Vasilakos",
@@ -897,8 +891,7 @@ export const WATCHTALKS = [
     title: "Expressing Identity Through Photography",
     yt_link:
       "https://youtu.be/AJndmyk15Fk?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
-    thumbnail_yt:
-      "https://www.youtube.com/watch?v=AJndmyk15Fk&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=7&pp=iAQB",
+    thumbnail_yt: "https://i.ytimg.com/vi/AJndmyk15Fk/hqdefault.jpg",
     thumbnail: "./watchpage/watchtalks/watchtalk66.png",
     bio: "Ever wondered how one's memories can shape their path in life? Meet Sever Zolak, a visionary photographer and prolific producer, whose remarkable journey is interwoven with his powerful memories and unique photography style. In this Talk he shares his story, revealing how memories have played a pivotal role in crafting his artistic identity. Sever Zolak, born in 1986 in Bosnia and Herzegovina, is a renowned photographer and producer with a career in fashion and commercial photography. His passion for photography ignited during his early years and starting with analog cameras his work gained recognition with publications in Svet magazine. After studying in Novi Sad and honing his skills in New York, he collaborated with global fashion houses, appearing in the British and Russian Vogue. ",
     speaker_name: "Sever Zolak",
