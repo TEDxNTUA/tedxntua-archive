@@ -3,6 +3,7 @@ import NewsletterTitle from "@/components/NewsletterPages/NewsletterTitle";
 import IntroductionMedia from "@/components/NewsletterPages/Media/IntroductionMedia";
 import MediaSuggestions from "@/components/NewsletterPages/Media/MediaSuggestions";
 import NewFooter from "@/components/Footer/NewFooter";
+import Link from "next/link";
 
 export default function MediaNewsletter() {
   return (
@@ -16,10 +17,9 @@ export default function MediaNewsletter() {
       }
     >
       <div className="absolute p-1 lg:p-10">
-        <button
-          type="button"
-          class="w-full flex items-center justify-center lg:px-5 px-2 py-2 text-sm text-white transition-colors duration-200 bg-transparent hover:bg-black border border-our-red rounded-lg gap-x-2 sm:w-auto"
-          onClick={() => window.open("/unmuTED", "_self")}
+        <Link
+          href="/unmuTED"
+          className="w-full flex items-center justify-center lg:px-5 px-2 py-2 text-sm text-white transition-colors duration-200 bg-transparent hover:bg-black border border-our-red rounded-lg gap-x-2 sm:w-auto"
         >
           <svg
             className="text-our-red w-5 h-5 rtl:rotate-180"
@@ -30,13 +30,12 @@ export default function MediaNewsletter() {
             stroke="currentColor"
           >
             <path
-              strokLinecap="round"
               strokeLinejoin="round"
               d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
             />
           </svg>
           <span className="italic text-xs">Go back</span>
-        </button>
+        </Link>
       </div>
 
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
