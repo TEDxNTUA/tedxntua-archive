@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "./NewsletterTitle.module.css";
 
-export default function NewsletterTitle() {
+export default function NewsletterTitle({date_image}) {
   return (
     <div className="w-[80%] md:w-[70%] 3xl:w-[60%] flex flex-col mx-auto gap-8">
       {/* sm:gap-20 md:gap-24 lg:gap-28 xl:gap-32 2xl:gap-36 3xl:gap-40 4xl:gap-36 5xl:gap-40 */}
@@ -61,8 +61,8 @@ export default function NewsletterTitle() {
 
         {/* <h1 className="text-white text-[3cqw] font-serif">2.03.2024</h1> */}
         <img
-          src="./newsletters/media/media-date.png"
-          alt="image"
+          src={date_image}
+          alt="date_of_newsletter"
           // fill="true"
           width={300}
           height={300}
