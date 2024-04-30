@@ -2,7 +2,12 @@ import UnmutedCard from "./UnmutedCard";
 
 export default function UnmutedGrid({}) {
   const unmutedlist = [
-   
+    {
+      link: "/unmuTED3",
+      thumbnail: "./unmuted/fr.png",
+      title: "unmuTED3",
+      team: "FR",
+    },
     {
       link: "/unmuTED2",
       thumbnail: "./unmuted/experience.png",
