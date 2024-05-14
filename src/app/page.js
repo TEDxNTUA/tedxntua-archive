@@ -30,7 +30,7 @@ function HomePage() {
       <SecondScroll />
 
       <div className="2024 relative mt-12">
-        <div className="hidden lg:block w-[80%] mx-auto max-w-[100rem] border-l-8 lg:border-our-red py-16">
+        {/* <div className="2024 NEW YEAR hidden lg:block w-[80%] mx-auto max-w-[100rem] border-l-8 lg:border-our-red py-16">
           <div className="flex flex-row gap-8 w-[80%] h-8 mx-auto left-0 top-0 right-[23px] 2xl:right-[22px] max-w-[100rem] absolute">
             <div className="h-8 w-8 rounded-full border-[3.5px] bg-our-red border-our-red" />
             <div className="absolute top-[-15px] left-[100px] flex flex-col">
@@ -46,7 +46,7 @@ function HomePage() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <Timeline />
       </div>
       {/* <div className="snap-start"> */}
