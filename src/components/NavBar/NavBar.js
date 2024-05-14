@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import "./Navbar.css";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import SocialMediaNav from "./SocialMediaNav";
@@ -58,7 +59,7 @@ function NewNavbar() {
         {/* Desktop Nav */}
         <div
           id="desktop-navbar"
-          className="menu hidden lg:flex flex-row-reverse "
+          className="menu hidden lg:flex flex-row-reverse lg:flex-row gap-8 xl:gap-16 justify-center items-center"
         >
           <ul className="flex lg:flex-row lg:space-x-8 xl:space-x-16">
             {navLinks.map((link, index) => (
@@ -89,6 +90,19 @@ function NewNavbar() {
               </li>
             ))}
           </ul>
+
+          <a
+            // className=""
+            href="https://2023tedxntua.us21.list-manage.com/subscribe?u=8fb93651f7aa4956e92c4f188&id=1473802836"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="ticket h-[60px]"
+              src="./ticket-2024.png"
+              alt="ticket"
+            ></img>
+          </a>
         </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block lg:hidden">
