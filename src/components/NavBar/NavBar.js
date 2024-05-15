@@ -93,13 +93,13 @@ function NewNavbar() {
 
           <a
             // className=""
-            href="https://2023tedxntua.us21.list-manage.com/subscribe?u=8fb93651f7aa4956e92c4f188&id=1473802836"
+            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
               className="ticket h-[60px]"
-              src="./ticket-2024.png"
+              src="./ticket.png"
               alt="ticket"
             ></img>
           </a>
@@ -146,6 +146,18 @@ function NewNavbar() {
               </li>
             ))}
           </ul>
+          <a
+            // className=""
+            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="ticket h-[60px]"
+              src="./ticket.png"
+              alt="ticket"
+            ></img>
+          </a>
           {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
           {/* <button
             className="bg-our-red bg-opacity-100 hover:bg-our-red hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
