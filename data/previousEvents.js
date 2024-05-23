@@ -2,7 +2,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "ephemeral",
     year: "2024",
-    link: "https://www.linkedin.com",
+    link: "https://2024.tedxntua.com/",
     source: "ephemeral.png",
     logo: "ephemeral-logo.png",
     paragraph:
@@ -12,7 +12,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "mneme",
     year: "2023",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "mneme.jpeg",
     logo: "Mneme-logo.png",
     paragraph:
@@ -21,7 +21,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "play",
     year: "2022",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "play.jpeg",
     logo: "Play-logo.png",
     paragraph:
@@ -31,7 +31,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "ubuntu",
     year: "2021",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "ubuntu.jpeg",
     logo: "Ubuntu-logo.png",
     paragraph:
@@ -40,7 +40,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "dualism",
     year: "2020",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "dualism.jpeg",
     logo: "Dualism-logo.png",
     paragraph:
@@ -51,7 +51,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "enigma",
     year: "2019",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "enigma.jpeg",
     logo: "Enigma-logo.png",
     paragraph:
@@ -61,7 +61,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "chaos",
     year: "2018",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "chaos.jpeg",
     logo: "Chaos-logo.png",
     paragraph:
@@ -70,7 +70,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "heuristics",
     year: "2017",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "heuristics.jpeg",
     logo: "Heuristics-logo.png",
     paragraph:
@@ -79,7 +79,7 @@ export const PREVIOUSEVENTS = [
   {
     id: "chain reactions",
     year: "2015",
-    link: "https://www.linkedin.com",
+    link: "",
     source: "chain-reactions.jpeg",
     logo: "Chain-reactions-logo.png",
     paragraph:

@@ -10,6 +10,7 @@ export default function Photo({ TedEvent }) {
   const { scrollYProgress } = useScroll({ target: Imageref });
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
+  console.log(TedEvent.link);
   return (
     // <main className="h-[50vh] grid grid-cols-3 justify-center items-center snap-center bg-emerald-500">
     //   <div className="grid grid-cols-1 justify-center items-center">
@@ -64,8 +65,7 @@ export default function Photo({ TedEvent }) {
             // style={{ y, zIndex: 1 }}
           />
         </div>
-        <div className="xl:mr-[5vw] self-start lg:self-center lg:col-span-2 xl:col-span-1">
-          {/* <Image */}
+        {/* <div className="xl:mr-[5vw] self-start lg:self-center lg:col-span-2 xl:col-span-1">
           <img
             width={300}
             height={300}
@@ -74,7 +74,36 @@ export default function Photo({ TedEvent }) {
             src={`./previousEvents/${TedEvent.source}`}
             alt="Previous ted event"
           />
+        </div> */}
+        <div className="xl:mr-[5vw] self-start lg:self-center lg:col-span-2 xl:col-span-1">
+          {TedEvent.link !== "" ? (
+            <a
+              href={TedEvent.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:cursor-pointer bg-blue-500"
+            >
+              <img
+                width={300}
+                height={300}
+                ref={Imageref}
+                className="border-[2px] border-[#eb002733] hover:border-[#eb0027] rounded-md mx-auto w-[60%] xl:w-full object-fill"
+                src={`./previousEvents/${TedEvent.source}`}
+                alt="Previous ted event"
+              />
+            </a>
+          ) : (
+            <img
+              width={300}
+              height={300}
+              ref={Imageref}
+              className="border-[2px] border-[#eb002733] rounded-md mx-auto w-[60%] xl:w-full object-fill"
+              src={`./previousEvents/${TedEvent.source}`}
+              alt="Previous ted event"
+            />
+          )}
         </div>
+
         {/* <img
           src={`./eventLogos/${TedEvent.logo}`}
           className="mx-auto w-[15vw] h-[5vh] xl:hidden"
