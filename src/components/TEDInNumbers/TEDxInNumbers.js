@@ -4,7 +4,7 @@ import TEDxStat from "./TEDxStat";
 
 const achievementsList = [
   {
-    stat: "Attendes",
+    stat: "Attendees",
     endValue: "4000",
     suffix: "+",
   },
