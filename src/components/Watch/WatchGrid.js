@@ -29,7 +29,7 @@ export default function WatchGrid({
   return (
     <>
       {filteredWatchTalks.length === 0 && (
-        <p className="text-our-red text-3xl items-center">OUPS... NO TALKS</p>
+        <p className="text-our-red text-3xl items-center">OOPS... NO TALKS</p>
       )}
       {filteredWatchTalks.length > 0 && (
         <ul
