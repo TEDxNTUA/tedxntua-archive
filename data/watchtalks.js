@@ -908,7 +908,7 @@ export const WATCHTALKS = [
     thumbnail: "./watchpage/watchtalks/watchtalk67.png",
     bio: "Art is directly intertwined with the notion of the ephemeral, a concept that has preoccupied artists for thousands of years. From the cave of Lascaux to Jan van Eyck's famous Arnolfini Wedding and Damien Hirst's impressive shark, the ephemerality of human nature seems to be the driving force of creation.  Fotis Floros is 22 years old and studies Theory and History of Art in the School of Fine Arts. At the same time, he is the creator of the community science project \"The Dandy\", a page that aims to bring the world closer to art through social media. Through interesting and strange stories, he tries to make his science more accessible to the public and prove that art is something that belongs to everyone. He searches for the faces and stories behind famous works of art and reintroduces them to the world through a new lens.",
     speaker_name: "Fotis Floros",
-    speaker_info: "https://www.instagram.com/fotis_floros/",
+    speaker_info: "https://www.instagram.com/_the_dandy_/?igsh=YWZyeWVkcnBjdThi",
     year: 2024,
     category: "culture",
   },
