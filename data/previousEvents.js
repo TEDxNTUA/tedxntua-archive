@@ -6,7 +6,7 @@ export const PREVIOUSEVENTS = [
     source: "ephemeral.png",
     logo: "ephemeral-logo.png",
     paragraph:
-      "This year, the organizing team of TEDxNTUA is preparing 'EPHEMERAL'.Ephemeral < originates from the greek word ἐφήμερος, meaning 'the one that lasts only one day' We will be exploring ephemerality and aiming to spread ideas around the concept of transience, how everything begins, ends and consequently  evolves, in all aspects of our lives. In the context of human experience, transience highlights the uniqueness and value of each moment and experience. At our event, we will point out how reconciliation with the ephemeral nature of things turns into a motivating force and a source of inspiration.",
+      "This year, the organizing team of TEDxNTUA is preparing 'EPHEMERAL'. Ephemeral originates from the greek word ἐφήμερος, meaning 'the one that lasts only one day' We will be exploring ephemerality and aiming to spread ideas around the concept of transience, how everything begins, ends and consequently  evolves, in all aspects of our lives. In the context of human experience, transience highlights the uniqueness and value of each moment and experience. At our event, we will point out how reconciliation with the ephemeral nature of things turns into a motivating force and a source of inspiration.",
   },
 
   {
