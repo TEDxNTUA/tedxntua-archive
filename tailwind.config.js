@@ -22,6 +22,8 @@ module.exports = {
         "tedx-red": "#eb0028",
         "our-red": "#e14640",
         "our-black": "#191617",
+        "ephemeral-neon": "#aae007",
+        "ephemeral-purple": "#1b0e28"
       },
     },
   },
