@@ -1,4 +1,12 @@
 export const PREVIOUSEVENTS = [
+  // {
+  //   id: "synelixis",
+  //   year: "2025",
+  //   link: "",
+  //   source: "synelixis.png",
+  //   logo: "synelixis-logo.png",
+  //   paragraph: "",
+  // },
   {
     id: "ephemeral",
     year: "2024",
