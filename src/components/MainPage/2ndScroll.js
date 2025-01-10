@@ -1,6 +1,5 @@
 import TEDxInNumbers from "../TEDInNumbers/TEDxInNumbers";
-
-import Image from "next/image";
+// import Image from "next/image";
 
 function SecondScroll() {
   return (
@@ -8,13 +7,9 @@ function SecondScroll() {
       <div className="mobile-tablet 2nd-scroll h-[calc(100vh-65px)] lg:hidden flex flex-col justify-end">
         <div className="flex flex-col justify-between gap-8 md:gap-16 items-center w-[85%] mx-auto my-auto">
           <div className="title col-span-1 flex flex-col gap-4">
-            {/* <h1 className="text-2xl text-center font-extrabold text-white tracking-wider">
-            About the
-          </h1> */}
-            {/* <Image */}
             <img
               className="mx-auto w-[80%] md:w-[60%]"
-              src="./homepage/archive.png"
+              src="/api/proxy-image?id=13wKapN78o5nEZJgTqp8IbOFaOJM2nruz" 
               width={300}
               height={300}
               alt="archive"
@@ -25,14 +20,12 @@ function SecondScroll() {
             </p>
           </div>
 
-          {/* <Image */}
           <img
             className="w-[100%] rounded-md"
-            src="./homepage/video-recap.png"
+            src="/api/proxy-image?id=17nYIHF2AgV_YsRHY8lX2MeOunxUOrlhU"
             width={800}
             height={800}
-            alt="archive"
-            // priority={true}
+            alt="video recap"
             priority="true"
           />
 
@@ -43,13 +36,9 @@ function SecondScroll() {
       <div className="desktop 2nd-scroll h-[calc(100vh-65px)] hidden lg:flex flex-col gap-16 justify-center w-[80%] max-w-[100rem] mx-auto relative">
         <div className="grid grid-cols-2 justify-center items-center mx-auto">
           <div className="title col-span-1 flex flex-col gap-4">
-            {/* <h1 className="text-2xl text-center font-extrabold text-white tracking-wider">
-            About the
-          </h1> */}
-            {/* <Image */}
             <img
               className="mx-auto w-[80%] md:w-[60%]"
-              src="./homepage/archive.png"
+              src="/api/proxy-image?id=13wKapN78o5nEZJgTqp8IbOFaOJM2nruz"
               width={300}
               height={300}
               alt="archive"
@@ -60,14 +49,12 @@ function SecondScroll() {
             </p>
           </div>
 
-          {/* <Image */}
           <img
             className="col-span-1 w-[100%] rounded-md"
-            src="./homepage/video-recap.png"
+            src="/api/proxy-image?id=17nYIHF2AgV_YsRHY8lX2MeOunxUOrlhU"
             width={800}
             height={800}
-            alt="archive"
-            // priority={true}
+            alt="video recap"
             priority="true"
           />
         </div>

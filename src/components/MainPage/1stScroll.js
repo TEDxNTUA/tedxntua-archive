@@ -10,24 +10,23 @@ function FirstScroll() {
             <span className="text-our-red">WELCOME</span> TO THE TED
             <span className="text-our-red">x</span>NTUA
           </h1>
-          {/* <Image */}
+          {/* Updated image using proxy */}
           <img
             className="pt-4 w-[50%] mx-auto md:mx-0 md:w-[40%] lg:w-[80%]"
-            src="./homepage/archive.png"
+            src="/api/proxy-image?id=13wKapN78o5nEZJgTqp8IbOFaOJM2nruz" 
             width={300}
             height={300}
             alt="archive"
             priority="true"
           />
         </div>
-        {/* <Image */}
+        {/* Updated image using proxy */}
         <img
           className="w-[100%] h-auto mx-auto"
-          src="./homepage/starting-page1.png"
+          src="/api/proxy-image?id=17nYIHF2AgV_YsRHY8lX2MeOunxUOrlhU"
           width={800}
           height={800}
           alt="archive"
-          // priority={true}
           priority="true"
         />
       </div>
@@ -35,10 +34,8 @@ function FirstScroll() {
       <div
         className="destkop 1st-scroll h-[calc(100vh-65px)] hidden lg:grid grid-cols-2 justify-center items-center max-w-[100rem] mx-auto"
         style={{
-          // backgroundImage: `url('/about/about4a.jpeg')`,
           backgroundImage: `url('./homepage/starting-page.png')`,
-          // backgroundImage: `url('BG.png.jpeg')`,
-          backgroundSize: "cover", // Optional: adjust as needed
+          backgroundSize: "cover",
         }}
       >
         <div className="flex flex-col gap-4 px-16 lg:bg-none my-16 mx-auto justify-center items-center max-w-[50rem]">
@@ -46,27 +43,17 @@ function FirstScroll() {
             <span className="text-our-red">WELCOME</span> TO THE TED
             <span className="text-our-red">x</span>NTUA
           </h1>
-          {/* <Image */}
+          {/* If desired, replace this image as well */}
           <img
             className="w-[70%] mx-auto"
-            src="./homepage/archive.png"
+            src="/api/proxy-image?id=13wKapN78o5nEZJgTqp8IbOFaOJM2nruz"
             width={300}
             height={300}
             alt="archive"
             priority="true"
           />
         </div>
-        {/* <Image */}
         <div></div>
-        {/* <img
-          className="w-auto max-h-[calc(100vh-65px)] mx-auto"
-          src="./homepage/starting-page.png"
-          width={800}
-          height={800}
-          alt="archive"
-          // priority={true}
-          priority="true"
-        /> */}
       </div>
     </section>
   );
