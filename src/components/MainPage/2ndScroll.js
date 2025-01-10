@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function SecondScroll() {
   return (
-    <section>
+    <section className="mb-[100px]">
       <div className="mobile-tablet 2nd-scroll h-[calc(100vh-65px)] lg:hidden flex flex-col justify-end">
         <div className="flex flex-col justify-between gap-8 md:gap-16 items-center w-[85%] mx-auto my-auto">
           <div className="title col-span-1 flex flex-col gap-4">
