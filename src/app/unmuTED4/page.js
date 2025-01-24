@@ -5,10 +5,10 @@ import VenueMainContent from "@/components/NewsletterPages/Venue/VenueMainConten
 import NewFooter from "@/components/Footer/NewFooter";
 import Link from "next/link";
 
-export default function FRNewsletter() {
+export default function VenueNewsletter() {
   return (
     <div
-      className="bg-our-black" // bg-contain"
+      className="bg-ephemeral-purple" // bg-contain"
       style={
         {
           // backgroundImage: `url('/newsletters/media/background.png')`,

@@ -8,8 +8,8 @@ function VenueMainContent() {
   return (
     <div className="text-white text-justify">
       <Dimitris />
-      <Giannis />
       <Georgia />
+      <Giannis />
     </div>
   );
 }

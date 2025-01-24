@@ -1,6 +1,19 @@
 function Giannis() {
-    return (
-      <div id="Giannis">
+  return (
+    <div id="Giannis">
+      <div className="w-full flex flex-col gap-6 text-justify">
+        <div className="mt-5 mb-10">
+          <hr className="bg-white h-1" />
+          <p className="text-ephemeral-neon text-xl text-center lg:text-2xl my-2 font-bold px-10 py-4">
+            “Suggestions”
+          </p>
+          <hr className="bg-white h-1" />
+        </div>
+        <p className="underline">
+        Είμαι ο <span className="font-semibold">Γιάννης</span> και είπα να σας βάλω κάτι χρήσιμο στο σημερινό unmuted! Οπότε ορίστε 6 μέρη που θα πρότεινα χωρίς
+        δεύτερη σκέψη τόσο σε φοιτητές που μόλις μετακόμισαν αλλά και σε μόνιμους κατοίκους που έχουν βαρεθεί τα ίδια και 
+        τα ίδια.
+        </p>
         <p className="my-8 italics  text-md md:text-base underline text-justify">
           Ο <span className="font-bold">Παύλος </span> μας αφηγείται:
         </p>
@@ -28,7 +41,7 @@ function Giannis() {
               className="w-[50%] lg:w-[25%] h-auto max-w-[2268px]"
             />
           </div>
-  
+
           <div className="flex flex-col gap-8">
             <p>
               Αφού, λοιπόν, άνοιξα τη γυάλινη πόρτα με τις άπειρες αφίσες,
@@ -60,15 +73,15 @@ function Giannis() {
               εκατομμυριούχο C.F. Kane. Πρέπει να χρησιμοποιήσεις πολύ πιο μεγάλα
               μέσα, κι αυτά είναι που μεταχειρίζεται κάθε σπουδαία Τέχνη.
             </p>
-  
+
             <p className="italic w-fit m-auto">
               Αφεθείτε σε αυτήν και θα το νιώσετε.
             </p>
           </div>
         </div>
       </div>
-    );
-  }
-  
-  export default Giannis;
-  
+    </div>
+  );
+}
+
+export default Giannis;
