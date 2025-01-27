@@ -51,8 +51,8 @@ export default function VenueNewsletter() {
         
         <div className="flex flex-col gap-6">
           <p className="text-white text-xxs self-end">
-              xoxo… Fundraising Team
-            <span className="text-our-red">&lt;3</span>
+              xoxo… Venue & Production Team
+            <span className="text-ephemeral-neon">&lt;3</span>
           </p>
         </div>
       </div>
