@@ -3,9 +3,16 @@ import Link from "next/link";
 import SocialMediaFooter from "../NavBar/SocialMediaFooter";
 import ModalWrapper from "../NewsLetterModal/ModalWrapper";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 function NewFooter() {
   const [isModalOpenFlag, setIsModalOpenFlag] = useState(false);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="c-footer relative overflow-hidden pt-[2rem] sm:pt-[1rem] md:pt-[10rem] z-0">
       <div className="c-footer-animation w-embed h-[100vh] object-cover md:object-none md:height-[50rem] absolute top-0 right-0 left-0 bottom-0">
@@ -66,8 +73,8 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
               </p>
               <p className="row-span-1 text-our-black text-sm lg:text-base font-thin z-10 w-[60%] text-justify">
                 This independent TEDx event is operated under license from TED
-                and the auspices of ICCS. This website is our latest version :
-                2024
+                and the auspices of ICCS. <br />
+                &copy; {currentYear} TEDxNTUA
               </p>
               <div className="row-span-1 w-[60%]">
                 <SocialMediaFooter />
@@ -119,8 +126,8 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
               </p>
               <p className="row-span-1 :text-our-black text-sm font-thin z-10 text-justify">
                 This independent TEDx event is operated under license from TED
-                and the auspices of ICCS This website is our latest version :
-                2024
+                and the auspices of ICCS. <br />
+                &copy; {currentYear} TEDxNTUA
               </p>
             </div>
 
