@@ -72,7 +72,7 @@ export default function ColumnScroll() {
 
           <img
             className="w-[100%] h-[100%] absolute"
-            src="./about/BG.png"
+            src="/api/proxy-image?id=1rDJthaM6MetEgdVgasrl9ui4Ptjwrskn"
           ></img>
 
           {/* Conditionally render the first two columns for small screens */}

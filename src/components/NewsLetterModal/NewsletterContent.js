@@ -43,7 +43,7 @@ const Newsletter = () => {
       </div> */}
       <div className="text-center">
         <img
-          src="./newsletters/unmuTED-red.png"
+          src="/api/proxy-image?id=1BsSsSl3r-9nsBxZRXMaaM__zp4O7Hhbt"
           alt="tedx ntua logo"
           width={300}
           height={300}
@@ -68,7 +68,7 @@ const Newsletter = () => {
       </div>
       {/* <Image */}
       <img
-        src="./tedxntua-black-logo.png"
+        src="/api/proxy-image?id=1cqPoQZ8msh_u1zzCv0V0omAFcOsdafPS"
         alt="tedx ntua logo"
         width={300}
         height={300}

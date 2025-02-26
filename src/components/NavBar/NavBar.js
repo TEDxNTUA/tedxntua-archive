@@ -46,7 +46,7 @@ function NewNavbar() {
       <div className="flex w-[85%] lg:max-w-[100rem] h-[65px] px-6 items-center justify-between mx-auto">
         <Link onClick={closeDrawer} href="/">
           <img
-            src="./tedxntua_logo.png"
+            src="/api/proxy-image?id=1O238FpNwIXo3ENmBaOg2NdJ2FQCzLLL0"
             className="w-auto h-[40px] object-contain"
             alt="TEDxNTUA Logo"
             onClick={() =>
@@ -74,7 +74,7 @@ function NewNavbar() {
                     // }
                   >
                     <img
-                      src="./homepage/archive.png"
+                      src="/api/proxy-image?id=13wKapN78o5nEZJgTqp8IbOFaOJM2nruz"
                       alt={link.title}
                       className="w-22 h-8"
                     />
@@ -99,7 +99,7 @@ function NewNavbar() {
           >
             <img
               className="ticket h-[60px]"
-              src="./ticket.png"
+              src="/api/proxy-image?id=1Pjem6eFGYD6Hf7FnOx_VxzT4FHQ2gDRD"
               alt="ticket"
             ></img>
           </a>
@@ -154,7 +154,7 @@ function NewNavbar() {
           >
             <img
               className="ticket h-[60px]"
-              src="./ticket.png"
+              src="/api/proxy-image?id=1Pjem6eFGYD6Hf7FnOx_VxzT4FHQ2gDRD"
               alt="ticket"
             ></img>
           </a>

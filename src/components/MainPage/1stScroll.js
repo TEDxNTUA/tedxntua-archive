@@ -34,7 +34,7 @@ function FirstScroll() {
       <div
         className="destkop 1st-scroll h-[calc(100vh-65px)] hidden lg:grid grid-cols-2 justify-center items-center max-w-[100rem] mx-auto"
         style={{
-          backgroundImage: `url('./homepage/starting-page.png')`,
+          backgroundImage: `url('/api/proxy-image?id=1M4smKIRC0_wZt6wEox8ZwLP26QkZ_0aw')`,
           backgroundSize: "cover",
         }}
       >

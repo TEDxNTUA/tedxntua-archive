@@ -3,7 +3,7 @@ function AboutTednTedx() {
     <div
       className="w-[100%] table py-28 mb-28"
       style={{
-        backgroundImage: `url('/about/BG.png')`,
+        backgroundImage: `url('/api/proxy-image?id=1rDJthaM6MetEgdVgasrl9ui4Ptjwrskn')`,
 
         backgroundSize: "cover", // Optional: adjust as needed
       }}

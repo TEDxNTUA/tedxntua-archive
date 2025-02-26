@@ -4,25 +4,25 @@ export default function UnmutedGrid({}) {
   const unmutedlist = [
     {
       link: "/unmuTED4",
-      thumbnail: "./unmuted/fr.png",
+      thumbnail: "/api/proxy-image?id=10xNVBF2UymbY0vR20jKD1gU2ZJX5ZMLL",
       title: "unmuTED4",
       team: "Venue and Production",
     },
     {
       link: "/unmuTED3",
-      thumbnail: "./unmuted/fr.png",
+      thumbnail: "/api/proxy-image?id=10xNVBF2UymbY0vR20jKD1gU2ZJX5ZMLL",
       title: "unmuTED3",
       team: "FR",
     },
     {
       link: "/unmuTED2",
-      thumbnail: "./unmuted/experience.png",
+      thumbnail: "/api/proxy-image?id=1y6ImGAC_ZkqtckVlVuJswVaBVEAqPap9",
       title: "unmuTED2",
       team: "Experience",
     },
     {
       link: "/unmuTED1",
-      thumbnail: "./unmuted/media.png",
+      thumbnail: "/api/proxy-image?id=1y7Yg8biXsO3u--fCBUe1nixRuXV4D0Tg",
       title: "unmuTED1",
       team: "Media",
     },

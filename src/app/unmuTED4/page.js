@@ -39,7 +39,7 @@ export default function FRNewsletter() {
       </div>
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
       <NewsletterTitle
-        date_image={"./newsletters/fr/fr-date_31.03.24.png"}
+        date_image={"/api/proxy-image?id=1yDZ8QYyfyqFlC_OmiWJxOfFDwmNVC7Gr"}
       />
       <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>
       <div

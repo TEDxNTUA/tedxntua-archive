@@ -11,13 +11,13 @@ export const metadata = {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      url: "./favicons/favicon-32x32.png",
+      url: "/api/proxy-image?id=18_MFRFRddQcsiJSxVL1od8eVVj3B-NSy",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url: "./favicons/favicon-16x16.png",
+      url: "/api/proxy-image?id=15fd2NZl98k3rRpbk3uFQvnXO0C9bZJtp",
     },
   ],
 };

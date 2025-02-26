@@ -3,7 +3,7 @@ function AboutTEDx() {
     <div
       style={{
         // backgroundImage: `url('/about/about4b.jpeg')`,
-        backgroundImage: `url('/about/BG.png')`,
+        backgroundImage: `url('/api/proxy-image?id=1rDJthaM6MetEgdVgasrl9ui4Ptjwrskn')`,
         backgroundSize: "cover", // Optional: adjust as needed
       }}
       className="h-[calc(100vh-65px)]  w-full relative flex flex-col justify-center"

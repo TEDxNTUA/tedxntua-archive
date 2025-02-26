@@ -6,7 +6,7 @@ function AboutTEDxNTUA() {
       className="h-[calc(100vh-65px)] flex flex-col justify-center"
       style={{
         // backgroundImage: `url('/about/about4b.jpeg')`,
-        backgroundImage: `url('/about/BG.png')`,
+        backgroundImage: `url('/api/proxy-image?id=1rDJthaM6MetEgdVgasrl9ui4Ptjwrskn')`,
         backgroundSize: "cover", // Optional: adjust as needed
       }}
     >

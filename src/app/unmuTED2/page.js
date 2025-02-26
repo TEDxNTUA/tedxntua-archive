@@ -39,7 +39,7 @@ export default function ExperienceNewsletter() {
       </div>
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
       <NewsletterTitle
-        date_image={"./newsletters/experience/experience-date_17_03_2024.png"}
+        date_image={"/api/proxy-image?id=1XYt_QtWdFK2VbuadrLD67iN-S5kdJI4r"}
       />
       <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>
       <div

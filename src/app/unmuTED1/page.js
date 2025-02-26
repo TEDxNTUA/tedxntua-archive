@@ -40,7 +40,7 @@ export default function MediaNewsletter() {
 
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
       <NewsletterTitle
-        date_image={"./newsletters/media/media-date_03_03_2024.png"}
+        date_image={"/api/proxy-image?id=1mxOvzbhtMzIXjhtPFDkMbVO5_VbXuNSz"}
       />
 
       <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>

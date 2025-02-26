@@ -810,7 +810,7 @@ export const WATCHTALKS = [
     yt_link:
       "https://www.youtube.com/watch?v=R9RgEicCzMI&list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA&index=1&pp=iAQB",
     thumbnail_yt: "https://i.ytimg.com/vi/R9RgEicCzMI/hqdefault.jpg",
-    thumbnail: "./watchpage/watchtalks/watchtalk60.png",
+    thumbnail: "/api/proxy-image?id=1iKO80MzN8GzLQ_jkh75yq-0rvOLPWiSs",
     bio: "Gazing up at the night sky, we can’t help but wonder whether we are alone in the cosmos. Certainly, our existence is infinitesimally small compared to the vastness of the Universe. But how can we leave our mark to this world? How can we preserve the memory of humanity? In this TED Talk, Dr. Krimigis narrates the journey of the two Voyagers, the only human-made spacecrafts that have ventured beyond the limits of our solar system, now traveling through interstellar space. Alongside them, they carry the Golden Record, a phonograph record that encapsulates the memory of humanity, or at the very least the portion of it that we have chosen to share. Stamatios Krimigis, Vice-President of the Academy of Athens, is a distinguished physicist renowned for his work on NASA space missions, including Voyagers 1 & 2. Holding a Ph.D. from the University of Iowa, he has been associated with Johns Hopkins University's Applied Physics Laboratory since 1968. Honored with numerous awards, including recognition from the US Senate in 2018, an asteroid was named 8323 Krimigis in his honor. ",
     speaker_name: "Stamatis Krimigis",
     speaker_info:
@@ -824,7 +824,7 @@ export const WATCHTALKS = [
     yt_link:
       "https://youtu.be/iniU9cUOW5A?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
     thumbnail_yt: "https://i.ytimg.com/vi/iniU9cUOW5A/hqdefault.jpg",
-    thumbnail: "./watchpage/watchtalks/watchtalk61.png",
+    thumbnail: "/api/proxy-image?id=15iFKMSTBEYxFRKJz9Mj8JSV1Q68ZvOVj",
     bio: "Embark on an illuminating journey into artificial intelligence's memory complexities with Xenia Miscouridou.In her TEDx talk, Xenia unravels the intricate interplay of memory and intelligence in AI systems. Exploring how AI remembers and forgets, she delves into the crucial link between memory, attention mechanisms, and time's transformative role. Xenia prompts critical reflections on AI's selective retention, re-education challenges, and the impact of flawed data on learning - an insightful exploration reshaping our perception of AI's memory dynamics. Xenia Miscouridou, a lecturer in Statistics and Machine Learning at Imperial College London, was recognized for her contributions, she was listed in Forbes 30 Under 30 in Europe in the Science and Healthcare sector.",
     speaker_name: "Xenia Miscouridou",
     speaker_info: "https://www.ucy.ac.cy/directory/en/profile/xmisco01",
@@ -837,7 +837,7 @@ export const WATCHTALKS = [
     yt_link:
       "https://youtu.be/E4UqnoUavwE?list=PLd7-PjFC85gz9zLjNuf0zD9bXV9D1N_iA",
     thumbnail_yt: "https://i.ytimg.com/vi/E4UqnoUavwE/hqdefault.jpg",
-    thumbnail: "./watchpage/watchtalks/watchtalk62.png",
+    thumbnail: "/api/proxy-image?id=1w1IXVCgLMY3mSUY2xBdq39oMos67D3oQ",
     bio: "With the increasing use of the term “artificial intelligence”, a concern has started to arise: What exactly is “intelligence” and why is the human mind so special? A globally recognized leader in standards development and intellectual property, Dr. Konstantinos Karachalios, highlights the unique nuances of human memory as opposed to binary machines. Dr. Konstantinos Karachalios, Managing Director of IEEE Standards Association and an influential figure in global standards development and intellectual property, has led efforts to expand IEEE's presence in strategic emerging technology fields. Under his guidance, IEEE has become a focal point for debates on crucial issues such as a trustworthy and inclusive Internet, emphasizing ethical considerations and the rights of minors.",
     speaker_name: "Konstantinos Karachalios",
     speaker_info:

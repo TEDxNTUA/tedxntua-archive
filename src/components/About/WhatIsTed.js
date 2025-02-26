@@ -23,7 +23,7 @@ function WhatIsTed() {
         // className="w-[100%] lg:h-[calc(100vh-5rem) text-center table lg:hidden"
         className="phone-title text-center py-16"
         style={{
-          backgroundImage: `url('/about/BG.png')`,
+          backgroundImage: `url('/api/proxy-image?id=1rDJthaM6MetEgdVgasrl9ui4Ptjwrskn')`,
 
           backgroundSize: "cover", // Optional: adjust as needed
         }}

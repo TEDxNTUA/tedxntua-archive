@@ -28,7 +28,11 @@ const DropdownEvent = ({ event_year, setEvent_year, uniqueYears }) => {
       >
         <p>{event_year === "" ? "Event" : event_year}</p>
         <img
-          src={event_year === "" ? "./arrow_up.png" : "./watchpage/cancel.png"}
+          src={
+            event_year === ""
+              ? "/api/proxy-image?id=1xxhkJA7ccVBkLy6onwNgwU2beoeIqt_4" 
+              : "/api/proxy-image?id=19KRg5FUc_Jh2-xCrwxWxyY4R2iXQvPWS" 
+          }
           className="w-4 h-4 ml-2 rotate-180"
         />
       </button>
