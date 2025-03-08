@@ -43,6 +43,7 @@ export default function WatchGrid({
                   <WatchCard
                     title={watchtalk.title}
                     thumbnail={watchtalk.thumbnail}
+                    thumbnail_yt={watchtalk.thumbnail_yt}
                     yt_link={watchtalk.yt_link}
                     bio={watchtalk.bio}
                     speaker_name={watchtalk.speaker_name}
