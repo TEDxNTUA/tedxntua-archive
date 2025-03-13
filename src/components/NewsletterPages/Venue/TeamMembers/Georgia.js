@@ -22,8 +22,8 @@ function Georgia() {
             πολλά που έχω την ανάγκη να σταματήσω να περπατώ μπας και σταματήσω να σκέφτομαι. Πού και πού κοιτάζω πίσω...
           </p>
           <img
-            src="./newsletters/venue/blade-runner.png"
-            alt="Blade Runner Poster"
+            src="./newsletters/venue/girlwalking.png"
+            alt="Girl Walking"
             className="w-[80%] lg:w-[35%] h-auto max-w-[2268px]"
           />
         </div>
