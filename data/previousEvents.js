@@ -1,6 +1,6 @@
 export const PREVIOUSEVENTS = [
   {
-    id: "Ephemeral",
+    name: "Ephemeral",
     date: "May 25, 2024",
     link: "https://2024.tedxntua.com/",
     source: "ephemeral.png",
@@ -111,7 +111,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Mneme",
+    name: "Mneme",
     date: "May 13, 2023",
     link: "",
     source: "mneme.jpeg",
@@ -189,7 +189,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Play",
+    name: "Play",
     date: "May 21, 2022",
     link: "",
     source: "play.jpeg",
@@ -259,7 +259,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Ubuntu",
+    name: "Ubuntu",
     date: "May 29, 2021",
     link: "",
     source: "ubuntu.jpeg",
@@ -364,7 +364,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Dualism",
+    name: "Dualism",
     date: "March 28, 2020",
     link: "",
     source: "dualism.jpeg",
@@ -372,11 +372,10 @@ export const PREVIOUSEVENTS = [
     paragraph:
       "We approach subjects that touch upon current social, humanitarian, artistic and scientific issues, which consist of two principles. The two principles seem to be unrelated and opposite to one another, but in reality they complement each other and act jointly to achieve a harmonious unity. What are humans made of? Mind and body or just matter? How does the wave-particle duality lead to the cutting-edge technology of quantum computing? How do the parallel existence of electricity and magnetism and their relationship as identified by Maxwell, lead to our modern economy and society? How does digital dualism define our daily life? How does the contrast between white and black compose the essence of a picture? How do emptiness and fullness compose landscapes in architecture? In all of the above, the dependence relationship between the two principles is clear. Without the existence of the first, the meaning of the other is negated.",
     par_short:
-      "DUALISM is the interpretation of the world based on two principles that act jointly and collaborate with each other. It is proposed to be the basis of connection and creation, rather than the foundation of opposition.",
-    talks: []
+      "DUALISM is the interpretation of the world based on two principles that act jointly and collaborate with each other. It is proposed to be the basis of connection and creation, rather than the foundation of opposition."
   },
   {
-    id: "Enigma",
+    name: "Enigma",
     date: "April 6, 2019",
     link: "",
     source: "enigma.jpeg",
@@ -500,7 +499,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Chaos",
+    name: "Chaos",
     date: "March 24, 2018",
     link: "",
     source: "chaos.jpeg",
@@ -612,7 +611,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Heuristics",
+    name: "Heuristics",
     date: "January 21, 2017",
     link: "",
     source: "heuristics.jpeg",
@@ -677,7 +676,7 @@ export const PREVIOUSEVENTS = [
     ]
   },
   {
-    id: "Chain reactions",
+    name: "Chain Reactions",
     date: "January 17, 2015",
     link: "",
     source: "chain-reactions.jpeg",
