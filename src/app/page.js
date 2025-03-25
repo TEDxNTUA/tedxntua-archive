@@ -7,7 +7,7 @@ import Timeline from "@/components/TimelineComponent/Timeline";
 import NewTimeline from "@/components/NewTimeline/NewTimeline";
 import NewFooter from "@/components/Footer/NewFooter";
 import ScrollTopButton from "@/components/ScrollTopButton";
-import { PREVIOUSEVENTS } from "../../data/previousEvents";
+import {PREVIOUS_EVENTS} from "../../data/previousEvents";
 import YearLine from "@/components/NewTimeline/YearLine";
 import TimelineEvent from "@/components/NewTimeline/TimelineEvent";
 
@@ -51,8 +51,7 @@ function HomePage() {
               <div className="text-center text-white  w-1/6">
                 <div className="text-4xl font-bold">2025</div>
                 <p className=" text-white bg-black mx-auto">
-                  Stay upda<span className="text-our-red">TED</span>. More
-                  coming soon!
+                  Stay upda<span className="text-our-red">TED</span>. More coming soon!
                 </p>
               </div>
             </div>
@@ -62,8 +61,7 @@ function HomePage() {
             <div className="flex flex-col text-center text-white">
               <div className="text-4xl font-bold">2025</div>
               <p className=" text-white bg-black mx-auto">
-                Stay upda<span className="text-our-red">TED</span>. More coming
-                soon!
+                Stay upda<span className="text-our-red">TED</span>. More coming soon!
               </p>
             </div>
           </div>
@@ -71,12 +69,8 @@ function HomePage() {
           {/* When timeline appears */}
           <div className="xl:ml-[100px] xl:w-[90%]">
             {/* Render Timeline Events */}
-            {PREVIOUSEVENTS.map((TedEvent, index) => (
-              <TimelineEvent
-                key={TedEvent.id}
-                TedEvent={TedEvent}
-                index={index}
-              />
+            {PREVIOUS_EVENTS.map((TedEvent, index) => (
+              <TimelineEvent key={TedEvent.id} TedEvent={TedEvent} index={index} />
             ))}
           </div>
         </div>
