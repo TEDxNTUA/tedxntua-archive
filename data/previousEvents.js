@@ -1,8 +1,8 @@
-export const PREVIOUSEVENTS = [
+export const PREVIOUS_EVENTS = [
   {
     name: "Ephemeral",
     date: "May 25, 2024",
-    link: "https://2024.tedxntua.com/",
+    link: "https://2024.tedxntua.com",
     source: "ephemeral.png",
     logo: "ephemeral-logo.png",
     paragraph:
@@ -113,7 +113,7 @@ export const PREVIOUSEVENTS = [
   {
     name: "Mneme",
     date: "May 13, 2023",
-    link: "",
+    link: "https://2023.tedxntua.com",
     source: "mneme.jpeg",
     logo: "Mneme-logo.png",
     paragraph:
@@ -817,3 +817,10 @@ export const PREVIOUSEVENTS = [
     ]
   }
 ];
+
+export const LEAN_EVENTS = PREVIOUS_EVENTS.filter(tedEvent => tedEvent.talks).map(tedEvent => {
+  return {
+    name: tedEvent.name,
+    year: tedEvent.date.split(",")[1]
+  };
+});
