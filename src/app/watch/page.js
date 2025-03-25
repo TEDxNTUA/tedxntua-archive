@@ -33,23 +33,20 @@ function WatchPage() {
   useEffect(() => {
     let filteredTalks = ALL_TALKS;
 
-    // Filter by event names
     if (selectedEventNames.length > 0) {
       filteredTalks = filteredTalks.filter(talk => selectedEventNames.includes(talk.eventName));
     }
 
-    // Filter by categories
     if (selectedCategories.length > 0) {
-      filteredTalks = filteredTalks.filter(
-        talk =>
-          Array.isArray(talk.category)
-            ? talk.category.some(cat => selectedCategories.includes(cat)) // If category is an array
-            : selectedCategories.includes(talk.category) // If category is a string
+      filteredTalks = filteredTalks.filter(talk =>
+        Array.isArray(talk.category)
+          ? talk.category.some(cat => selectedCategories.includes(cat)) // some talks have 2+ categories
+          : selectedCategories.includes(talk.category)
       );
     }
 
     setFeaturedTalks(filteredTalks);
-  }, [selectedEventNames, selectedCategories]); // Runs when either changes
+  }, [selectedEventNames, selectedCategories]);
 
   return (
     <div className="bg-black text-white">
@@ -66,7 +63,10 @@ function WatchPage() {
       <section id="talk-filtering" className="hidden md:block max-w-[1600px] w-10/12 mt-8 mx-auto">
         <div className="flex flex-row justify-between items-center gap-8 xl:p-10">
           {/* Category Filter */}
-          <ul className="w-[300px] h-[130px] xl:w-[380px] 2xl:h-[150px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950">
+          <ul
+            id="category-filter-container"
+            className="w-[300px] h-[130px] xl:w-[380px] 2xl:h-[150px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950"
+          >
             {WATCHTALK_CATEGORIES.map(watchtalkCategory => (
               <li key={watchtalkCategory.category}>
                 <button
@@ -86,7 +86,10 @@ function WatchPage() {
           </ul>
 
           {/* Event Filter */}
-          <ul className="w-[300px] h-[130px] lg:w-[700px] 2xl:h-[150px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950">
+          <ul
+            id="event-filter-container"
+            className="w-[300px] h-[130px] lg:w-[700px] 2xl:h-[150px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
+          >
             {LEAN_EVENTS.map(tedEvent => (
               <li key={tedEvent.year}>
                 <button

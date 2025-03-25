@@ -1,19 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import Modal from "./Modal";
 import Newsletter from "./NewsletterContent";
 
-const ModalWrapper = ({ isModalOpenFlag, setIsModalOpenFlag }) => {
+const ModalWrapper = ({isModalOpenFlag, setIsModalOpenFlag}) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsModalOpen(true);
-  //   }, 3000); // 5000 milliseconds = 5 seconds
-
-  //   return () => clearTimeout(timer); // Clear the timer if the component unmounts
-  // }, []);
 
   return (
     <>

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import SocialMediaFooter from "../NavBar/SocialMediaFooter";
+import SocialMediaFooter from "./SocialMediaFooter";
 import ModalWrapper from "../NewsLetterModal/ModalWrapper";
 
 import {useState, useEffect} from "react";

@@ -1,21 +1,13 @@
 "use client";
-import NewsletterTitle from "@/components/NewsletterPages/NewsletterTitle";
-import IntroductionExperience from "@/components/NewsletterPages/Experience/IntroductionExperience";
-import ExperienceMainContent from "@/components/NewsletterPages/Experience/ExperienceMainContent";
+import NewsletterTitle from "@/components/Unuted/NewsletterPages/NewsletterTitle";
+import IntroductionExperience from "@/components/Unuted/NewsletterPages/Experience/IntroductionExperience";
+import ExperienceMainContent from "@/components/Unuted/NewsletterPages/Experience/ExperienceMainContent";
 import NewFooter from "@/components/Footer/NewFooter";
 import Link from "next/link";
 
 export default function ExperienceNewsletter() {
   return (
-    <div
-      className="bg-our-black" // bg-contain"
-      style={
-        {
-          // backgroundImage: `url('/newsletters/media/background.png')`,
-          // backgroundSize: `cover`,
-        }
-      }
-    >
+    <div className="bg-our-black">
       <div className="absolute p-1 lg:p-10">
         <Link
           href="/unmuTED"
@@ -29,30 +21,19 @@ export default function ExperienceNewsletter() {
             strokeWidth="1.5"
             stroke="currentColor"
           >
-            <path
-              strokeLinejoin="round"
-              d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-            />
+            <path strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
           </svg>
           <span className="italic text-xs">Go back</span>
         </Link>
       </div>
       <div className="h-8 md:h-12 lg:h-20 2xl:h-28 4xl:h-32"></div>
-      <NewsletterTitle
-        date_image={"./newsletters/experience/experience-date_17_03_2024.png"}
-      />
+      <NewsletterTitle date_image={"./newsletters/experience/experience-date_17_03_2024.png"} />
       <div className="h-8 md:h-12 lg:h-16 2xl:h-24"></div>
-      <div
-        id="body"
-        className="w-[80%] md:w-[60%] 3xl:w-[50%] 3xl:text-xl mx-auto"
-      >
+      <div id="body" className="w-[80%] md:w-[60%] 3xl:w-[50%] 3xl:text-xl mx-auto">
         <IntroductionExperience />
 
         <ExperienceMainContent />
         <div className="flex flex-col gap-6">
-          {/* <span className="text-white text-lg mx-auto text-center flex self-center">
-            Keep in touch!
-          </span> */}
           <p className="text-white text-xxs self-end">
             xoxo...Experience & Workshops Team
             <span className="text-our-red">&lt;3</span>
