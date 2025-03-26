@@ -1,11 +1,18 @@
 "use client";
 import Link from "next/link";
-import SocialMediaFooter from "../NavBar/SocialMediaFooter";
+import SocialMediaFooter from "./SocialMediaFooter";
 import ModalWrapper from "../NewsLetterModal/ModalWrapper";
 
-import { useState } from "react";
+import {useState, useEffect} from "react";
+
 function NewFooter() {
   const [isModalOpenFlag, setIsModalOpenFlag] = useState(false);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="c-footer relative overflow-hidden pt-[2rem] sm:pt-[1rem] md:pt-[10rem] z-0">
       <div className="c-footer-animation w-embed h-[100vh] object-cover md:object-none md:height-[50rem] absolute top-0 right-0 left-0 bottom-0">
@@ -36,8 +43,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
           <div className="grid justify-items-center md:row-span-1 md:grid-cols-4 pb-4 md:pb-12 justify-center items-center gap-4 md:gap-8">
             <div className="col-span-3 z-10">
               <p className="text-white text-[1.5rem] leading-9 md:text-[2rem] lg:text-[2.5rem] md:leading-10 lg:leading-[3rem] font-bold text-justify z-10">
-                Sign up to unmuTED and we'll keep you posted on all things about
-                TEDxNTUA
+                Sign up to unmuTED and we'll keep you posted on all things about TEDxNTUA
               </p>
             </div>
             <div className="col-span-3 md:col-span-1 z-10">
@@ -65,9 +71,9 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 <span className="text-our-black">TEDx</span>NTUA
               </p>
               <p className="row-span-1 text-our-black text-sm lg:text-base font-thin z-10 w-[60%] text-justify">
-                This independent TEDx event is operated under license from TED
-                and the auspices of ICCS. This website is our latest version :
-                2024
+                This independent TEDx event is operated under license from TED and the auspices of
+                ICCS. <br />
+                &copy; {currentYear} TEDxNTUA
               </p>
               <div className="row-span-1 w-[60%]">
                 <SocialMediaFooter />
@@ -76,35 +82,23 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
 
             {/* Nav links*/}
             <ul className="col-span-1 grid grid-cols-2 grid-rows-2 z-10 mt-4 lg:text-2xl justify-center justify-items-center">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"about"}>
+                <Link href="/about" className="text-our-black text-md font-bold hover:underline">
                   About
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"archive"}>
+                <Link href="/" className="text-our-black text-md font-bold hover:underline">
                   Archive
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/unmuTED"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"unmuTED"}>
+                <Link href="/unmuTED" className="text-our-black text-md font-bold hover:underline">
                   unmuTED
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/watch"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"watch"}>
+                <Link href="/watch" className="text-our-black text-md font-bold hover:underline">
                   Watch
                 </Link>
               </li>
@@ -118,43 +112,31 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
                 <span className="text-our-black">TEDx</span>NTUA
               </p>
               <p className="row-span-1 :text-our-black text-sm font-thin z-10 text-justify">
-                This independent TEDx event is operated under license from TED
-                and the auspices of ICCS This website is our latest version :
-                2024
+                This independent TEDx event is operated under license from TED and the auspices of
+                ICCS. <br />
+                &copy; {currentYear} TEDxNTUA
               </p>
             </div>
 
             {/* Nav links*/}
             <ul className="col-span-1 grid grid-cols-2 grid-rows-2 z-10 mt-4 justify-center justify-items-center">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"about"}>
+                <Link href="/about" className="text-our-black text-md font-bold hover:underline">
                   About
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"archive"}>
+                <Link href="/" className="text-our-black text-md font-bold hover:underline">
                   Archive
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/unmuTED"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"unmuTED"}>
+                <Link href="/unmuTED" className="text-our-black text-md font-bold hover:underline">
                   unmuTED
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/watch"
-                  className="text-our-black text-md font-bold hover:underline"
-                >
+              <li key={"watch"}>
+                <Link href="/watch" className="text-our-black text-md font-bold hover:underline">
                   Watch
                 </Link>
               </li>
@@ -166,10 +148,7 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
         </div>
         {isModalOpenFlag && console.log(typeof setIsModalOpenFlag)}
         {isModalOpenFlag && (
-          <ModalWrapper
-            isModalOpenFlag={isModalOpenFlag}
-            setIsModalOpenFlag={setIsModalOpenFlag}
-          />
+          <ModalWrapper isModalOpenFlag={isModalOpenFlag} setIsModalOpenFlag={setIsModalOpenFlag} />
         )}
       </div>
     </footer>

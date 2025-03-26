@@ -1,8 +1,7 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
+import {useState} from "react";
 
-function SocialMediaItem({ iconName, link, color, hoverColor }) {
+function SocialMediaItem({iconName, link, color, hoverColor}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -14,7 +13,6 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div>
-        {/* <Image */}
         <img
           className={`${isHovered ? "hidden" : "block"}`}
           src={`./socialMediaIcons/${color}/${iconName}-${color}.png`}
@@ -22,7 +20,6 @@ function SocialMediaItem({ iconName, link, color, hoverColor }) {
           width={30}
           height={30}
         />
-        {/* <Image */}
         <img
           className={`${isHovered ? "block" : "hidden"}`}
           src={`./socialMediaIcons/${hoverColor}/${iconName}-${hoverColor}.png`}
