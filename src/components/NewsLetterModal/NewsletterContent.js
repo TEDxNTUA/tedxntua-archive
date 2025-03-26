@@ -1,10 +1,5 @@
 import React from "react";
-import Image from "next/image";
-
-import InputForm2 from "./InputForm/InputForm2";
-import SignupButton from "./InputForm/SignupButton";
-
-import classes from "./NewsletterTitle.module.css";
+import SignupButton from "./SignupButton";
 
 const Newsletter = () => {
   return (
@@ -61,12 +56,10 @@ const Newsletter = () => {
           <strong className="font-bold italic text-black">
             TED<span className="text-our-red">x</span>NTUA unmuTED
           </strong>{" "}
-          to be the first to know the latest news about us & our upcoming
-          events!
+          to be the first to know the latest news about us & our upcoming events!
         </p>
         <SignupButton />
       </div>
-      {/* <Image */}
       <img
         src="./tedxntua-black-logo.png"
         alt="tedx ntua logo"

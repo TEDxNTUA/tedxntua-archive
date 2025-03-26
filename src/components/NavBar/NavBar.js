@@ -1,37 +1,28 @@
 "use client";
-import { useState } from "react";
+import {useState} from "react";
 import "./Navbar.css";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import SocialMediaNav from "./SocialMediaNav";
-// import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { title: "Home", path: "/", isImage: true },
+  {title: "Home", path: "/", isImage: true},
   {
     title: "Watch",
-    path: "/watch",
+    path: "/watch"
   },
-  // {
-  //   title: "Let's Blog",
-  //   path: "/blog",
-  // },
   {
     title: "unmuTED",
-    path: "/unmuTED",
+    path: "/unmuTED"
   },
   {
     title: "About",
-    path: "/about",
-  },
+    path: "/about"
+  }
 ];
 
 function NewNavbar() {
-  // const path = usePathname();
-  // console.log(path);
-
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
-  // const [buttonClicked, setButtonClicked] = useState("");
   const closeDrawer = () => {
     if (drawerIsOpen) {
       setDrawerIsOpen(false);
@@ -52,7 +43,7 @@ function NewNavbar() {
             onClick={() =>
               document
                 .getElementById("main-scroll-container")
-                .scrollTo({ top: 0, behavior: "smooth" })
+                .scrollTo({top: 0, behavior: "smooth"})
             }
           ></img>
         </Link>
@@ -65,43 +56,22 @@ function NewNavbar() {
             {navLinks.map((link, index) => (
               <li key={index} className="mx-2">
                 {link.isImage ? (
-                  <Link
-                    href={link.path}
-                    // onClick={() =>
-                    //   document
-                    //     .getElementById("main-scroll-container")
-                    //     .scrollTo({ top: 0, behavior: "smooth" })
-                    // }
-                  >
-                    <img
-                      src="./homepage/archive.png"
-                      alt={link.title}
-                      className="w-22 h-8"
-                    />
+                  <Link href={link.path}>
+                    <img src="./homepage/archive.png" alt={link.title} className="w-22 h-8" />
                   </Link>
                 ) : (
-                  <NavLink
-                    href={link.path}
-                    title={link.title}
-                    // onClick={() => setButtonClicked(link.title)}
-                    // buttonClicked={buttonClicked}
-                  />
+                  <NavLink href={link.path} title={link.title} />
                 )}
               </li>
             ))}
           </ul>
 
           <a
-            // className=""
             href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="ticket h-[60px]"
-              src="./ticket.png"
-              alt="ticket"
-            ></img>
+            <img className="ticket h-[60px]" src="./ticket.png" alt="ticket"></img>
           </a>
         </div>
         {/* Burger for Mobile Nav */}
@@ -111,9 +81,7 @@ function NewNavbar() {
             onClick={() => setDrawerIsOpen(!drawerIsOpen)}
           >
             <div
-              className={`${hamburgerLine} ${
-                drawerIsOpen ? "translate-y-[9px] rotate-45" : ""
-              }`}
+              className={`${hamburgerLine} ${drawerIsOpen ? "translate-y-[9px] rotate-45" : ""}`}
             />
             <div
               className={`${hamburgerLine} ${
@@ -121,9 +89,7 @@ function NewNavbar() {
               }`}
             />
             <div
-              className={`${hamburgerLine} ${
-                drawerIsOpen ? "-translate-y-[9px] -rotate-45" : ""
-              }`}
+              className={`${hamburgerLine} ${drawerIsOpen ? "-translate-y-[9px] -rotate-45" : ""}`}
             />
           </button>
         </div>
@@ -147,16 +113,11 @@ function NewNavbar() {
             ))}
           </ul>
           <a
-            // className=""
             href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="ticket h-[60px]"
-              src="./ticket.png"
-              alt="ticket"
-            ></img>
+            <img className="ticket h-[60px]" src="./ticket.png" alt="ticket"></img>
           </a>
           {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
           {/* <button
