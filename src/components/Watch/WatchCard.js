@@ -16,7 +16,8 @@ export default function WatchCard({talk}) {
             />
             <div className="flex flex-col gap-1 mt-2 xl:mt-6">
               <h2 className="font-extralight capitalize no-underline flex flex-row gap-2">
-                <span>{talk.eventName.toUpperCase()}</span>|<span>{talk.eventDate}</span>
+                <span>{talk.eventName.toUpperCase()}</span>
+                <span className="hidden md:block">| {talk.eventDate}</span>
               </h2>
               <h2 className="text-xl font-semibold group-hover:underline">{talk.title}</h2>
             </div>
