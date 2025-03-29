@@ -1,7 +1,7 @@
 "use client";
-import NewsletterTitle from "@/components/Unuted/NewsletterPages/NewsletterTitle";
-import IntroductionExperience from "@/components/Unuted/NewsletterPages/Experience/IntroductionExperience";
-import ExperienceMainContent from "@/components/Unuted/NewsletterPages/Experience/ExperienceMainContent";
+import NewsletterTitle from "@/components/Unmuted/NewsletterPages/NewsletterTitle";
+import IntroductionExperience from "@/components/Unmuted/NewsletterPages/Experience/IntroductionExperience";
+import ExperienceMainContent from "@/components/Unmuted/NewsletterPages/Experience/ExperienceMainContent";
 import NewFooter from "@/components/Footer/NewFooter";
 import Link from "next/link";
 
