@@ -1,7 +1,7 @@
 "use client";
-import NewsletterTitle from "@/components/Unuted/NewsletterPages/NewsletterTitle";
-import IntroductionMedia from "@/components/Unuted/NewsletterPages/Media/IntroductionMedia";
-import MediaSuggestions from "@/components/Unuted/NewsletterPages/Media/MediaSuggestions";
+import NewsletterTitle from "@/components/Unmuted/NewsletterPages/NewsletterTitle";
+import IntroductionMedia from "@/components/Unmuted/NewsletterPages/Media/IntroductionMedia";
+import MediaSuggestions from "@/components/Unmuted/NewsletterPages/Media/MediaSuggestions";
 import NewFooter from "@/components/Footer/NewFooter";
 import Link from "next/link";
 
