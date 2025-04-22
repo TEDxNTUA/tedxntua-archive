@@ -67,11 +67,11 @@ function NewNavbar() {
           </ul>
 
           <a
-            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
+            href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="ticket h-[60px]" src="./ticket.png" alt="ticket"></img>
+            <img className="ticket h-[60px]" src="./ticket-synelixis.png" alt="ticket"></img>
           </a>
         </div>
         {/* Burger for Mobile Nav */}
@@ -113,22 +113,21 @@ function NewNavbar() {
             ))}
           </ul>
           <a
-            href="https://www.eventora.com/el/Events/ephemeral?fbclid=IwAR1dVD5B4W-_9M2s2yfTFu_RAV9GWMdssRmyVqbNu6UWHNIve4H9IHFCCVQ"
+            href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="ticket h-[60px]" src="./ticket.png" alt="ticket"></img>
+            <img className="ticket h-[60px]" src="./ticket-synelixis.png" alt="ticket"></img>
           </a>
           {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
-          {/* <button
+          <a
             className="bg-our-red bg-opacity-100 hover:bg-our-red hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
-            onClick={() => {
-              // Handle booking logic here
-              console.log("Booking button clicked");
-            }}
+            href="https://www.eventora.com/en/Events/tedxntua2025"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Book Your Ticket!
-          </button> */}
+          </a>
 
           {/* <SocialMediaNav onClick={closeDrawer} /> */}
         </div>

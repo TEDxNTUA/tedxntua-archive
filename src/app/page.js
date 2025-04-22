@@ -20,13 +20,13 @@ function HomePage() {
         <div className="relative flex flex-col w-full mx-auto ">
           {/* Timeline appears in screens of size XL */}
           <div id="line-div" className="hidden xl:block">
-            <YearLine numberOfYears={9} />
+            <YearLine numberOfYears={8} />
           </div>
 
           <div className="hidden xl:block">
             <div className="ml-[100px] w-[90%] top-[-20px] absolute flex items-center">
               <div className="text-center text-white  w-1/6">
-                <div className="text-4xl font-bold">2025</div>
+                <div className="text-4xl font-bold">2026</div>
                 <p className=" text-white bg-black mx-auto">
                   Stay upda<span className="text-our-red">TED</span>. More coming soon!
                 </p>
@@ -36,7 +36,7 @@ function HomePage() {
 
           <div className="xl:hidden mb-[200px]">
             <div className="flex flex-col text-center text-white">
-              <div className="text-4xl font-bold">2025</div>
+              <div className="text-4xl font-bold">2026</div>
               <p className=" text-white bg-black mx-auto">
                 Stay upda<span className="text-our-red">TED</span>. More coming soon!
               </p>
