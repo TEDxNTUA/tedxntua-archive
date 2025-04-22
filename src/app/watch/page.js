@@ -88,7 +88,7 @@ function WatchPage() {
           {/* Event Filter */}
           <ul
             id="event-filter-container"
-            className="w-[300px] h-[130px] lg:w-[700px] 2xl:h-[150px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
+            className="w-[300px] h-[200px] lg:w-[700px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
           >
             {LEAN_EVENTS.map(tedEvent => (
               <li key={tedEvent.year}>
