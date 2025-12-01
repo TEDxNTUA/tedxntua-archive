@@ -129,6 +129,7 @@ function NewNavbar() {
             Book Your Ticket!
           </a> */}
 
+
           {/* <SocialMediaNav onClick={closeDrawer} /> */}
         </div>
       </div>
