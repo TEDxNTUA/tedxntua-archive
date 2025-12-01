@@ -1,7 +1,7 @@
 "use client";
 
 import NewFooter from "@/components/Footer/NewFooter";
-import UnmutedGrid from "@/components/Unuted/UnmutedGrid";
+import UnmutedGrid from "@/components/Unmuted/UnmutedGrid";
 
 function UnmuTED() {
   return (
