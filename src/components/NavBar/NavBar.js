@@ -66,13 +66,13 @@ function NewNavbar() {
             ))}
           </ul>
 
-          <a
+          {/* <a
             href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img className="ticket h-[60px]" src="./ticket-synelixis.png" alt="ticket"></img>
-          </a>
+          </a> */}
         </div>
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block lg:hidden">
@@ -112,22 +112,22 @@ function NewNavbar() {
               </li>
             ))}
           </ul>
-          <a
+          {/* <a
             href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img className="ticket h-[60px]" src="./ticket-synelixis.png" alt="ticket"></img>
-          </a>
+          </a> */}
           {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
-          <a
+          {/* <a
             className="bg-our-red bg-opacity-100 hover:bg-our-red hover:bg-opacity-80 text-white font-semibold py-4 px-6 rounded-md focus:outline-none focus:shadow-outline-red"
             href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
             rel="noopener noreferrer"
           >
             Book Your Ticket!
-          </a>
+          </a> */}
 
           {/* <SocialMediaNav onClick={closeDrawer} /> */}
         </div>
