@@ -40,13 +40,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Build the production image:
 
 ```bash
-docker build -t tedxntua-archive .
+ docker build -t tedxntua-archive .
 ```
 
 Run the container (exposes port 3000):
 
 ```bash
-docker run -p 3000:3000 tedxntua-archive
+docker run -it --rm -p 3000:3000 tedxntua-archive
 ```
 
 The image runs `npm run start` to serve the Next.js production build.
