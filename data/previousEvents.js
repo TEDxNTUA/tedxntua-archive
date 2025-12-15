@@ -15,7 +15,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/p6_OPJxk8oc/hqdefault.jpg",
         speaker_name: "Ioannis Pantazopoulos",
         speaker_info: "",
-        category: "Education"
+        category: "education"
       },
       {
         id: "watchtalk102",
@@ -24,7 +24,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/3sOBkLntUpk/hqdefault.jpg",
         speaker_name: "Eva Kotta",
         speaker_info: "https://www.instagram.com/the.abstract.girl/",
-        category: "Life"
+        category: "life"
       },
       {
         id: "watchtalk103",
@@ -33,7 +33,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/K7ULboaVvqE/hqdefault.jpg",
         speaker_name: "George Gougoulakis",
         speaker_info: "",
-        category: "Life"
+        category: "life"
       },
       {
         id: "watchtalk104",
@@ -42,7 +42,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/3MFj7pCZXVw/hqdefault.jpg",
         speaker_name: "Aristides G. Eliopoulos",
         speaker_info: "",
-        category: "Science"
+        category: "science"
       },
       {
         id: "watchtalk105",
@@ -51,7 +51,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/qt0aGGZwVIU/hqdefault.jpg",
         speaker_name: "Zografos V",
         speaker_info: "",
-        category: "Life"
+        category: "life"
       },
       {
         id: "watchtalk106",
@@ -60,7 +60,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/2T8aoCWZ4CE/hqdefault.jpg",
         speaker_name: "Rosario Moscato",
         speaker_info: "",
-        category: "Technology"
+        category: "technology"
       },
       {
         id: "watchtalk107",
@@ -69,7 +69,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/yAJiwxP57dw/hqdefault.jpg",
         speaker_name: "Xenia Mastoraki",
         speaker_info: "",
-        category: "Design",
+        category: "design",
       },
       {
         id: "watchtalk108",
@@ -78,7 +78,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/TsJCyzGVgDY/hqdefault.jpg",
         speaker_name: "Kimon Vogt & Antonia Vogt",
         speaker_info: "",
-        category: "Technology"
+        category: "technology"
       },
       {
         id: "watchtalk109",
@@ -87,7 +87,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/TwKoGF4D4hQ/hqdefault.jpg",
         speaker_name: "Gogo Delogianni",
         speaker_info: "",
-        category: "Life"
+        category: "life"
       },
       {
         id: "watchtalk100",
@@ -96,7 +96,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/tz-jJ4z8edk/hqdefault.jpg",
         speaker_name: "Vangelis Simakis - Backpack Brothers",
         speaker_info: "",
-        category: "Global Issues"
+        category: "global issues"
       }
     ]
   },
