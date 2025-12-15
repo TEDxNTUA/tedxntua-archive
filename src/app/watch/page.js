@@ -65,7 +65,7 @@ function WatchPage() {
           {/* Category Filter */}
           <ul
             id="category-filter-container"
-            className="w-[300px] h-[130px] xl:w-[380px] 2xl:h-[150px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950"
+            className="w-[300px] h-[230px] xl:w-[400px] 2xl:h-[240px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950"
           >
             {WATCHTALK_CATEGORIES.map(watchtalkCategory => (
               <li key={watchtalkCategory.category}>
@@ -88,7 +88,7 @@ function WatchPage() {
           {/* Event Filter the size will HAVE TO BE CHANGED WHILE YEARS GO AND WE HAVE MORE AND MORE/WONT FIT */}
           <ul
             id="event-filter-contSiner"
-            className="w-[300px] h-[130px] lg:w-[800px] 2xl:h-[140px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
+            className="w-[300px] h-[230px] lg:w-[600px] 2xl:h-[240px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
           > 
 
             {LEAN_EVENTS.map(tedEvent => (
