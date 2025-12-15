@@ -88,7 +88,7 @@ function WatchPage() {
           {/* Event Filter the size will HAVE TO BE CHANGED WHILE YEARS GO AND WE HAVE MORE AND MORE/WONT FIT */}
           <ul
             id="event-filter-contSiner"
-            className="w-[270px] h-[130px] lg:w-[800px] 2xl:h-[140px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
+            className="w-[300px] h-[130px] lg:w-[800px] 2xl:h-[140px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
           > 
 
             {LEAN_EVENTS.map(tedEvent => (

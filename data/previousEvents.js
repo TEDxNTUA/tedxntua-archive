@@ -9,7 +9,7 @@ export const PREVIOUS_EVENTS = [
       "SYNELIXIS What happens when two worlds come into contact? Synelixis, in its mathematical sense, describes the transformation one function causes in another as it passes through it — and the result that emerges as a combination of both. In our lives, in our everyday reality, a 'function' can be seen as any idea, any interaction, any moment — a brief (or perhaps not so brief) exchange. A dialogue between the old and the new, the familiar and the unknown, the fleeting and the eternal — not simply the merging of opposites, but the birth of something new and unique.",
     talks: [
       {
-        id: "watchtalk1",
+        id: "watchtalk101",
         title: "When Science Becomes The Soundtrack of Your Life",
         yt_link: "https://www.youtube.com/watch?v=p6_OPJxk8oc&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=1",
         thumbnail_yt: "https://i.ytimg.com/vi/p6_OPJxk8oc/hqdefault.jpg",
@@ -18,7 +18,7 @@ export const PREVIOUS_EVENTS = [
         category: "Science"
       },
       {
-        id: "watchtalk2",
+        id: "watchtalk102",
         title: "The Multiplicity of The Self",
         yt_link: "https://www.youtube.com/watch?v=3sOBkLntUpk&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=2",
         thumbnail_yt: "https://i.ytimg.com/vi/3sOBkLntUpk/hqdefault.jpg",
@@ -27,7 +27,7 @@ export const PREVIOUS_EVENTS = [
         category: "Science"
       },
       {
-        id: "watchtalk3",
+        id: "watchtalk103",
         title: "Disability As a Result of Human Behaviors",
         yt_link: "https://www.youtube.com/watch?v=K7ULboaVvqE&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=3",
         thumbnail_yt: "https://i.ytimg.com/vi/K7ULboaVvqE/hqdefault.jpg",
@@ -36,7 +36,7 @@ export const PREVIOUS_EVENTS = [
         category: "life"
       },
       {
-        id: "watchtalk4",
+        id: "watchtalk104",
         title: "Know Thyself 2.0: When Technology Rewrites Life",
         yt_link: "https://www.youtube.com/watch?v=3MFj7pCZXVw&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=4",
         thumbnail_yt: "https://i.ytimg.com/vi/3MFj7pCZXVw/hqdefault.jpg",
@@ -45,7 +45,7 @@ export const PREVIOUS_EVENTS = [
         category: "Science"
       },
       {
-        id: "watchtalk5",
+        id: "watchtalk105",
         title: "Roots",
         yt_link: "https://www.youtube.com/watch?v=qt0aGGZwVIU&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=5",
         thumbnail_yt: "https://i.ytimg.com/vi/qt0aGGZwVIU/hqdefault.jpg",
@@ -54,7 +54,7 @@ export const PREVIOUS_EVENTS = [
         category: "Culture"
       },
       {
-        id: "watchtalk6",
+        id: "watchtalk106",
         title: "Navigating our future with AI ethics",
         yt_link: "youtube.com/watch?v=2T8aoCWZ4CE&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=6",
         thumbnail_yt: "https://i.ytimg.com/vi/2T8aoCWZ4CE/hqdefault.jpg",
@@ -63,7 +63,7 @@ export const PREVIOUS_EVENTS = [
         category: "Science"
       },
       {
-        id: "watchtalk7",
+        id: "watchtalk107",
         title: "How Places Are Born: The Convolution of Humans and Environment",
         yt_link: "https://www.youtube.com/watch?v=yAJiwxP57dw&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=7",
         thumbnail_yt: "https://i.ytimg.com/vi/yAJiwxP57dw/hqdefault.jpg",
@@ -72,16 +72,16 @@ export const PREVIOUS_EVENTS = [
         category: "Science"
       },
       {
-        id: "watchtalk8",
+        id: "watchtalk108",
         title: "Reimagining medicine with AI",
-        yt_link: "https://www.youtube.com/watch?v=p6_OPJxk8oc&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=1",
-        thumbnail_yt: "https://i.ytimg.com/vi/p6_OPJxk8oc/hqdefault.jpg",
+        yt_link: "https://www.youtube.com/watch?v=TsJCyzGVgDY&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=8",
+        thumbnail_yt: "https://i.ytimg.com/vi/TsJCyzGVgDY/hqdefault.jpg",
         speaker_name: "Kimon Vogt & Antonia Vogt",
         speaker_info: "",
         category: "Science"
       },
       {
-        id: "watchtalk9",
+        id: "watchtalk109",
         title: "Cooking My Way Through Change",
         yt_link: "https://www.youtube.com/watch?v=TwKoGF4D4hQ&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=9",
         thumbnail_yt: "https://i.ytimg.com/vi/TwKoGF4D4hQ/hqdefault.jpg",
@@ -90,7 +90,7 @@ export const PREVIOUS_EVENTS = [
         category: "life"
       },
       {
-        id: "watchtalk10",
+        id: "watchtalk100",
         title: "A Journey of Solidarity",
         yt_link: "https://www.youtube.com/watch?v=tz-jJ4z8edk&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=10",
         thumbnail_yt: "https://i.ytimg.com/vi/tz-jJ4z8edk/hqdefault.jpg",
@@ -98,7 +98,6 @@ export const PREVIOUS_EVENTS = [
         speaker_info: "",
         category: "Science"
       }
-      
     ]
   },
   {
