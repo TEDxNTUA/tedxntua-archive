@@ -32,7 +32,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=K7ULboaVvqE&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=3",
         thumbnail_yt: "https://i.ytimg.com/vi/K7ULboaVvqE/hqdefault.jpg",
         speaker_name: "George Gougoulakis",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/giorgio_el_greco",
         category: "life"
       },
       {
@@ -41,7 +41,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=3MFj7pCZXVw&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=4",
         thumbnail_yt: "https://i.ytimg.com/vi/3MFj7pCZXVw/hqdefault.jpg",
         speaker_name: "Aristides G. Eliopoulos",
-        speaker_info: "",
+        speaker_info: "https://www.facebook.com/eliopag",
         category: "science"
       },
       {
@@ -50,7 +50,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=qt0aGGZwVIU&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=5",
         thumbnail_yt: "https://i.ytimg.com/vi/qt0aGGZwVIU/hqdefault.jpg",
         speaker_name: "Zografos V",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/zografos_vita/",
         category: "life"
       },
       {
@@ -59,7 +59,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "youtube.com/watch?v=2T8aoCWZ4CE&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=6",
         thumbnail_yt: "https://i.ytimg.com/vi/2T8aoCWZ4CE/hqdefault.jpg",
         speaker_name: "Rosario Moscato",
-        speaker_info: "",
+        speaker_info: "https://www.linkedin.com/in/rosariomoscato/",
         category: "technology"
       },
       {
@@ -68,7 +68,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=yAJiwxP57dw&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=7",
         thumbnail_yt: "https://i.ytimg.com/vi/yAJiwxP57dw/hqdefault.jpg",
         speaker_name: "Xenia Mastoraki",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/xeniamastoraki/",
         category: "design",
       },
       {
@@ -86,7 +86,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=TwKoGF4D4hQ&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=9",
         thumbnail_yt: "https://i.ytimg.com/vi/TwKoGF4D4hQ/hqdefault.jpg",
         speaker_name: "Gogo Delogianni",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/gogodelogianni/?hl=en",
         category: "life"
       },
       {
@@ -95,7 +95,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=tz-jJ4z8edk&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=10",
         thumbnail_yt: "https://i.ytimg.com/vi/tz-jJ4z8edk/hqdefault.jpg",
         speaker_name: "Vangelis Simakis - Backpack Brothers",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/backpackbrothers.gr/",
         category: "global issues"
       }
     ]
