@@ -14,7 +14,7 @@ export const PREVIOUS_EVENTS = [
         yt_link: "https://www.youtube.com/watch?v=p6_OPJxk8oc&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=1",
         thumbnail_yt: "https://i.ytimg.com/vi/p6_OPJxk8oc/hqdefault.jpg",
         speaker_name: "Ioannis Pantazopoulos",
-        speaker_info: "",
+        speaker_info: "https://www.instagram.com/johnpantazopoulos/",
         category: "education"
       },
       {
