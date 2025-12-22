@@ -1,19 +1,26 @@
 "use client";
-import WatchGrid from "@/components/Watch/WatchGrid";
-import {ALL_TALKS, WATCHTALK_CATEGORIES} from "../../../data/watchtalks";
-import {LEAN_EVENTS} from "../../../data/previousEvents";
 import React, {useEffect, useState} from "react";
+
+//Components
+import WatchGrid from "@/components/Watch/WatchGrid";
 import NewFooter from "@/components/Footer/NewFooter";
 import SearchBar from "@/components/Watch/SearchBar";
-//css
+//Data
+import {ALL_TALKS, WATCHTALK_CATEGORIES} from "../../../data/watchtalks";
+import {LEAN_EVENTS} from "../../../data/previousEvents";
+//Styles
 import styles from "./page.module.css";
 
+
 function WatchPage() {
+  // --- Local state ------------------------------------------------------
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedEventNames, setSelectedEventNames] = useState([]);
   const [featuredTalks, setFeaturedTalks] = useState(ALL_TALKS);
+  // Current search input (raw string entered by the user)
   const [searchTerm, setSearchTerm] = useState("");
 
+  // Toggle a category on/off in `selectedCategories`
   const handleSelectCategory = browserEvent => {
     const newCategory = browserEvent.currentTarget.value;
 
@@ -24,6 +31,7 @@ function WatchPage() {
     );
   };
 
+  // Toggle an event name on/off in `selectedEventNames`
   const handleSelectEventName = browserEvent => {
     const newTedEventName = browserEvent.currentTarget.value;
 
@@ -34,22 +42,32 @@ function WatchPage() {
     );
   };
 
+  /*
+   * Recompute `featuredTalks` whenever filters or the search term change.
+   * Filtering order:
+   *  1) start from ALL_TALKS
+   *  2) narrow by selected event names (if any)
+   *  3) narrow by selected categories (if any)
+   *  4) apply text search across title, speaker_name, and eventName
+   */
   useEffect(() => {
     let filteredTalks = ALL_TALKS;
 
+    // 2) Filter by selected event names
     if (selectedEventNames.length > 0) {
       filteredTalks = filteredTalks.filter(talk => selectedEventNames.includes(talk.eventName));
     }
 
+    // 3) Filter by selected categories (support arrays or single category strings)
     if (selectedCategories.length > 0) {
       filteredTalks = filteredTalks.filter(talk =>
         Array.isArray(talk.category)
-          ? talk.category.some(cat => selectedCategories.includes(cat)) // some talks have 2+ categories
+          ? talk.category.some(cat => selectedCategories.includes(cat))
           : selectedCategories.includes(talk.category)
       );
     }
 
-    // Apply search filter (case-insensitive) across title, speaker, and event name
+    // 4) Apply searchTerm (case-insensitive) across title, speaker_name, and eventName
     if (searchTerm && searchTerm.trim() !== "") {
       const normalizedQuery = searchTerm.trim().toLowerCase();
       filteredTalks = filteredTalks.filter(talk => {
@@ -66,6 +84,8 @@ function WatchPage() {
 
   return (
     <div className="bg-black text-white">
+
+    {/*--- Page Title Section -----------------------------------------------*/}
       <section
         id="title"
         className="pt-10 max-w-[1600px] w-10/12 flex flex-col gap-4 items-center mx-auto mt-12"
@@ -76,6 +96,8 @@ function WatchPage() {
         </h1>
         <h2>Explore a Decade of Ideas Worth Spreading!</h2>
       </section>
+
+    {/*--- Talk Filtering Section -------------------------------------------*/}
       <section id="talk-filtering" className="hidden md:block max-w-[1600px] w-10/12 mt-8 mx-auto">
         <div className="flex flex-row justify-between items-center gap-8 xl:p-10">
           {/* Category Filter */}
@@ -122,7 +144,7 @@ function WatchPage() {
                     className={`lg:hidden text-sm font-bold text-gray-200"
                       }`}
                   >
-                    {tedEvent.year}
+                    <h1>{tedEvent.year}:{  }{tedEvent.name}</h1>
                   </span>
                   <span
                     className={`hidden lg:block text-xs xl:text-sm px-1 py-1 py-1font-bold rounded-md ${
@@ -141,29 +163,33 @@ function WatchPage() {
         </div>
       </section>
 
-      {/* Search Bar */}
-        <div className="hidden md:block flex-1 pr-6">
-          <SearchBar
-            value={searchTerm}
-            onChange={event => setSearchTerm(event.currentTarget.value)}
-            className={styles.search}
-          />
-        </div>
+      {/* Desktop search: visible on md+ and positioned beside filters */}
+      <div className="hidden md:block flex-1 pr-6">
+        <SearchBar
+          value={searchTerm}
+          onChange={event => setSearchTerm(event.currentTarget.value)}
+          className={styles.search}
+        />
+      </div>
 
-
+      {/* Mobile layout: search above the grid on small screens */}
       <div className="md:hidden px-4">
+
         <div className="mb-4">
           <SearchBar
             value={searchTerm}
             onChange={event => setSearchTerm(event.currentTarget.value)}
             className="w-full px-4 py-2 rounded-md bg-zinc-900 text-white placeholder-gray-400 border border-zinc-800 focus:outline-none focus:ring-2 focus:ring-our-red"
           />
-
-
         </div>
+
         <WatchGrid talks={featuredTalks} />
       </div>
+
+      {/* Spacer for desktop layout (keeps content offset when filters are shown) */}
       <div className="hidden md:block"></div>
+
+      {/* Main grid (desktop) or fallback message when no talks match) */}
       {featuredTalks.length > 0 ? (
         <WatchGrid talks={featuredTalks} />
       ) : (
