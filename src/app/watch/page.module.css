@@ -20,3 +20,103 @@
   box-shadow: 0 0 0 3px rgba(235, 0, 40, 0.12);
   border-color: #eb0028;
 }
+
+/* Category filter container (desktop) */
+.categoryContainer {
+  width: 300px;
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  /* Centers the items inside their cells */
+  place-items: center; 
+  
+  /* Centers the whole grid "block" inside the 300x230 container */
+  place-content: center; 
+  
+  gap: 0.5rem; /* This is your consistent spacing */
+  
+  background: #3b5777;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Category button base style */
+.categoryButton {
+  text-transform: capitalize;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  width: 70px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #1f2937; /* bg-gray-800 */
+  color: #e5e7eb;
+  box-shadow: 0 4px 8px rgba(2,6,23,0.4);
+  transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+}
+
+.categoryButton:hover {
+  background: #374151; /* slightly lighter */
+}
+
+/* Selected category */
+.categoryButtonSelected {
+  background: #2563eb; /* blue-600 */
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(37,99,235,0.2);
+}
+
+/* Event filter container */
+.eventContainer {
+  width: 300px;
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  /* Centers the items inside their cells */
+  place-items: center; 
+  
+  /* Centers the whole grid "block" inside the 300x230 container */
+  place-content: center; 
+  
+  gap: 0.5rem; /* This is your consistent spacing */
+  
+  background: #3b5777;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Event button base style */
+.eventButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background: #1f2937;
+  color: #e5e7eb;
+  transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.eventButton:hover {
+  background: #374151;
+}
+
+.eventButtonSelected {
+  background: #2563eb;
+  box-shadow: 0 6px 12px rgba(37,99,235,0.18);
+}
+
+/* Utility: hidden on md and up */
+.mobileOnly {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileOnly { display: none; }
+  .categoryContainer { width: 400px; }
+  .eventContainer { width: 600px; }
+}

@@ -144,7 +144,7 @@ function WatchPage() {
                     className={`lg:hidden text-sm font-bold text-gray-200"
                       }`}
                   >
-                    {tedEvent.year}
+                    <h1>{tedEvent.year}:{  }{tedEvent.name}</h1>
                   </span>
                   <span
                     className={`hidden lg:block text-xs xl:text-sm px-1 py-1 py-1font-bold rounded-md ${
