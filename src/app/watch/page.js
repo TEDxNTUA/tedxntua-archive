@@ -103,21 +103,31 @@ function WatchPage() {
           {/* Category Filter */}
           <ul
             id="category-filter-container"
-            className="w-[300px] h-[230px] xl:w-[400px] 2xl:h-[240px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950"
+            className={`${styles.categoryContainer}
+                  ${
+                    selectedCategories.length > 0
+                    ? styles.categoryContainerSelected
+                    : styles.categoryContainer
+                  }`}
+            //className="w-[300px] h-[230px] xl:w-[400px] 2xl:h-[240px] grid grid-cols-3 2xl:grid-cols-3 items-center justify-items-center rounded-md shadow-lg bg-zinc-950"
           >
             {WATCHTALK_CATEGORIES.map(watchtalkCategory => (
               <li key={watchtalkCategory.category}>
                 <button
                   value={watchtalkCategory}
-                  className={`capitalize py-2 px-1 transition-all duration-300 ease-in-out shadow-md rounded-lg w-[70px] xl:w-[100px] text-xs xl:text-base lg:text-md lg:font-medium
-          ${
-            selectedCategories.includes(watchtalkCategory)
-              ? "bg-blue-600 lg:hover:bg-blue-500 shadow-sm transform scale-[1.01]"
-              : "bg-gray-800 lg:hover:bg-gray-700"
-          }`}
+                  
+                  className={`${styles.categoryButton}
+                  ${
+                    selectedCategories.includes(watchtalkCategory)
+                    ? styles.categoryButtonSelected
+                    : styles.categoryButton
+                  }`}
+
                   onClick={handleSelectCategory}
                 >
-                  {watchtalkCategory}
+
+                  <p>{watchtalkCategory}</p>
+
                 </button>
               </li>
             ))}
@@ -125,26 +135,36 @@ function WatchPage() {
 
           {/* Event Filter the size will HAVE TO BE CHANGED WHILE YEARS GO AND WE HAVE MORE AND MORE/WONT FIT */}
           <ul
-            id="event-filter-contSiner"
-            className="w-[300px] h-[230px] lg:w-[600px] 2xl:h-[240px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
+            id="event-filter-container"
+            className = {`${styles.eventContainer}
+            ${              selectedEventNames.length > 0
+              ? styles.eventContainerSelected
+              : styles.eventContainer
+            }`}
+            
+            //className="w-[300px] h-[230px] lg:w-[600px] 2xl:h-[240px] py-4 flex flex-wrap items-center justify-center overflow-hidden gap-3 rounded-md shadow-lg bg-zinc-950"
           > 
 
             {LEAN_EVENTS.map(tedEvent => (
               <li key={tedEvent.year}>
                 <button
                   value={tedEvent.name}
-                  className={`flex items-center gap-2 xl:gap-4 px-3 py-1 lg:py-2 rounded-md lg:rounded-xl font-medium transition-all shadow-md ${
+
+                  className={`${styles.eventButton}
+                  ${
                     selectedEventNames.includes(tedEvent.name)
-                      ? "bg-blue-600 lg:hover:bg-blue-500 shadow-sm transform scale-[1.02]"
-                      : "bg-gray-800 lg:hover:bg-gray-700"
-                  } `}
+                    ? styles.eventButtonSelected
+                    : styles.eventButton
+                  }`}
+
                   onClick={handleSelectEventName}
                 >
                   <span
                     className={`lg:hidden text-sm font-bold text-gray-200"
                       }`}
                   >
-                    <h1>{tedEvent.year}:{  }{tedEvent.name}</h1>
+                    <h1>{tedEvent.year}:</h1>
+                    <p>{tedEvent.name}</p>
                   </span>
                   <span
                     className={`hidden lg:block text-xs xl:text-sm px-1 py-1 py-1font-bold rounded-md ${
