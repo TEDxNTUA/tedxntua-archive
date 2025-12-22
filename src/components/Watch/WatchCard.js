@@ -1,8 +1,17 @@
+/**
+ * WatchCard
+ * Displays a single talk card used inside `WatchGrid`.
+ * Responsibilities:
+ * - show thumbnail that links to the YouTube talk
+ * - display event name/date and talk title
+ * - link to speaker info below the card
+ */
 export default function WatchCard({talk}) {
   return (
     <div className="text-white">
       <section className="youtube-link-wrapper mb-2">
         <div className="group">
+          {/* Clickable area linking to the YouTube video */}
           <a
             className="image-wrapper bg-white"
             href={talk.yt_link}
@@ -14,6 +23,8 @@ export default function WatchCard({talk}) {
               src={talk.thumbnail_yt}
               alt={talk.title}
             />
+
+            {/* Title block: event name/date and talk title */}
             <div className="flex flex-col gap-1 mt-2 xl:mt-6">
               <h2 className="font-extralight capitalize no-underline flex flex-row gap-2">
                 <span>{talk.eventName.toUpperCase()}</span>
@@ -24,6 +35,8 @@ export default function WatchCard({talk}) {
           </a>
         </div>
       </section>
+
+      {/* Speaker name with link to external speaker page/info */}
       <span className="text-md hover:text-[#eb0028] capitalize hover:undeline">
         <a href={talk.speaker_info} target="_blank" rel="noopener noreferrer">
           {talk.speaker_name.toUpperCase()}
