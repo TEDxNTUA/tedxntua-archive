@@ -4,14 +4,18 @@ import {ALL_TALKS, WATCHTALK_CATEGORIES} from "../../../data/watchtalks";
 import {LEAN_EVENTS} from "../../../data/previousEvents";
 import React, {useEffect, useState} from "react";
 import NewFooter from "@/components/Footer/NewFooter";
+import SearchBar from "@/components/Watch/SearchBar";
+//css
+import styles from "./page.module.css";
 
 function WatchPage() {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedEventNames, setSelectedEventNames] = useState([]);
   const [featuredTalks, setFeaturedTalks] = useState(ALL_TALKS);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleSelectCategory = browserEvent => {
-    const newCategory = browserEvent.target.value;
+    const newCategory = browserEvent.currentTarget.value;
 
     setSelectedCategories(prevCategories =>
       prevCategories.includes(newCategory)
@@ -45,8 +49,20 @@ function WatchPage() {
       );
     }
 
+    // Apply search filter (case-insensitive) across title, speaker, and event name
+    if (searchTerm && searchTerm.trim() !== "") {
+      const normalizedQuery = searchTerm.trim().toLowerCase();
+      filteredTalks = filteredTalks.filter(talk => {
+        return (
+          (talk.title && talk.title.toLowerCase().includes(normalizedQuery)) ||
+          (talk.speaker_name && talk.speaker_name.toLowerCase().includes(normalizedQuery)) ||
+          (talk.eventName && talk.eventName.toLowerCase().includes(normalizedQuery))
+        );
+      });
+    }
+
     setFeaturedTalks(filteredTalks);
-  }, [selectedEventNames, selectedCategories]);
+  }, [selectedEventNames, selectedCategories, searchTerm]);
 
   return (
     <div className="bg-black text-white">
@@ -125,8 +141,27 @@ function WatchPage() {
         </div>
       </section>
 
-      <div className="md:hidden">
-        <WatchGrid talks={ALL_TALKS} />
+      {/* Search Bar */}
+        <div className="hidden md:block flex-1 pr-6">
+          <SearchBar
+            value={searchTerm}
+            onChange={event => setSearchTerm(event.currentTarget.value)}
+            className={styles.search}
+          />
+        </div>
+
+
+      <div className="md:hidden px-4">
+        <div className="mb-4">
+          <SearchBar
+            value={searchTerm}
+            onChange={event => setSearchTerm(event.currentTarget.value)}
+            className="w-full px-4 py-2 rounded-md bg-zinc-900 text-white placeholder-gray-400 border border-zinc-800 focus:outline-none focus:ring-2 focus:ring-our-red"
+          />
+
+
+        </div>
+        <WatchGrid talks={featuredTalks} />
       </div>
       <div className="hidden md:block"></div>
       {featuredTalks.length > 0 ? (

@@ -66,6 +66,8 @@ function NewNavbar() {
             ))}
           </ul>
 
+          {/* UNCOMMENT WHEN EVENT STARTS AND TICKETS ARE AVAILABLE */}
+
           {/* <a
             href="https://www.eventora.com/en/Events/tedxntua2025"
             target="_blank"
@@ -73,7 +75,10 @@ function NewNavbar() {
           >
             <img className="ticket h-[60px]" src="./ticket-synelixis.png" alt="ticket"></img>
           </a> */}
+
         </div>
+
+
         {/* Burger for Mobile Nav */}
         <div id="burger" className="block lg:hidden">
           <button
@@ -94,6 +99,7 @@ function NewNavbar() {
           </button>
         </div>
       </div>
+      
       {/* Menu-Drawer for Mobile Nav */}
       <div
         onClick={closeDrawer}
