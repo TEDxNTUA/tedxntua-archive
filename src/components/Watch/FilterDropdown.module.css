@@ -1,0 +1,240 @@
+/**
+ * FilterDropdown.module.css
+ * ---------------------------------------------------------------------------
+ * Styles for the FilterDropdown component.
+ * Maintains the dark theme aesthetic of the Watch page while providing
+ * a smooth, professional dropdown experience.
+ */
+
+/* ==========================================================================
+   Container
+   ========================================================================== */
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Trigger Button
+   ========================================================================== */
+
+.triggerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-width: 180px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #27272a;
+  background-color: #0f1720;
+  color: #e5e7eb;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.triggerButton:hover {
+  background-color: #1f2937;
+  border-color: #3f3f46;
+}
+
+.triggerButton:focus {
+  outline: none;
+  border-color: #eb0028;
+  box-shadow: 0 0 0 2px rgba(235, 0, 40, 0.15);
+}
+
+/* Active state when items are selected */
+.triggerButtonActive {
+  border-color: #eb0028;
+  background-color: #1a0a0a;
+}
+
+.triggerLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Selection count badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 9999px;
+  background-color: #eb0028;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Chevron icon */
+.chevron {
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   Options Panel (Dropdown)
+   ========================================================================== */
+
+.optionsPanel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 50;
+  min-width: 100%;
+  max-height: 280px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  background-color: #0f1720;
+  border: 1px solid #27272a;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+
+  /* Smooth entrance animation */
+  animation: dropdownFadeIn 150ms ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for the panel */
+.optionsPanel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.optionsPanel::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.optionsPanel::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+.optionsPanel::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* ==========================================================================
+   Option Button
+   ========================================================================== */
+
+.optionButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: transparent;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.optionButton:hover {
+  background-color: #1f2937;
+}
+
+.optionButton:focus {
+  outline: none;
+  background-color: #1f2937;
+}
+
+.optionButtonSelected {
+  background-color: rgba(109, 26, 26, 0.4);
+  color: #ffffff;
+}
+
+.optionButtonSelected:hover {
+  background-color: rgba(109, 26, 26, 0.6);
+}
+
+/* ==========================================================================
+   Checkbox Indicator
+   ========================================================================== */
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 2px solid #4b5563;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.checkboxChecked {
+  border-color: #eb0028;
+  background-color: #eb0028;
+}
+
+.checkboxChecked svg {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Option Content
+   ========================================================================== */
+
+.optionContent {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .triggerButton {
+    min-width: 200px;
+  }
+
+  .optionsPanel {
+    min-width: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .triggerButton {
+    min-width: 220px;
+  }
+
+  .optionsPanel {
+    min-width: 280px;
+  }
+}
