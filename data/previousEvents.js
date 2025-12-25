@@ -1,3 +1,22 @@
+//ADVICES TO FUTURE AND EXISTING DEVELOPERS !
+// RULE 1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Existing categories (update this list if new ones are added):
+// education, life, science, technology, design, global issues, culture, history, business
+// (Also supports arrays, e.g. ["technology", "business"])
+// If you add a new category, please update this comment.
+//
+// RULE 2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+//Speaker info advice for popups:
+// Preferred: speaker_speakers: [{ name, social }]
+// Example (multiple speakers):
+// speaker_speakers: [
+//   { name: "Alice Example", social: "https://instagram.com/alice" },
+//   { name: "Bob Example", social: "https://linkedin.com/in/bob" }
+// ]
+// Legacy: speaker_name: "Name1 & Name2", speaker_info: [url1, url2]
+// Single: speaker_name: "Name", speaker_info: "url"
+// Each speaker should have a name and a social/profile URL for best results.
+
 export const PREVIOUS_EVENTS = [
   {
     name: "Synelixis",
@@ -76,8 +95,10 @@ export const PREVIOUS_EVENTS = [
         title: "Reimagining medicine with AI",
         yt_link: "https://www.youtube.com/watch?v=TsJCyzGVgDY&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=8",
         thumbnail_yt: "https://i.ytimg.com/vi/TsJCyzGVgDY/hqdefault.jpg",
-        speaker_name: "Kimon Vogt & Antonia Vogt",
-        speaker_info: "",
+        speaker_speakers: [
+          { name: "Kimon Vogt", social: "" },
+          { name: "Antonia Vogt", social: "" }
+        ],
         category: "technology"
       },
       {
