@@ -17,7 +17,7 @@ function AboutTednTedx() {
           </div>
           <div className="text-justify">
             <p className="text-[1rem] leading-[1.875rem] 4xl:text-[1.3rem] 4xl:leading-[2rem]">
-              TED is a nonprofit organization devoted to Ideas Worth Spreading.
+              TED is a nonprofit organization devoted to Ideas Change Everything.
               Started as a four-day conference in California 30 years ago, TED
               has grown to support its mission with multiple initiatives. The
               two annual TED Conferences invite the world's leading thinkers and
@@ -68,7 +68,7 @@ function AboutTednTedx() {
             </h2>
           </div>
           <p className="text-justify 4xl:text-[1.3rem] 4xl:leading-[2rem]">
-            In the spirit of ideas worth spreading, TEDx is a program of local,
+            In the spirit of Ideas Change Everything, TEDx is a program of local,
             self-organized events that bring people together to share a TED-like
             experience. At a TEDx event, TED Talks video and live speakers
             combine to spark deep discussion and connection. These local,

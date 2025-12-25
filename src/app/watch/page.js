@@ -174,7 +174,7 @@ function WatchPage() {
           Every <span className="text-our-red">TEDx</span>
           NTUA talk since 2015, all in one place.
         </h1>
-        <h2>Explore a Decade of Ideas Worth Spreading!</h2>
+        <h2>Explore a Decade of Ideas Change Everything!</h2>
       </section>
 
       {/* =====================================================================
