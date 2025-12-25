@@ -7,6 +7,7 @@
 //
 // RULE 2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 //Speaker info advice for popups:
+// Please add speaker_name and if multiple speakers this speaker_speakers below for pop up
 // Preferred: speaker_speakers: [{ name, social }]
 // Example (multiple speakers):
 // speaker_speakers: [
@@ -95,6 +96,7 @@ export const PREVIOUS_EVENTS = [
         title: "Reimagining medicine with AI",
         yt_link: "https://www.youtube.com/watch?v=TsJCyzGVgDY&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=8",
         thumbnail_yt: "https://i.ytimg.com/vi/TsJCyzGVgDY/hqdefault.jpg",
+        speaker_name: "Kimon Vogt & Antonia Vogt",
         speaker_speakers: [
           { name: "Kimon Vogt", social: "" },
           { name: "Antonia Vogt", social: "" }
