@@ -19,6 +19,7 @@ import { LEAN_EVENTS } from "../../../data/previousEvents";
 // Styles
 // =============================================================================
 import styles from "./page.module.css";
+import dropdownStyles from "@/components/Watch/FilterDropdown.module.css";
 
 /**
  * WatchPage
@@ -94,30 +95,19 @@ function WatchPage() {
   }));
 
   /**
-   * Custom renderer for event options, restoring the previous aesthetic:
-   * - On mobile: year and name stacked
-   * - On desktop: year in a pill, name beside it
+   * Custom renderer for event options with improved appearance:
+   * Year in a styled pill badge, name beside it
    */
   function renderEventOption(option, isSelected) {
     return (
-      <>
-        {/* Mobile: stacked year and name */}
-        <span className="lg:hidden flex flex-col text-sm font-bold text-gray-200">
-          <span>{option.year}:</span>
-          <span>{option.name}</span>
+      <span className={dropdownStyles.eventOption}>
+        <span className={`${dropdownStyles.eventYear} ${isSelected ? dropdownStyles.eventYearSelected : ""}`}>
+          {option.year}
         </span>
-        {/* Desktop: year pill + name */}
-        <span className="hidden lg:flex items-center gap-2">
-          <span
-            className={`text-xs xl:text-sm px-2 py-1 font-bold rounded-md ${
-              isSelected ? "bg-black/20" : "bg-gray-600 text-gray-200"
-            }`}
-          >
-            {option.year}
-          </span>
-          <span className="text-sm xl:text-base">{option.name}</span>
+        <span className={`${dropdownStyles.eventName} ${isSelected ? dropdownStyles.eventNameSelected : ""}`}>
+          {option.name}
         </span>
-      </>
+      </span>
     );
   }
 
