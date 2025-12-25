@@ -8,6 +8,7 @@ import WatchGrid from "@/components/Watch/WatchGrid";
 import NewFooter from "@/components/Footer/NewFooter";
 import SearchBar from "@/components/Watch/SearchBar";
 import FilterDropdown from "@/components/Watch/FilterDropdown";
+import SpeakerPopup from "@/components/Watch/SpeakerPopup";
 
 // =============================================================================
 // Data
@@ -47,6 +48,31 @@ function WatchPage() {
 
   /** Current search input (raw string entered by the user) */
   const [searchTerm, setSearchTerm] = useState("");
+
+  /** Speaker popup state */
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+
+  // ---------------------------------------------------------------------------
+  // Popup Handlers
+  // ---------------------------------------------------------------------------
+
+  /**
+   * Open the speaker popup with the selected talk's speaker info.
+   * @param {object} talk - The talk object containing speaker info.
+   */
+  const handleSpeakerClick = (talk) => {
+    setSelectedSpeaker(talk);
+    setIsPopupOpen(true);
+  };
+
+  /**
+   * Close the speaker popup.
+   */
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setSelectedSpeaker(null);
+  };
 
   // ---------------------------------------------------------------------------
   // Filter Handlers
@@ -249,7 +275,7 @@ function WatchPage() {
           ===================================================================== */}
       <section className="mt-8">
         {featuredTalks.length > 0 ? (
-          <WatchGrid talks={featuredTalks} />
+          <WatchGrid talks={featuredTalks} onSpeakerClick={handleSpeakerClick} />
         ) : (
           <p className="w-10/12 mx-auto text-center text-lg mt-12">
             Oops! No talks match your selection. Try adjusting the filters to
@@ -257,6 +283,15 @@ function WatchPage() {
           </p>
         )}
       </section>
+
+      {/* =====================================================================
+          Speaker Popup
+          ===================================================================== */}
+      <SpeakerPopup
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+        speaker={selectedSpeaker}
+      />
 
       {/* =====================================================================
           Footer

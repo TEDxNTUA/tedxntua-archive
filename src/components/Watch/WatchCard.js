@@ -4,9 +4,9 @@
  * Responsibilities:
  * - show thumbnail that links to the YouTube talk
  * - display event name/date and talk title
- * - link to speaker info below the card
+ * - clickable speaker name that triggers a popup with social links
  */
-export default function WatchCard({talk}) {
+export default function WatchCard({talk, onSpeakerClick}) {
   return (
     <div className="text-white">
       <section className="youtube-link-wrapper mb-2">
@@ -36,12 +36,13 @@ export default function WatchCard({talk}) {
         </div>
       </section>
 
-      {/* Speaker name with link to external speaker page/info */}
-      <span className="text-md hover:text-[#eb0028] capitalize hover:undeline">
-        <a href={talk.speaker_info} target="_blank" rel="noopener noreferrer">
-          {talk.speaker_name.toUpperCase()}
-        </a>
-      </span>
+      {/* Speaker name - clicks opens popup with social links */}
+      <button
+        onClick={() => onSpeakerClick(talk)}
+        className="text-md hover:text-[#eb0028] capitalize hover:underline cursor-pointer bg-transparent border-none text-white text-left"
+      >
+        {talk.speaker_name.toUpperCase()}
+      </button>
     </div>
   );
 }
