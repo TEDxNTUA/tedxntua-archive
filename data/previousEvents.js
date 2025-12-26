@@ -98,8 +98,8 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/TsJCyzGVgDY/hqdefault.jpg",
         speaker_name: "Kimon Vogt & Antonia Vogt",
         speaker_speakers: [
-          { name: "Kimon Vogt", social: "" },
-          { name: "Antonia Vogt", social: "" }
+          { name: "Kimon Vogt", social: "https://www.instagram.com/kimonvogt/" },
+          { name: "Antonia Vogt", social: "https://www.instagram.com/antoniaavogt/" }
         ],
         category: "technology"
       },
