@@ -1,0 +1,213 @@
+/* Timeline Animation Styles */
+
+.timelineEvent {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.timelineEvent.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timelineEvent.fadeOut {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+/* Stagger animation for child elements */
+.eventYear {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out 0.1s, transform 0.6s ease-out 0.1s;
+}
+
+.timelineEvent.visible .eventYear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.eventImage {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.7s ease-out 0.2s, transform 0.7s ease-out 0.2s;
+}
+
+.timelineEvent.visible .eventImage {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.eventDescription {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s;
+}
+
+.timelineEvent.visible .eventDescription {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   TIMELINE CONTAINER
+   ============================================ */
+
+.timelineContainer {
+  position: absolute;
+  left: 40px;
+  width: 6px;
+}
+
+/* ============================================
+   THE VISIBLE RED BAR
+   ============================================ */
+
+.redBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #ef4444 0%,
+    #dc2626 30%,
+    #ef4444 50%,
+    #dc2626 70%,
+    #ef4444 100%
+  );
+  border-radius: 3px;
+  box-shadow: 
+    0 0 10px rgba(239, 68, 68, 0.4),
+    0 0 20px rgba(239, 68, 68, 0.2);
+}
+
+/* ============================================
+   GLOW TRAIL (follows the moving dot)
+   ============================================ */
+
+.glowTrail {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  width: calc(100% + 6px);
+  background: linear-gradient(
+    180deg,
+    rgba(239, 68, 68, 0.2) 0%,
+    rgba(239, 68, 68, 0.5) 60%,
+    rgba(255, 100, 100, 0.9) 90%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  border-radius: 3px;
+  box-shadow: 
+    0 0 20px rgba(239, 68, 68, 0.6),
+    0 0 40px rgba(239, 68, 68, 0.3);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ============================================
+   YEAR BULLETS (static red dots at each year)
+   ============================================ */
+
+.yearBullet {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle at 30% 30%, #ff6b6b 0%, #ef4444 50%, #b91c1c 100%);
+  border-radius: 50%;
+  border: 3px solid #1a1a1a;
+  z-index: 5;
+  transition: all 0.4s ease-out;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+}
+
+.yearBullet.bulletActive {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fecaca 40%, #ef4444 100%);
+  border-color: #ef4444;
+  box-shadow: 
+    0 0 15px rgba(239, 68, 68, 1),
+    0 0 30px rgba(239, 68, 68, 0.7),
+    0 0 45px rgba(239, 68, 68, 0.4);
+}
+
+/* ============================================
+   MOVING DOT (follows scroll smoothly)
+   ============================================ */
+
+.movingDot {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(
+    circle at 35% 35%,
+    #ffffff 0%,
+    #fef2f2 20%,
+    #fca5a5 40%,
+    #ef4444 70%,
+    #b91c1c 100%
+  );
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.95);
+  z-index: 20;
+  box-shadow: 
+    0 0 20px rgba(239, 68, 68, 1),
+    0 0 40px rgba(239, 68, 68, 0.8),
+    0 0 60px rgba(239, 68, 68, 0.6),
+    0 0 80px rgba(239, 68, 68, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.6);
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(239, 68, 68, 1),
+      0 0 40px rgba(239, 68, 68, 0.8),
+      0 0 60px rgba(239, 68, 68, 0.6),
+      0 0 80px rgba(239, 68, 68, 0.4),
+      inset 0 0 10px rgba(255, 255, 255, 0.6);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    box-shadow: 
+      0 0 25px rgba(239, 68, 68, 1),
+      0 0 50px rgba(239, 68, 68, 0.9),
+      0 0 75px rgba(239, 68, 68, 0.7),
+      0 0 100px rgba(239, 68, 68, 0.5),
+      inset 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+/* ============================================
+   OTHER ANIMATIONS
+   ============================================ */
+
+.eventImage img {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.eventImage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(235, 0, 39, 0.3);
+}
+
+.yearBadge {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.yearBadge.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

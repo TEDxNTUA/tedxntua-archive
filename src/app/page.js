@@ -1,14 +1,44 @@
 "use client";
 import {PREVIOUS_EVENTS} from "../../data/previousEvents";
+import {useEffect, useState, useRef} from "react";
 
 import FirstScroll from "@/components/MainPage/1stScroll";
 import SecondScroll from "@/components/MainPage/2ndScroll";
 import YearLine from "@/components/MainPage/Timeline/YearLine";
 import TimelineEvent from "@/components/MainPage/Timeline/TimelineEvent";
+import styles from "@/components/MainPage/Timeline/Timeline.module.css";
 
 import NewFooter from "@/components/Footer/NewFooter";
 
 function HomePage() {
+  const [yearBadgeVisible, setYearBadgeVisible] = useState(false);
+  const badgeRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setYearBadgeVisible(true);
+          }
+        });
+      },
+      {
+        threshold: 0.5
+      }
+    );
+
+    if (badgeRef.current) {
+      observer.observe(badgeRef.current);
+    }
+
+    return () => {
+      if (badgeRef.current) {
+        observer.unobserve(badgeRef.current);
+      }
+    };
+  }, []);
+
   return (
     <main>
       <FirstScroll />
@@ -20,11 +50,16 @@ function HomePage() {
         <div className="relative flex flex-col w-full mx-auto ">
           {/* Timeline appears in screens of size XL */}
           <div id="line-div" className="hidden xl:block">
-            <YearLine numberOfYears={8} />
+            <YearLine events={PREVIOUS_EVENTS} />
           </div>
 
           <div className="hidden xl:block">
-            <div className="ml-[100px] w-[90%] top-[-20px] absolute flex items-center">
+            <div 
+              ref={badgeRef}
+              className={`ml-[100px] w-[90%] top-[-20px] absolute flex items-center ${styles.yearBadge} ${
+                yearBadgeVisible ? styles.visible : ""
+              }`}
+            >
               <div className="text-center text-white  w-1/6">
                 <div className="text-4xl font-bold">2026</div>
                 <p className=" text-white bg-black mx-auto">
