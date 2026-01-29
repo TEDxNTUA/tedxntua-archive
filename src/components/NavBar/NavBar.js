@@ -38,7 +38,7 @@ function NewNavbar() {
         <Link onClick={closeDrawer} href="/">
           <img
             src="./tedxntua_logo.png"
-            className="w-auto h-[40px] object-contain"
+            className="w-auto h-[40px] object-contain tedx-logo"
             alt="TEDxNTUA Logo"
             onClick={() =>
               document
@@ -57,7 +57,7 @@ function NewNavbar() {
               <li key={index} className="mx-2">
                 {link.isImage ? (
                   <Link href={link.path}>
-                    <img src="./homepage/archive.png" alt={link.title} className="w-22 h-8" />
+                    <img src="./homepage/archive.png" alt={link.title} className="w-22 h-8 archive-icon" />
                   </Link>
                 ) : (
                   <NavLink href={link.path} title={link.title} />

@@ -17,3 +17,25 @@
     transform: rotate(0.5deg);
   }
 }
+
+/* Simple, smooth hover animation for the archive icon */
+.archive-icon {
+  transition: transform 200ms cubic-bezier(.2,.9,.2,1), filter 200ms ease;
+  will-change: transform;
+}
+.archive-icon:hover,
+.archive-icon:focus {
+  transform: translateY(-3px) scale(1.06);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
+
+/* Smooth hover animation for top-left TEDxNTUA logo */
+.tedx-logo {
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1), filter 220ms ease;
+  will-change: transform;
+}
+.tedx-logo:hover,
+.tedx-logo:focus {
+  transform: translateY(-4px) scale(1.06);
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.28));
+}
