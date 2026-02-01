@@ -89,7 +89,6 @@ export default function CookieConsent() {
           className={styles.compactWidget}
           title="Click to manage analytics preferences"
         >
-          <span className={`${styles.compactDot} ${cookieConsent ? styles.dotActive : styles.dotInactive}`}></span>
           <span className={styles.compactText}>
             {cookieConsent ? '🍪 ON' : '🍪 OFF'}
           </span>
@@ -101,9 +100,9 @@ export default function CookieConsent() {
         <div className={styles.widgetContent}>
           <div className={styles.widgetHeader}>
             <div className={styles.titleSection}>
-              <h3 className={styles.widgetTitle}>🍪 Analytics & Tracking</h3>
+              <h3 className={styles.widgetTitle}>📊 Understand How You Use Our Site</h3>
               <p className={styles.widgetSubtitle}>
-                Help us improve by sharing usage data
+                Help us make TEDxNTUA better for you
               </p>
             </div>
           </div>
@@ -111,22 +110,22 @@ export default function CookieConsent() {
           {/* Details section - Always visible when expanded */}
           <div className={styles.detailsSection}>
             <p className={styles.detailsTitle}>
-              <strong>What we collect:</strong>
+              <strong>What we learn:</strong>
             </p>
             <ul className={styles.detailsList}>
-              <li>Pages you visit</li>
-              <li>Time spent on pages</li>
-              <li>Device type & browser</li>
-              <li>General location (anonymized)</li>
+              <li>Which pages are most popular</li>
+              <li>How visitors navigate the site</li>
+              <li>Browser and device information</li>
+              <li>General location (city level only)</li>
             </ul>
 
             <p className={styles.detailsTitle}>
-              <strong>What we DON'T collect:</strong>
+              <strong>What we never collect:</strong>
             </p>
             <ul className={styles.detailsList}>
-              <li>❌ Passwords or login info</li>
-              <li>❌ Payment information</li>
-              <li>❌ Personal identifiable data</li>
+              <li>✅ Your passwords or login info</li>
+              <li>✅ Payment or credit card data</li>
+              <li>✅ Personal information (names, emails)</li>
             </ul>
 
             <div className={styles.legalText}>
@@ -152,11 +151,11 @@ export default function CookieConsent() {
                   checked={cookieConsent}
                   onChange={handleToggle}
                   className={styles.toggleCheckbox}
-                  aria-label="Toggle analytics tracking"
+                  aria-label="Toggle analytics"
                 />
                 <span className={styles.toggleSwitch}></span>
                 <span className={styles.toggleText}>
-                  {cookieConsent ? 'Tracking ON' : 'Tracking OFF'}
+                  {cookieConsent ? 'Analytics ON' : 'Analytics OFF'}
                 </span>
               </label>
             </div>
@@ -181,8 +180,7 @@ export default function CookieConsent() {
 
           {/* Status indicator */}
           <div className={`${styles.statusIndicator} ${cookieConsent ? styles.statusActive : styles.statusInactive}`}>
-            <span className={styles.statusDot}></span>
-            {cookieConsent ? 'Tracking enabled' : 'Tracking disabled'}
+            {cookieConsent ? 'Analytics enabled' : 'Analytics disabled'}
           </div>
         </div>
       )}

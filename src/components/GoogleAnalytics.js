@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export default function GoogleAnalytics() {
   const [cookieConsent, setCookieConsent] = useState(null);
-  const [gtmLoaded, setGtmLoaded] = useState(false);
+  const [gtagLoaded, setGtagLoaded] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -25,9 +25,9 @@ export default function GoogleAnalytics() {
       const newConsent = event.detail.consent;
       setCookieConsent(newConsent);
 
-      // If user disables tracking, stop GTM
+      // If user disables analytics, stop gtag
       if (!newConsent) {
-        disableGTM();
+        disableAnalytics();
       }
     };
 
@@ -40,7 +40,7 @@ export default function GoogleAnalytics() {
         setCookieConsent(newConsent);
         
         if (!newConsent) {
-          disableGTM();
+          disableAnalytics();
         }
       }
     };
@@ -53,50 +53,44 @@ export default function GoogleAnalytics() {
     };
   }, []);
 
-  const disableGTM = () => {
-    // Clear GTM data when user opts out
+  const disableAnalytics = () => {
+    // Clear analytics data when user opts out
     if (window.dataLayer) {
       window.dataLayer = [];
     }
-    if (window.google_tag_manager) {
-      delete window.google_tag_manager;
-    }
-    // Remove GTM scripts
-    const gtmScripts = document.querySelectorAll('script[src*="googletagmanager"]');
-    gtmScripts.forEach(script => script.remove());
+    // Remove gtag scripts
+    const gtagScripts = document.querySelectorAll('script[src*="googletagmanager"]');
+    gtagScripts.forEach(script => script.remove());
+    delete window.gtag;
   };
 
-  // Only load GTM if consent is explicitly true and not already loaded
-  if (!isClient || cookieConsent !== true || gtmLoaded) {
+  // Only load gtag if consent is explicitly true and not already loaded
+  if (!isClient || cookieConsent !== true || gtagLoaded) {
     return null;
   }
 
-  setGtmLoaded(true);
+  setGtagLoaded(true);
 
   return (
     <>
-      {/* Google Tag Manager Script - Only loads when consent is true */}
+      {/* Google Analytics - gtag.js */}
       <Script
-        id="gtm-script"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-E46SH2LTF1"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-config"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PDQQ8BZ4');`,
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E46SH2LTF1');
+          `,
         }}
       />
-
-      {/* Google Tag Manager (noscript) - Fallback for users without JS */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-PDQQ8BZ4"
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        />
-      </noscript>
     </>
   );
 }

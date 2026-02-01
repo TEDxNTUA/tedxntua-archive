@@ -262,19 +262,7 @@
 }
 
 .statusDot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-.statusActive .statusDot {
-  background-color: #2d7a2d;
-}
-
-.statusInactive .statusDot {
-  background-color: #8b0000;
+  display: none;
 }
 
 @keyframes pulse {
@@ -329,19 +317,15 @@
 }
 
 .compactDot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
+  display: none;
 }
 
 .compactDot.dotActive {
-  background-color: #2d7a2d;
+  display: none;
 }
 
 .compactDot.dotInactive {
-  background-color: #8b0000;
+  display: none;
 }
 
 .compactText {
