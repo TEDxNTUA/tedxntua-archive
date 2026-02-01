@@ -65,7 +65,11 @@ export default function GoogleAnalytics() {
   };
 
   // Only load gtag if consent is explicitly true and not already loaded
-  if (!isClient || cookieConsent !== true || gtagLoaded) {
+  if (!isClient || cookieConsent !== true) {
+    return null;
+  }
+
+  if (gtagLoaded) {
     return null;
   }
 
