@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import Navbar from "@/components/NavBar/NavBar.js";
 // import ModalWrapper from "@/components/NewsLetterModal/ModalWrapper";
 import ScrollTopButton from "@/components/ScrollTopButton";
@@ -28,7 +29,22 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
       <head>
-        {/* Google Tag Manager - Must be as high in head as possible */}
+        {/* Google tag (gtag.js) - Added to every page */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E46SH2LTF1"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E46SH2LTF1');
+          `}
+        </Script>
+
+        {/* Google Analytics - Consent management */}
         <GoogleAnalytics />
       </head>
       <body className="bg-black font-[Helvetica]">
