@@ -158,16 +158,12 @@ export default function CookieConsent() {
                 </span>
               </label>
             </div>
+            <div className={styles.warningMessage}>
+              ⚠️ You must click "Accept & Close" for your toggle changes to take effect
+            </div>
 
-            {/* Accept and Collapse buttons */}
+            {/* Accept button */}
             <div className={styles.buttonGroup}>
-              <button
-                onClick={handleCollapse}
-                className={styles.minimizeBtn}
-                title="Minimize widget"
-              >
-                Minimize
-              </button>
               <button
                 onClick={handleAccept}
                 className={styles.acceptBtn}
