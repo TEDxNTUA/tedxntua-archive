@@ -2,6 +2,8 @@ import "./globals.css";
 import Navbar from "@/components/NavBar/NavBar.js";
 // import ModalWrapper from "@/components/NewsLetterModal/ModalWrapper";
 import ScrollTopButton from "@/components/ScrollTopButton";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieConsent from "@/components/CookieConsent/CookieConsent";
 
 export const metadata = {
   title: "TEDxNTUA-Archive",
@@ -25,7 +27,14 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Tag Manager - Must be as high in head as possible */}
+        <GoogleAnalytics />
+      </head>
       <body className="bg-black font-[Helvetica]">
+        {/* Cookie Consent Banner */}
+        <CookieConsent />
+        
         {/* <ModalWrapper />  */}
         <div>
           <ScrollTopButton />

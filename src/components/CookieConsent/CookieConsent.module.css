@@ -1,0 +1,436 @@
+.cookieWidget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* EXPANDED STATE - Full widget on first visit */
+.cookieWidget.expanded {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  width: 100%;
+  overflow: hidden;
+  animation: slideIn 0.4s ease-out;
+  border: 1px solid #e0e0e0;
+}
+
+/* COMPACT STATE - Very small widget after first interaction */
+.cookieWidget.compact {
+  width: auto;
+  padding: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ==================== EXPANDED VIEW ==================== */
+
+.widgetContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.widgetHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.titleSection {
+  flex: 1;
+  min-width: 0;
+}
+
+.widgetTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.widgetSubtitle {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+/* Details Section */
+.detailsSection {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  border-left: 4px solid #dc143c;
+}
+
+.detailsTitle {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #dc143c;
+}
+
+.detailsList {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  color: #444444;
+  line-height: 1.6;
+}
+
+.detailsList li {
+  margin: 2px 0;
+}
+
+.legalText {
+  font-size: 11px;
+  color: #666666;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.policyLink {
+  color: #dc143c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.policyLink:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Toggle Section */
+.toggleSection {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleSwitch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: #cccccc;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.toggleCheckbox:checked + .toggleSwitch {
+  background-color: #dc143c;
+}
+
+.toggleSwitch::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggleCheckbox:checked + .toggleSwitch::after {
+  left: 22px;
+}
+
+.toggleText {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  min-width: 95px;
+}
+
+/* Controls Section */
+.controlsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.minimizeBtn,
+.acceptBtn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.minimizeBtn {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
+}
+
+.minimizeBtn:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.minimizeBtn:active {
+  transform: scale(0.98);
+}
+
+.acceptBtn {
+  background-color: #dc143c;
+  color: #ffffff;
+  border: none;
+}
+
+.acceptBtn:hover {
+  background-color: #b71230;
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);
+}
+
+.acceptBtn:active {
+  transform: scale(0.98);
+}
+
+/* Status Indicator */
+.statusIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.statusActive {
+  background-color: #f0f8f0;
+  color: #2d7a2d;
+}
+
+.statusInactive {
+  background-color: #fff0f0;
+  color: #8b0000;
+}
+
+.statusDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.statusActive .statusDot {
+  background-color: #2d7a2d;
+}
+
+.statusInactive .statusDot {
+  background-color: #8b0000;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ==================== COMPACT VIEW ==================== */
+
+.compactWidget {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 2px solid #dc143c;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.compactWidget:hover {
+  background-color: #dc143c;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(220, 20, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.compactWidget:active {
+  transform: translateY(0);
+}
+
+.compactDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.compactDot.dotActive {
+  background-color: #2d7a2d;
+}
+
+.compactDot.dotInactive {
+  background-color: #8b0000;
+}
+
+.compactText {
+  font-weight: 700;
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+
+.toggleLabel:focus-within .toggleSwitch {
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.3);
+}
+
+.minimizeBtn:focus,
+.acceptBtn:focus {
+  outline: 2px solid #dc143c;
+  outline-offset: 2px;
+}
+
+.compactWidget:focus {
+  outline: 2px solid #dc143c;
+  outline-offset: 2px;
+}
+
+.policyLink:focus {
+  outline: 2px solid #dc143c;
+  outline-offset: 2px;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 640px) {
+  .cookieWidget.expanded {
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
+    max-width: none;
+  }
+
+  .widgetContent {
+    padding: 14px;
+  }
+
+  .widgetTitle {
+    font-size: 14px;
+  }
+
+  .widgetSubtitle {
+    font-size: 11px;
+  }
+
+  .toggleText {
+    font-size: 11px;
+    min-width: auto;
+  }
+
+  .minimizeBtn,
+  .acceptBtn {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .compactWidget {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookieWidget.expanded {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    border-radius: 8px;
+  }
+
+  .widgetContent {
+    padding: 12px;
+  }
+
+  .detailsSection {
+    padding: 10px;
+  }
+
+  .widgetTitle {
+    font-size: 13px;
+  }
+
+  .compactWidget {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
