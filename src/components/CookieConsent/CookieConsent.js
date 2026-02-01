@@ -5,6 +5,7 @@ import styles from './CookieConsent.module.css';
 
 export default function CookieConsent() {
   const [cookieConsent, setCookieConsent] = useState(null);
+  const [tempConsent, setTempConsent] = useState(null);
   const [isExpanded, setIsExpanded] = useState(true);
   const [isClient, setIsClient] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
@@ -22,17 +23,20 @@ export default function CookieConsent() {
     }
     
     if (savedConsent) {
-      setCookieConsent(JSON.parse(savedConsent));
+      const consent = JSON.parse(savedConsent);
+      setCookieConsent(consent);
+      setTempConsent(consent);
     } else {
-      // Default to accepted on first visit
-      setCookieConsent(true);
-      localStorage.setItem('cookie-consent', JSON.stringify(true));
+      // Default to accepted on first visit (but don't save yet)
+      setTempConsent(true);
     }
 
     // Listen for storage changes from other tabs
     const handleStorageChange = (e) => {
       if (e.key === 'cookie-consent' && e.newValue) {
-        setCookieConsent(JSON.parse(e.newValue));
+        const consent = JSON.parse(e.newValue);
+        setCookieConsent(consent);
+        setTempConsent(consent);
       }
     };
 
@@ -41,30 +45,21 @@ export default function CookieConsent() {
   }, []);
 
   const handleToggle = () => {
-    const newConsent = !cookieConsent;
-    setCookieConsent(newConsent);
-    localStorage.setItem('cookie-consent', JSON.stringify(newConsent));
-    
-    // Mark as interacted and collapse
+    // Only update temporary state, don't save to localStorage yet
+    setTempConsent(prev => !prev);
+  };
+
+  const handleAccept = () => {
+    // Save the temporary consent to localStorage
+    localStorage.setItem('cookie-consent', JSON.stringify(tempConsent));
+    setCookieConsent(tempConsent);
     localStorage.setItem('cookie-widget-seen', 'true');
     setIsExpanded(false);
     setHasInteracted(true);
 
     // Trigger a custom event so GoogleAnalytics component can react
     window.dispatchEvent(
-      new CustomEvent('cookieConsentChanged', { detail: { consent: newConsent } })
-    );
-  };
-
-  const handleAccept = () => {
-    localStorage.setItem('cookie-consent', JSON.stringify(true));
-    localStorage.setItem('cookie-widget-seen', 'true');
-    setCookieConsent(true);
-    setIsExpanded(false);
-    setHasInteracted(true);
-
-    window.dispatchEvent(
-      new CustomEvent('cookieConsentChanged', { detail: { consent: true } })
+      new CustomEvent('cookieConsentChanged', { detail: { consent: tempConsent } })
     );
   };
 
@@ -75,6 +70,10 @@ export default function CookieConsent() {
   };
 
   const toggleExpand = () => {
+    // When expanding, sync tempConsent with saved cookieConsent
+    if (!isExpanded && cookieConsent !== null) {
+      setTempConsent(cookieConsent);
+    }
     setIsExpanded(!isExpanded);
   };
 
@@ -148,14 +147,14 @@ export default function CookieConsent() {
               <label className={styles.toggleLabel}>
                 <input
                   type="checkbox"
-                  checked={cookieConsent}
+                  checked={tempConsent !== null ? tempConsent : false}
                   onChange={handleToggle}
                   className={styles.toggleCheckbox}
                   aria-label="Toggle analytics"
                 />
                 <span className={styles.toggleSwitch}></span>
                 <span className={styles.toggleText}>
-                  {cookieConsent ? 'Analytics ON' : 'Analytics OFF'}
+                  {tempConsent ? 'Analytics ON' : 'Analytics OFF'}
                 </span>
               </label>
             </div>
@@ -179,8 +178,8 @@ export default function CookieConsent() {
           </div>
 
           {/* Status indicator */}
-          <div className={`${styles.statusIndicator} ${cookieConsent ? styles.statusActive : styles.statusInactive}`}>
-            {cookieConsent ? 'Analytics enabled' : 'Analytics disabled'}
+          <div className={`${styles.statusIndicator} ${tempConsent ? styles.statusActive : styles.statusInactive}`}>
+            {tempConsent ? 'Analytics enabled' : 'Analytics disabled'}
           </div>
         </div>
       )}
