@@ -9,14 +9,15 @@ export default function CookieConsent() {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isClient, setIsClient] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
     
     // Always ask for permission - don't save consent to localStorage
-    // Default to OFF (no tracking) until user explicitly accepts
-    setCookieConsent(false);
-    setTempConsent(false);
+    // Default to ON (tracking enabled) until user explicitly changes
+    setCookieConsent(true);
+    setTempConsent(true);
     
     // Keep widget expanded at all times
     setIsExpanded(true);
@@ -28,6 +29,9 @@ export default function CookieConsent() {
   };
 
   const handleAccept = () => {
+    // Start closing animation
+    setIsClosing(true);
+    
     // DO NOT save to localStorage - ask for permission every visit
     // Only update the current session state
     setCookieConsent(tempConsent);
@@ -52,7 +56,7 @@ export default function CookieConsent() {
   if (!isClient) return null;
 
   return (
-    <div className={`${styles.cookieWidget} ${styles.expanded}`}>
+    <div className={`${styles.cookieWidget} ${styles.expanded} ${isClosing ? styles.fadeOut : ''}`}>
       {/* Always show expanded view - users MUST make a choice */}
       {true && (
         <div className={styles.widgetContent}>
