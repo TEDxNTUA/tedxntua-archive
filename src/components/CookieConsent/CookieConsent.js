@@ -14,10 +14,19 @@ export default function CookieConsent() {
   useEffect(() => {
     setIsClient(true);
     
-    // Always ask for permission - don't save consent to localStorage
-    // Default to ON (tracking enabled) until user explicitly changes
-    setCookieConsent(true);
-    setTempConsent(true);
+    // Check if user has a saved preference in localStorage
+    const savedConsent = localStorage.getItem('cookieConsent');
+    
+    if (savedConsent !== null) {
+      // Load saved preference
+      const consent = JSON.parse(savedConsent);
+      setCookieConsent(consent);
+      setTempConsent(consent);
+    } else {
+      // First visit - default to ON (tracking enabled) until user explicitly changes
+      setCookieConsent(true);
+      setTempConsent(true);
+    }
     
     // Keep widget expanded at all times
     setIsExpanded(true);
@@ -32,8 +41,10 @@ export default function CookieConsent() {
     // Start closing animation
     setIsClosing(true);
     
-    // DO NOT save to localStorage - ask for permission every visit
-    // Only update the current session state
+    // Save consent preference to localStorage
+    localStorage.setItem('cookieConsent', JSON.stringify(tempConsent));
+    
+    // Update the current session state
     setCookieConsent(tempConsent);
     setHasInteracted(true);
 
