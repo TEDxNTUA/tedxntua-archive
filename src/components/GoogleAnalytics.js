@@ -1,23 +1,26 @@
 'use client';
 
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function GoogleAnalytics() {
-  const [cookieConsent, setCookieConsent] = useState(null);
-  const [gtagLoaded, setGtagLoaded] = useState(false);
+  const [cookieConsent, setCookieConsent] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const gtagLoadedRef = useRef(false);
 
   useEffect(() => {
     setIsClient(true);
 
-    // Check initial consent state
+    // Check initial consent state from localStorage
     const savedConsent = localStorage.getItem('cookie-consent');
     
     if (savedConsent) {
-      setCookieConsent(JSON.parse(savedConsent));
-    } else {
-      setCookieConsent(true);
+      const consent = JSON.parse(savedConsent);
+      setCookieConsent(consent);
+      // Initialize gtag if consent is true
+      if (consent === true) {
+        initializeGtag();
+      }
     }
 
     // Listen for real-time consent changes from the banner
@@ -25,8 +28,10 @@ export default function GoogleAnalytics() {
       const newConsent = event.detail.consent;
       setCookieConsent(newConsent);
 
-      // If user disables analytics, stop gtag
-      if (!newConsent) {
+      if (newConsent === true) {
+        initializeGtag();
+      } else {
+        // If user disables analytics, disable gtag
         disableAnalytics();
       }
     };
@@ -39,7 +44,9 @@ export default function GoogleAnalytics() {
         const newConsent = JSON.parse(e.newValue);
         setCookieConsent(newConsent);
         
-        if (!newConsent) {
+        if (newConsent === true) {
+          initializeGtag();
+        } else {
           disableAnalytics();
         }
       }
@@ -58,41 +65,65 @@ export default function GoogleAnalytics() {
     if (window.dataLayer) {
       window.dataLayer = [];
     }
-    // Remove gtag scripts
-    const gtagScripts = document.querySelectorAll('script[src*="googletagmanager"]');
-    gtagScripts.forEach(script => script.remove());
-    delete window.gtag;
+    // Disable gtag if it exists
+    if (window.gtag) {
+      window.gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+    }
   };
 
-  // Only load gtag if consent is explicitly true and not already loaded
+  const initializeGtag = () => {
+    // Prevent multiple initializations
+    if (gtagLoadedRef.current) {
+      return;
+    }
+
+    // Initialize dataLayer if not already present
+    if (!window.dataLayer) {
+      window.dataLayer = [];
+    }
+
+    // Create gtag function
+    if (!window.gtag) {
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+    }
+
+    // Set consent and configure analytics
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-E46SH2LTF1', {
+      'page_path': window.location.pathname
+    });
+
+    gtagLoadedRef.current = true;
+  };
+
+  // Don't render anything - scripts are loaded conditionally
+  // Only load gtag script if consent is explicitly true
   if (!isClient || cookieConsent !== true) {
     return null;
   }
 
-  if (gtagLoaded) {
-    return null;
-  }
-
-  setGtagLoaded(true);
-
   return (
     <>
-      {/* Google Analytics - gtag.js */}
+      {/* Google Analytics - gtag.js - Only loads if consent is true */}
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-E46SH2LTF1"
         strategy="afterInteractive"
-      />
-      <Script
-        id="gtag-config"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E46SH2LTF1');
-          `,
+        onLoad={() => {
+          // Ensure gtag is configured after script loads
+          if (window.gtag) {
+            window.gtag('config', 'G-E46SH2LTF1', {
+              'page_path': window.location.pathname
+            });
+          }
         }}
       />
     </>

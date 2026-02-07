@@ -17,18 +17,33 @@ export default function CookieConsent() {
     const hasSeenWidget = localStorage.getItem('cookie-widget-seen');
     const savedConsent = localStorage.getItem('cookie-consent');
     
-    if (hasSeenWidget) {
-      setIsExpanded(false);
-      setHasInteracted(true);
-    }
-    
     if (savedConsent) {
+      // User has already made a choice
       const consent = JSON.parse(savedConsent);
       setCookieConsent(consent);
       setTempConsent(consent);
+      setIsExpanded(false);
+      setHasInteracted(true);
     } else {
-      // Default to accepted on first visit (but don't save yet)
-      setTempConsent(true);
+      // First visit: Default to accepted analytics and save it immediately
+      const defaultConsent = true;
+      localStorage.setItem('cookie-consent', JSON.stringify(defaultConsent));
+      setCookieConsent(defaultConsent);
+      setTempConsent(defaultConsent);
+      
+      // Trigger analytics loading immediately
+      window.dispatchEvent(
+        new CustomEvent('cookieConsentChanged', { detail: { consent: defaultConsent } })
+      );
+      
+      // Show widget briefly on first visit (expanded), collapse after 5 seconds or on interaction
+      setIsExpanded(true);
+      const autoCollapseTimer = setTimeout(() => {
+        setIsExpanded(false);
+        localStorage.setItem('cookie-widget-seen', 'true');
+      }, 5000); // Auto-collapse after 5 seconds
+      
+      return () => clearTimeout(autoCollapseTimer);
     }
 
     // Listen for storage changes from other tabs
@@ -67,6 +82,12 @@ export default function CookieConsent() {
     setIsExpanded(false);
     localStorage.setItem('cookie-widget-seen', 'true');
     setHasInteracted(true);
+    
+    // Ensure consent is saved when collapsing (in case of first visit)
+    if (cookieConsent === null) {
+      localStorage.setItem('cookie-consent', JSON.stringify(tempConsent));
+      setCookieConsent(tempConsent);
+    }
   };
 
   const toggleExpand = () => {
