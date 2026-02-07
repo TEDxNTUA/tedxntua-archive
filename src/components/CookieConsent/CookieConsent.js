@@ -13,50 +13,13 @@ export default function CookieConsent() {
   useEffect(() => {
     setIsClient(true);
     
-    // Check if user has already interacted with widget
-    const hasSeenWidget = localStorage.getItem('cookie-widget-seen');
-    const savedConsent = localStorage.getItem('cookie-consent');
+    // Always ask for permission - don't save consent to localStorage
+    // Default to OFF (no tracking) until user explicitly accepts
+    setCookieConsent(false);
+    setTempConsent(false);
     
-    if (savedConsent) {
-      // User has already made a choice
-      const consent = JSON.parse(savedConsent);
-      setCookieConsent(consent);
-      setTempConsent(consent);
-      setIsExpanded(false);
-      setHasInteracted(true);
-    } else {
-      // First visit: Default to accepted analytics and save it immediately
-      const defaultConsent = true;
-      localStorage.setItem('cookie-consent', JSON.stringify(defaultConsent));
-      setCookieConsent(defaultConsent);
-      setTempConsent(defaultConsent);
-      
-      // Trigger analytics loading immediately
-      window.dispatchEvent(
-        new CustomEvent('cookieConsentChanged', { detail: { consent: defaultConsent } })
-      );
-      
-      // Show widget briefly on first visit (expanded), collapse after 5 seconds or on interaction
-      setIsExpanded(true);
-      const autoCollapseTimer = setTimeout(() => {
-        setIsExpanded(false);
-        localStorage.setItem('cookie-widget-seen', 'true');
-      }, 5000); // Auto-collapse after 5 seconds
-      
-      return () => clearTimeout(autoCollapseTimer);
-    }
-
-    // Listen for storage changes from other tabs
-    const handleStorageChange = (e) => {
-      if (e.key === 'cookie-consent' && e.newValue) {
-        const consent = JSON.parse(e.newValue);
-        setCookieConsent(consent);
-        setTempConsent(consent);
-      }
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
+    // Keep widget expanded at all times
+    setIsExpanded(true);
   }, []);
 
   const handleToggle = () => {
@@ -65,11 +28,9 @@ export default function CookieConsent() {
   };
 
   const handleAccept = () => {
-    // Save the temporary consent to localStorage
-    localStorage.setItem('cookie-consent', JSON.stringify(tempConsent));
+    // DO NOT save to localStorage - ask for permission every visit
+    // Only update the current session state
     setCookieConsent(tempConsent);
-    localStorage.setItem('cookie-widget-seen', 'true');
-    setIsExpanded(false);
     setHasInteracted(true);
 
     // Trigger a custom event so GoogleAnalytics component can react
@@ -79,44 +40,21 @@ export default function CookieConsent() {
   };
 
   const handleCollapse = () => {
-    setIsExpanded(false);
-    localStorage.setItem('cookie-widget-seen', 'true');
-    setHasInteracted(true);
-    
-    // Ensure consent is saved when collapsing (in case of first visit)
-    if (cookieConsent === null) {
-      localStorage.setItem('cookie-consent', JSON.stringify(tempConsent));
-      setCookieConsent(tempConsent);
-    }
+    // Widget stays expanded - users must make a choice by clicking Accept
+    // This ensures they can't skip the permission prompt
   };
 
   const toggleExpand = () => {
-    // When expanding, sync tempConsent with saved cookieConsent
-    if (!isExpanded && cookieConsent !== null) {
-      setTempConsent(cookieConsent);
-    }
-    setIsExpanded(!isExpanded);
+    // Widget is always expanded - disable toggle
+    return;
   };
 
   if (!isClient) return null;
 
   return (
-    <div className={`${styles.cookieWidget} ${isExpanded ? styles.expanded : styles.compact}`}>
-      {/* Compact view - Always visible, very small */}
-      {!isExpanded && (
-        <button
-          onClick={toggleExpand}
-          className={styles.compactWidget}
-          title="Click to manage analytics preferences"
-        >
-          <span className={styles.compactText}>
-            {cookieConsent ? '🍪 ON' : '🍪 OFF'}
-          </span>
-        </button>
-      )}
-
-      {/* Expanded view - Full widget */}
-      {isExpanded && (
+    <div className={`${styles.cookieWidget} ${styles.expanded}`}>
+      {/* Always show expanded view - users MUST make a choice */}
+      {true && (
         <div className={styles.widgetContent}>
           <div className={styles.widgetHeader}>
             <div className={styles.titleSection}>

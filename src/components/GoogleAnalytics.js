@@ -68,17 +68,8 @@ export default function GoogleAnalytics() {
   useEffect(() => {
     setIsClient(true);
 
-    // Check initial consent state from localStorage
-    const savedConsent = localStorage.getItem('cookie-consent');
-    
-    if (savedConsent) {
-      const consent = JSON.parse(savedConsent);
-      setCookieConsent(consent);
-      // Initialize gtag if consent is true
-      if (consent === true) {
-        initializeGtag();
-      }
-    }
+    // Don't check localStorage - ask for permission every visit
+    // Default to no tracking until user explicitly accepts
 
     // Listen for real-time consent changes from the banner
     const handleConsentChange = (event) => {
@@ -95,25 +86,8 @@ export default function GoogleAnalytics() {
 
     window.addEventListener('cookieConsentChanged', handleConsentChange);
 
-    // Also listen for localStorage changes (multi-tab support)
-    const handleStorageChange = (e) => {
-      if (e.key === 'cookie-consent' && e.newValue) {
-        const newConsent = JSON.parse(e.newValue);
-        setCookieConsent(newConsent);
-        
-        if (newConsent === true) {
-          initializeGtag();
-        } else {
-          disableAnalytics();
-        }
-      }
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-
     return () => {
       window.removeEventListener('cookieConsentChanged', handleConsentChange);
-      window.removeEventListener('storage', handleStorageChange);
     };
   }, []);
 
