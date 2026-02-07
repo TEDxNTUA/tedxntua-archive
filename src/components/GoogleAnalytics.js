@@ -2,11 +2,68 @@
 
 import Script from 'next/script';
 import { useEffect, useState, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function GoogleAnalytics() {
   const [cookieConsent, setCookieConsent] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const gtagLoadedRef = useRef(false);
+  const pathname = usePathname();
+
+  // Track page views when pathname changes
+  useEffect(() => {
+    if (!isClient || !window.gtag || cookieConsent !== true) {
+      return;
+    }
+
+    // Send page view to Google Analytics
+    window.gtag('config', 'G-E46SH2LTF1', {
+      'page_path': pathname,
+      'page_location': window.location.href,
+    });
+  }, [pathname, isClient, cookieConsent]);
+
+  // Track external link clicks
+  useEffect(() => {
+    if (!isClient || !window.gtag || cookieConsent !== true) {
+      return;
+    }
+
+    const handleLinkClick = (e) => {
+      const link = e.target.closest('a[href]');
+      if (!link) return;
+
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      // Check if it's an external link
+      const isExternal = href.startsWith('http://') || 
+                         href.startsWith('https://') || 
+                         href.startsWith('//');
+
+      if (isExternal) {
+        // Check if it's a different domain
+        try {
+          const linkUrl = new URL(href, window.location.href);
+          const isOutbound = linkUrl.hostname !== window.location.hostname;
+
+          if (isOutbound) {
+            // Send event to Google Analytics
+            window.gtag('event', 'click', {
+              'event_category': 'outbound',
+              'event_label': href,
+              'value': linkUrl.hostname,
+            });
+          }
+        } catch (e) {
+          // Invalid URL, skip
+        }
+      }
+    };
+
+    document.addEventListener('click', handleLinkClick);
+    return () => document.removeEventListener('click', handleLinkClick);
+  }, [isClient, cookieConsent]);
 
   useEffect(() => {
     setIsClient(true);
