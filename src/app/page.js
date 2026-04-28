@@ -60,22 +60,36 @@ function HomePage() {
                 yearBadgeVisible ? styles.visible : ""
               }`}
             >
-              <div className="text-center text-white  w-1/6">
-                <div className="text-4xl font-bold">2026</div>
-                <p className=" text-white bg-black mx-auto">
-                  Stay upda<span className="text-our-red">TED</span>. More coming soon!
+              <a
+                href="https://2026.tedxntua.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-white w-1/6 group"
+              >
+                <div className="text-4xl font-bold group-hover:text-our-red transition-colors duration-300">
+                  2026
+                </div>
+                <p className="text-white bg-black mx-auto group-hover:text-our-red transition-colors duration-300">
+                  Stay upda<span className="text-our-red">TED</span>. The TEDxNTUA 2026 site is up. <br />Click 2026 above!!! 
                 </p>
-              </div>
+              </a>
             </div>
           </div>
 
           <div className="xl:hidden mb-[200px]">
-            <div className="flex flex-col text-center text-white">
-              <div className="text-4xl font-bold">2026</div>
-              <p className=" text-white bg-black mx-auto">
+            <a
+              href="https://2026.tedxntua.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col text-center text-white group"
+            >
+              <div className="text-4xl font-bold group-hover:text-our-red transition-colors duration-300">
+                2026
+              </div>
+              <p className="text-white bg-black mx-auto group-hover:text-our-red transition-colors duration-300">
                 Stay upda<span className="text-our-red">TED</span>. More coming soon!
               </p>
-            </div>
+            </a>
           </div>
 
           {/* When timeline appears */}
