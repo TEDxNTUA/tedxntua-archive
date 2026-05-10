@@ -8,7 +8,7 @@ function YearLine({events = []}) {
 
   // Automatically calculate all bullet positions based on events
   const numberOfYears = events.length;
-  const bulletPositions = [0, ...Array.from({length: numberOfYears}, (_, i) => 120 + i * 600)];
+  const bulletPositions = [50, ...Array.from({length: numberOfYears}, (_, i) => 300 + i * 400)];
   const lastBulletPosition = bulletPositions[bulletPositions.length - 1];
 
   const handleScroll = useCallback(() => {

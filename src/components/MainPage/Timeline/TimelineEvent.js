@@ -7,8 +7,36 @@ const TimelineEvent = ({TedEvent, index}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasBeenVisible, setHasBeenVisible] = useState(false);
   const eventRef = useRef(null);
+  const videoRef = useRef(null);
+  const [direction, setDirection] = useState(1);
 
   const assetSrc = source.startsWith("/") ? source : `./previousEvents/${source}`;
+
+  useEffect(() => {
+    if (!isVideo) return;
+    
+    const handlePlayback = () => {
+      const video = videoRef.current;
+      if (!video) return;
+
+      if (direction === 1) {
+        if (video.currentTime >= video.duration - 0.1) {
+          setDirection(-1);
+          video.pause();
+        }
+      } else {
+        if (video.currentTime <= 0.1) {
+          setDirection(1);
+          video.play();
+        } else {
+          video.currentTime -= 0.05;
+        }
+      }
+    };
+
+    const interval = setInterval(handlePlayback, 30);
+    return () => clearInterval(interval);
+  }, [isVideo, direction]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,12 +72,9 @@ const TimelineEvent = ({TedEvent, index}) => {
     <div
       ref={eventRef}
       key={TedEvent.source}
-      className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center h-[600px] ${styles.timelineEvent} ${
+      className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center h-[400px] ${styles.timelineEvent} ${
         isVisible ? styles.visible : hasBeenVisible ? styles.fadeOut : ""
       }`}
-      style={{
-        top: `${120 + index * 600}px` // Align with the bullet position
-      }}
     >
       <div className={`xl:w-1/6 ${styles.eventYear}`}>
         <div className="text-center text-white text-4xl font-bold">{date}</div>
@@ -59,8 +84,9 @@ const TimelineEvent = ({TedEvent, index}) => {
         {isVideo ? (
           <a href={link} target="_blank" rel="noopener noreferrer" className="relative hover:cursor-pointer w-full max-w-xs group">
             <video
+              ref={videoRef}
               autoPlay
-              loop
+              loop={false}
               muted
               playsInline
               className="w-full rounded-lg border border-[#eb002733] hover:border-[#eb0027] transition duration-200 object-cover aspect-square"

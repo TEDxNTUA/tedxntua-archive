@@ -2,6 +2,36 @@
 import React from "react";
 
 const UpcomingEvent2026 = () => {
+  const desktopVideoRef = React.useRef(null);
+  const mobileVideoRef = React.useRef(null);
+  const [direction, setDirection] = React.useState(1); // 1 for forward, -1 for backward
+
+  React.useEffect(() => {
+    const handlePlayback = () => {
+      const videos = [desktopVideoRef.current, mobileVideoRef.current];
+      videos.forEach((video) => {
+        if (!video) return;
+
+        if (direction === 1) {
+          if (video.currentTime >= video.duration - 0.1) {
+            setDirection(-1);
+            video.pause();
+          }
+        } else {
+          if (video.currentTime <= 0.1) {
+            setDirection(1);
+            video.play();
+          } else {
+            video.currentTime -= 0.05; // Adjust speed of reversal
+          }
+        }
+      });
+    };
+
+    const interval = setInterval(handlePlayback, 30);
+    return () => clearInterval(interval);
+  }, [direction]);
+
   return (
     <div className="relative w-full max-w-5xl mx-auto my-12 overflow-hidden rounded-2xl shadow-2xl group cursor-pointer border border-white/10">
       <a
@@ -12,8 +42,9 @@ const UpcomingEvent2026 = () => {
       >
         {/* Desktop Video */}
         <video
+          ref={desktopVideoRef}
           autoPlay
-          loop
+          loop={false}
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover hidden md:block transition-transform duration-700 group-hover:scale-105"
@@ -23,8 +54,9 @@ const UpcomingEvent2026 = () => {
 
         {/* Mobile Video */}
         <video
+          ref={mobileVideoRef}
           autoPlay
-          loop
+          loop={false}
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover md:hidden"

@@ -53,10 +53,10 @@ function HomePage() {
             <YearLine events={PREVIOUS_EVENTS} />
           </div>
 
-          <div className="hidden xl:block">
+          <div className="hidden xl:block h-[100px] relative">
             <div 
               ref={badgeRef}
-              className={`ml-[100px] w-[90%] top-[-20px] absolute flex items-center ${styles.yearBadge} ${
+              className={`ml-[100px] w-[90%] absolute top-0 flex items-center h-full ${styles.yearBadge} ${
                 yearBadgeVisible ? styles.visible : ""
               }`}
             >
