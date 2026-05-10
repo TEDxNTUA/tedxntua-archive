@@ -32,6 +32,13 @@ const UpcomingEvent2026 = () => {
           <source src="/2026/output_android.mp4" type="video/mp4" />
         </video>
 
+        {/* Logo Overlay */}
+        <img 
+          src="/eventLogos/cycle0-logo.png" 
+          alt="Cycle 0 Logo" 
+          className="absolute top-4 right-4 w-20 md:w-32 h-auto object-contain z-20 transition-transform duration-500 group-hover:scale-110"
+        />
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 transition-opacity duration-500">
           <div className="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">

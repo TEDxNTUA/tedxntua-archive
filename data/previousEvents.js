@@ -26,7 +26,7 @@ export const PREVIOUS_EVENTS = [
     source: "/2026/output_desktop.mp4",
     mobileSource: "/2026/output_android.mp4",
     iosSource: "/2026/output_ios.mp4",
-    logo: "tedxntua_logo.png",
+    logo: "cycle0-logo.png",
     paragraph:
       "Cycle 0 — Exploring the origins of innovation and the power of ideas that redefine our future. A journey that marked the beginning of a new era for TEDxNTUA, focusing on the fundamental principles that drive change.",
     isVideo: true,

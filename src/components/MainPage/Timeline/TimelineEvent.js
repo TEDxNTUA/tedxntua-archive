@@ -2,8 +2,8 @@
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./Timeline.module.css";
 
-const TimelineEvent = ({TedEvent}) => {
-  const {link, source, date, paragraph, index, isVideo, mobileSource, iosSource} = TedEvent;
+const TimelineEvent = ({TedEvent, index}) => {
+  const {link, source, date, paragraph, isVideo, mobileSource, iosSource, logo} = TedEvent;
   const [isVisible, setIsVisible] = useState(false);
   const [hasBeenVisible, setHasBeenVisible] = useState(false);
   const eventRef = useRef(null);
@@ -48,7 +48,7 @@ const TimelineEvent = ({TedEvent}) => {
         isVisible ? styles.visible : hasBeenVisible ? styles.fadeOut : ""
       }`}
       style={{
-        top: `${index * 600}px` // Align with the bullet position
+        top: `${120 + index * 600}px` // Align with the bullet position
       }}
     >
       <div className={`xl:w-1/6 ${styles.eventYear}`}>
@@ -57,7 +57,7 @@ const TimelineEvent = ({TedEvent}) => {
 
       <div id="image-column" className={`xl:w-3/6 flex justify-center ${styles.eventImage}`}>
         {isVideo ? (
-          <a href={link} target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer w-full max-w-xs">
+          <a href={link} target="_blank" rel="noopener noreferrer" className="relative hover:cursor-pointer w-full max-w-xs group">
             <video
               autoPlay
               loop
@@ -69,6 +69,13 @@ const TimelineEvent = ({TedEvent}) => {
               {mobileSource && <source src={mobileSource} type="video/mp4" />}
               <source src={assetSrc} type="video/mp4" />
             </video>
+            {logo && (
+              <img 
+                src={`./eventLogos/${logo}`} 
+                alt="Event Logo" 
+                className="absolute top-2 right-2 w-16 md:w-24 h-auto object-contain pointer-events-none transition-transform duration-300 group-hover:scale-110"
+              />
+            )}
           </a>
         ) : link ? (
           <a href={link} target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer">

@@ -73,7 +73,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="xl:hidden mb-[200px]">
+          <div className="xl:hidden mb-[80px]">
             <div
               className="flex flex-col text-center text-white group"
             >
