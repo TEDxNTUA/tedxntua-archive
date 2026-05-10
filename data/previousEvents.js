@@ -20,6 +20,18 @@
 
 export const PREVIOUS_EVENTS = [
   {
+    name: "Cycle 0",
+    date: "May 9, 2026",
+    link: "https://2026.tedxntua.com",
+    source: "/2026/output_desktop.mp4",
+    mobileSource: "/2026/output_android.mp4",
+    iosSource: "/2026/output_ios.mp4",
+    logo: "tedxntua_logo.png",
+    paragraph:
+      "Cycle 0 — Exploring the origins of innovation and the power of ideas that redefine our future. A journey that marked the beginning of a new era for TEDxNTUA, focusing on the fundamental principles that drive change.",
+    isVideo: true,
+  },
+  {
     name: "Synelixis",
     date: "May 10, 2025",
     link: "https://2025.tedxntua.com",

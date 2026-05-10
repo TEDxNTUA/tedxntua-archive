@@ -60,36 +60,30 @@ function HomePage() {
                 yearBadgeVisible ? styles.visible : ""
               }`}
             >
-              <a
-                href="https://2026.tedxntua.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
                 className="text-center text-white w-1/6 group"
               >
                 <div className="text-4xl font-bold group-hover:text-our-red transition-colors duration-300">
-                  2026
+                  2027
                 </div>
                 <p className="text-white bg-black mx-auto group-hover:text-our-red transition-colors duration-300">
-                  Stay upda<span className="text-our-red">TED</span>. The TEDxNTUA 2026 site is up. <br />Click 2026 above!!! 
+                  Stay upda<span className="text-our-red">TED</span>.
                 </p>
-              </a>
+              </div>
             </div>
           </div>
 
           <div className="xl:hidden mb-[200px]">
-            <a
-              href="https://2026.tedxntua.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="flex flex-col text-center text-white group"
             >
               <div className="text-4xl font-bold group-hover:text-our-red transition-colors duration-300">
-                2026
+                2027
               </div>
               <p className="text-white bg-black mx-auto group-hover:text-our-red transition-colors duration-300">
-                Stay upda<span className="text-our-red">TED</span>. More coming soon!
+                Stay upda<span className="text-our-red">TED</span>.
               </p>
-            </a>
+            </div>
           </div>
 
           {/* When timeline appears */}
