@@ -72,7 +72,7 @@ const TimelineEvent = ({TedEvent, index}) => {
     <div
       ref={eventRef}
       key={TedEvent.source}
-      className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center h-[400px] ${styles.timelineEvent} ${
+      className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center xl:h-[400px] h-auto py-10 xl:py-0 ${styles.timelineEvent} ${
         isVisible ? styles.visible : hasBeenVisible ? styles.fadeOut : ""
       }`}
     >

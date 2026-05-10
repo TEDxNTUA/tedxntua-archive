@@ -45,7 +45,7 @@ function HomePage() {
       <SecondScroll />
 
       {/* <Timeline /> */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
         {/* <div className="relative flex flex-col w-full mx-auto lg:bg-yellow-500 xl:bg-lime-600 2xl:bg-blue-200 bg-[rgba(200,200,200,0.2)]"> */}
         <div className="relative flex flex-col w-full mx-auto ">
           {/* Timeline appears in screens of size XL */}
