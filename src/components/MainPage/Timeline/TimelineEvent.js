@@ -71,10 +71,11 @@ const TimelineEvent = ({TedEvent, index}) => {
   return (
     <div
       ref={eventRef}
+      data-timeline-event
       key={TedEvent.source}
-      className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center xl:h-[400px] h-auto py-10 xl:py-0 ${styles.timelineEvent} ${
+            className={`relative flex flex-col xl:flex-row gap-8 xl:gap-0 items-center xl:min-h-[400px] h-auto py-10 ${styles.timelineEvent} ${
         isVisible ? styles.visible : hasBeenVisible ? styles.fadeOut : ""
-      }`}
+      }`} 
     >
       <div className={`xl:w-1/6 ${styles.eventYear}`}>
         <div className="text-center text-white text-4xl font-bold">{date}</div>

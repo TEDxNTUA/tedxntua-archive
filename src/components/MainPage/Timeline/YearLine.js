@@ -7,9 +7,35 @@ function YearLine({events = []}) {
   const lineRef = useRef(null);
 
   // Automatically calculate all bullet positions based on events
-  const numberOfYears = events.length;
-  const bulletPositions = [50, ...Array.from({length: numberOfYears}, (_, i) => 300 + i * 400)];
+    const [bulletPositions, setBulletPositions] = useState(
+    [50, ...events.map((_, i) => 300 + i * 400)]
+  );
   const lastBulletPosition = bulletPositions[bulletPositions.length - 1];
+
+  // Measure the real center of every event, so each dot sits next to its date
+  useEffect(() => {
+    const measure = () => {
+      const line = lineRef.current;
+      const container = line?.offsetParent;
+      if (!container) return; // line is hidden (small screens)
+      const rows = container.querySelectorAll("[data-timeline-event]");
+      if (!rows.length) return;
+      const positions = Array.from(rows).map(
+        (row) => row.offsetTop + row.offsetHeight / 2 - line.offsetTop
+      );
+      setBulletPositions([50, ...positions]);
+    };
+
+    measure();
+    const observer = new ResizeObserver(measure);
+    if (lineRef.current?.offsetParent) observer.observe(lineRef.current.offsetParent);
+    window.addEventListener("resize", measure);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [events.length]);
 
   const handleScroll = useCallback(() => {
     if (!lineRef.current) return;
