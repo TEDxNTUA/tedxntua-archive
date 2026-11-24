@@ -47,16 +47,16 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/p6_OPJxk8oc/hqdefault.jpg",
         speaker_name: "Ioannis Pantazopoulos",
         speaker_info: "https://www.instagram.com/johnpantazopoulos/",
-        category: "education"
+        category: ["science", "culture", "education"]
       },
       {
         id: "watchtalk102",
-        title: "The Multiplicity of The Self",
+        title: "The Multiplicity of The Self",  
         yt_link: "https://www.youtube.com/watch?v=3sOBkLntUpk&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=2",
         thumbnail_yt: "https://i.ytimg.com/vi/3sOBkLntUpk/hqdefault.jpg",
         speaker_name: "Eva Kotta",
         speaker_info: "https://www.instagram.com/the.abstract.girl/",
-        category: "life"
+        category: ["life", "science"]
       },
       {
         id: "watchtalk103",
@@ -65,7 +65,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/K7ULboaVvqE/hqdefault.jpg",
         speaker_name: "George Gougoulakis",
         speaker_info: "https://www.instagram.com/giorgio_el_greco",
-        category: "life"
+        category: ["life", "global issues"]
       },
       {
         id: "watchtalk104",
@@ -74,7 +74,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/3MFj7pCZXVw/hqdefault.jpg",
         speaker_name: "Aristides G. Eliopoulos",
         speaker_info: "https://www.facebook.com/eliopag",
-        category: "science"
+        category: ["science", "technology"]
       },
       {
         id: "watchtalk105",
@@ -83,7 +83,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/qt0aGGZwVIU/hqdefault.jpg",
         speaker_name: "Zografos V",
         speaker_info: "https://www.instagram.com/zografos_vita/",
-        category: "life"
+        category: ["life", "culture"]
       },
       {
         id: "watchtalk106",
@@ -92,7 +92,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/2T8aoCWZ4CE/hqdefault.jpg",
         speaker_name: "Rosario Moscato",
         speaker_info: "https://www.linkedin.com/in/rosariomoscato/",
-        category: "technology"
+        category: ["technology", "global issues"]
       },
       {
         id: "watchtalk107",
@@ -101,7 +101,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/yAJiwxP57dw/hqdefault.jpg",
         speaker_name: "Xenia Mastoraki",
         speaker_info: "https://www.instagram.com/xeniamastoraki/",
-        category: "design",
+        category: ["design", "global issues"],
       },
       {
         id: "watchtalk108",
@@ -113,7 +113,7 @@ export const PREVIOUS_EVENTS = [
           { name: "Kimon Vogt", social: "https://www.instagram.com/kimonvogt/" },
           { name: "Antonia Vogt", social: "https://www.instagram.com/antoniaavogt/" }
         ],
-        category: "technology"
+        category: ["technology", "science"]
       },
       {
         id: "watchtalk109",
@@ -122,7 +122,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/TwKoGF4D4hQ/hqdefault.jpg",
         speaker_name: "Gogo Delogianni",
         speaker_info: "https://www.instagram.com/gogodelogianni/?hl=en",
-        category: "life"
+        category: ["life", "culture"]
       },
       {
         id: "watchtalk100",
@@ -131,7 +131,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/tz-jJ4z8edk/hqdefault.jpg",
         speaker_name: "Vangelis Simakis - Backpack Brothers",
         speaker_info: "https://www.instagram.com/backpackbrothers.gr/",
-        category: "global issues"
+        category: ["global issues", "life"]
       }
     ]
   },
@@ -152,7 +152,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/KadsZRnGnN4/hqdefault.jpg",
         speaker_name: "Fotis Floros",
         speaker_info: "https://www.instagram.com/_the_dandy_/?igsh=YWZyeWVkcnBjdThi",
-        category: "culture"
+        category: ["culture", "history"]
       },
       {
         id: "watchtalk68",
@@ -162,7 +162,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/8UO4XyevOj8/hqdefault.jpg",
         speaker_name: "George Pleios",
         speaker_info: "https://pleios.gr",
-        category: "history"
+        category: ["culture", "history"]
       },
       {
         id: "watchtalk69",
@@ -172,7 +172,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/zmfBAMh09H8/hqdefault.jpg",
         speaker_name: "Spyridoula Varlokosta",
         speaker_info: "https://www.researchgate.net/profile/Spyridoula-Varlokosta",
-        category: "science"
+        category: ["science", "culture", "education"]
       },
       {
         id: "watchtalk70",
@@ -192,7 +192,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/NKEo0MgsJ_g/hqdefault.jpg",
         speaker_name: "Iasonas Apostolopoulos",
         speaker_info: "https://en.wikipedia.org/wiki/Iasonas_Apostolopoulos",
-        category: "life"
+        category: "global issues"
       },
       {
         id: "watchtalk72",
@@ -202,7 +202,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/ckg_u74z57A/hqdefault.jpg",
         speaker_name: "Nassia Philippidi",
         speaker_info: "https://www.linkedin.com/in/nasiafilippidi/",
-        category: "business"
+        category: ["business", "global issues", "design"]
       },
       {
         id: "watchtalk73",
@@ -232,7 +232,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/PhJ_LhBnVYc/hqdefault.jpg",
         speaker_name: "Konstantinos Kotios",
         speaker_info: "https://axia.edu.gr/wp-content/uploads/2022/06/κοτιος-cv-.pdf",
-        category: ["life", "business"]
+        category: ["education", "business"]
       },
       {
         id: "watchtalk76",
@@ -264,7 +264,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Stamatis Krimigis",
         speaker_info:
           "https://el.wikipedia.org/wiki/%CE%A3%CF%84%CE%B1%CE%BC%CE%AC%CF%84%CE%B7%CF%82_%CE%9A%CF%81%CE%B9%CE%BC%CE%B9%CE%B6%CE%AE%CF%82",
-        category: "science"
+        category: ["science", "history"]
       },
       {
         id: "watchtalk61",
@@ -282,7 +282,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/E4UqnoUavwE/hqdefault.jpg",
         speaker_name: "Konstantinos Karachalios",
         speaker_info: "https://manageroftheyear.gr/person/dr-ing-konstantinos-karachalios/",
-        category: "technology"
+        category: ["technology", "global issues"]
       },
       {
         id: "watchtalk63",
@@ -311,7 +311,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/XDnQ2A7JqoI/hqdefault.jpg",
         speaker_name: "Eleni Mami & Haris Vasilakos",
         speaker_info: "https://www.vamvakourevival.org/",
-        category: "life"
+        category: ["life", "history", "business"]
       },
       {
         id: "watchtalk66",
@@ -320,7 +320,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/AJndmyk15Fk/hqdefault.jpg",
         speaker_name: "Sever Zolak",
         speaker_info: "https://severzolak.com/",
-        category: "life"
+        category: ["culture", "design"]
       }
     ]
   },
@@ -340,7 +340,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/K-25ugdT8Cc/hqdefault.jpg",
         speaker_name: "Apostolos Apostolakis",
         speaker_info: "https://www.linkedin.com/in/apostolosapostolakis/?originalSubdomain=gr",
-        category: ["technology", "business"]
+        category: ["technology", "design", "business"]
       },
       {
         id: "watchtalk55",
@@ -350,7 +350,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Eugene Trivizas",
         speaker_info:
           "https://el.wikipedia.org/wiki/%CE%95%CF%85%CE%B3%CE%AD%CE%BD%CE%B9%CE%BF%CF%82_%CE%A4%CF%81%CE%B9%CE%B2%CE%B9%CE%B6%CE%AC%CF%82",
-        category: ["life", "culture"]
+        category: ["culture", "education"]
       },
       {
         id: "watchtalk56",
@@ -360,7 +360,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Mirela Pachou",
         speaker_info:
           "https://el.wikipedia.org/wiki/%CE%9C%CE%B9%CF%81%CE%AD%CE%BB%CE%B1_%CE%A0%CE%AC%CF%87%CE%BF%CF%85",
-        category: "life"
+        category: ["life", "culture"]
       },
       {
         id: "watchtalk57",
@@ -380,7 +380,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Konstantinos Gardikis",
         speaker_info:
           "https://www.linkedin.com/in/konstantinos-gardikis-89940343/?originalSubdomain=gr",
-        category: ["culture", "science"]
+        category: ["culture", "science", "design"]
       },
       {
         id: "watchtalk59",
@@ -457,7 +457,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/avEbqbXOC2s/hqdefault.jpg",
         speaker_name: "Sandra Mavroidi",
         speaker_info: "https://trianemi.edu.gr/",
-        category: "life"
+        category: ["education", "global issues"]
       },
       {
         id: "watchtalk50",
@@ -495,7 +495,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/TPiZhu0zN9s/hqdefault.jpg",
         speaker_name: "Fiori Zafeiopoulou",
         speaker_info: "https://www.epixeiro.gr/authors/633",
-        category: "life"
+        category: "global issues"
       }
     ]
   },
@@ -526,7 +526,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/RiR2OiUHGhg/hqdefault.jpg",
         speaker_name: "Michael Spengos",
         speaker_info: "https://www.linkedin.com/in/michael-spengos-36440625/?originalSubdomain=gr",
-        category: "science"
+        category: ["science", "education"]
       },
       {
         id: "watchtalk33",
@@ -536,7 +536,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Marianna Diamantopoulou",
         speaker_info:
           "https://www.linkedin.com/in/marianna-diamantopoulou-a078149b/?originalSubdomain=ch",
-        category: "science"
+        category: ["science", "technology"]
       },
       {
         id: "watchtalk34",
@@ -545,7 +545,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/9j1MOKodBdM/hqdefault.jpg",
         speaker_name: "Eleni Diamanti",
         speaker_info: "https://en.wikipedia.org/wiki/Eleni_Diamanti",
-        category: "science"
+        category: ["science", "technology"]
       },
       {
         id: "watchtalk35",
@@ -555,7 +555,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Manolis Korres",
         speaker_info:
           "https://el.wikipedia.org/wiki/%CE%9C%CE%B1%CE%BD%CF%8C%CE%BB%CE%B7%CF%82_%CE%9A%CE%BF%CF%81%CF%81%CE%AD%CF%82",
-        category: ["science", "life"]
+        category: ["design", "history"]
       },
       {
         id: "watchtalk36",
@@ -564,7 +564,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/DPaNcktCAMw/hqdefault.jpg",
         speaker_name: "Delft Hyperloop",
         speaker_info: "https://www.delfthyperloop.nl/",
-        category: ["technology", "life", "business"]
+        category: ["technology", "business", "design"]
       },
       {
         id: "watchtalk37",
@@ -573,7 +573,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/oOfw-rNJY2s/hqdefault.jpg",
         speaker_name: "Kastler Skjeseth Architects",
         speaker_info: "https://www.kastlerskjeseth.no/",
-        category: "science"
+        category: "design"
       },
       {
         id: "watchtalk38",
@@ -583,7 +583,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Gábor Vásárhelyi",
         speaker_info:
           "https://www.linkedin.com/in/g%C3%A1bor-v%C3%A1s%C3%A1rhelyi-764432135/?originalSubdomain=hu",
-        category: "science"
+        category: ["technology", "science"]
       },
       {
         id: "watchtalk39",
@@ -592,7 +592,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/eJu2vb3uU30/hqdefault.jpg",
         speaker_name: "En Route Architects",
         speaker_info: "https://www.e-r-a.net/",
-        category: ["science", "business"]
+        category: ["design", "business"]
       },
       {
         id: "watchtalk40",
@@ -610,7 +610,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/d9o_bwo0jJA/hqdefault.jpg",
         speaker_name: "Ivan Yamshchikov",
         speaker_info: "https://www.yamshchikov.info/",
-        category: ["science", "life"]
+        category: ["technology", "science"]
       },
       {
         id: "watchtalk42",
@@ -620,7 +620,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Evanthia Hatziminaoglou",
         speaker_info:
           "https://www.iac.es/en/mobility/dr-evanthia-hatziminaoglou-european-southern-observatory-eso-germany",
-        category: ["science", "life"]
+        category: "science"
       },
       {
         id: "watchtalk43",
@@ -630,7 +630,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Ioannis Tassopoulos",
         speaker_info:
           "http://dddp.pspa.uoa.gr/an8rwpino-dynamiko/didaskontes/iwannhs-tasopoylos.html",
-        category: ["life", "culture"]
+        category: ["life", "global issues"]
       }
     ]
   },
@@ -660,7 +660,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/kthpTbI0xR4/hqdefault.jpg",
         speaker_name: "Vassilis Charalabidis",
         speaker_info: "https://www.linkedin.com/in/vcharalampidis/?originalSubdomain=gr",
-        category: ["life", "history"]
+        category: ["history", "design"]
       },
       {
         id: "watchtalk23",
@@ -669,7 +669,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/Vd-N7fbU_qk/hqdefault.jpg",
         speaker_name: "Caroline Bos",
         speaker_info: "https://en.wikipedia.org/wiki/Caroline_Bos",
-        category: "technology"
+        category: ["technology", "design"]
       },
       {
         id: "watchtalk24",
@@ -678,7 +678,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/izREPCXCdKQ/hqdefault.jpg",
         speaker_name: "Michael Styllas",
         speaker_info: "https://www.researchgate.net/profile/Michael-Styllas",
-        category: ["life", "history"]
+        category: ["history", "culture"]
       },
       {
         id: "watchtalk25",
@@ -687,7 +687,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/NZ_aw7NFfg8/hqdefault.jpg",
         speaker_name: "Natassa Lianou & Ermis Chalvatzis (LC Architects)",
         speaker_info: "https://www.lc-a.uk/",
-        category: "science"
+        category: ["design", "technology"]
       },
       {
         id: "watchtalk26",
@@ -696,7 +696,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/HzKPmMHURXg/hqdefault.jpg",
         speaker_name: "Ioanna Theodorou",
         speaker_info: "https://www.linkedin.com/in/ioannatheodorou/?originalSubdomain=nl",
-        category: ["business", "life"]
+        category: ["business", "global issues"]
       },
       {
         id: "watchtalk27",
@@ -733,7 +733,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Vassilios Makios",
         speaker_info:
           "https://www.ece.upatras.gr/index.php/en/meriti-professors/makios-vasilios.html",
-        category: "business"
+        category: ["business", "technology"]
       },
       {
         id: "watchtalk31",
@@ -762,7 +762,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/D_rGV423ths/hqdefault.jpg",
         speaker_name: "John Kalogerakis",
         speaker_info: "https://jmk.gr/index.php/who-is-john-kalogerakis/",
-        category: "business"
+        category: ["business", "education"]
       },
       {
         id: "watchtalk16",
@@ -780,7 +780,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/xTToXqYeUMU/hqdefault.jpg",
         speaker_name: "Sissy Nikolaou",
         speaker_info: "https://www.nist.gov/people/aspasia-nikolaou",
-        category: "science"
+        category: ["science", "education"]
       },
       {
         id: "watchtalk18",
@@ -789,7 +789,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/KrB9Ntwkn9c/hqdefault.jpg",
         speaker_name: "Edward Perello",
         speaker_info: "https://www.linkedin.com/in/edwardperello/?originalSubdomain=uk",
-        category: "science"
+        category: ["science", "global issues"]
       },
       {
         id: "watchtalk19",
@@ -798,7 +798,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/_L2REhDa9gs/hqdefault.jpg",
         speaker_name: "Christos Raftogiannis",
         speaker_info: "https://www.linkedin.com/in/chrisraftogiannis/?originalSubdomain=gr",
-        category: ["business", "life"]
+        category: ["business", "technology", "global issues"]
       },
       {
         id: "watchtalk20",
@@ -807,7 +807,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/NIiBXYC4j-s/hqdefault.jpg",
         speaker_name: "Anezina Solomonidou",
         speaker_info: "https://science.jpl.nasa.gov/people/anezina-solomonidou/",
-        category: ["science", "technology"]
+        category: "science"
       }
     ]
   },
@@ -827,7 +827,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/6yvIpW1zFDc/hqdefault.jpg",
         speaker_name: "Yiannis Ampelas",
         speaker_info: "https://www.befoolish.co/work/newslexia/",
-        category: ["business", "technology"]
+        category: ["technology", "culture"]
       },
       {
         id: "watchtalk2",
@@ -836,7 +836,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/IPWjla9rC9A/hqdefault.jpg",
         speaker_name: "Jon Mark Walls",
         speaker_info: "https://www.linkedin.com/in/jon-mark-walls/?originalSubdomain=ch",
-        category: "business"
+        category: ["technology", "global issues"]
       },
       {
         id: "watchtalk3",
@@ -845,7 +845,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/jaD0EQIxDIA/hqdefault.jpg",
         speaker_name: "Thanos Vlastos",
         speaker_info: "http://regplanunit.survey.ntua.gr/st_Vlastos.html",
-        category: "life"
+        category: ["design", "life"]
       },
       {
         id: "watchtalk4",
@@ -855,7 +855,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Andrianos Golemis",
         speaker_info:
           "https://www.lifo.gr/now/greece/adrianos-golemis-o-giatros-ton-astronayton-poy-oneireyetai-na-paei-sto-diastima",
-        category: "life"
+        category: ["science", "life"]
       },
       {
         id: "watchtalk5",
@@ -865,7 +865,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Dimitris Fouskakis",
         speaker_info:
           "https://www.linkedin.com/in/dimitris-fouskakis-6090962/?originalSubdomain=gr",
-        category: "science"
+        category: ["science", "education"]
       },
       {
         id: "watchtalk6",
@@ -883,7 +883,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/fXJJpYVIU94/hqdefault.jpg",
         speaker_name: "Ashley Dove-Jay",
         speaker_info: "https://www.linkedin.com/in/ashdj/?originalSubdomain=uk",
-        category: "science"
+        category: ["science", "technology"]
       },
       {
         id: "watchtalk8",
@@ -911,7 +911,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Theodosis Tassios",
         speaker_info:
           "https://el.wikipedia.org/wiki/%CE%98%CE%B5%CE%BF%CE%B4%CF%8C%CF%83%CE%B7%CF%82_%CE%A4%CE%AC%CF%83%CE%B9%CE%BF%CF%82",
-        category: ["science", "technology"]
+        category: ["science", "technology", "history"]
       },
       {
         id: "watchtalk11",
@@ -929,7 +929,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/9p4KUsEBzJg/hqdefault.jpg",
         speaker_name: "Athina Pitta",
         speaker_info: "https://www.linkedin.com/in/athinapitta/?originalSubdomain=gr",
-        category: "business"
+        category: ["business", "global issues"]
       },
       {
         id: "watchtalk13",
@@ -939,7 +939,7 @@ export const PREVIOUS_EVENTS = [
         speaker_name: "Engineers of the Earth",
         speaker_info:
           "https://www.engoe.gr/?fbclid=IwAR3og3-oisA_RbOgO0cT4V6Gl82RxaggBU7A6gGbuiyXC6B1JiWura9j-gk",
-        category: "life"
+        category: ["global issues", "education"]
       },
       {
         id: "watchtalk14",
@@ -948,7 +948,7 @@ export const PREVIOUS_EVENTS = [
         thumbnail_yt: "https://i.ytimg.com/vi/_YJEP-Hi6O0/hqdefault.jpg",
         speaker_name: "Israel Dejene",
         speaker_info: "https://www.globalcitizen.org/fr/content/israel-dejenes-story/",
-        category: ["life", "culture"]
+        category: ["life", "global issues"]
       }
     ]
   }
