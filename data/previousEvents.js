@@ -30,7 +30,97 @@ export const PREVIOUS_EVENTS = [
     paragraph:
       "Cycle 0 — Exploring the origins of innovation and the power of ideas that redefine our future. A journey that marked the beginning of a new era for TEDxNTUA, focusing on the fundamental principles that drive change.",
     isVideo: true,
+    talks: [
+      {
+        id: "watchtalk110",
+        title: "Collect, Report, Repeat: Every story completes its own cycle",
+        yt_link: "https://www.youtube.com/watch?v=TF5vkI370PA&list=PLBYgHgGJZCoQ&index=2",
+        thumbnail_yt: "https://i.ytimg.com/vi/TF5vkI370PA/hqdefault.jpg",
+        speaker_name: "Elena Papadimitriou",
+        speaker_info: "https://www.instagram.com/papadelena/?hl=en",
+        category: "social science "
+      },
+      {
+        id: "watchtalk111",
+        title: "The revolution of glitter",
+        yt_link: "https://www.youtube.com/watch?v=uEIqiIaQitM&list=PLBYgHgGJZCoQ&index=2",
+        thumbnail_yt: "https://i.ytimg.com/vi/uEIqiIaQitM/hqdefault.jpg",
+        speaker_name: "Dimitris Samolis",
+        speaker_info: "https://www.instagram.com/dimitris_samolis/?hl=en",
+        category: "life"
+      },
+      {
+        id: "watchtalk112",
+        title: "When AI Answers the Doctor’s Phone",
+        yt_link: "https://www.youtube.com/watch?v=Q4Atf0E9I80&list=PLBYgHgGJZCoQ&index=3",
+        thumbnail_yt: "https://i.ytimg.com/vi/Q4Atf0E9I80/hqdefault.jpg",
+        speaker_name: "Nassos Katsamanis",
+        speaker_info: "https://gr.linkedin.com/in/nkatsam",
+        category: "technology"
+      },
+      {
+        id: "watchtalk113",
+        title: "Trust your starting point/ 240791",
+        yt_link: "https://www.youtube.com/watch?v=KMTwyN7OaOg&list=PLBYgHgGJZCoQ&index=4",
+        thumbnail_yt: "https://i.ytimg.com/vi/KMTwyN7OaOg/hqdefault.jpg",
+        speaker_name: "Eleni Kavvada",
+        speaker_info: "https://www.instagram.com/240791ek/",
+        category: "art"
+      },
+      {
+        id: "watchtalk114",
+        title: "Cycle 0: Restarting islands, restarting systems",
+        yt_link: "https://www.youtube.com/watch?v=jLkYRjLAIuA&list=PLBYgHgGJZCoQ&index=5",
+        thumbnail_yt: "https://i.ytimg.com/vi/jLkYRjLAIuA/hqdefault.jpg",
+        speaker_name: "Stergios Vakalis",
+        speaker_info: "https://www.instagram.com/stergios_vakalis/",
+        category: "global issues"
+      },
+      {
+        id: "watchtalk115",
+        title: "The cycles of our Sun",
+        yt_link: "https://www.youtube.com/watch?v=OUy0imdVdH8&list=PLBYgHgGJZCoQ&index=6",
+        thumbnail_yt: "https://i.ytimg.com/vi/OUy0imdVdH8/hqdefault.jpg",
+        speaker_name: "Yannis Daglis",
+        speaker_info: "https://gr.linkedin.com/in/ioannis-a-daglis-a2b8a46",
+        category: "science"
+      }
+      ,
+      {
+        id: "watchtalk116",
+        title: "Repetition throughout music histor",
+        yt_link: "https://www.youtube.com/watch?v=Nf7GNbAUeL4&list=PLBYgHgGJZCoQ&index=7",
+        thumbnail_yt: "https://i.ytimg.com/vi/Nf7GNbAUeL4/hqdefault.jpg",
+        speaker_name: "Dimitris Barmpas",
+        speaker_info: "https://www.instagram.com/mr.music.gr",
+        category: "entertainment"
+      }
+      ,
+      {
+        id: "watchtalk117",
+        title: "The power of coming back",
+        yt_link: "https://www.youtube.com/watch?v=KpgJ6neKJwY&list=PLBYgHgGJZCoQ&index=8",
+        thumbnail_yt: "https://i.ytimg.com/vi/KpgJ6neKJwY/hqdefault.jpg",
+        speaker_name: "Nora Drakou",
+        speaker_info: "https://www.instagram.com/noradrakou/",
+        category: "life"
+      }
+      ,
+      {
+        id: "watchtalk118",
+        title: "Crafting Architecture Stories ",
+        yt_link: "https://www.youtube.com/watch?v=2C3yywdBmOc&list=PLBYgHgGJZCoQ&index=9",
+        thumbnail_yt: "https://i.ytimg.com/vi/2C3yywdBmOc/hqdefault.jpg",
+        speaker_name: "Thanos Ioannidis & Chara Kontochristou",
+        speaker_speakers: [
+          { name: "Thanos Ioannidis", social: "https://www.instagram.com/thanos__ioannidis/" },
+          { name: "Chara Kontochristou ", social: "https://www.instagram.com/chara_kontochristou/" }
+        ],
+        category: "design"
+      }
+    ]
   },
+
   {
     name: "Synelixis",
     date: "May 10, 2025",
@@ -51,7 +141,7 @@ export const PREVIOUS_EVENTS = [
       },
       {
         id: "watchtalk102",
-        title: "The Multiplicity of The Self",  
+        title: "The Multiplicity of The Self",
         yt_link: "https://www.youtube.com/watch?v=3sOBkLntUpk&list=PLd7-PjFC85gwyYgELrfHGvr-sT2vsbJql&index=2",
         thumbnail_yt: "https://i.ytimg.com/vi/3sOBkLntUpk/hqdefault.jpg",
         speaker_name: "Eva Kotta",
